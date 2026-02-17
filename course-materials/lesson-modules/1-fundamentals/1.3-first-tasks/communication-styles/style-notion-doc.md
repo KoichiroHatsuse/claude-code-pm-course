@@ -65,7 +65,7 @@ The empty workspace intimidates new users:
 ## Competitive Comparison
 
 | Platform | Time-to-First-Task | Has Templates | Has Interactive Tour |
-|----------|-------------------|---------------|---------------------|
+| --- | --- | --- | --- |
 | TaskFlow | 45 min | ❌ | ❌ |
 | Asana | 12 min | ✅ | ✅ |
 | Linear | 15 min | ❌ | ✅ |

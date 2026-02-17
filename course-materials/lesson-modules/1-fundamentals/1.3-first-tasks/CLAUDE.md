@@ -463,14 +463,12 @@ Ready to see image analysis in action? Say: **'Ready to see it'**
 
 I want you to try this right now! Here's what to do:
 
-1. Open `REFERENCE_GUIDE.md` in your editor (it's in this same exercise folder)
-2. Scroll down to the "Example UI to Try" section (around line 177)
-3. You'll see a screenshot of a user interface
-4. Click on that image to open it full-size
-5. Copy the image (right-click → Copy Image, or Cmd+C on Mac)
-6. Come back to this Claude Code chat
-7. Press **Ctrl+V** (remember: Ctrl, not Command on Mac!)
-8. Then ask me: "Analyze this UI and provide improvement recommendations from a PM perspective"
+1. Open `attachments/ui-mockup-example.png` in your editor (it's in this same exercise folder)
+2. You'll see a UI mockup image
+3. Copy the image (right-click → Copy Image, or Cmd+C on Mac)
+4. Come back to this Claude Code chat
+5. Press **Ctrl+V** (remember: Ctrl, not Command on Mac!)
+6. Then ask me: "Analyze this UI and provide improvement recommendations from a PM perspective"
 
 This will let you practice the image pasting workflow with a real example!
 

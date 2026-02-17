@@ -59,22 +59,22 @@ Mike's perspective:
 
 discussed:
 1. smart batching (group similar notifications)
-   - mike: "like github does it - one email for multiple events"
-   - me: makes sense, but need to define what gets batched
+  - mike: "like github does it - one email for multiple events"
+  - me: makes sense, but need to define what gets batched
 
 2. notification preferences need overhaul
-   - current: binary (on/off per notification type)
-   - need: granular (by project, by person, by urgency)
+  - current: binary (on/off per notification type)
+  - need: granular (by project, by person, by urgency)
 
 3. digest mode
-   - batch non-urgent notifications
-   - send once daily (or twice daily?)
-   - mike: "i want morning digest, not constant interruptions"
+  - batch non-urgent notifications
+  - send once daily (or twice daily?)
+  - mike: "i want morning digest, not constant interruptions"
 
 4. timezone-aware notifications
-   - don't notify at 2am!
-   - respect working hours
-   - mike mentioned they built this at his last company
+  - don't notify at 2am!
+  - respect working hours
+  - mike mentioned they built this at his last company
 
 TECHNICAL CONSIDERATIONS:
 - notification service currently synchronous (slows down API)
@@ -231,7 +231,7 @@ PRIORITIES EMERGING:
 1. mobile app (committed, Q1)
 2. dark mode (highly requested, team morale, relatively quick)
 3. activation/onboarding (OKR-critical, but what exactly?)
-   - templates? interactive tour? both?
+  - templates? interactive tour? both?
 4. notifications (pain point, but complex, might be Q2)
 5. enterprise features (sso variants, advanced permissions - ongoing)
 

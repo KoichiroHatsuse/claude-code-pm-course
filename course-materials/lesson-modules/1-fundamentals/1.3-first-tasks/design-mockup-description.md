@@ -211,11 +211,11 @@ Marketing opportunity:
 
 NEXT STEPS:
 
-[ ] Product (me): Decision on user-uploaded images, embeds, default mode
-[ ] Engineering (Jamie): Investigate chart library dark mode support
-[ ] Mobile (Alex): Decide if mobile launches with dark mode
-[ ] Marketing: Plan launch campaign (if going forward)
-[ ] Design (Jordan): Address feedback, finalize specs for engineering
+- [ ] Product (me): Decision on user-uploaded images, embeds, default mode
+- [ ] Engineering (Jamie): Investigate chart library dark mode support
+- [ ] Mobile (Alex): Decide if mobile launches with dark mode
+- [ ] Marketing: Plan launch campaign (if going forward)
+- [ ] Design (Jordan): Address feedback, finalize specs for engineering
 
 ═══════════════════════════════════════════════════════════════════
 
