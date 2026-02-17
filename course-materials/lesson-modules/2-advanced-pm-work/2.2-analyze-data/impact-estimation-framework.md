@@ -1,67 +1,67 @@
 # Impact Estimation Framework
 
-**A Product Manager's Guide to Estimating Feature Impact**
+**プロダクトマネージャーのためのフィーチャーインパクト見積もりガイド**
 
 ---
 
-## The Formula
+## 計算式
 
-Impact estimation follows this basic formula:
+インパクト見積もりは以下の基本計算式に従います:
 
 ```
 Impact = Users Affected × Current Action Rate × Expected Lift × Value per Action
 ```
 
-Let's break down each component:
+各コンポーネントを分解しましょう:
 
 ---
 
-## 1. Users Affected
+## 1. Users Affected（影響を受けるユーザー数）
 
-**Question:** How many users will be exposed to this feature?
+**質問:** このフィーチャーに触れるユーザーは何人ですか？
 
-**Examples:**
+**例:**
 - **All new signups:** 5,000 users/month
 - **Existing users who see onboarding:** 70% of signups = 3,500 users/month
 - **Enterprise customers only:** 500 users/month
 
-**Key considerations:**
-- Will this be a gradual rollout or 100% launch?
-- Are we targeting specific segments?
-- What's the adoption curve? (not everyone uses a feature immediately)
+**主な考慮事項:**
+- 段階的ロールアウトですか、それとも100%ローンチですか？
+- 特定のセグメントをターゲットにしていますか？
+- 採用カーブはどうですか？（全員がすぐにフィーチャーを使うわけではありません）
 
 ---
 
-## 2. Current Action Rate
+## 2. Current Action Rate（現在のアクション率）
 
-**Question:** What percentage of users currently take the desired action?
+**質問:** 現在、望ましいアクションを取っているユーザーの割合は？
 
-**Examples:**
+**例:**
 - **Activation rate:** 45% of signups complete first task
 - **Invite rate:** 12% of users invite a teammate
 - **Feature adoption:** 23% of users use advanced filters
 
-**How to find this:**
-- Query your analytics tool (Mixpanel, Amplitude)
-- Export usage data and calculate the baseline
-- Segment by user type if relevant (small teams vs enterprise)
+**見つけ方:**
+- アナリティクスツール（Mixpanel、Amplitude）でクエリを実行する
+- 使用データをエクスポートしてベースラインを計算する
+- 関連する場合はユーザータイプ別にセグメント（小規模チーム vs エンタープライズ）
 
 ---
 
-## 3. Expected Lift
+## 3. Expected Lift（期待されるリフト）
 
-**Question:** How much will this feature improve the action rate?
+**質問:** このフィーチャーはアクション率をどれだけ改善しますか？
 
-**This is the hardest part!** You need to make educated assumptions based on:
+**これが最も難しい部分です！** 以下に基づいて根拠ある仮定を立てる必要があります:
 
-**Sources of lift estimates:**
-1. **Similar features you've shipped:** "Last time we improved onboarding, we saw +8pp lift"
-2. **Competitor benchmarks:** "Linear's activation is 65%, we're at 45%, so there's 20pp of room"
-3. **User research:** "Survey shows 60% of drop-offs are due to X, so fixing X could recover 60% of that drop-off"
-4. **A/B test results from similar features:** Historical data from your company
-5. **Expert judgment:** Engineering/Design/PM estimates based on the scope of change
+**リフト見積もりのソース:**
+1. **過去にリリースした類似フィーチャー:** "前回オンボーディングを改善したとき、+8pp のリフトが見られた"
+2. **競合ベンチマーク:** "Linear のアクティベーションは65%、私たちは45%、つまり20pp の余地がある"
+3. **ユーザーリサーチ:** "調査によると離脱の60%が X が原因なので、X を修正すればその離脱の60%を回復できる可能性がある"
+4. **類似フィーチャーの A/B テスト結果:** 自社のヒストリカルデータ
+5. **エキスパート判断:** 変更のスコープに基づくエンジニアリング/デザイン/PM の見積もり
 
-**Example calculation:**
+**計算例:**
 - Current: 45% activation (4,500 out of 10,000 signups complete first task)
 - Problem: 60% drop-off between "create task" and "complete task"
 - Root cause: Users don't know what to put in tasks (from survey)
@@ -71,49 +71,49 @@ Let's break down each component:
 - Conservative estimate: Recover 30% of drop-off = +1,800 users = 63% activation
 - Really conservative: Recover 20% = +1,200 users = 58% activation ← Use this
 
-**Pro tip:** Create three scenarios (pessimistic, realistic, optimistic) to bound your estimate.
+**プロのヒント:** 見積もりの範囲を限定するために、3つのシナリオ（悲観的、現実的、楽観的）を作成しましょう。
 
 ---
 
-## 4. Value per Action
+## 4. Value per Action（アクションあたりの価値）
 
-**Question:** What is each incremental action worth to the business?
+**質問:** 各増分アクションはビジネスにとっていくらの価値がありますか？
 
-**For activation improvements:**
+**アクティベーション改善の場合:**
 - Activated user → Paying customer conversion rate: 60%
 - Average revenue per user: $12/month
 - Average customer lifetime: 24 months
 - **Value per activated user:** $12 × 60% × 24 months = $172.80 LTV
 
-**For retention improvements:**
+**リテンション改善の場合:**
 - Each percentage point of retention = X users stay longer
 - Extended LTV = retention improvement × ARPU × extended months
 
-**For viral/invite features:**
+**バイラル/招待フィーチャーの場合:**
 - Each invite → 40% acceptance rate
 - Each accepted invite → 60% activation → 60% conversion
 - **Value per invite:** 40% × 60% × 60% × $172.80 LTV = $41.47
 
 ---
 
-## Putting It All Together
+## すべてを組み合わせる
 
-**Example: Guided Onboarding for TaskFlow**
+**例: TaskFlow の Guided Onboarding**
 
-### Current State:
+### 現在の状態:
 - **Users affected:** 5,000 new signups/month (post-launch, assume 70% see it = 3,500/month)
 - **Current action rate:** 45% activation
 - **Current activated users:** 2,250/month
 - **Value per activation:** $172.80 LTV ($12/mo × 60% conversion × 24 months)
 
-### Projected Impact (Realistic Scenario):
+### 予測インパクト（Realistic Scenario）:
 - **Expected lift:** 45% → 58% activation (+13 percentage points)
 - **New activated users:** 2,030/month (58% of 3,500)
 - **Incremental activated users:** +130/month (2,030 - 1,900)
 - **Annual value:** 130 × 12 months × $172.80 = $269,856 in LTV
 - **Year 1 revenue impact:** 130 × 12 × $12 × 60% = $11,232 MRR = $134,784 ARR
 
-### Cost:
+### コスト:
 - **Engineering:** 4 engineers × 1 month = $100,000
 
 ### ROI:
@@ -122,48 +122,48 @@ Let's break down each component:
 
 ---
 
-## Three Scenarios Approach
+## 3つのシナリオアプローチ
 
-Always create three scenarios to acknowledge uncertainty:
+不確実性を認めるために、必ず3つのシナリオを作成してください:
 
-### Pessimistic Scenario (20th percentile):
-- Lower adoption (30% instead of 70%)
-- Lower lift (45% → 50% instead of 58%)
-- Calculate minimum expected impact
+### Pessimistic Scenario（悲観的シナリオ、20th percentile）:
+- 低い採用率（70%ではなく30%）
+- 低いリフト（45% → 58%ではなく45% → 50%）
+- 最小限の期待インパクトを計算
 
-### Realistic Scenario (50th percentile):
-- Expected adoption (70%)
-- Conservative lift based on data (45% → 58%)
-- Your "most likely" case
+### Realistic Scenario（現実的シナリオ、50th percentile）:
+- 期待される採用率（70%）
+- データに基づく保守的なリフト（45% → 58%）
+- 「最も可能性が高い」ケース
 
-### Optimistic Scenario (80th percentile):
-- High adoption (90%)
-- Strong lift plus secondary effects (45% → 62% + retention improvements)
-- Best-case scenario if everything works
+### Optimistic Scenario（楽観的シナリオ、80th percentile）:
+- 高い採用率（90%）
+- 強いリフト + 二次効果（45% → 62% + リテンション改善）
+- すべてがうまくいった場合のベストケースシナリオ
 
-**Present all three to leadership** so they understand the range of outcomes.
-
----
-
-## Common Pitfalls
-
-❌ **Don't:**
-- Assume 100% of users will use the feature
-- Take the most optimistic benchmark ("Notion has 80% activation!")
-- Forget to account for conversion rates in your value calculation
-- Include every possible secondary effect (keep it simple)
-- Present a single number without uncertainty bounds
-
-✅ **Do:**
-- Use historical data from your company when possible
-- Be conservative with lift estimates (better to under-promise)
-- Show your work (make assumptions explicit)
-- Create multiple scenarios
-- Validate assumptions with data where possible
+**3つすべてをリーダーシップに提示して**、結果の範囲を理解してもらいましょう。
 
 ---
 
-## Template for Impact Estimates
+## よくある落とし穴
+
+**やってはいけないこと:**
+- 100%のユーザーがフィーチャーを使うと仮定する
+- 最も楽観的なベンチマークを取る（"Notion は80%のアクティベーション！"）
+- 価値計算でコンバージョン率を考慮し忘れる
+- あらゆる二次効果を含める（シンプルに保つ）
+- 不確実性の範囲なしで単一の数字を提示する
+
+**やるべきこと:**
+- 可能な限り自社のヒストリカルデータを使用する
+- リフト見積もりは保守的に（約束し過ぎないほうが良い）
+- 作業を見せる（前提を明示的にする）
+- 複数のシナリオを作成する
+- 可能な場合はデータで前提を検証する
+
+---
+
+## インパクト見積もりのテンプレート
 
 ```markdown
 ## Feature: [Name]
@@ -200,4 +200,4 @@ Always create three scenarios to acknowledge uncertainty:
 
 ---
 
-**Remember:** Impact estimates are not predictions—they're informed hypotheses. The goal is to make better decisions, not to be perfectly accurate. Show your work, state your assumptions, and update your estimates as you learn more.
+**覚えておいてください:** インパクト見積もりは予測ではなく、根拠ある仮説です。目的は完璧に正確であることではなく、より良い意思決定を行うことです。作業を見せ、前提を述べ、学びに応じて見積もりを更新しましょう。

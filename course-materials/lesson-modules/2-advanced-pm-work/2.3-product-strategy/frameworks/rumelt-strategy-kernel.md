@@ -1,186 +1,186 @@
-# Rumelt's Strategy Kernel
+# Rumelt の Strategy Kernel
 
-**Source:** Richard Rumelt, "Good Strategy, Bad Strategy"
+**出典:** Richard Rumelt 著『Good Strategy, Bad Strategy』
 
-## What Is The Kernel?
+## Strategy Kernel とは？
 
-The kernel is the **bare-bones center of a strategy** - the hard core that defines its essential character. A good strategy has three essential parts:
+Strategy Kernel は、戦略の**最も核心的な部分** - その本質的な性格を定義するハードコアです。良い戦略には3つの不可欠な要素があります:
 
-1. **Diagnosis** - What's really going on here?
-2. **Guiding Policy** - Our overall approach to dealing with it
-3. **Coherent Actions** - Feasible coordinated steps that follow from the policy
+1. **Diagnosis（診断）** - 本当は何が起きているのか？
+2. **Guiding Policy（指針）** - それに対処するための全体的なアプローチ
+3. **Coherent Actions（一貫した行動）** - 指針に従った、実行可能で調整された具体的なステップ
 
-## Why This Matters for Product Strategy
+## なぜプロダクト戦略に重要なのか
 
-Most "strategies" are actually just lists of goals or features. Real strategy involves:
-- **Choices** about where to compete and how to win
-- **Tradeoffs** about what NOT to do
-- **Focus** on a few key actions that reinforce each other
+ほとんどの「戦略」は、実際にはただの目標やフィーチャーのリストです。本当の戦略には以下が含まれます:
+- どこで競争し、どう勝つかの**選択**
+- 何をやらないかの**トレードオフ**
+- 互いを強化する少数の重要な行動への**フォーカス**
 
-Bad strategy is fluffy, filled with buzzwords, and doesn't make hard choices. Good strategy is crisp, realistic, and actionable.
-
----
-
-## Part 1: DIAGNOSIS
-
-### What It Is
-A diagnosis **simplifies the overwhelming complexity** of reality by identifying critical aspects of the situation. It names or classifies the challenge, drawing on existing categories or creating new ones.
-
-### Questions to Ask
-- What's the actual challenge or opportunity we're facing?
-- What are the critical constraints?
-- What's really preventing us from achieving our goals?
-- What does the competitive landscape look like?
-- Where are customers underserved?
-
-### Example: Netflix circa 2007
-**Diagnosis:** "We're a DVD-by-mail company in a world moving to streaming. Our core business has a shelf life. If we don't transform, we'll be the next Blockbuster."
-
-### For Product Strategy
-Your diagnosis should reveal:
-- The core problem or opportunity
-- Why now is the right time
-- What's changed in the market/technology/customer behavior
-- Your current position (strengths and constraints)
+悪い戦略はふわっとしていて、バズワードに満ち、難しい選択をしません。良い戦略は明確で、現実的で、実行可能です。
 
 ---
 
-## Part 2: GUIDING POLICY
+## パート 1: DIAGNOSIS（診断）
 
-### What It Is
-A guiding policy is an **overall approach** chosen to cope with or overcome the obstacles identified in the diagnosis. It channels action in certain directions without defining exactly what shall be done.
+### それは何か
+Diagnosis は、現実の圧倒的な複雑さを、状況の重要な側面を特定することで**簡素化**します。既存のカテゴリーを使うか新しいものを作成して、課題に名前を付けたり分類したりします。
 
-### Key Characteristics
-- Creates **advantage** - It's not just "work harder" or "be better"
-- Makes **tradeoffs** - Says no to some things to focus on others
-- Is **coherent** - The parts reinforce each other
-- Provides **direction** - But isn't so specific it becomes a project plan
+### 問うべき質問
+- 私たちが直面している実際の課題や機会は何か？
+- 重要な制約条件は何か？
+- 目標達成を本当に妨げているものは何か？
+- 競合環境はどうなっているか？
+- 顧客はどこでサービス不足を感じているか？
 
-### Example: Netflix circa 2007
-**Guiding Policy:** "Become a streaming-first entertainment company, even if it cannibalizes our DVD business. Build original content to differentiate from commodity streaming."
+### 例: 2007年頃の Netflix
+**Diagnosis:** "私たちは、ストリーミングに移行する世界における DVD 郵送会社です。コアビジネスには寿命があります。変革しなければ、次の Blockbuster になるでしょう。"
 
-### For Product Strategy
-Your guiding policy should answer:
-- Who are we targeting? (And who are we NOT targeting?)
-- What's our positioning/differentiation?
-- What type of product experience are we building?
-- What's our unfair advantage?
-
-### Red Flags (Bad Guiding Policy)
-❌ "Increase revenue"
-❌ "Delight customers"
-❌ "Be the market leader"
-❌ "Build the best product"
-
-These are **goals**, not strategy. They don't tell you HOW or WHERE to compete.
+### プロダクト戦略における Diagnosis
+あなたの Diagnosis は以下を明らかにするべきです:
+- コアとなる問題または機会
+- 今がなぜ適切なタイミングなのか
+- 市場/テクノロジー/顧客行動で何が変わったか
+- 現在のポジション（強みと制約）
 
 ---
 
-## Part 3: COHERENT ACTIONS
+## パート 2: GUIDING POLICY（指針）
 
-### What It Is
-Coherent actions are **feasible coordinated policies, resource commitments, and actions** designed to carry out the guiding policy. The actions should be coherent - coordinated with one another so they reinforce each other.
+### それは何か
+Guiding Policy は、Diagnosis で特定された障害に対処し、克服するために選択された**全体的なアプローチ**です。何をすべきかを正確に定義せずに、行動を特定の方向に導きます。
 
-### Key Characteristics
-- **Specific enough to be actionable** - Not vague aspirations
-- **Coordinated** - Each action supports the others
-- **Feasible** - Can actually be done with your resources and capabilities
-- **Sequential** - Clear what comes first and what depends on what
+### 主要な特徴
+- **アドバンテージを創出する** - 単に「もっと頑張る」「もっと良くする」ではない
+- **トレードオフを行う** - あるものに NO と言い、他のものにフォーカスする
+- **一貫性がある** - 各要素が互いを強化する
+- **方向性を示す** - ただし、プロジェクト計画になるほど具体的ではない
 
-### Example: Netflix circa 2007
+### 例: 2007年頃の Netflix
+**Guiding Policy:** "たとえ DVD ビジネスを食い潰すことになっても、ストリーミングファーストのエンターテインメント企業になる。コモディティ化するストリーミングから差別化するために、オリジナルコンテンツを制作する。"
+
+### プロダクト戦略における Guiding Policy
+あなたの Guiding Policy は以下に答えるべきです:
+- 誰をターゲットにするか？（そして誰をターゲットにしないか？）
+- ポジショニング/差別化は何か？
+- どんなプロダクト体験を構築するか？
+- 不公平なアドバンテージは何か？
+
+### レッドフラグ（悪い Guiding Policy）
+- "収益を増やす"
+- "顧客を喜ばせる"
+- "マーケットリーダーになる"
+- "最高のプロダクトを作る"
+
+これらは**目標**であって、戦略ではありません。どこでどう競争するかを示していません。
+
+---
+
+## パート 3: COHERENT ACTIONS（一貫した行動）
+
+### それは何か
+Coherent Actions は、Guiding Policy を実行するために設計された、**実行可能で調整された方針、リソースコミットメント、アクション**です。アクションは一貫している必要があります - 互いに調整され、互いを強化するものです。
+
+### 主要な特徴
+- **実行可能なほど具体的** - 曖昧な願望ではない
+- **調整されている** - 各アクションが他のアクションを支える
+- **実現可能** - リソースと能力で実際に実行できる
+- **順序がある** - 何が最初で、何が何に依存するかが明確
+
+### 例: 2007年頃の Netflix
 **Coherent Actions:**
-1. Launch streaming service (even with limited content)
-2. License streaming rights aggressively from studios
-3. Invest in recommendation algorithms to help users discover content
-4. Eventually produce original content (House of Cards, Orange is the New Black)
-5. Expand internationally before competitors can establish themselves
+1. ストリーミングサービスを開始する（限られたコンテンツでも）
+2. スタジオからストリーミング権を積極的にライセンスする
+3. ユーザーがコンテンツを発見するためのレコメンデーションアルゴリズムに投資する
+4. 最終的にオリジナルコンテンツを制作する（House of Cards、Orange is the New Black）
+5. 競合が確立する前に国際展開する
 
-Notice how each action **reinforces** the others. Streaming + recommendations + originals = defensible position.
+各アクションが他のアクションを**強化**していることに注目してください。ストリーミング + レコメンデーション + オリジナル = 防御可能なポジション。
 
-### For Product Strategy
-Your coherent actions should include:
-- Key initiatives on the roadmap (sequenced properly)
-- Resource allocation decisions
-- Technical infrastructure investments
-- Go-to-market approach
-- Partnership or hiring priorities
+### プロダクト戦略における Coherent Actions
+あなたの Coherent Actions には以下を含めるべきです:
+- ロードマップ上の主要な施策（適切な順序で）
+- リソース配分の決定
+- テクニカルインフラへの投資
+- Go-to-market アプローチ
+- パートナーシップまたは採用の優先順位
 
-### Red Flags (Incoherent Actions)
-❌ A laundry list of every idea anyone had
-❌ Actions that contradict each other
-❌ "We'll do everything for everyone"
-❌ No clear dependencies or sequencing
-
----
-
-## How to Use This Framework
-
-### Step 1: Start with Diagnosis
-Don't jump to solutions! Spend time really understanding:
-- What's the challenge/opportunity?
-- What do we know from data, research, competitive analysis?
-- What are our constraints?
-
-### Step 2: Develop Guiding Policy
-Make the hard choices:
-- Who's our target customer? (Say no to other segments)
-- What's our positioning?
-- What's our angle of attack?
-
-Use this test: **Would a reasonable person disagree with this?** If not, it's probably too generic.
-
-### Step 3: Define Coherent Actions
-Translate strategy into concrete steps:
-- What do we build first, second, third?
-- Why that order?
-- How do these actions reinforce each other?
-
-### Step 4: Test for Coherence
-Ask: Do all these pieces fit together? Would removing any action weaken the whole strategy? Are there conflicting actions?
+### レッドフラグ（一貫性のないアクション）
+- 誰かが思いついたすべてのアイデアのランドリーリスト
+- 互いに矛盾するアクション
+- "すべての人にすべてを提供する"
+- 明確な依存関係や順序がない
 
 ---
 
-## Common Mistakes
+## このフレームワークの使い方
 
-### Mistake 1: Skipping Diagnosis
-Jumping straight to "here's what we'll build" without understanding the real problem.
+### ステップ 1: Diagnosis から始める
+ソリューションに飛びつかないでください！以下を本当に理解するために時間をかけましょう:
+- 課題/機会は何か？
+- データ、リサーチ、競合分析から何がわかるか？
+- 制約条件は何か？
 
-### Mistake 2: Goals Masquerading as Strategy
-"We'll grow 50% year-over-year" is not a strategy. HOW will you grow?
+### ステップ 2: Guiding Policy を策定する
+難しい選択をしましょう:
+- ターゲット顧客は誰か？（他のセグメントに NO と言う）
+- ポジショニングは何か？
+- 攻めの角度は？
 
-### Mistake 3: Wishful Thinking
-"We'll be the best at X" - okay, but what gives you the right to win? What's your advantage?
+このテストを使いましょう: **合理的な人がこれに反対するか？** もし反対しないなら、おそらく一般的すぎます。
 
-### Mistake 4: Incoherent Actions
-Having a laundry list of initiatives that don't reinforce each other - spreading resources thin instead of focusing.
+### ステップ 3: Coherent Actions を定義する
+戦略を具体的なステップに変換します:
+- 最初に、2番目に、3番目に何を作るか？
+- なぜその順序か？
+- これらのアクションはどう互いを強化するか？
 
-### Mistake 5: No Tradeoffs
-Real strategy involves saying NO. If your strategy accommodates everyone's pet projects, it's not a strategy.
+### ステップ 4: 一貫性をテストする
+こう問いかけます: これらの要素はすべて噛み合っているか？いずれかのアクションを削除すると、戦略全体が弱くなるか？矛盾するアクションはないか？
 
 ---
 
-## Quick Reference
+## よくある間違い
 
-When developing your product strategy, ensure you can fill in these blanks:
+### 間違い 1: Diagnosis を飛ばす
+本当の問題を理解せずに、「これを作ります」に直行してしまう。
+
+### 間違い 2: 戦略のふりをした目標
+"年間50%成長する" は戦略ではありません。どうやって成長するのですか？
+
+### 間違い 3: 希望的観測
+"X で最高になる" - わかりましたが、勝つ権利は何によって与えられますか？アドバンテージは何ですか？
+
+### 間違い 4: 一貫性のないアクション
+互いに強化し合わない施策のランドリーリストがある - リソースをフォーカスするのではなく、薄く広げてしまう。
+
+### 間違い 5: トレードオフがない
+本当の戦略には NO と言うことが含まれます。戦略が全員のペットプロジェクトを収容しているなら、それは戦略ではありません。
+
+---
+
+## クイックリファレンス
+
+プロダクト戦略を策定する際、以下の空欄を埋められることを確認してください:
 
 **DIAGNOSIS:**
-"The key challenge/opportunity is ___________. This matters because ___________. The critical factors are ___________."
+"主要な課題/機会は___________です。これが重要な理由は___________です。重要な要因は___________です。"
 
 **GUIDING POLICY:**
-"Our approach is to ___________ for ___________ [target customer]. We'll differentiate by ___________. This means we won't ___________."
+"私たちのアプローチは、___________[ターゲット顧客]に対して___________することです。___________で差別化します。つまり、___________はしないということです。"
 
 **COHERENT ACTIONS:**
-"We'll execute this through: 1) ___________, 2) ___________, 3) ___________. These actions reinforce each other because ___________."
+"以下を通じて実行します: 1) ___________、2) ___________、3) ___________。これらのアクションが互いを強化する理由は___________です。"
 
 ---
 
-## Remember
+## 忘れないでください
 
-**Strategy is about CHOICES, not documents.**
+**戦略はドキュメントではなく、選択についてです。**
 
-The kernel framework forces you to:
-1. Really understand the situation (diagnosis)
-2. Make hard tradeoffs (guiding policy)
-3. Focus resources coherently (coherent actions)
+Strategy Kernel フレームワークは、以下を強制します:
+1. 状況を本当に理解する（Diagnosis）
+2. 難しいトレードオフを行う（Guiding Policy）
+3. リソースを一貫して集中させる（Coherent Actions）
 
-If you can't articulate your kernel clearly, you don't have a strategy yet.
+Strategy Kernel を明確に表現できないなら、まだ戦略がないということです。
