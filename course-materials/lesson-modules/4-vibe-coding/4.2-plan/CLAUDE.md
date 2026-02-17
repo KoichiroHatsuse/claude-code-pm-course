@@ -1,237 +1,237 @@
-# 4.2 Plan
+# 4.2 プラン
 
-Before we build, we need to get clear on what we're building.
+ビルドする前に、何をビルドするのかを明確にする必要があります。
 
-This is called "requirements" - basically a description of how your quiz should work and look.
+これを「要件定義」と呼びます - 基本的には、クイズがどう動き、どう見えるべきかの説明です。
 
-STOP: Have you ever given someone vague instructions and gotten something totally different than you expected?
+STOP: 誰かに曖昧な指示を出して、期待と全然違うものが返ってきた経験はありますか？
 
-USER: Yes / Definitely
-
----
-
-That's what happens when you skip requirements. The more detail we figure out now, the better I can build what you actually want.
-
-I'm going to interview you about your quiz. We'll figure out the personality-to-coffee pairings, the style, the questions. Then I'll save it all to a file so we have a clear spec to build from.
-
-STOP: Think of this like briefing a contractor before they start work. The clearer the brief, the better the result. Ready to start?
-
-USER: Yes
+USER: はい / ありますね
 
 ---
 
-I'm going to use a tool called AskUserQuestion - it gives you nice buttons to pick from instead of typing. You can ask me to use this anytime you want a cleaner way to make decisions. Just say "ask me" or "give me options."
+要件定義をスキップするとそうなります。今のうちに詳細を詰めれば詰めるほど、あなたが本当に欲しいものを私がうまく作れます。
 
-Let's try it now.
+あなたのクイズについてインタビューしていきます。パーソナリティとコーヒーの組み合わせ、スタイル、質問を決めていきましょう。その後、すべてファイルに保存して、ビルドするための明確なスペックを作ります。
 
-ACTION: Use AskUserQuestion with two questions:
-- Q1 Header: "Results" / Question: "How many personality/coffee pairings should your quiz have?" / Options: "3 - Simple and focused", "4 - Good variety (Recommended)", "5 - More distinctions", "6 - Maximum variety"
-- Q2 Header: "Question vibe" / Question: "What style of questions do you want?" / Options: "Fun pop culture (Harry Potter, Netflix, etc.)", "Lifestyle & preferences (travel, food, weekends)", "Abstract & quirky (colors, scenarios, hypotheticals)", "Mix of everything"
+STOP: これは業者に仕事を発注する前のブリーフィングのようなものです。ブリーフが明確であればあるほど、結果が良くなります。始める準備はできましたか？
 
-USER: [Selects options]
-
-Great choices! Now let's pick your actual personality-to-coffee pairings.
+USER: はい
 
 ---
 
-Remember: the quiz recommends a COFFEE based on personality. So we need to decide which personalities map to which drinks.
+AskUserQuestion というツールを使います - タイピングの代わりにボタンで選べるようになります。よりスッキリした形で意思決定したいときは、いつでも「聞いて」や「選択肢を出して」と言ってください。
 
-Here are 10 pairing ideas. Pick [X] based on how many results you chose earlier. Just type the numbers, like "1, 4, 7":
+試してみましょう。
 
-1. **Bold Adventurer** → Double Espresso - "You live for intensity"
-2. **Cozy Classic** → Medium Roast Drip - "Comfort in every cup"
-3. **Sweet Enthusiast** → Caramel Latte - "Life's too short for bitter"
-4. **Zen Minimalist** → Black Coffee, Single Origin - "Simple. Clean. Perfect."
-5. **Social Butterfly** → Cappuccino - "Coffee is better with company"
-6. **Night Owl** → Red Eye (coffee + espresso shot) - "Sleep is optional"
-7. **Health Nut** → Oat Milk Americano - "Wellness in every sip"
-8. **Artisan Snob** → Pour-Over, Single Origin - "You know what you like"
-9. **Practical Pragmatist** → Large Drip, Whatever's Fresh - "Just make it work"
-10. **Indulgent Treat** → Mocha with Whip - "Coffee is dessert"
+ACTION: AskUserQuestion を2つの質問で使用する：
+- Q1 Header: "結果" / Question: "クイズのパーソナリティ/コーヒーの組み合わせはいくつにしますか？" / Options: "3 - シンプルで集中型", "4 - ちょうどいいバリエーション（おすすめ）", "5 - より細かい区別", "6 - 最大のバリエーション"
+- Q2 Header: "質問の雰囲気" / Question: "どんなスタイルの質問がいいですか？" / Options: "楽しいポップカルチャー（ハリーポッター、Netflixなど）", "ライフスタイル＆好み（旅行、食べ物、週末）", "抽象的＆ユニーク（色、シナリオ、仮説）", "全部ミックス"
 
-STOP: Type the numbers you want (e.g., "1, 3, 5, 8")
+USER: [選択肢を選ぶ]
 
-USER: [Types numbers]
-
-ACTION: Note their selections for use in REQUIREMENTS.md
+いい選択ですね！では、実際のパーソナリティとコーヒーの組み合わせを決めましょう。
 
 ---
 
-Perfect! Now we need to figure out the "logic."
+覚えておいてください：このクイズはパーソナリティに基づいてコーヒーをおすすめします。つまり、どのパーソナリティがどのドリンクに対応するかを決める必要があります。
 
-Logic is the behind-the-scenes rules for how something works. If users do X, what happens? If they click this, what do they see? It's the "if this, then that" of your product.
+10個の組み合わせアイデアを用意しました。先ほど選んだ結果数に応じて [X] 個選んでください。「1, 4, 7」のように番号を入力してください：
 
-Every app, website, or tool has logic. When you're planning something, you always need to think through how it should actually behave. I can help you brainstorm options.
+1. **大胆な冒険家** → ダブルエスプレッソ - 「刺激を求めて生きる」
+2. **コージークラシック** → ミディアムローストドリップ - 「一杯ごとの安らぎ」
+3. **スイートエンスージアスト** → キャラメルラテ - 「苦いだけの人生なんてもったいない」
+4. **禅ミニマリスト** → ブラックコーヒー、シングルオリジン - 「シンプル。クリーン。パーフェクト。」
+5. **ソーシャルバタフライ** → カプチーノ - 「コーヒーは誰かと一緒がいい」
+6. **ナイトオウル** → レッドアイ（コーヒー＋エスプレッソショット） - 「睡眠はオプション」
+7. **ヘルシー志向** → オーツミルクアメリカーノ - 「一口ごとにウェルネス」
+8. **こだわりのアルチザン** → プアオーバー、シングルオリジン - 「自分の好みを知っている」
+9. **実用主義プラグマティスト** → ラージドリップ、できたてなら何でも - 「とにかく動けばいい」
+10. **ご褒美インダルジェント** → モカ with ホイップ - 「コーヒーはデザート」
 
-Here's how this quiz will work: each question has answers, and each answer maps to one of your personalities. At the end, we tally up which personality got picked most.
+STOP: 欲しい番号を入力してください（例：「1, 3, 5, 8」）
 
-The question is: how do we show the result? Two options:
+USER: [番号を入力]
 
-**Option A: Single recommendation** - "You're a Bold Adventurer! Try our Double Espresso."
-
-**Option B: Show all percentages** - "You're 50% Bold Adventurer, 30% Cozy Classic, 20% Sweet Enthusiast" with all the coffee recommendations.
-
-STOP: Which do you prefer - single recommendation (A) or show percentages (B)?
-
-USER: [Responds A or B]
-
-ACTION: Note their choice for REQUIREMENTS.md
-
-Great choice! So if someone's answers map to "Bold Adventurer" 3 times and "Cozy Classic" 2 times:
-
-[If they chose A]: They get "You're a Bold Adventurer! Your coffee: Double Espresso."
-
-[If they chose B]: They see all their results with percentages and can explore all the coffee recommendations.
-
-The questions just reveal which personality fits them best.
-
-STOP: Make sense?
-
-USER: Yes
+ACTION: 選択内容を REQUIREMENTS.md 用に記録する
 
 ---
 
-Now for the fun part - how should it LOOK?
+完璧です！次に「ロジック」を決める必要があります。
 
-I'm going to generate a few different visual styles as preview pages and open them in your browser.
+ロジックとは、何かがどう動くかの裏側のルールです。ユーザーがXをしたら何が起こる？これをクリックしたら何が表示される？プロダクトの「もしこれなら、あれ」です。
 
-STOP: Ready to see some style options?
+すべてのアプリ、ウェブサイト、ツールにはロジックがあります。何かを企画するときは、実際にどう動くべきかを常に考える必要があります。私がオプションのブレインストーミングをお手伝いします。
 
-USER: Yes
+このクイズの仕組みはこうです：各質問には回答があり、各回答はあなたのパーソナリティの1つに対応します。最後に、どのパーソナリティが最も多く選ばれたかを集計します。
 
-ACTION: Generate 3-4 HTML style preview files with different aesthetics:
-- Style 1: Playful/colorful (bright colors, rounded shapes, fun fonts)
-- Style 2: Minimal/clean (lots of whitespace, simple typography)
-- Style 3: Bold/dramatic (dark backgrounds, high contrast, strong typography)
-- Style 4: Warm/cozy (earth tones, soft gradients, inviting feel)
+問題は：結果をどう表示するか？2つのオプションがあります：
 
-Each preview should show a sample quiz card with a question and answer options. Save them to the quiz-project folder as style-preview-1.html, style-preview-2.html, etc.
+**オプション A: 単一のおすすめ** - 「あなたは大胆な冒険家！ダブルエスプレッソを試してみて。」
 
-ACTION: Open all preview files in the browser using bash open commands
+**オプション B: パーセンテージを全表示** - 「あなたは50%大胆な冒険家、30%コージークラシック、20%スイートエンスージアスト」とすべてのコーヒーおすすめ付き。
 
-Take a look at those previews in your browser. Each tab is a different style.
+STOP: どちらが好みですか - 単一のおすすめ（A）かパーセンテージ表示（B）か？
 
-STOP: Which style do you like best? You can pick one, or tell me what to mix - like "I like the colors from #2 but the layout from #3"
+USER: [AまたはBで回答]
 
-USER: [Responds with preference]
+ACTION: 選択内容を REQUIREMENTS.md 用に記録する
 
-ACTION: Note their style preference. If they want to mix elements, clarify what specifically they want combined.
+いい選択ですね！つまり、誰かの回答が「大胆な冒険家」3回、「コージークラシック」2回に対応した場合：
 
----
+[Aを選んだ場合]：「あなたは大胆な冒険家！あなたのコーヒー：ダブルエスプレッソ。」と表示されます。
 
-One more visual question: do you want images in your quiz?
+[Bを選んだ場合]：すべての結果がパーセンテージ付きで表示され、すべてのコーヒーおすすめを見ることができます。
 
-You could have a picture for each coffee result - like a photo of espresso for "Bold Adventurer."
+質問は、どのパーソナリティが最もフィットするかを明らかにするだけです。
 
-I can search the web and download images for you - but heads up, it takes a bit of time since I have to search, find good ones, and download them.
+STOP: わかりましたか？
 
-Alternatively, we can skip images for now and add them later once the quiz is working.
-
-STOP: What do you prefer - images (takes longer) or skip for now?
-
-USER: [Responds]
-
-ACTION: Based on their choice:
-
-If they want IMAGES:
-- Ask what images they want for each result (e.g., "espresso shot", "cozy latte", "iced coffee")
-- For each image:
-  1. Web search for the image (e.g., "espresso shot unsplash")
-  2. Fetch a result page to find direct image URLs
-  3. Download using curl to public/ folder in quiz-project
-- Note: Unsplash is best for stock photos (free, high quality).
-
-If they want to SKIP:
-- Move on - can always add images later during iteration
+USER: はい
 
 ---
 
-One more thing: do you want icons next to each answer option? Like a little sword icon for "Gryffindor" or a moon for "Night vision"?
+次は楽しいパート - どんな見た目にするか？
 
-Icons make the quiz feel more polished and visual, but we can also keep it text-only if you prefer a cleaner look.
+いくつかの異なるビジュアルスタイルのプレビューページを生成して、ブラウザで開きます。
 
-STOP: Icons or no icons?
+STOP: スタイルオプションを見る準備はできましたか？
 
-USER: [Responds]
+USER: はい
 
-ACTION: Note their choice for REQUIREMENTS.md
+ACTION: 3〜4つの異なるビジュアルスタイルのHTMLプレビューファイルを生成する：
+- スタイル1: ポップ/カラフル（明るい色、丸みのある形、楽しいフォント）
+- スタイル2: ミニマル/クリーン（余白たっぷり、シンプルなタイポグラフィ）
+- スタイル3: ボールド/ドラマチック（ダークな背景、ハイコントラスト、力強いタイポグラフィ）
+- スタイル4: ウォーム/コージー（アースカラー、柔らかいグラデーション、温かみのある雰囲気）
 
----
+各プレビューには、質問と回答オプション付きのサンプルクイズカードを表示する。quiz-project フォルダに style-preview-1.html、style-preview-2.html などとして保存する。
 
-Last part - the actual questions people will answer.
+ACTION: bash の open コマンドを使ってすべてのプレビューファイルをブラウザで開く
 
-You chose "[their vibe choice from earlier]" style questions, so I'll generate 5-7 questions that match that vibe. Each question will have answers that map to your different personalities.
+ブラウザでプレビューを確認してください。各タブが異なるスタイルです。
 
-Of course, you can always come up with your own questions too - just tell me what you want and I'll make it happen.
+STOP: どのスタイルが好きですか？1つ選んでもいいし、ミックスしたいところを教えてくれてもOKです - 例えば「#2の色合いが好きだけど、レイアウトは#3がいい」など
 
-ACTION: Generate 5-7 quiz questions matching their vibe choice:
-- If "Fun pop culture": Harry Potter houses, Netflix shows, fictional characters, movie genres, etc.
-- If "Lifestyle & preferences": weekend activities, travel styles, food choices, social preferences, etc.
-- If "Abstract & quirky": colors, hypothetical scenarios, random objects, desert island choices, etc.
-- If "Mix of everything": 2-3 from each category
+USER: [好みを回答]
 
-Each question should have answers that clearly map to the personalities they selected. For example, if they picked Bold Adventurer and Cozy Classic, answers should lean toward intensity vs. comfort.
-
-Here are my suggestions. Take a look - each answer is designed to map to one of your personalities.
-
-STOP: What do you think? Good as-is, want changes, or want to write your own?
-
-USER: [Approves or suggests changes]
-
-ACTION: Adjust questions based on feedback. If they want to write their own, help them map answers to personalities.
+ACTION: スタイルの好みを記録する。要素をミックスしたい場合は、具体的に何を組み合わせたいか確認する。
 
 ---
 
-Perfect! We've got everything we need. Let me save all of this to a requirements file.
+もう1つビジュアルの質問です：クイズに画像を入れたいですか？
 
-ACTION: Create REQUIREMENTS.md in the quiz-project folder with:
-- Personality→Coffee pairings (all selected ones with taglines)
-- Result display style (single or percentages)
-- Visual style description
-- Image/icon decision
-- All quiz questions with answer-to-personality mappings
+各コーヒー結果に写真をつけることができます - 例えば「大胆な冒険家」にはエスプレッソの写真。
 
-Done! Open REQUIREMENTS.md and take a look. This is the spec I'll build from.
+ウェブで検索して画像をダウンロードできます - ただし、検索して良い画像を見つけてダウンロードするので、少し時間がかかります。
 
-STOP: Does everything look right?
+あるいは、今は画像をスキップして、クイズが動いてから後で追加することもできます。
 
-USER: Yes / [Corrections]
+STOP: どちらが好みですか - 画像あり（時間がかかる）かスキップして後で？
 
-ACTION: Make any corrections if needed
+USER: [回答]
+
+ACTION: 選択に基づいて：
+
+画像ありの場合：
+- 各結果にどんな画像が欲しいか聞く（例：「エスプレッソショット」、「コージーラテ」、「アイスコーヒー」）
+- 各画像について：
+  1. ウェブ検索で画像を探す（例：「espresso shot unsplash」）
+  2. 結果ページを取得してダイレクト画像URLを見つける
+  3. curl を使って quiz-project の public/ フォルダにダウンロード
+- 注：Unsplash はストックフォトに最適です（無料、高品質）。
+
+スキップの場合：
+- 先に進む - イテレーション時にいつでも画像を追加可能
 
 ---
 
-**What you just learned:** How to define clear requirements before building - specifically for a recommendation engine.
+あともう1つ：各回答オプションの横にアイコンは欲しいですか？「グリフィンドール」の横に剣のアイコンとか、「暗視」に月のアイコンとか。
 
-**Where else this applies:**
-- Briefing a designer or developer on any project
-- Writing a product spec or PRD
-- Planning any creative project - the clearer the vision, the better the result
-- Working with AI tools - the more specific you are, the better the output
+アイコンがあるとクイズがより洗練されたビジュアルになりますが、よりクリーンな見た目が好みならテキストのみでもOKです。
 
-**Next up:** In 4.3, we actually BUILD this thing. You'll watch me create your quiz from scratch based on these requirements. This is where the magic happens.
+STOP: アイコンあり？なし？
 
-STOP: Ready for 4.3? Say "let's build" or type /start-4-3
+USER: [回答]
 
-USER: Let's build
+ACTION: 選択内容を REQUIREMENTS.md 用に記録する
+
+---
+
+最後のパート - 実際にユーザーが答える質問です。
+
+あなたは先ほど「[先ほどの雰囲気の選択]」スタイルの質問を選んだので、その雰囲気に合った5〜7問を生成します。各質問には、あなたの異なるパーソナリティに対応する回答があります。
+
+もちろん、自分で質問を考えることもできます - 欲しいものを教えてくれれば実現します。
+
+ACTION: 選択した雰囲気に合わせて5〜7問のクイズ質問を生成する：
+- 「楽しいポップカルチャー」の場合：ハリーポッターの寮、Netflix番組、架空のキャラクター、映画ジャンルなど
+- 「ライフスタイル＆好み」の場合：週末の過ごし方、旅行スタイル、食の好み、社交の好みなど
+- 「抽象的＆ユニーク」の場合：色、仮説的なシナリオ、ランダムなオブジェクト、無人島の選択など
+- 「全部ミックス」の場合：各カテゴリから2〜3問
+
+各質問には、選択したパーソナリティに明確に対応する回答を持たせる。例えば「大胆な冒険家」と「コージークラシック」を選んでいる場合、回答は刺激 vs. 安らぎの方向に寄せる。
+
+提案を用意しました。見てください - 各回答はあなたのパーソナリティの1つに対応するよう設計されています。
+
+STOP: いかがですか？このままでOK、変更したい、それとも自分で書きたいですか？
+
+USER: [承認または変更を提案]
+
+ACTION: フィードバックに基づいて質問を調整する。自分で書きたい場合は、回答とパーソナリティの対応づけを手伝う。
+
+---
+
+完璧です！必要なものがすべて揃いました。これをすべて要件ファイルに保存しましょう。
+
+ACTION: quiz-project フォルダに REQUIREMENTS.md を作成する。内容：
+- パーソナリティ→コーヒーの組み合わせ（選択したすべてとタグライン）
+- 結果表示スタイル（単一かパーセンテージか）
+- ビジュアルスタイルの説明
+- 画像/アイコンの決定
+- すべてのクイズ質問と回答→パーソナリティの対応づけ
+
+できました！REQUIREMENTS.md を開いて確認してください。これが私がビルドする際のスペックです。
+
+STOP: すべて正しいですか？
+
+USER: はい / [修正点]
+
+ACTION: 必要に応じて修正する
+
+---
+
+**今学んだこと：** ビルドする前に明確な要件を定義する方法 - 特にレコメンデーションエンジンの場合。
+
+**他にどこで使えるか：**
+- デザイナーやデベロッパーに任意のプロジェクトをブリーフィングするとき
+- プロダクトスペックや PRD を書くとき
+- 任意のクリエイティブプロジェクトを企画するとき - ビジョンが明確であれば結果が良くなります
+- AI ツールと連携するとき - 具体的であればあるほど、アウトプットが良くなります
+
+**次回：** 4.3 では、実際にこれをビルドします。あなたのクイズをこの要件に基づいてゼロから作るのを見届けてください。ここからが魔法の始まりです。
+
+STOP: 4.3 の準備はできましたか？「作りましょう」と言うか、/start-4-3 と入力してください
+
+USER: 作りましょう
 
 ---
 
 ## Important Notes for Claude
 
-- The AskUserQuestion tool should be used for the initial batched questions ONLY - after that, use regular conversation
-- When generating style previews, make them actually visually distinct - don't just change colors slightly
-- For images: Unsplash works great for stock photos, but always check the URL actually returns an image before downloading
-- The REQUIREMENTS.md file is crucial - it's the spec for 4.3. Make sure it's complete and clear.
-- If users want to mix styles, get specific about what elements from each
-- Adjust the number of questions based on their pairing count (more pairings = more questions needed to differentiate)
+- AskUserQuestion ツールは最初のバッチ質問にのみ使用する - その後は通常の会話を使用する
+- スタイルプレビューを生成する際は、実際に視覚的に区別できるものにする - 少しだけ色を変えるのではなく
+- 画像について：Unsplash はストックフォトに最適だが、ダウンロード前にURLが実際に画像を返すか常に確認する
+- REQUIREMENTS.md ファイルは極めて重要 - 4.3 のスペックになる。完全で明確であることを確認する
+- ユーザーがスタイルをミックスしたい場合、各スタイルのどの要素を組み合わせたいか具体的に確認する
+- 組み合わせ数に基づいて質問数を調整する（組み合わせが多い = 区別するためにより多くの質問が必要）
 
 ## Success Criteria
 
-- User has selected their personality→coffee pairings
-- User has chosen result display style (single vs percentages)
-- User has selected a visual style
-- User has made a decision on images/icons/skip
-- User has approved quiz questions
-- REQUIREMENTS.md exists with all the above documented
-- User is excited to build
+- ユーザーがパーソナリティ→コーヒーの組み合わせを選択した
+- ユーザーが結果表示スタイルを選択した（単一 vs パーセンテージ）
+- ユーザーがビジュアルスタイルを選択した
+- ユーザーが画像/アイコン/スキップについて決定した
+- ユーザーがクイズ質問を承認した
+- REQUIREMENTS.md に上記すべてが記録されている
+- ユーザーがビルドを楽しみにしている

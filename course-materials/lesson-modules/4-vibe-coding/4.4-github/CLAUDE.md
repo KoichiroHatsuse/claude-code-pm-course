@@ -1,165 +1,165 @@
 # 4.4 GitHub
 
-Right now, your quiz only exists on your computer.
+今のところ、クイズはあなたのコンピュータにしか存在しません。
 
-If your laptop stops working or you delete the files, it's gone. And we can't put it on the internet yet.
+もしノートパソコンが壊れたりファイルを削除したら、全てなくなります。それにまだインターネットに公開することもできません。
 
-We need to save it to the cloud first. That's what GitHub is for.
+まずクラウドに保存する必要があります。それがGitHubの役割です。
 
-STOP: Have you used GitHub before?
+STOP: GitHubを使ったことはありますか？
 
-USER: Yes / No / A little
-
----
-
-GitHub is like Google Drive, but for code.
-
-It saves your code to the cloud, keeps a history of every change, and lets you undo mistakes.
-
-It's also how we'll get your quiz onto the internet - the service we use needs to grab your code from somewhere.
-
-Your project on GitHub is called a "repository" (or "repo" for short). You'll hear developers use that word a lot.
-
-STOP: Make sense?
-
-USER: Yes
+USER: はい / いいえ / 少しだけ
 
 ---
 
-First, you need a GitHub account.
+GitHubは、コード版のGoogleドライブのようなものです。
 
-STOP: Do you have a GitHub account? If not, I can open the signup page for you.
+コードをクラウドに保存し、全ての変更履歴を残し、ミスを元に戻すことができます。
 
-USER: I have one / Open it for me / I'll do it myself
+クイズをインターネットに公開するためにも必要です - 使うサービスがどこかからコードを取得する必要があるからです。
 
-ACTION: If they want it opened, run: `open https://github.com` (or bash open on Mac)
+GitHub上のプロジェクトのことを「リポジトリ」（略して「リポ」）と呼びます。開発者がよく使う言葉です。
 
-STOP: Let me know when you have an account and are ready to continue.
+STOP: わかりましたか？
 
-USER: Ready
+USER: はい
 
 ---
 
-Now I need to connect to your GitHub account so I can save your code there.
+まず、GitHubアカウントが必要です。
 
-I'm going to download some tools that let me work with GitHub directly - so you never have to type scary commands.
+STOP: GitHubアカウントはお持ちですか？お持ちでなければ、サインアップページを開きましょうか？
 
-This might open your browser to log in - just follow the prompts and come back when it's done.
+USER: 持ってます / 開いてください / 自分でやります
 
-ACTION: Set up GitHub CLI:
+ACTION: 開いてほしい場合は実行: `open https://github.com`（Macではbash open）
 
-1. Check if already installed:
+STOP: アカウントの準備ができて、続行する準備ができたら教えてください。
+
+USER: 準備できました
+
+---
+
+それでは、あなたのGitHubアカウントに接続して、コードを保存できるようにします。
+
+GitHubと直接やりとりできるツールをダウンロードします - あなたが難しいコマンドを入力する必要はありません。
+
+ブラウザが開いてログインを求められるかもしれません - 画面の指示に従って、終わったら戻ってきてください。
+
+ACTION: GitHub CLIをセットアップ：
+
+1. インストール済みか確認：
 ```
 gh --version
 ```
 
-2. If NOT installed:
-   - On Mac: `brew install gh`
-   - If brew fails or not on Mac: Tell user to go to https://cli.github.com and download manually, then come back
+2. インストールされていない場合：
+   - Macの場合: `brew install gh`
+   - brewが失敗した場合やMac以外の場合: https://cli.github.com にアクセスして手動でダウンロードするよう伝え、完了後に戻ってくるよう案内
 
-3. Once installed, authenticate (run in background to avoid blocking):
+3. インストールできたら、認証（ブロックを避けるためバックグラウンドで実行）：
 ```bash
 gh auth login --web --git-protocol https > /tmp/gh-auth.log 2>&1 &
 sleep 2
 cat /tmp/gh-auth.log
 ```
 
-4. Read the output to get the one-time code, then open the device auth page:
+4. 出力を読んでワンタイムコードを取得し、デバイス認証ページを開く：
 ```bash
 open https://github.com/login/device
 ```
 
-5. Tell user: "I just opened a page in your browser. Enter this code: [CODE FROM OUTPUT]. Click Authorize, then let me know when you're done."
+5. ユーザーに伝える: 「ブラウザでページを開きました。このコードを入力してください: [出力からのコード]。Authorizeをクリックして、終わったら教えてください。」
 
-STOP: Let me know when you've authorized it.
+STOP: 認証が完了したら教えてください。
 
-USER: Done
+USER: できました
 
-ACTION: Verify authentication worked:
+ACTION: 認証が成功したか確認：
 ```bash
 gh auth status
 ```
 
-If successful, continue. If not authenticated, troubleshoot:
-- They may not have completed the browser flow - ask them to try again
-- The background process may have timed out - run the auth command again
+成功していれば続行。認証されていない場合はトラブルシューティング：
+- ブラウザの手順を完了していない可能性 - もう一度試すよう依頼
+- バックグラウンドプロセスがタイムアウトした可能性 - 認証コマンドを再実行
 
 ---
 
-Now let's save your code to GitHub. I'll make it private by default so only you can see it.
+それでは、コードをGitHubに保存しましょう。デフォルトでプライベートにするので、あなただけが見ることができます。
 
-ACTION: Run the following commands in order:
+ACTION: 以下のコマンドを順番に実行：
 
-1. Navigate to the quiz-project folder:
+1. quiz-projectフォルダに移動：
 ```
-cd [path to quiz-project]
+cd [quiz-projectへのパス]
 ```
 
-2. Initialize git (if not already done):
+2. gitを初期化（まだの場合）：
 ```
 git init
 ```
 
-3. Add all files:
+3. 全ファイルを追加：
 ```
 git add .
 ```
 
-4. Create initial commit:
+4. 最初のコミットを作成：
 ```
 git commit -m "Initial commit - coffee personality quiz"
 ```
 
-5. Create GitHub repo and push:
+5. GitHubリポジトリを作成してプッシュ：
 ```
 gh repo create quiz-project --private --source=. --push
 ```
 
-Done! Your code is now saved to GitHub. Developers call this "pushing" your code - you're pushing it up to the cloud.
+完了です！コードがGitHubに保存されました。開発者はこれを「プッシュ」と呼びます - コードをクラウドに押し上げるイメージです。
 
-Let me open it for you so you can see it.
+ブラウザで確認できるように開きましょう。
 
-ACTION: Get the repo URL and open it:
+ACTION: リポジトリのURLを取得して開く：
 ```
 gh repo view --web
 ```
-(This opens the GitHub repo in your browser)
+（ブラウザでGitHubリポジトリが開きます）
 
-STOP: Do you see your project on GitHub?
+STOP: GitHubであなたのプロジェクトが見えますか？
 
-USER: Yes!
+USER: はい！
 
 ---
 
-Your quiz is now backed up and ready to go live.
+クイズがバックアップされ、公開の準備が整いました。
 
-From now on, whenever you want to save your work, just ask me to "push to GitHub" and I'll save your latest changes.
+今後、作業を保存したいときは、「GitHubにプッシュして」と頼むだけで、最新の変更を保存します。
 
-There's a lot more to GitHub - collaboration, version history, branching - and there will be a full module on it in the future. But for now, the important thing is: your code lives somewhere it can be accessed to put on the internet.
+GitHubにはまだまだたくさんの機能があります - コラボレーション、バージョン履歴、ブランチなど - 将来のモジュールで詳しく扱います。でも今重要なのは、コードがインターネットに公開するためにアクセスできる場所に保存されたということです。
 
-That's exactly what we're doing next.
+まさにそれを次にやります。
 
-**Next up:** In 4.5, we put your quiz on the internet! We're going to connect GitHub to a service called Vercel, and you'll get a real URL you can share with anyone. This is the finish line.
+**次のステップ：** 4.5では、クイズをインターネットに公開します！GitHubをVercelというサービスに接続して、誰とでも共有できる本物のURLを取得します。これがゴールラインです。
 
-STOP: Ready to go live? Say "let's go" or type /start-4-5
+STOP: 公開する準備はできましたか？「やろう」と言うか、/start-4-5と入力してください
 
-USER: Let's go
+USER: やろう
 
 ---
 
 ## Important Notes for Claude
 
-- GitHub CLI (gh) is the easiest way to handle auth - avoid asking users to set up SSH keys
-- The `--private` flag is important - users don't want their quiz code public by default
-- If they already have a repo named quiz-project, gh will error - help them pick a different name
-- The `gh repo view --web` command is much cleaner than trying to construct the URL
-- If brew isn't available, cli.github.com has installers for all platforms
-- Next.js projects already have a .gitignore so node_modules won't be committed
+- GitHub CLI (gh)が認証を扱う最も簡単な方法 - SSHキーのセットアップは求めない
+- `--private`フラグは重要 - ユーザーはデフォルトでクイズコードを公開したくない
+- quiz-projectという名前のリポジトリが既にある場合、ghがエラーを出す - 別の名前を選ぶのを手伝う
+- `gh repo view --web`コマンドはURLを手動で構築するよりずっとクリーン
+- brewが使えない場合、cli.github.comに全プラットフォーム用のインストーラーがある
+- Next.jsプロジェクトには既に.gitignoreがあるのでnode_modulesはコミットされない
 
 ## Success Criteria
 
-- User has a GitHub account
-- GitHub CLI is installed and authenticated
-- Code is committed and pushed to a private GitHub repository
-- User can see their repo on github.com
-- User understands they can ask to "push to GitHub" to save future changes
+- ユーザーがGitHubアカウントを持っている
+- GitHub CLIがインストールされ認証されている
+- コードがコミットされプライベートGitHubリポジトリにプッシュされている
+- ユーザーがgithub.comで自分のリポジトリを確認できる
+- ユーザーが将来の変更を保存するために「GitHubにプッシュして」と頼めばよいことを理解している

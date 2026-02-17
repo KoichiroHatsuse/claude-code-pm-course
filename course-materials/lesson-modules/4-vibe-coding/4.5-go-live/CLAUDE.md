@@ -1,252 +1,252 @@
-# 4.5 Go Live
+# 4.5 公開
 
-This is it. The final step.
+これが最後のステップです。
 
-Your quiz is built, polished, and saved to GitHub. Now we put it on the internet so anyone can visit it.
+クイズはビルドされ、磨かれ、GitHubに保存されています。あとはインターネットに公開して、誰でもアクセスできるようにするだけです。
 
-Developers call this "deploying" - you're deploying your app to the web. You'll hear that word a lot.
+開発者はこれを「デプロイ」と呼びます - アプリをウェブにデプロイする、ということです。よく聞く言葉になるでしょう。
 
-STOP: Ready to go live?
+STOP: 公開する準備はいいですか？
 
-USER: Yes
-
----
-
-Vercel is a free service that puts your code on the internet.
-
-It's basically the home base of vibecoding.
-
-You give it your GitHub project, and it turns it into a real website with a real URL.
-
-It's made by the same people who make Next.js (the framework we used), so they work together perfectly.
-
-STOP: Sound good?
-
-USER: Yes
+USER: はい
 
 ---
 
-First, you need a Vercel account.
+Vercelは、コードをインターネットに公開する無料のサービスです。
 
-STOP: Want me to open vercel.com for you? I recommend signing up with your GitHub account - it makes everything connect automatically.
+バイブコーディングのホームベースみたいなものです。
 
-USER: Yes / I'll do it myself
+GitHubプロジェクトを渡すと、本物のURLが付いた本物のウェブサイトに変えてくれます。
 
-ACTION: If they want it opened, run: `open https://vercel.com`
+Next.js（使っているフレームワーク）を作った人たちと同じ会社が作っているので、完璧に連携します。
 
-STOP: Let me know when you've created an account. Make sure to sign up with GitHub!
+STOP: よさそうですか？
 
-USER: Done
+USER: はい
 
 ---
 
-Just like with GitHub, I'm going to download tools that let me work with Vercel directly.
+まず、Vercelアカウントが必要です。
 
-This will open your browser to log in - just follow the prompts.
+STOP: vercel.comを開きましょうか？GitHubアカウントでサインアップすることをお勧めします - 全てが自動的に接続されます。
 
-ACTION: Set up Vercel CLI:
+USER: はい / 自分でやります
 
-1. Check if already installed:
+ACTION: 開いてほしい場合は実行: `open https://vercel.com`
+
+STOP: アカウントを作成したら教えてください。必ずGitHubでサインアップしてくださいね！
+
+USER: できました
+
+---
+
+GitHubのときと同じように、Vercelと直接やりとりできるツールをダウンロードします。
+
+ブラウザが開いてログインを求められます - 画面の指示に従ってください。
+
+ACTION: Vercel CLIをセットアップ：
+
+1. インストール済みか確認：
 ```
 vercel --version
 ```
 
-2. If NOT installed:
+2. インストールされていない場合：
 ```
 npm i -g vercel
 ```
 
-3. Once installed, authenticate (run in background to avoid blocking):
+3. インストールできたら、認証（ブロックを避けるためバックグラウンドで実行）：
 ```bash
 vercel login > /tmp/vercel-auth.log 2>&1 &
 sleep 3
 cat /tmp/vercel-auth.log
 ```
 
-4. Read the output to get the device URL with code, then open it:
+4. 出力を読んでデバイスURLとコードを取得し、それを開く：
 ```bash
 open "https://vercel.com/oauth/device?user_code=[CODE FROM OUTPUT]"
 ```
 
-5. Tell user: "I just opened Vercel in your browser. Click Authorize, then let me know when you're done."
+5. ユーザーに伝える: 「ブラウザでVercelを開きました。Authorizeをクリックして、終わったら教えてください。」
 
-STOP: Let me know when you've authorized it.
+STOP: 認証が完了したら教えてください。
 
-USER: Done
+USER: できました
 
-ACTION: Verify authentication worked:
+ACTION: 認証が成功したか確認：
 ```bash
 vercel whoami
 ```
 
-If successful, continue. If not authenticated, troubleshoot:
-- They may not have completed the browser flow - ask them to try again
-- The background process may have timed out - run the login command again
+成功していれば続行。認証されていない場合はトラブルシューティング：
+- ブラウザの手順を完了していない可能性 - もう一度試すよう依頼
+- バックグラウンドプロセスがタイムアウトした可能性 - ログインコマンドを再実行
 
 ---
 
-Now let's put your quiz on the internet.
+それでは、クイズをインターネットに公開しましょう。
 
-ACTION: Deploy to Vercel:
+ACTION: Vercelにデプロイ：
 
-1. Navigate to the quiz-project folder:
+1. quiz-projectフォルダに移動：
 ```
-cd [path to quiz-project]
+cd [quiz-projectへのパス]
 ```
 
-2. Deploy to production:
+2. プロダクションにデプロイ：
 ```
 vercel --prod --yes
 ```
 
-The `--yes` flag accepts all the defaults so you don't have to answer questions. The `--prod` flag means it goes live immediately.
+`--yes`フラグで全てのデフォルト設定を受け入れ、質問に答える必要がなくなります。`--prod`フラグで即座に本番環境に公開されます。
 
-Wait for the deploy to complete - it takes about a minute. Watch for the URL in the output.
+デプロイが完了するまで待ちます - 約1分かかります。出力にURLが表示されるのを見てください。
 
-Vercel is building your quiz and putting it on the internet now...
+Vercelがクイズをビルドしてインターネットに公開しています...
 
-Done! Look for the URL in the output - it'll look something like `quiz-project-abc123.vercel.app`.
-
----
-
-Your URL is: [Copy the URL from the deploy output]
-
-That's YOUR website. On the real internet. Anyone can visit it.
-
-Let me open it for you.
-
-ACTION: Open the deployed URL in the browser using bash open
-
-STOP: Do you see your quiz live on the internet?
-
-USER: Yes!
+完了です！出力に表示されたURLを確認してください - `quiz-project-abc123.vercel.app`のような形式です。
 
 ---
 
-Open that URL on your phone. It should work there too - same quiz, any device.
+あなたのURLは: [デプロイ出力からURLをコピー]
 
-STOP: Does it work on your phone?
+これがあなたのウェブサイトです。本物のインターネット上に。誰でもアクセスできます。
 
-USER: Yes!
+開いてみましょう。
 
----
+ACTION: デプロイされたURLをbash openでブラウザで開く
 
-Now for the real test: send that link to a friend. Text it to someone right now. When they react, that's the feeling of shipping something real.
+STOP: インターネット上でクイズが見えますか？
 
-Let's acknowledge what just happened.
-
-You built a real web application. You put it on the internet. You have a URL that works on any device. You did this without writing a single line of code yourself.
-
-That's vibecoding. That's the future.
-
-STOP: How does that feel?
-
-USER: [Response]
+USER: はい！
 
 ---
 
-Here's what you now know:
+スマートフォンでそのURLを開いてみてください。そちらでも動くはずです - 同じクイズが、どのデバイスでも。
 
-**Plan** → Get clear on what you're building
-**Build** → Let AI create it
-**Iterate** → Refine until it's right
-**Save** → Back it up to GitHub
-**Go Live** → Put it on the internet (deploy)
+STOP: スマートフォンでも動きますか？
 
-This is the loop. You can build anything with this loop.
-
-STOP: Make sense?
-
-USER: Yes
+USER: はい！
 
 ---
 
-One more thing: what if you want to update your quiz later?
+さあ、本当のテストです：そのリンクを友達に送ってみましょう。今すぐ誰かにテキストで送ってみてください。相手のリアクションを見たとき、それが本物をリリースした感覚です。
 
-Here's the flow: make changes on your computer, ask me to "push to GitHub," and Vercel will automatically update your live website.
+ここで何が起きたか振り返りましょう。
 
-That's it. Vercel watches your GitHub and auto-deploys whenever you push changes. Magic.
+あなたは本物のウェブアプリケーションをビルドしました。インターネットに公開しました。どのデバイスでも動くURLがあります。これを自分でコードを1行も書かずにやり遂げました。
 
-STOP: Pretty cool, right?
+これがバイブコーディングです。これが未来です。
 
-USER: Yes
+STOP: どんな気持ちですか？
 
----
-
-What if you wanted to collect emails from people who take the quiz? You'd need a database to save them. That's a future module.
-
-What if you wanted to make sure it doesn't break? You'd need testing. Also a future module.
-
-What if you wanted a custom domain like yourquiz.com? Totally doable - Vercel makes it easy.
-
-The point is: you now have the foundation. Everything else builds on this.
-
-STOP: Feeling empowered?
-
-USER: Yes
+USER: [回答]
 
 ---
 
-Want to build something else? Start a new project folder and follow this same process.
+ここまでで学んだことを整理しましょう：
 
-The main things to tell Claude: you want to deploy on Vercel, and that it has Vercel CLI access. It'll know what to do.
+**プラン** → 何をビルドするか明確にする
+**ビルド** → AIに作ってもらう
+**イテレーション** → 正しくなるまで改善する
+**保存** → GitHubにバックアップ
+**公開** → インターネットに公開する（デプロイ）
 
-STOP: Any ideas brewing?
+これがループです。このループで何でもビルドできます。
 
-USER: [Response]
+STOP: わかりましたか？
 
----
-
-## Quick Plugs
-
-**To catch future modules:** Subscribe to the Claude Code for PMs newsletter at ccforpms.com. That's also where you'll find in-depth guides and a community of PMs using Claude Code.
-
-STOP: Want me to open that site so you can subscribe?
-
-USER: Yes / No
-
-ACTION: If yes, open https://ccforpms.com in browser
-
-This course was created by Carl Vellotti. If you have feedback, questions, or just want to say hi, he's always happy to hear from you: [X](https://x.com/carlvellotti) / [LinkedIn](https://www.linkedin.com/in/carlvellotti/)
-
-If you enjoyed this, share it with friends and coworkers who could use these skills!
+USER: はい
 
 ---
 
-**Module 4 Complete!**
+もう一つ：後でクイズを更新したくなったらどうすればいいでしょう？
 
-You went from zero to deployed web app. You learned planning, building, iteration, GitHub, and going live.
+やり方はこうです：コンピュータ上で変更を加えて、「GitHubにプッシュして」と頼むだけで、Vercelが自動的にライブサイトを更新します。
 
-This is vibecoding. This is your new superpower.
+それだけです。VercelはGitHubを監視していて、プッシュするたびに自動でデプロイします。魔法みたいですよね。
 
-**What's next:** Future modules will cover databases, APIs, more complex apps, and connecting Claude to everything. But you now have the core skill - you can build and ship things.
+STOP: すごくないですか？
 
-In the meantime, try building something for yourself. The best way to learn is to make something you actually want.
+USER: はい
 
-STOP: Thanks for building with me. Now go make something cool.
+---
 
-USER: (exits or explores)
+もしクイズを受けた人のメールアドレスを収集したかったら？保存するためにデータベースが必要です。それは将来のモジュールで扱います。
+
+壊れないか確認したかったら？テストが必要です。これも将来のモジュールです。
+
+yourquiz.comのようなカスタムドメインが欲しかったら？完全に可能です - Vercelなら簡単にできます。
+
+ポイントは：あなたはもう基盤を持っているということです。他の全てはこの上に積み上げていけます。
+
+STOP: パワーがみなぎってきましたか？
+
+USER: はい
+
+---
+
+何か他のものをビルドしたいですか？新しいプロジェクトフォルダを作って、同じプロセスを繰り返すだけです。
+
+Claudeに伝える重要なこと：Vercelにデプロイしたいということ、そしてVercel CLIにアクセスできるということ。あとはClaudeが対応してくれます。
+
+STOP: 何かアイデアが浮かんできましたか？
+
+USER: [回答]
+
+---
+
+## お知らせ
+
+**今後のモジュールを受け取るには：** ccforpms.comでClaude Code for PMsニュースレターに登録してください。詳しいガイドやClaude Codeを使うPMのコミュニティもあります。
+
+STOP: サイトを開いて登録しますか？
+
+USER: はい / いいえ
+
+ACTION: はいの場合、ブラウザでhttps://ccforpms.comを開く
+
+このコースはCarl Vellottiが作りました。フィードバック、質問、または単にご挨拶でも、いつでもお気軽にどうぞ: [X](https://x.com/carlvellotti) / [LinkedIn](https://www.linkedin.com/in/carlvellotti/)
+
+気に入っていただけたら、同じスキルを必要としている友人や同僚にシェアしてください！
+
+---
+
+**Module 4 完了！**
+
+ゼロからデプロイ済みウェブアプリまで到達しました。プランニング、ビルド、イテレーション、GitHub、そして公開を学びました。
+
+これがバイブコーディングです。これがあなたの新しいスーパーパワーです。
+
+**次のステップ：** 将来のモジュールでは、データベース、API、より複雑なアプリ、そしてClaudeを全てに接続する方法を扱います。しかし、あなたはもうコアスキルを手に入れました - 何かをビルドしてリリースできます。
+
+それまでの間、自分のために何かビルドしてみてください。学ぶ最良の方法は、自分が本当に欲しいものを作ることです。
+
+STOP: 一緒にビルドしてくれてありがとうございました。さあ、何かクールなものを作りに行きましょう。
+
+USER: （終了または探索）
 
 ---
 
 ## Important Notes for Claude
 
-- The `vercel --prod --yes` flags are critical - `--yes` skips all interactive prompts, `--prod` deploys to production immediately
-- Vercel auto-connects to the GitHub repo they created in 4.4 - this is why signing up with GitHub was important
-- The URL format is usually `[project-name]-[random].vercel.app`
-- Auto-deploy is set up automatically when they link GitHub during Vercel signup
-- If deploy fails, common issues:
-  - Build errors → Check the Vercel dashboard for logs
-  - Not in the right directory → Make sure you're in quiz-project
-- The celebration moment (sending to a friend) is crucial - let it breathe, don't rush past it
+- `vercel --prod --yes`フラグは重要 - `--yes`で全てのインタラクティブプロンプトをスキップ、`--prod`で即座にプロダクションにデプロイ
+- VercelはModule 4.4で作成したGitHubリポジトリに自動接続する - GitHubでサインアップすることが重要だった理由
+- URLの形式は通常`[project-name]-[random].vercel.app`
+- Vercelサインアップ時にGitHubをリンクすると自動デプロイが自動的にセットアップされる
+- デプロイが失敗した場合のよくある問題：
+  - ビルドエラー → Vercelダッシュボードでログを確認
+  - 正しいディレクトリにいない → quiz-projectにいることを確認
+- お祝いの瞬間（友達に送る）は重要 - 急がせずに余韻を楽しませる
 
 ## Success Criteria
 
-- User has a Vercel account (connected to GitHub)
-- Vercel CLI is installed and authenticated
-- Quiz is deployed and live on the internet
-- User can access the quiz from their phone
-- User has sent the link to at least one other person
-- User understands the Plan → Build → Iterate → Save → Go Live loop
-- User knows how to update: make changes → push to GitHub → auto-deploys
-- User feels empowered to build more things
+- ユーザーがVercelアカウントを持っている（GitHubに接続済み）
+- Vercel CLIがインストールされ認証されている
+- クイズがデプロイされインターネット上でライブになっている
+- ユーザーがスマートフォンからクイズにアクセスできる
+- ユーザーが少なくとも1人にリンクを送っている
+- ユーザーがプラン → ビルド → イテレーション → 保存 → 公開のループを理解している
+- ユーザーが更新方法を知っている：変更 → GitHubにプッシュ → 自動デプロイ
+- ユーザーがさらにビルドする意欲を感じている

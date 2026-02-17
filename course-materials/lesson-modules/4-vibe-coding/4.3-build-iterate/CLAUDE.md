@@ -1,199 +1,199 @@
-# 4.3 Build & Iterate
+# 4.3 ビルド＆イテレーション
 
-This is it. Time to build your quiz.
+いよいよです。クイズをビルドしましょう。
 
-I'm going to handle all the technical setup. You just watch the magic happen.
+技術的なセットアップは全て私が担当します。あなたは魔法が起きるのを見ていてください。
 
-STOP: Ready?
+STOP: 準備はいいですか？
 
-USER: Yes
+USER: はい
 
 ---
 
-First, I need to set up the project structure - this creates all the starter files we need.
+まず、プロジェクト構造をセットアップします - 必要なスターターファイルを全て作成します。
 
-ACTION: Run the following command in the quiz-project folder:
+ACTION: quiz-projectフォルダで以下のコマンドを実行：
 ```
 npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias "@/*" --yes
 ```
-(The --yes flag accepts all defaults automatically)
+（--yesフラグで全てのデフォルト設定を自動的に受け入れます）
 
-Done! Look at your file explorer - you should see a bunch of new files in the quiz-project folder.
+完了です！ファイルエクスプローラーを見てください - quiz-projectフォルダに新しいファイルがたくさんできているはずです。
 
-Don't worry about understanding all of them. The `app/` folder is where your quiz will live. Everything else is just configuration.
+全部を理解する必要はありません。`app/`フォルダがクイズの本体が置かれる場所です。それ以外は設定ファイルです。
 
-STOP: Do you see the new files?
+STOP: 新しいファイルが見えますか？
 
-USER: Yes
-
----
-
-Before I build, let me show you something useful: plan mode.
-
-For big tasks, it helps to see what I'm going to do before I do it. Press **Shift+Tab** to switch modes - you should see "Plan mode" as an option.
-
-STOP: Switch to Plan mode and let me know when you're there.
-
-USER: In plan mode
-
-Perfect. Plan mode means I'll show you my plan, you approve it, then I execute. Let's do it.
-
-STOP: Ask me to build the quiz based on the requirements.
-
-USER: Build my quiz based on REQUIREMENTS.md
-
-ACTION: Read REQUIREMENTS.md, then create a plan showing:
-- Components to create (quiz page, question component, results page)
-- Styling approach based on their chosen style
-- Quiz logic implementation (how answers map to results)
-- Any images/icons to include
-
-Present the plan clearly with bullet points.
-
-Here's my plan. I'll create the quiz page, the question components, the results page, and style everything according to your preferences.
-
-STOP: Does this look right? Any questions before I start?
-
-USER: Looks good / [Questions]
-
-ACTION: Answer any questions they have, then tell them to switch back to normal mode (Shift+Tab) and you'll execute the plan.
+USER: はい
 
 ---
 
-Building now. This takes a minute or two. You'll see me creating and editing files. Just let me work.
+ビルドする前に、便利な機能を紹介させてください：プランモードです。
 
-ACTION: Build the full quiz application based on REQUIREMENTS.md:
-1. Create the main quiz page in app/page.tsx
-2. Create quiz components (QuizQuestion, Results, etc.)
-3. Implement the quiz logic (tracking answers, calculating results)
-4. Apply the visual style they chose
-5. Add any images/icons based on their preference
-6. Make sure the result display matches their choice (single vs percentages)
+大きなタスクの場合、実行する前に何をするかを確認できると便利です。**Shift+Tab**を押してモードを切り替えてください - "Plan mode"というオプションが見えるはずです。
 
-Take your time and build it properly. This is the core deliverable.
+STOP: プランモードに切り替えて、できたら教えてください。
 
-Done! Your quiz is built. Now let's see it in action.
+USER: プランモードになりました
 
----
+完璧です。プランモードでは、私がプランを見せて、あなたが承認してから、私が実行します。やってみましょう。
 
-I'm going to start your quiz running and open it in your browser.
+STOP: 要件に基づいてクイズをビルドするように私に依頼してください。
 
-ACTION: Run `npm run dev` in background in the quiz-project folder
+USER: REQUIREMENTS.mdに基づいてクイズをビルドして
 
-ACTION: Wait a few seconds for the server to start, then bash open http://localhost:3000 in browser
+ACTION: REQUIREMENTS.mdを読んでから、以下を示すプランを作成：
+- 作成するコンポーネント（クイズページ、質問コンポーネント、結果ページ）
+- 選択したスタイルに基づくスタイリングアプローチ
+- クイズロジックの実装（回答が結果にどうマッピングされるか）
+- 含める画像/アイコン
 
-Your quiz should now be open in your browser!
+プランを箇条書きで分かりやすく提示。
 
-This "localhost" link only works on YOUR computer - it's a temporary local version. We'll make it public later when we deploy.
+これがプランです。クイズページ、質問コンポーネント、結果ページを作成し、あなたの好みに合わせて全てスタイリングします。
 
-STOP: Do you see your quiz?
+STOP: これで合っていますか？始める前に質問はありますか？
 
-USER: Yes! / [Issues]
+USER: いいですね / [質問]
 
-ACTION: If they have issues:
-- Browser didn't open → Tell them to manually go to http://localhost:3000
-- Build errors → Check the terminal output, fix errors
-- Blank page → Check for JavaScript errors in browser console
+ACTION: 質問があれば答えてから、通常モードに戻すよう伝える（Shift+Tab）、その後プランを実行。
 
 ---
 
-Look at that! You have a working quiz!
+ビルドしています。1〜2分かかります。ファイルを作成・編集しているのが見えるでしょう。そのまま任せてください。
 
-Take it for a spin - answer the questions and see your result.
+ACTION: REQUIREMENTS.mdに基づいてクイズアプリケーション全体をビルド：
+1. app/page.tsxにメインクイズページを作成
+2. クイズコンポーネントを作成（QuizQuestion、Resultsなど）
+3. クイズロジックを実装（回答の追跡、結果の計算）
+4. 選択したビジュアルスタイルを適用
+5. 好みに基づいて画像/アイコンを追加
+6. 結果表示が選択に合っているか確認（単一結果 vs パーセンテージ）
 
-STOP: Try the quiz. Does it work? Do you get a result at the end?
+時間をかけてしっかりビルドすること。これがコアの成果物。
 
-USER: Yes it works! / [Something's wrong]
-
-ACTION: If something's wrong, debug together. Common issues:
-- Result not showing → Check the logic implementation
-- Wrong personality mapping → Review the answer mappings
-- Style issues → Can fix in iteration
-
-This is normal - first versions often need fixes. Let's get it working first, then polish.
-
-Amazing! You just built a web app. Let that sink in.
+完了です！クイズがビルドされました。実際に動かしてみましょう。
 
 ---
 
-The first version is never perfect. Let's iterate - make 2-3 changes until you love it.
+クイズを起動して、ブラウザで開きます。
 
-Here's a trick: you can take a screenshot, paste it here with **Ctrl+V** (not Cmd+V on Mac!), and tell me what to change.
+ACTION: quiz-projectフォルダで`npm run dev`をバックグラウンドで実行
 
-Circle something, point at it, whatever - just show me what you want different.
+ACTION: サーバーが起動するまで数秒待ってから、bashでhttp://localhost:3000をブラウザで開く
 
-This is also a great way to show me bugs. If something looks wrong, screenshot it and paste it here.
+ブラウザでクイズが開いているはずです！
 
-If you're not sure what to change, here are some ideas:
-- Add confetti or animation when you get your result
-- Change the colors or fonts
-- Tweak the wording on questions or results
-- Add images for each result
-- Change the layout or spacing
-- Add a progress bar
+この"localhost"リンクはあなたのコンピュータでのみ動作します - 一時的なローカルバージョンです。後でデプロイするときに公開します。
 
-STOP: Take a screenshot of your quiz, paste it with Ctrl+V, and tell me what you'd like to change.
+STOP: クイズが見えますか？
 
-USER: [Pastes screenshot and describes change]
+USER: はい！ / [問題あり]
 
-ACTION: Make the requested change to the code
-
-Done! Refresh your browser to see the update.
-
-STOP: How's that? Want to change anything else?
-
-USER: [More changes / Happy with it]
-
-ACTION: Keep iterating until they're satisfied. 2-3 rounds is typical. Common requests:
-- Visual tweaks (colors, spacing, fonts)
-- Animation additions
-- Wording changes
-- Layout adjustments
+ACTION: 問題がある場合：
+- ブラウザが開かない → http://localhost:3000に手動でアクセスするよう伝える
+- ビルドエラー → ターミナル出力を確認してエラーを修正
+- 空白ページ → ブラウザコンソールでJavaScriptエラーを確認
 
 ---
 
-Look at that - it's YOUR quiz, exactly how you want it.
+見てください！動くクイズができましたね！
 
-This is the iteration loop: screenshot → describe → change → refresh → repeat.
+実際にやってみましょう - 質問に答えて結果を見てみてください。
 
-This is how real product development works. And with AI, each iteration takes seconds instead of days.
+STOP: クイズを試してください。動きますか？最後に結果が表示されますか？
 
-STOP: Happy with how it looks?
+USER: 動きました！ / [何かおかしい]
 
-USER: Yes
+ACTION: 何かおかしい場合は一緒にデバッグ。よくある問題：
+- 結果が表示されない → ロジックの実装を確認
+- 性格マッピングが間違っている → 回答のマッピングを確認
+- スタイルの問題 → イテレーションで修正可能
+
+これは普通のことです - 最初のバージョンは修正が必要なことが多いです。まず動くようにして、それから磨きましょう。
+
+すごい！あなたはたった今ウェブアプリをビルドしました。ちょっと実感してみてください。
 
 ---
 
-**What you just learned:** How to go from requirements to working product, then iterate until it's exactly what you want.
+最初のバージョンは完璧ではありません。イテレーションしましょう - 気に入るまで2〜3回変更します。
 
-**Where else this applies:**
-- Building any web project - landing pages, tools, prototypes
-- Testing ideas quickly before investing in "real" development
-- Working with designers/developers - clear visual feedback speeds everything up
+コツを教えます：スクリーンショットを撮って、ここに**Ctrl+V**（Macの場合もCmd+Vではなく！）でペーストして、何を変えたいか教えてください。
 
-**Next up:** In 4.4, we save your code to GitHub. Right now it only exists on your computer. We're going to put it in the cloud so it's backed up and ready for deployment.
+丸で囲んだり、指差したり、何でも構いません - 何を変えてほしいか見せてください。
 
-STOP: Ready to save your work? Say "let's do GitHub" or type /start-4-4
+これはバグを見せるのにも最適な方法です。何かおかしく見えたら、スクリーンショットを撮ってここにペーストしてください。
 
-USER: Let's do GitHub
+何を変えるか迷ったら、こんなアイデアはどうですか：
+- 結果表示時に紙吹雪やアニメーションを追加
+- 色やフォントを変更
+- 質問や結果の文言を調整
+- 各結果に画像を追加
+- レイアウトや余白を変更
+- プログレスバーを追加
+
+STOP: クイズのスクリーンショットを撮って、Ctrl+Vでペーストして、何を変えたいか教えてください。
+
+USER: [スクリーンショットをペーストして変更を説明]
+
+ACTION: リクエストされた変更をコードに適用
+
+完了です！ブラウザを更新して変更を確認してください。
+
+STOP: いかがですか？他に変えたいところはありますか？
+
+USER: [さらに変更 / 満足]
+
+ACTION: 満足するまでイテレーションを続ける。2〜3回が一般的。よくあるリクエスト：
+- ビジュアルの調整（色、余白、フォント）
+- アニメーションの追加
+- 文言の変更
+- レイアウトの調整
+
+---
+
+見てください - あなただけのクイズが、思い通りの形になりました。
+
+これがイテレーションのループです：スクリーンショット → 説明 → 変更 → 更新 → 繰り返し。
+
+これが本当のプロダクト開発の進め方です。そしてAIを使えば、各イテレーションが数日ではなく数秒で済みます。
+
+STOP: 見た目に満足していますか？
+
+USER: はい
+
+---
+
+**今学んだこと：** 要件から動くプロダクトに辿り着き、思い通りになるまでイテレーションする方法。
+
+**他にも活用できる場面：**
+- あらゆるウェブプロジェクトのビルド - ランディングページ、ツール、プロトタイプ
+- 本格的な開発に投資する前にアイデアを素早くテスト
+- デザイナー/開発者との協業 - 明確なビジュアルフィードバックが全てをスピードアップ
+
+**次のステップ：** 4.4では、コードをGitHubに保存します。今のところコードはあなたのコンピュータにしか存在しません。クラウドに保存して、バックアップとデプロイの準備をしましょう。
+
+STOP: 作業を保存する準備はできましたか？「GitHubやろう」と言うか、/start-4-4と入力してください
+
+USER: GitHubやろう
 
 ---
 
 ## Important Notes for Claude
 
-- The `npm run dev` command should run in background so the user can keep talking
-- localhost:3000 is the default Next.js port - if something's already using it, Next.js will suggest another port
-- When they paste screenshots, actually look at them and make specific changes
-- The Ctrl+V note is important - Mac users often try Cmd+V first
-- Keep iterations focused - don't suggest too many changes at once
-- If the quiz has bugs, fix them before moving to visual polish
-- Plan mode (Shift+Tab) is a real Claude Code feature - make sure they actually use it
+- `npm run dev`コマンドはバックグラウンドで実行し、ユーザーが会話を続けられるようにする
+- localhost:3000はNext.jsのデフォルトポート - 既に使用中の場合、Next.jsが別のポートを提案する
+- スクリーンショットをペーストされたら、実際に見て具体的な変更を行う
+- Ctrl+Vの注意はMacユーザーにとって重要 - 最初にCmd+Vを試しがち
+- イテレーションは集中して行う - 一度に多くの変更を提案しない
+- クイズにバグがある場合、ビジュアルの磨きより先に修正する
+- プランモード（Shift+Tab）はClaude Codeの実際の機能 - 実際に使わせること
 
 ## Success Criteria
 
-- Next.js project is scaffolded in quiz-project folder
-- Quiz is fully built based on REQUIREMENTS.md
-- Dev server is running and quiz is viewable at localhost:3000
-- User has done at least 1-2 iterations
-- User is satisfied with how their quiz looks
-- User is ready for GitHub
+- Next.jsプロジェクトがquiz-projectフォルダにスキャフォールドされている
+- クイズがREQUIREMENTS.mdに基づいて完全にビルドされている
+- 開発サーバーが起動し、localhost:3000でクイズが表示できる
+- ユーザーが少なくとも1〜2回イテレーションしている
+- ユーザーがクイズの見た目に満足している
+- ユーザーがGitHubの準備ができている
