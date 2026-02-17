@@ -1,50 +1,50 @@
-# Module 3.2.3: Marketing & Launch Assets
+# Module 3.2.3: マーケティング＆ローンチアセット
 
-Welcome to Module 3.2.3: Marketing & Launch Assets!
+Module 3.2.3: マーケティング＆ローンチアセットへようこそ！
 
-You did it.
+やりましたね。
 
-The pitch landed. The CTO signed off on the architecture. The CEO approved the roadmap. The board gave the green light.
+プレゼンは成功。CTOはアーキテクチャを承認。CEOはロードマップを承認。取締役会はゴーサインを出しました。
 
-TaskFlow Mobile is launching next month.
+TaskFlow Mobileは来月ローンチです。
 
-STOP: Exciting, right?
+STOP: ワクワクしますよね？
 
 USER: Yes
 
 ---
 
-There's just one problem: marketing needs assets. And they needed them yesterday.
+ただ1つ問題が。マーケティングがアセットを必要としています。しかも昨日までに。
 
-App store graphics, social ads, announcement visuals - the whole launch kit.
+App Storeグラフィック、ソーシャル広告、アナウンスメントビジュアル - ローンチキット一式です。
 
-Good news: you're about to create all of it in the next few minutes.
+良いニュース：これから数分ですべて作ります。
 
-STOP: Ready to build your launch assets?
+STOP: ローンチアセットを作る準備はできましたか？
 
 USER: Ready
 
 ---
 
-Quick reminder: you can reference styles from `style-library.html` or just describe what you want.
+リマインダー：`style-library.html` からスタイルを参照するか、欲しいものをそのまま説明できます。
 
-The Marketing category has great options for this module - but feel free to explore others too.
+Marketingカテゴリーにはこのモジュールに最適なオプションがあります - でも他のカテゴリーも自由に探索してください。
 
-STOP: Makes sense?
+STOP: わかりましたか？
 
 USER: Yes
 
 ---
 
-## Part 1: App Store Hero
+## Part 1: App Storeヒーロー
 
-First up: the App Store feature graphic.
+最初はApp Storeのフィーチャーグラフィックです。
 
-This is the hero image users see when they find TaskFlow Mobile in the App Store or Play Store. It needs to communicate the value instantly - "task management for teams on the go."
+これは、ユーザーがApp StoreやPlay StoreでTaskFlow Mobileを見つけたときに目にするヒーロー画像です。価値を瞬時に伝える必要があります - 「外出先でもチームのタスク管理」。
 
-I've got a reference image in this module folder called `app-store-hero.png` - I'll use that as a style reference to generate something in the same aesthetic for TaskFlow.
+このモジュールフォルダに `app-store-hero.png` というリファレンス画像があります - TaskFlow用に同じ美学で何かを生成するためのスタイルリファレンスとして使います。
 
-STOP: Ask me to create an App Store feature graphic for TaskFlow Mobile.
+STOP: TaskFlow MobileのApp Storeフィーチャーグラフィックを作成するよう依頼してください。
 
 USER: Create an App Store feature graphic / Generate the app store hero
 
@@ -59,31 +59,31 @@ ACTION: Generate App Store feature graphic
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your App Store graphic.
+`outputs/` フォルダでApp Storeグラフィックを確認してください。
 
-STOP: Does this make you want to download the app?
+STOP: このアプリをダウンロードしたくなりますか？
 
 USER: Response
 
 ACTION: If user wants changes, iterate on the graphic. If satisfied, continue.
 
-That's your app store presence sorted.
+これでApp Storeのプレゼンスは完成です。
 
-STOP: Ready for the ad campaign?
+STOP: 広告キャンペーンの準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 2: Social Ad Creative
+## Part 2: ソーシャル広告クリエイティブ
 
-Next: social media ads.
+次はソーシャルメディア広告です。
 
-TaskFlow is B2B, so LinkedIn is the primary channel - but these work for any platform.
+TaskFlowはB2Bなので、LinkedInがメインチャネルです - ただし、どのプラットフォームでも使えます。
 
-A good ad creative shows the problem and the solution in one glance. Let's create an ad showing operations managers going from chaos (clipboard, scattered texts) to clarity (TaskFlow Mobile).
+良い広告クリエイティブは、問題とソリューションを一目で見せます。オペレーションマネージャーがカオス（クリップボード、バラバラのテキスト）からクラリティ（TaskFlow Mobile）へ変わる広告を作りましょう。
 
-STOP: Ask me to create a social ad showing the before/after transformation.
+STOP: ビフォー/アフターの変革を示すソーシャル広告を作成するよう依頼してください。
 
 USER: Create a social ad / Generate the LinkedIn ad
 
@@ -98,11 +98,11 @@ ACTION: Generate social ad creative
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your ad creative.
+`outputs/` フォルダで広告クリエイティブを確認してください。
 
-Quick note: your output obviously depends on your inputs. This is a proof of concept - if you have ads or designs you love, you could use them as style references and generate in that aesthetic instead. Same process, your preferred style.
+ちなみに：出力は当然インプットに依存します。これはプルーフオブコンセプトです - 気に入った広告やデザインがあれば、それをスタイルリファレンスとして使い、その美学で生成することもできます。同じプロセスで、好みのスタイルで。
 
-STOP: Can you see the transformation story in a single image?
+STOP: 1枚の画像で変革のストーリーが見えますか？
 
 USER: Response
 
@@ -110,29 +110,29 @@ ACTION: If user wants changes, iterate on the ad. If satisfied, continue.
 
 ---
 
-Want to try a variant? Different ad styles work for different audiences - maybe a more polished corporate look, or something more dynamic.
+バリエーションを試してみますか？異なる広告スタイルは異なるオーディエンスに効果的です - もっと洗練されたコーポレートルックや、よりダイナミックなものなど。
 
-STOP: Want to generate an alternate version, or move on to the announcement graphic?
+STOP: 別バージョンを生成しますか、それともアナウンスメントグラフィックに進みますか？
 
 USER: Response (alternate version or continue)
 
 ACTION: If user wants alternate, generate another variant with a different style. If they want to continue, proceed to Part 3.
 
-STOP: Ready for the launch announcement?
+STOP: ローンチアナウンスメントの準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 3: Feature Announcement Graphic
+## Part 3: フィーチャーアナウンスメントグラフィック
 
-Final asset: the launch announcement graphic.
+最後のアセット：ローンチアナウンスメントグラフィックです。
 
-This goes in the blog post, the email blast, the social announcement - everywhere you're saying "TaskFlow Mobile is here."
+これはブログ記事、メール配信、ソーシャルアナウンスメント - 「TaskFlow Mobileが登場しました」と言うあらゆる場所に使います。
 
-It should feel like an event. Something new and exciting is arriving. Think: "Introducing TaskFlow Mobile" energy.
+イベント感が必要です。新しくてエキサイティングなものが来る。「Introducing TaskFlow Mobile」のエネルギーです。
 
-STOP: Ask me to create a launch announcement graphic.
+STOP: ローンチアナウンスメントグラフィックを作成するよう依頼してください。
 
 USER: Create a launch announcement / Generate the announcement graphic
 
@@ -146,9 +146,9 @@ ACTION: Generate launch announcement graphic
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your announcement graphic.
+`outputs/` フォルダでアナウンスメントグラフィックを確認してください。
 
-STOP: Does this feel like a launch moment? Want to make any updates?
+STOP: ローンチの瞬間という感じがしますか？何か更新したいですか？
 
 USER: Response
 
@@ -156,87 +156,87 @@ ACTION: If user wants changes, iterate on the graphic. If satisfied, continue.
 
 ---
 
-Perfect - you now have your launch announcement ready to go.
+完璧 - ローンチアナウンスメントの準備完了です。
 
-## Wrap-Up
+## まとめ
 
-Let's look at what you just created:
+作成したものを見てみましょう：
 
-1. **An App Store feature graphic** - your storefront presence
-2. **A social ad creative** (maybe multiple variants) - your campaign assets
-3. **A launch announcement graphic** - your "we're here" moment
+1. **App Storeフィーチャーグラフィック** - ストアフロントのプレゼンス
+2. **ソーシャル広告クリエイティブ**（複数バリエーションかも）- キャンペーンアセット
+3. **ローンチアナウンスメントグラフィック** - 「ここに来ました」の瞬間
 
-That's a complete launch asset kit - built in minutes.
+これは完全なローンチアセットキットです - 数分で作り上げました。
 
-STOP: Pretty powerful, right?
-
-USER: Yes
-
----
-
-## The Big Picture
-
-Let's zoom out for a moment.
-
-Think about what you've actually built in this course.
-
-You now understand how the most powerful image generation model ever made works - inside and out.
-
-You know the prompting principles. The session mechanics. How to iterate. When to use references.
-
-But that's just the foundation.
-
-You've learned how to supercharge Gemini by pairing it with Claude Code.
-
-Natural language commands - no clicking through menus. Instant iteration - "make it bluer" and it happens. No context switching - you stay in your flow.
-
-This is faster and more powerful than any wrapper app.
-
-STOP: Makes sense?
+STOP: かなりパワフルですよね？
 
 USER: Yes
 
 ---
 
-And here's the real unlock: you built a compounding system.
+## 全体像
 
-Your style library in `style-library.html` grows more valuable with every project. Every style you extract, every prompt you save - it compounds.
+少しズームアウトしましょう。
 
-Next time you need a journey map, you've got your go-to style ready. Next time you need an architecture diagram, same thing.
+このコースで実際に何を構築したか考えてみてください。
 
-Most people generate random images and forget about them.
+あなたは今、史上最も強力な画像生成モデルがどう動くのかを内側から外側まで理解しています。
 
-You now have a professional-grade creative pipeline:
+プロンプティングの原則。セッションのメカニクス。イテレーションの方法。リファレンスをいつ使うか。
 
-- **The most powerful model** (Gemini)
-- **The most powerful AI assistant** (Claude Code)
-- **A system that compounds over time** (your style library)
+でもそれは基盤に過ぎません。
 
-This is how you actually leverage AI for real work.
+GeminiをClaude Codeと組み合わせることでスーパーチャージする方法を学びました。
 
-STOP: Any questions about what you've built?
+自然言語コマンド - メニューをクリックする必要なし。即座のイテレーション - 「もっと青く」と言えばそうなります。コンテキストスイッチなし - フローに留まれます。
+
+これはどんなラッパーアプリよりも速く、パワフルです。
+
+STOP: わかりますか？
+
+USER: Yes
+
+---
+
+そしてここが本当のアンロックです：複利で成長するシステムを構築したのです。
+
+`style-library.html` のスタイルライブラリは、プロジェクトごとにより価値が増します。抽出したすべてのスタイル、保存したすべてのプロンプト - それが複利で積み重なります。
+
+次にジャーニーマップが必要なとき、お気に入りのスタイルがすぐに使えます。次にアーキテクチャダイアグラムが必要なとき、同じことです。
+
+ほとんどの人はランダムに画像を生成して忘れてしまいます。
+
+あなたには今、プロフェッショナルグレードのクリエイティブパイプラインがあります：
+
+- **最も強力なモデル**（Gemini）
+- **最も強力なAIアシスタント**（Claude Code）
+- **時間とともに複利で成長するシステム**（あなたのスタイルライブラリ）
+
+これが、AIを実際の仕事に本当に活かす方法です。
+
+STOP: 構築したものについて質問はありますか？
 
 USER: Response
 
 ---
 
-## Congratulations
+## おめでとうございます
 
-You've completed Nano Banana - the image generation course.
+Nano Banana - 画像生成コースを修了しました。
 
-From your first generation in Module 3.1.1 to launching a product with professional visuals just now. You went from "how does this work?" to having a complete creative toolkit.
+Module 3.1.1での最初の生成から、たった今プロフェッショナルなビジュアルでプロダクトをローンチするまで。「これはどう動くの？」から完全なクリエイティブツールキットを手に入れるまでになりました。
 
-The style library is yours to keep building. Every project makes it more valuable.
+スタイルライブラリはこれからも育て続けられます。プロジェクトごとにその価値は増していきます。
 
-STOP: Congratulations! Any final questions?
+STOP: おめでとうございます！最後に何か質問はありますか？
 
 USER: Response
 
 ---
 
-Thanks for learning with us.
+一緒に学んでいただきありがとうございました。
 
-Now go build something amazing.
+さあ、素晴らしいものを作りに行きましょう。
 
 ---
 
@@ -253,9 +253,9 @@ Now go build something amazing.
 
 ## Success Criteria
 
-The module is complete when the user has:
-- [ ] Generated an App Store feature graphic for TaskFlow Mobile
-- [ ] Generated at least one social ad creative showing problem → solution
-- [ ] Generated a launch announcement graphic
-- [ ] Understands the three-part thesis: powerful model + powerful assistant + compounding system
-- [ ] Feels a sense of completion and accomplishment for finishing Nano Banana
+このモジュールは、受講者が以下を達成した時点で完了です：
+- [ ] TaskFlow MobileのApp Storeフィーチャーグラフィックを生成した
+- [ ] 問題→ソリューションを示すソーシャル広告クリエイティブを少なくとも1つ生成した
+- [ ] ローンチアナウンスメントグラフィックを生成した
+- [ ] 3つのテーゼを理解した：強力なモデル＋強力なアシスタント＋複利で成長するシステム
+- [ ] Nano Bananaを修了した達成感と満足感を感じている

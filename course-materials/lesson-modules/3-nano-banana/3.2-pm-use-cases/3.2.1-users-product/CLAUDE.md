@@ -1,50 +1,50 @@
-# Module 3.2.1: Users & Product Visuals
+# Module 3.2.1: ユーザー＆プロダクトビジュアル
 
-Welcome to Module 3.2.1: Users & Product Visuals!
+Module 3.2.1: ユーザー＆プロダクトビジュアルへようこそ！
 
-You've learned the fundamentals of image generation in Module 3.1. Now let's put those skills to work on real PM tasks.
+Module 3.1で画像生成の基本を学びましたね。今度はそのスキルを実際のPM業務に活かしましょう。
 
-Quick reminder: TaskFlow is the fictional company for this course - a B2B SaaS platform for team task management.
+念のための確認：TaskFlowはこのコースの架空の会社で、チームタスク管理のためのB2B SaaSプラットフォームです。
 
-Here's the scenario: you're a PM at TaskFlow, and you're pitching a new mobile app to leadership next week. The app is designed for operations managers in manufacturing - people who coordinate tasks across shifts on the factory floor.
+シナリオはこうです：あなたはTaskFlowのPMで、来週リーダーシップに新しいモバイルアプリをプレゼンします。このアプリは製造業のオペレーションマネージャー向け - 工場のフロアでシフト間のタスクを調整する人たちです。
 
-You need visuals for your pitch deck: 
-- a persona portrait
-- a journey map
-- wireframes
-- a hero image.
+プレゼン資料にはビジュアルが必要です：
+- ペルソナポートレート
+- ジャーニーマップ
+- ワイヤーフレーム
+- ヒーロー画像
 
-By the end of this module, you'll have built all of them.
+このモジュールが終わるまでに、すべて作り上げます。
 
-STOP: Ready to start building your pitch deck visuals?
+STOP: プレゼン資料のビジュアル作成を始める準備はできましたか？
 
 USER: Ready
 
 ---
 
-Quick reminder - you have two ways to work with image generation:
+リマインダー - 画像生成には2つの方法があります：
 
-**Option 1:** Pick a style from your `style-library.html` (e.g., "use style #9") - we introduced this in 3.1.4. Let me know if you need help accessing it.
+**Option 1:** `style-library.html` からスタイルを選ぶ（例：「スタイル#9を使って」）- Module 3.1.4で紹介しましたね。アクセス方法がわからない場合はお知らせください。
 
-**Option 2:** Just describe what you want and I'll figure out the rest.
+**Option 2:** 欲しいものを説明するだけで、あとはこちらで対応します。
 
-Both approaches work great. Use whichever feels natural to you.
+どちらのアプローチもうまくいきます。自然に感じる方を使ってください。
 
-STOP: Makes sense?
+STOP: わかりましたか？
 
 USER: Yes
 
 ---
 
-## Part 1: Persona Portrait
+## Part 1: ペルソナポートレート
 
-First things first - every good pitch starts with "who are we building for?"
+まず最初に - 良いプレゼンはいつも「誰のために作っているのか？」から始まります。
 
-Let's create a persona portrait for your pitch deck.
+プレゼン資料用のペルソナポートレートを作りましょう。
 
-Meet Marcus Chen. He's an operations manager at a manufacturing plant. He manages 3 shift supervisors and needs to track tasks across the factory floor. Mid-40s, practical, always has his phone in one hand and a coffee in the other.
+Marcus Chenを紹介します。彼は製造工場のオペレーションマネージャーです。3人のシフトスーパーバイザーを管理し、工場フロア全体のタスクを追跡する必要があります。40代半ば、実用的で、いつも片手にスマホ、もう片手にコーヒーを持っています。
 
-STOP: Ask me to create a persona portrait of Marcus for your pitch deck.
+STOP: プレゼン資料用にMarcusのペルソナポートレートを作成するよう依頼してください。
 
 USER: Create a persona portrait of Marcus / Generate Marcus Chen
 
@@ -57,34 +57,34 @@ ACTION: Generate persona portrait of Marcus Chen
 
 ACTION: Provide the path to the output image so user can view it.
 
-Open the `outputs/` folder to see Marcus.
+`outputs/` フォルダを開いてMarcusを確認してください。
 
-STOP: What do you think? Does he look like someone who runs a factory floor?
+STOP: どう思いますか？工場フロアを仕切る人に見えますか？
 
 USER: Response
 
-That's your "who we're building for" slide sorted.
+これで「誰のために作っているのか」のスライドは完成です。
 
-STOP: Ready to show leadership what Marcus's day looks like?
+STOP: リーダーシップにMarcusの一日がどんなものか見せる準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 2: Journey Map
+## Part 2: ジャーニーマップ
 
-A journey map shows the pain points we're solving. Let's map Marcus's morning workflow - this is where TaskFlow Mobile helps most.
+ジャーニーマップは解決しようとしているペインポイントを示します。Marcusの朝のワークフローをマッピングしましょう - ここがTaskFlow Mobileが最も役立つところです。
 
-His morning goes something like this:
-- **6 AM:** Arrives, checks overnight shift handoff notes
-- **6:30 AM:** Reviews task backlog, assigns priorities for day shift
-- **7 AM:** Morning standup with shift supervisors
-- **8-11 AM:** Walks the floor, tracks task completion, handles issues
-- **11:30 AM:** Prepares handoff notes for afternoon shift
+彼の朝はこんな感じです：
+- **6 AM:** 出勤、夜勤の引き継ぎノートを確認
+- **6:30 AM:** タスクバックログを確認、日勤の優先順位を割り当て
+- **7 AM:** シフトスーパーバイザーとの朝のスタンドアップ
+- **8-11 AM:** フロアを巡回、タスク完了を追跡、問題に対処
+- **11:30 AM:** 午後シフトへの引き継ぎノートを準備
 
-Currently, he does all this with a clipboard, a radio, and scattered text messages. It's chaos.
+現在、彼はこのすべてをクリップボード、無線機、バラバラのテキストメッセージでこなしています。カオスです。
 
-STOP: Ask me to create a journey map showing Marcus's morning workflow.
+STOP: Marcusの朝のワークフローを示すジャーニーマップを作成するよう依頼してください。
 
 USER: Create a journey map / Generate the journey map
 
@@ -97,31 +97,31 @@ ACTION: Generate journey map visualization
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your journey map.
+`outputs/` フォルダでジャーニーマップを確認してください。
 
-STOP: See how it visualizes the problem you're solving?
+STOP: 解決しようとしている問題がどのように可視化されているか、わかりますか？
 
 USER: Response
 
 ---
 
-Remember: you can always ask for changes.
+覚えておいてください：いつでも変更を依頼できます。
 
-Don't like the style? Just ask - "make it more playful" or "try a hand-drawn look."
+スタイルが気に入らない？聞いてください - 「もっと遊び心のある感じに」や「手描き風にして」など。
 
-You can also reference the style library - for example, "regenerate this using style #59" for an illustrated version.
+スタイルライブラリも参照できます - 例えば「スタイル#59でこれを再生成して」とすれば、イラスト版になります。
 
-STOP: Want to try a different style, or are you happy with this one?
+STOP: 別のスタイルを試してみたいですか、それともこのままで満足ですか？
 
 USER: Response (either asks for change or continues)
 
 ACTION: If user wants a change, regenerate with their requested style. If they're satisfied, continue to the next section.
 
-Now here's a power move: we can put Marcus INSIDE the journey map.
+ここでパワームーブです：Marcusをジャーニーマップの中に入れることができます。
 
-We have Marcus's portrait from earlier. We can use it as a reference image and generate a journey map that shows him at each stage of his morning.
+先ほどのMarcusのポートレートがあります。これをリファレンス画像として使い、朝の各ステージで彼が登場するジャーニーマップを生成できます。
 
-STOP: Ask me to regenerate the journey map with Marcus in it.
+STOP: Marcusを入れたジャーニーマップを再生成するよう依頼してください。
 
 USER: Regenerate with Marcus / Put Marcus in the journey map
 
@@ -136,41 +136,41 @@ ACTION: Generate journey map with Marcus as a character at each stage
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check `outputs/` for the updated journey map.
+`outputs/` で更新されたジャーニーマップを確認してください。
 
-STOP: See how Marcus appears consistently across all stages? That's the session memory at work.
+STOP: すべてのステージでMarcusが一貫して表示されているのがわかりますか？これがセッションメモリの力です。
 
 USER: Response
 
 ---
 
-This is the kind of artifact that makes presentations memorable. It's not just a generic journey map - it's Marcus's story.
+これはプレゼンテーションを印象的にするアーティファクトです。ただの汎用的なジャーニーマップではなく - Marcusのストーリーなのです。
 
-STOP: Ready to show leadership what the solution looks like? Next up: wireframes
+STOP: ソリューションがどんなものか、リーダーシップに見せる準備はできましたか？次はワイヤーフレームです。
 
 USER: Yes
 
 ---
 
-## Part 3: Wireframe Transformation
+## Part 3: ワイヤーフレーム変換
 
-Here's a common PM scenario: you sketched an idea in a meeting and now you need to make it presentable.
+よくあるPMのシナリオです：会議でアイデアをスケッチして、今度はそれをプレゼン用にきれいにする必要があります。
 
 ACTION: Get the absolute path to `hand-drawn-wireframe.jpg` in this module folder.
 
-Open this file to see it: [provide the path]
+このファイルを開いて確認してください：[provide the path]
 
-This is your "meeting sketch" - a quick wireframe you drew while thinking about Marcus's needs.
+これはあなたの「会議スケッチ」です - Marcusのニーズを考えながら描いた簡単なワイヤーフレームです。
 
-STOP: Do you see the sketch? Notice the TaskFlow header, the shift overview, the task assignments?
+STOP: スケッチが見えますか？TaskFlowのヘッダー、シフト概要、タスク割り当てに注目してください。
 
 USER: Yes, I see it
 
 ---
 
-Now let's transform this rough sketch into a polished wireframe for your pitch deck.
+では、このラフスケッチをプレゼン資料用の洗練されたワイヤーフレームに変換しましょう。
 
-STOP: Ask me to transform this hand-drawn sketch into a clean, polished wireframe.
+STOP: この手描きスケッチをクリーンで洗練されたワイヤーフレームに変換するよう依頼してください。
 
 USER: Transform this into a polished wireframe / Clean up this sketch
 
@@ -183,27 +183,27 @@ ACTION: Generate polished wireframe using hand-drawn-wireframe.jpg as reference
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder - you should see your polished wireframe.
+`outputs/` フォルダを確認してください - 洗練されたワイヤーフレームが見えるはずです。
 
-STOP: Compare the sketch to the polished version. See how it preserved your ideas but made them presentation-ready?
+STOP: スケッチと洗練されたバージョンを比べてみてください。アイデアはそのままに、プレゼン用にきれいになっているのがわかりますか？
 
 USER: Response
 
-In minutes, you went from meeting sketch to pitch-ready wireframe.
+数分で、会議のスケッチからプレゼン用のワイヤーフレームに変わりました。
 
-STOP: Ready to make it look even more real?
+STOP: もっとリアルに見せる準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 4: Device Mockup
+## Part 4: デバイスモックアップ
 
-Wireframes are great, but stakeholders love seeing the app "in a phone." It makes everything feel more real.
+ワイヤーフレームは素晴らしいですが、ステークホルダーはアプリが「スマホの中に入っている」のを見るのが大好きです。すべてがよりリアルに感じられます。
 
-Let's put your polished wireframe into an iPhone frame.
+洗練されたワイヤーフレームをiPhoneフレームに入れましょう。
 
-STOP: Ask me to put the wireframe into an iPhone mockup.
+STOP: ワイヤーフレームをiPhoneモックアップに入れるよう依頼してください。
 
 USER: Put this in an iPhone / Create a device mockup
 
@@ -217,27 +217,27 @@ ACTION: Generate device mockup with a realistic UI (not wireframe)
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your device mockup.
+`outputs/` フォルダでデバイスモックアップを確認してください。
 
-STOP: Now it looks like a real app, right?
+STOP: 本物のアプリのように見えますよね？
 
 USER: Response
 
-Perfect for your pitch deck - but we can go one step further.
+プレゼン資料にぴったりです - でも、もう一歩先に進めます。
 
-STOP: Ready to create the hero image?
+STOP: ヒーロー画像を作る準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 5: Lifestyle Shot
+## Part 5: ライフスタイルショット
 
-The hero image is what sells the vision.
+ヒーロー画像はビジョンを売り込むものです。
 
-Let's show Marcus actually using TaskFlow on the factory floor. This brings everything together: your persona, in their environment, using your product.
+Marcusが工場フロアで実際にTaskFlowを使っている様子を見せましょう。すべてがまとまります：あなたのペルソナが、その環境で、あなたのプロダクトを使っている。
 
-STOP: Ask me to create a lifestyle shot of Marcus using TaskFlow on the factory floor.
+STOP: 工場フロアでMarcusがTaskFlowを使っているライフスタイルショットを作成するよう依頼してください。
 
 USER: Create a lifestyle shot / Show Marcus using the app on the factory floor
 
@@ -251,37 +251,37 @@ ACTION: Generate lifestyle shot
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your hero image.
+`outputs/` フォルダでヒーロー画像を確認してください。
 
-STOP: This is your pitch deck cover right here. What do you think?
+STOP: これがプレゼン資料のカバーです。どう思いますか？
 
 USER: Response
 
 ---
 
-## Wrap-Up
+## まとめ
 
-Let's recap what you just built:
+作成したものを振り返りましょう：
 
-1. **A persona portrait** of Marcus Chen
-2. **A journey map** of his morning workflow
-3. **A polished wireframe** transformed from a rough sketch
-4. **A device mockup** showing the app in an iPhone
-5. **A hero image** of Marcus using TaskFlow on the factory floor
+1. **Marcus Chenのペルソナポートレート**
+2. **朝のワークフローのジャーニーマップ**
+3. **ラフスケッチから変換した洗練されたワイヤーフレーム**
+4. **iPhoneに入れたデバイスモックアップ**
+5. **工場フロアでMarcusがTaskFlowを使っているヒーロー画像**
 
-That's a complete visual narrative for a product pitch - built in minutes.
+これはプロダクトプレゼンのための完全なビジュアルナラティブです - 数分で作り上げました。
 
-These same techniques work for any PM scenario: user research presentations, stakeholder updates, product reviews. Whenever you need visuals, you now have the skills to create them.
+これらの同じテクニックは、どんなPMシナリオにも使えます：ユーザーリサーチのプレゼン、ステークホルダーへの報告、プロダクトレビュー。ビジュアルが必要なとき、それを作るスキルがあなたにはもうあります。
 
-STOP: Any questions before we move on?
+STOP: 次に進む前に質問はありますか？
 
 USER: Questions or ready to continue
 
 ---
 
-In the next module, we'll tackle strategy and architecture visuals - diagrams, frameworks, and system overviews.
+次のモジュールでは、戦略とアーキテクチャのビジュアル - ダイアグラム、フレームワーク、システム概要に取り組みます。
 
-Type `/start-3-2-2` to continue.
+`/start-3-2-2` と入力して続けましょう。
 
 ---
 
@@ -296,10 +296,10 @@ Type `/start-3-2-2` to continue.
 
 ## Success Criteria
 
-The module is complete when the user has:
-- [ ] Generated a persona portrait of Marcus Chen
-- [ ] Generated a journey map of Marcus's morning workflow
-- [ ] Transformed the hand-drawn wireframe into a polished version
-- [ ] Created a device mockup with the wireframe in an iPhone
-- [ ] Generated a lifestyle shot of Marcus using the app
-- [ ] Understands they can apply these techniques to any PM visual need
+このモジュールは、受講者が以下を達成した時点で完了です：
+- [ ] Marcus Chenのペルソナポートレートを生成した
+- [ ] Marcusの朝のワークフローのジャーニーマップを生成した
+- [ ] 手描きワイヤーフレームを洗練されたバージョンに変換した
+- [ ] ワイヤーフレームをiPhoneに入れたデバイスモックアップを作成した
+- [ ] 工場フロアでアプリを使うMarcusのライフスタイルショットを生成した
+- [ ] これらのテクニックをあらゆるPMのビジュアルニーズに応用できることを理解した

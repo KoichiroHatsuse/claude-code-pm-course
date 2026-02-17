@@ -1,171 +1,171 @@
-# Module 3.1.1: Welcome & First Generation
+# Module 3.1.1: ウェルカム & 初めての画像生成
 
-**Teaching Script for Claude Code**
-
----
-
-## Teaching Flow
-
-Welcome to **Nano Banana Pro in Claude Code for PMs**!
-
-I'm going to quote the course creator Carl here: "You aren't going to believe how fucking amazing this is."
-
-He's right. We're going to use Gemini 3 Pro - also known as Nano Banana Pro - Google's most advanced image generation model. It can create photorealistic images, transform reference photos, generate text overlays, and so much more.
-
-STOP: Are you ready to see what it can do?
-
-USER: Yes / Ready
+**Claude Code用ティーチングスクリプト**
 
 ---
 
-Before we generate anything, we need to set up your API key. This takes about 2-3 minutes and you only do it once.
+## ティーチングフロー
 
-First, go to Google AI Studio:
+**Nano Banana Pro in Claude Code for PMs** へようこそ！
+
+コース制作者のCarlの言葉を引用させてください：「これがどれだけすごいか、信じられないと思うよ。」
+
+彼の言う通りです。これからGemini 3 Pro（別名Nano Banana Pro）を使います。Googleの最も高度な画像生成モデルです。フォトリアルな画像の作成、参照写真の変換、テキストオーバーレイの生成など、本当に多くのことができます。
+
+STOP: 何ができるか見てみる準備はできましたか？
+
+USER: はい / 準備できました
+
+---
+
+何かを生成する前に、APIキーの設定が必要です。2〜3分ほどかかりますが、一度だけの作業です。
+
+まず、Google AI Studioを開いてください：
 
 **https://aistudio.google.com/**
 
-STOP: Open that link in your browser and let me know when you're there.
+STOP: ブラウザでこのリンクを開いて、準備ができたら教えてください。
 
-USER: I'm there
-
----
-
-If this is your first time, accept the Terms of Service.
-
-Then:
-1. Click **"Get API Key"** in the left sidebar
-2. Click **"Create API key"** in the upper right
-3. Name your key whatever you want and select **"Default Gemini Project"**
-4. Click on the key in the dashboard to reveal it
-5. Copy the key - it starts with "AIza..."
-
-STOP: Do you have your API key copied?
-
-USER: Yes
+USER: 開きました
 
 ---
 
-Important: You also need to set up billing for Gemini 3 Pro to work.
+初めての場合は、利用規約に同意してください。
 
-Don't worry about cost - it's about $0.10 per image, and this whole course will cost less than $5 total. (This goes to Google, not to Carl... unfortunately.)
+次に：
+1. 左サイドバーの **「Get API Key」** をクリック
+2. 右上の **「Create API key」** をクリック
+3. キーの名前を任意に設定し、**「Default Gemini Project」** を選択
+4. ダッシュボードでキーをクリックして表示
+5. キーをコピー - 「AIza...」で始まります
 
-1. In Google AI Studio, go to **Get API key** (bottom of left sidebar)
-2. Under the **"Quota tier"** column, click **Set up billing**
-3. Follow the prompts to add a payment method
+STOP: APIキーをコピーしましたか？
 
-STOP: Is your billing set up?
-
-USER: Yes / Done
-
----
-
-Now let's add your API key to this project. You have two options:
-
-**Option 1:** Just paste your API key here and I'll create the `.env` file for you.
-
-**Option 2:** Do it yourself - copy `.env.example` to `.env` and add your key: `GEMINI_API_KEY=YourKeyHere`
-
-STOP: Paste your API key here, or say "Done" if you set it up manually.
-
-USER: [Pastes API key] / Done
+USER: はい
 
 ---
 
-ACTION: If user provided an API key, create `.env` file with `GEMINI_API_KEY=[their key]`. If user said "Done", verify `.env` exists.
+重要：Gemini 3 Proを使うには、課金設定も必要です。
 
-Great, you're all set up!
+コストについて心配しないでください - 1枚あたり約$0.10で、このコース全体でかかる費用は$5未満です。（これはGoogleへの支払いで、残念ながらCarlには入りません...。）
 
-Now for the fun part - let's generate your first image.
+1. Google AI Studioで、**Get API key**（左サイドバーの下部）に移動
+2. **「Quota tier」** 列の下にある **Set up billing** をクリック
+3. プロンプトに従って支払い方法を追加
 
-I have a reference photo of Carl, the course creator. You can find it at `lesson-modules/3-nano-banana/3.1-intro-to-image-gen/3.1.1-welcome/carl-reference.JPG` if you want to see what you're working with. We're going to put him in a banana suit to welcome you to the course.
+STOP: 課金設定は完了しましたか？
 
-STOP: Say "Generate Carl in a banana suit welcoming me to Nano Banana"
-
-USER: Generate Carl in a banana suit welcoming me to Nano Banana
-
----
-This will take about 10-15 seconds
-
-ACTION: Run generate() with reference image `carl-reference.JPG` and prompt: "Carl in a bright yellow banana suit, standing confidently with arms crossed, big friendly smile, ready to teach. Text overlay says 'Welcome to Nano Banana!' Professional course instructor vibe but fun and playful."
-
-Your image has been saved to the `outputs/` folder - open it to see the result!
-
-STOP: What do you think?
-
-USER: Response about the image
+USER: はい / 完了
 
 ---
 
-Pretty incredible, right?
+それでは、APIキーをこのプロジェクトに追加しましょう。2つの方法があります：
 
-That's Gemini 3 Pro. It can take a reference photo and transform it while keeping the person recognizable. And because we're doing this in Claude Code, I handle all the complexity for you:
+**方法1:** ここにAPIキーを貼り付けてください。`.env` ファイルを自動で作成します。
 
-- API calls
-- Session management
-- Saving outputs
-- Picking smart parameters
+**方法2:** 自分で設定する場合 - `.env.example` を `.env` にコピーして、キーを追加してください：`GEMINI_API_KEY=YourKeyHere`
 
-Through this course, you'll build your own system of prompts, reference images, and styles. We'll start by covering general use and then move onto PM use cases in the next module.
+STOP: ここにAPIキーを貼り付けるか、手動で設定した場合は「完了」と言ってください。
 
-STOP: Want to hear what's coming next in this module?
-
-USER: Yes
+USER: [APIキーを貼り付け] / 完了
 
 ---
 
-Here's what we'll cover in Module 3.1:
+ACTION: ユーザーがAPIキーを提供した場合、`GEMINI_API_KEY=[そのキー]` で `.env` ファイルを作成する。ユーザーが「完了」と言った場合、`.env` が存在することを確認する。
 
-- **Understanding the Basics** - how the generate() function works, available parameters, output structure
-- **Consistency & Style** - using reference images, building a style database, extracting styles from existing images
-- **Iteration Strategies** - sessions, refining images step by step, reverting when needed
+セットアップ完了です！
 
-Once you've got the fundamentals down, Module 3.2 will show you PM-specific use cases like mockups, personas, and diagrams.
+さあ、お楽しみの時間です - 最初の画像を生成しましょう。
 
-STOP: Ready to continue to the next lesson?
+コース制作者Carlの参照写真があります。`lesson-modules/3-nano-banana/3.1-intro-to-image-gen/3.1.1-welcome/carl-reference.JPG` にあるので、元の写真を確認したい方はどうぞ。これから彼をバナナスーツ姿にして、コースへのウェルカムにします。
 
-USER: Yes / Ready
+STOP: 「Carlをバナナスーツ姿にしてNano Bananaへのウェルカムを生成して」と言ってください。
+
+USER: Carlをバナナスーツ姿にしてNano Bananaへのウェルカムを生成して
+
+---
+生成には約10〜15秒かかります
+
+ACTION: 参照画像 `carl-reference.JPG` とプロンプト "Carl in a bright yellow banana suit, standing confidently with arms crossed, big friendly smile, ready to teach. Text overlay says 'Welcome to Nano Banana!' Professional course instructor vibe but fun and playful." で generate() を実行する。
+
+画像が `outputs/` フォルダに保存されました - 開いて結果を確認してください！
+
+STOP: どう思いますか？
+
+USER: 画像についての感想
 
 ---
 
-Great! In the next lesson, you'll learn how the `generate()` function works and all the options available to you.
+すごいでしょう？
 
-Run `/start-3-1-2` when you're ready to continue.
+これがGemini 3 Proです。参照写真を取り込んで、人物を認識可能なまま変換できます。そして、Claude Codeでやっているからこそ、複雑な処理はすべて私が担当します：
+
+- APIコール
+- セッション管理
+- 出力の保存
+- 最適なパラメータの選択
+
+このコースを通じて、プロンプト、参照画像、スタイルの独自システムを構築していきます。まずは一般的な使い方から始めて、次のモジュールでPMユースケースに進みます。
+
+STOP: このモジュールで次に何が待っているか聞きたいですか？
+
+USER: はい
+
+---
+
+Module 3.1で学ぶ内容はこちらです：
+
+- **基本を理解する** - generate()関数の仕組み、利用可能なパラメータ、出力の構造
+- **一貫性とスタイル** - 参照画像の使い方、スタイルデータベースの構築、既存画像からのスタイル抽出
+- **イテレーション戦略** - セッション、画像を段階的に改善する方法、必要に応じて元に戻す方法
+
+基本をマスターしたら、Module 3.2ではモックアップ、ペルソナ、ダイアグラムなど、PM固有のユースケースを紹介します。
+
+STOP: 次のレッスンに進む準備はできましたか？
+
+USER: はい / 準備できました
+
+---
+
+次のレッスンでは、`generate()` 関数の仕組みと利用可能なオプションをすべて学びます。
+
+準備ができたら `/start-3-1-2` を実行してください。
 
 ACTION: End module
 
 ---
 
-## Important Notes for Claude
+## Claudeへの重要な注意事項
 
-**File operations in this module:**
-- Read `.env.example` to show the student the template
-- Copy `.env.example` to `.env` when student requests
-- The student manually pastes their API key - don't try to insert it for them
+**このモジュールでのファイル操作：**
+- `.env.example` を読んで、学習者にテンプレートを表示する
+- 学習者がリクエストしたら `.env.example` を `.env` にコピーする
+- 学習者が手動でAPIキーを貼り付ける - 代わりに挿入しようとしないこと
 
-**For the image generation:**
-- Use the `generate()` function from `image_gen.py`
-- Pass the reference image path and the exact prompt specified
-- The output will be saved automatically to `outputs/`
+**画像生成について：**
+- `image_gen.py` の `generate()` 関数を使用する
+- 参照画像のパスと指定されたプロンプトを正確に渡す
+- 出力は自動的に `outputs/` に保存される
 
-**If something goes wrong:**
-- API key errors: Have them double-check the key is pasted correctly in `.env`
-- Billing errors: Confirm billing is set up in Google AI Studio settings
-- Generation fails: Check the error message and troubleshoot accordingly
+**問題が発生した場合：**
+- APIキーエラー：`.env` にキーが正しく貼り付けられているか確認してもらう
+- 課金エラー：Google AI Studioの設定で課金が設定されているか確認
+- 生成失敗：エラーメッセージを確認し、適切にトラブルシューティング
 
-**Opening images:** If a user is having trouble finding an image, offer to open it for them using `open [path]` (Mac) or `start [path]` (Windows).
-
----
-
-## Success Criteria
-
-Module 3.1.1 is successful if the student:
-
-- ✅ Has their Gemini API key set up in `.env`
-- ✅ Has billing configured in Google AI Studio
-- ✅ Generated their first image (Carl in banana suit)
-- ✅ Understands what they'll learn in this module
-- ✅ Knows how to continue to the next lesson
+**画像を開く：** ユーザーが画像を見つけるのに困っている場合、`open [path]`（Mac）または `start [path]`（Windows）で開くことを提案する。
 
 ---
 
-**Remember: This is the student's first taste of image generation. Make it magical. The "wow" moment with that first generated image sets the tone for the entire module.**
+## 成功基準
+
+Module 3.1.1が成功したと言えるのは、学習者が：
+
+- Gemini APIキーを `.env` に設定できた
+- Google AI Studioで課金を設定できた
+- 最初の画像を生成できた（Carlのバナナスーツ）
+- このモジュールで何を学ぶか理解した
+- 次のレッスンへの進み方を知っている
+
+---
+
+**覚えておいてください：これは学習者にとって初めての画像生成体験です。魔法のような体験にしてください。最初に生成された画像での「わあ！」という瞬間が、モジュール全体のトーンを決めます。**

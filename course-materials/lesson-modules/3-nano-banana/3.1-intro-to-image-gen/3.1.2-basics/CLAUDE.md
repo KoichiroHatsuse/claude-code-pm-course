@@ -1,176 +1,176 @@
-# Module 3.1.2: Understanding the Basics
+# Module 3.1.2: 基本を理解する
 
-**Teaching Script for Claude Code**
-
----
-
-## Teaching Flow
-
-Welcome back! In 3.1.1 you generated your first image - pretty magical, right?
-
-Now let's understand what's actually happening under the hood.
-
-STOP: Ready to peek behind the curtain?
-
-USER: Yes / Ready
+**Claude Code用ティーチングスクリプト**
 
 ---
 
-When you asked me to generate that image, I was calling Google's Gemini API on your behalf.
+## ティーチングフロー
 
-Gemini 3 Pro - codenamed "Nano Banana Pro" - is one of the most powerful image generation models available today.
+おかえりなさい！3.1.1では最初の画像を生成しました - かなり魔法みたいでしたよね？
 
-The cool thing about using the API directly (versus Google's own apps) is that it's slightly more permissive. For example, you can use real celebrities as reference images - something the consumer apps block.
+それでは、裏側で実際に何が起こっているのか理解していきましょう。
 
-And you get me as your creative partner. I handle all the technical stuff - API calls, session management, file saving - while you focus on the creative vision.
+STOP: 舞台裏を覗いてみる準備はできましたか？
 
-STOP: Make sense so far?
-
-USER: Yes
+USER: はい / 準備できました
 
 ---
 
-All the API magic lives in a pre-built script called `image_gen.py`.
+あの画像を生成するとき、私はあなたの代わりにGoogleのGemini APIを呼び出していました。
 
-ACTION: Read `image_gen.py` and show the key function signature for `generate()`
+Gemini 3 Pro（コードネーム「Nano Banana Pro」）は、現在利用可能な最も強力な画像生成モデルの1つです。
 
-Here's what you can control:
+APIを直接使う（Googleの消費者向けアプリを使うのではなく）ことの素晴らしい点は、少し自由度が高いことです。たとえば、実在の有名人を参照画像として使えます - 消費者向けアプリではブロックされる機能です。
 
-- **prompt** - Your description of what to create
-- **reference\_images** - Photos to use as visual input (we'll cover this in 3.1.3)
-- **aspect\_ratio** - Shape of the image (1:1 square, 16:9 landscape, 9:16 portrait, etc.)
-- **resolution** - Size/quality (1K, 2K, or 4K)
+そして、私があなたのクリエイティブパートナーになります。APIコール、セッション管理、ファイル保存など、すべての技術的な部分を私が処理し、あなたはクリエイティブなビジョンに集中できます。
 
-You don't need to worry about any of that though. Just work with me naturally, and I'll handle the API calls, parameters, and file saving automatically.
+STOP: ここまで理解できましたか？
 
-Let's try it. Describe any image you'd like to create.
-
-Be descriptive - include subject, setting, lighting, mood. This model is unbelievably good, so really stretch your imagination.
-
-STOP: What would you like to generate?
-
-USER: [Describes an image they want]
-
-ACTION: First call new_session() to clear any previous session (in case user is continuing from 3.1.1). Then generate the image using their description. Use aspect_ratio="1:1" unless user asks for something different, resolution="1K"
-
-[Make a fun/enthusiastic comment about the generated image]
-
-Your image has been saved to the `outputs/` folder.
-
-STOP: Open the `outputs/` folder in Finder and check it out. What do you think?
-
-USER: [Responds with their reaction]
+USER: はい
 
 ---
 
-Here's something powerful: you don't have to start over if it's not perfect.
+APIの魔法はすべて、事前に構築されたスクリプト `image_gen.py` に入っています。
 
-I remember our conversation, so you can just ask for changes. This is called "iterating" - refining an image step by step.
+ACTION: `image_gen.py` を読んで、`generate()` の主要な関数シグネチャを表示する
 
-Even better: I continue the session with Nano Banana, which means it has all its thoughts from before. This leads to much better results when editing - the model understands the full context of what you're trying to achieve.
+コントロールできるパラメータはこちらです：
 
-STOP: Tell me one thing you'd change about your image. Suggest some ideas.
+- **prompt** - 作成したいもののテキスト説明
+- **reference\_images** - ビジュアル入力として使う写真（3.1.3で詳しく説明します）
+- **aspect\_ratio** - 画像の形（1:1正方形、16:9横長、9:16縦長など）
+- **resolution** - サイズ/品質（1K、2K、または4K）
 
-USER: [Describes a change they want]
+ただし、これらについて心配する必要はありません。自然に私とやり取りするだけで、APIコール、パラメータ、ファイル保存を自動的に処理します。
 
-ACTION: Generate a refined version based on their feedback (this continues the existing session)
+試してみましょう。作りたい画像を何でも説明してください。
 
-Check the `outputs/` folder - there's a new version.
+具体的に - 被写体、設定、照明、雰囲気を含めてください。このモデルは信じられないほど優秀なので、想像力を思いっきり広げてください。
 
-STOP: Better? Want to tweak something else? Or shall we continue?
+STOP: 何を生成したいですか？
 
-USER: [Responds]
+USER: [作りたい画像の説明]
 
----
+ACTION: まず new_session() を呼んで前のセッションをクリアする（ユーザーが3.1.1から続けている場合に備えて）。次に、ユーザーの説明を使って画像を生成する。ユーザーが別のものを指定しない限り、aspect_ratio="1:1"、resolution="1K" を使用する。
 
-Nice! Let's talk about aspect ratios - the shape of your image.
+[生成された画像について楽しい/熱意のあるコメントをする]
 
-Here are the common options:
+画像が `outputs/` フォルダに保存されました。
 
-- **1:1** - Square (Instagram posts, profile pics)
-- **16:9** - Landscape (presentations, YouTube thumbnails, desktop wallpapers)
-- **9:16** - Portrait (Instagram/TikTok stories, phone wallpapers)
-- **4:5** - Tall rectangle (Instagram feed posts - fits better than square)
-- **3:2** - Classic photo ratio (similar to 35mm film)
+STOP: `outputs/` フォルダをファイルエクスプローラーで開いて確認してください。どう思いますか？
 
-STOP: Quick quiz - which ratio would you use for a presentation slide?
-
-USER: [Answers]
-
-[Respond based on their answer. If they say 16:9 or landscape: "Exactly! The shape should match where you'll use the image." If wrong, gently correct and explain why 16:9 works for presentations.]
+USER: [感想を述べる]
 
 ---
 
-Now let's talk resolution - how big and detailed the image is.
+ここからが強力なポイントです：完璧でなくても最初からやり直す必要はありません。
 
-Three options:
+私は会話を覚えているので、変更を依頼するだけで大丈夫です。これを「イテレーション」と呼びます - 画像を段階的に改善していく方法です。
 
-- **1K** (1024px): Fastest generation, about 20 seconds. Great for iterating and drafts.
-- **2K** (2048px): Slower, about 30 seconds. Same cost as 1K. Good for final outputs.
-- **4K** (4096px): Slowest, about 45 seconds. Costs more. Only needed for print-quality work.
+さらに良いことに：私はNano Bananaとのセッションを継続しているので、モデルは以前のすべての思考を持っています。これにより、編集時にはるかに良い結果が得られます - モデルがあなたの達成しようとしていることの全体的なコンテキストを理解しているからです。
 
-For this course, we default to 1K so you can iterate quickly. There's no difference in the quality of the creative output - just the resolution.
+STOP: 画像の中で1つ変えたいところを教えてください。いくつかアイデアを提案しますね。
 
-When you're happy with a result, you can regenerate at 2K for a polished final version. 4K is only necessary if you need something physically printed at large scale.
+USER: [変更したいことの説明]
 
-STOP: Makes sense?
+ACTION: フィードバックに基づいて改良版を生成する（既存のセッションを継続）
 
-USER: Yes
+`outputs/` フォルダを確認してください - 新しいバージョンがあります。
+
+STOP: 良くなりましたか？他に調整したいですか？それとも先に進みましょうか？
+
+USER: [回答]
 
 ---
 
-Quick recap of what you learned:
+いいですね！次はアスペクト比について話しましょう - 画像の形のことです。
 
-- The Gemini API powers image generation (via `image_gen.py`)
-- You can control aspect ratio and resolution
-- Iteration is key - refine images step by step instead of starting over
-- Use 1K for drafts, 2K for finals
+一般的なオプションはこちらです：
 
-In the next lesson, we'll cover the **Golden Rules of Prompting** - how to write prompts that get amazing results - and how to use reference images for consistent style.
+- **1:1** - 正方形（Instagram投稿、プロフィール画像）
+- **16:9** - 横長（プレゼンテーション、YouTubeサムネイル、デスクトップ壁紙）
+- **9:16** - 縦長（Instagram/TikTokストーリー、スマホ壁紙）
+- **4:5** - 縦長の長方形（Instagramフィード投稿 - 正方形より見栄えが良い）
+- **3:2** - クラシックな写真比率（35mmフィルムに近い）
 
-STOP: Ready to continue to 3.1.3?
+STOP: クイズです - プレゼンテーションスライドにはどの比率を使いますか？
 
-USER: Yes / Ready
+USER: [回答]
 
-Great! Run `/start-3-1-3` when you're ready to continue.
+[回答に応じて対応する。16:9またはランドスケープと答えた場合：「正解です！画像を使う場所に合った形を選ぶのが大切です。」間違った場合は、やさしく訂正してプレゼンテーションに16:9が適している理由を説明する。]
+
+---
+
+次はレゾリューション（解像度）について話しましょう - 画像の大きさと詳細度です。
+
+3つのオプションがあります：
+
+- **1K**（1024px）：最速の生成、約20秒。イテレーションやドラフトに最適。
+- **2K**（2048px）：やや遅め、約30秒。コストは1Kと同じ。最終出力に適しています。
+- **4K**（4096px）：最も遅い、約45秒。コストが高い。印刷品質が必要な場合のみ。
+
+このコースでは、素早くイテレーションできるように1Kをデフォルトにしています。クリエイティブな出力の品質に違いはありません - 解像度が違うだけです。
+
+結果に満足したら、2Kで再生成して洗練された最終版にできます。4Kは、大判で物理的に印刷する必要がある場合にのみ必要です。
+
+STOP: 理解できましたか？
+
+USER: はい
+
+---
+
+今回学んだことのまとめ：
+
+- Gemini APIが画像生成を担っています（`image_gen.py` 経由）
+- アスペクト比とレゾリューションをコントロールできます
+- イテレーションが重要 - 最初からやり直すのではなく、段階的に改善する
+- ドラフトには1K、最終版には2Kを使う
+
+次のレッスンでは、**プロンプトのゴールデンルール** - 素晴らしい結果を得るためのプロンプトの書き方 - と、一貫したスタイルのための参照画像の使い方を学びます。
+
+STOP: 3.1.3に進む準備はできましたか？
+
+USER: はい / 準備できました
+
+準備ができたら `/start-3-1-3` を実行してください。
 
 ACTION: End module
 
 ---
 
-## Important Notes for Claude
+## Claudeへの重要な注意事項
 
-**For the image generation:**
-- Use the `generate()` function from `image_gen.py`
-- Default to aspect_ratio="1:1" and resolution="1K" unless user specifies otherwise
-- The output will be saved automatically to `outputs/`
-- When iterating, the session continues automatically - don't call `new_session()`
+**画像生成について：**
+- `image_gen.py` の `generate()` 関数を使用する
+- ユーザーが指定しない限り、aspect_ratio="1:1" と resolution="1K" をデフォルトにする
+- 出力は自動的に `outputs/` に保存される
+- イテレーション時はセッションが自動的に継続される - `new_session()` を呼ばないこと
 
-**For showing the function signature:**
-- Show the `generate()` function definition from `image_gen.py`
-- Focus on the parameters: prompt, reference_images, aspect_ratio, resolution
-- Don't show the entire file - just the relevant function
+**関数シグネチャの表示について：**
+- `image_gen.py` の `generate()` 関数定義を表示する
+- パラメータに焦点を当てる：prompt、reference_images、aspect_ratio、resolution
+- ファイル全体を表示しない - 関連する関数のみ
 
-**If something goes wrong:**
-- API key errors: Have them check `.env` file from 3.1.1
-- Generation fails: Check error message, troubleshoot accordingly
-- Session issues: Can call `new_session()` to start fresh if needed
+**問題が発生した場合：**
+- APIキーエラー：3.1.1で設定した `.env` ファイルを確認してもらう
+- 生成失敗：エラーメッセージを確認し、適切にトラブルシューティング
+- セッションの問題：必要に応じて `new_session()` を呼んでリセットできる
 
-**Terminal limitations:**
-- Cannot display images directly - always tell users to open the `outputs/` folder
-- Use Finder (Mac) or File Explorer (Windows) to view generated images
+**ターミナルの制限事項：**
+- 画像を直接表示できない - 常に `outputs/` フォルダを開くよう案内する
+- 生成された画像を見るにはFinder（Mac）またはファイルエクスプローラー（Windows）を使用
 
-**Opening images:** If a user is having trouble finding an image, offer to open it for them using `open [path]` (Mac) or `start [path]` (Windows).
+**画像を開く：** ユーザーが画像を見つけるのに困っている場合、`open [path]`（Mac）または `start [path]`（Windows）で開くことを提案する。
 
 ---
 
-## Success Criteria
+## 成功基準
 
-Module 3.1.2 is successful if the student:
+Module 3.1.2が成功したと言えるのは、学習者が：
 
-- ✅ Understands that Gemini API powers the image generation
-- ✅ Generated at least one new image of their choice
-- ✅ Successfully iterated on their image (made at least one edit)
-- ✅ Understands aspect ratios and when to use each
-- ✅ Understands resolution options (1K for drafts, 2K for finals)
-- ✅ Knows how to continue to the next lesson
+- Gemini APIが画像生成を担っていることを理解した
+- 自分の選んだ画像を少なくとも1枚生成した
+- 画像のイテレーションに成功した（少なくとも1回編集した）
+- アスペクト比と使い分けを理解した
+- レゾリューションのオプションを理解した（ドラフトは1K、最終版は2K）
+- 次のレッスンへの進み方を知っている

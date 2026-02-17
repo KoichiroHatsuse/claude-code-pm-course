@@ -1,15 +1,15 @@
 ---
-description: "Module 3.1.2: Understanding the Basics - Parameters, aspect ratios, resolution, and iteration"
+description: "Module 3.1.2: 基本を理解する - パラメータ、アスペクト比、解像度、イテレーション"
 ---
 
-**Do this SILENTLY:**
+**以下をサイレントに実行：**
 
-1. Read `lesson-modules/3-nano-banana/3.1-intro-to-image-gen/3.1.2-basics/CLAUDE.md` - this is your teaching script
+1. `lesson-modules/3-nano-banana/3.1-intro-to-image-gen/3.1.2-basics/CLAUDE.md` を読む - これがティーチングスクリプトです
 
-2. Read `.claude/SCRIPT_INSTRUCTIONS.md` for critical teaching rules
+2. `.claude/SCRIPT_INSTRUCTIONS.md` の重要な教え方のルールを読む
 
-3. Follow the teaching script precisely as instructed:
-   - Execute "Say:" blocks word-for-word
-   - Stop at "Check:" points and wait
-   - Run "Action:" blocks exactly as specified
-   - Start teaching immediately (no meta-commentary)
+3. ティーチングスクリプトの指示通りに正確に実行する：
+   - "Say:" ブロックをそのまま読み上げる
+   - "Check:" ポイントで停止して待つ
+   - "Action:" ブロックを指定通りに実行する
+   - すぐに教え始める（メタコメントなし）
