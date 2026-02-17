@@ -1,128 +1,128 @@
-# TaskFlow Company Context
+# TaskFlow 会社コンテキスト
 
-## Company Overview
+## 会社概要
 
-**TaskFlow** is a fast-growing SaaS productivity platform designed for remote and hybrid teams. Think Asana meets Jira, but built specifically for distributed work.
+**TaskFlow** は、リモートおよびハイブリッドチーム向けに設計された急成長中のSaaS生産性プラットフォームです。Asana と Jira を合わせたような、分散型ワークに特化して構築されたツールです。
 
-**Founded:** 2021
-**Employees:** 45 people (15 product/eng, 10 sales/marketing, 20 customer success/ops)
-**Customers:** 850 companies, ranging from 10-500 employees
-**Revenue:** $4.2M ARR, growing 15% month-over-month
-**Funding:** Series A ($8M raised from Acme Ventures)
+**設立:** 2021年
+**従業員数:** 45名（プロダクト/エンジニアリング15名、セールス/マーケティング10名、カスタマーサクセス/オペレーション20名）
+**顧客:** 850社、従業員10〜500名の企業
+**収益:** $4.2M ARR、月次15%成長
+**資金調達:** シリーズA（Acme Venturesから$8M調達）
 
-## Product
+## プロダクト
 
-TaskFlow is a project management and collaboration platform with three core modules:
+TaskFlowは、3つのコアモジュールを持つプロジェクト管理＆コラボレーションプラットフォームです:
 
-1. **Task Management** - Create, assign, track tasks with dependencies, priorities, and deadlines
-2. **Team Collaboration** - Real-time comments, file sharing, @mentions, activity feeds
-3. **Workflow Automation** - Custom workflows, automated status updates, integrations with Slack/email
+1. **タスク管理** - 依存関係、優先度、期限付きでタスクの作成、割り当て、追跡
+2. **チームコラボレーション** - リアルタイムコメント、ファイル共有、@メンション、アクティビティフィード
+3. **ワークフロー自動化** - カスタムワークフロー、自動ステータス更新、Slack/メールとのインテグレーション
 
-**Key differentiator:** Built for remote teams from day one - async-first communication, timezone awareness, flexible notification settings, and detailed activity logs so people can catch up anytime.
+**主な差別化要因:** 初日からリモートチーム向けに構築 - 非同期ファーストのコミュニケーション、タイムゾーン対応、柔軟な通知設定、いつでもキャッチアップできる詳細なアクティビティログ。
 
-## Target Customers
+## ターゲット顧客
 
-**Primary:** Mid-size tech companies (50-200 employees) with distributed teams
+**プライマリ:** 分散チームを持つ中規模テック企業（従業員50〜200名）
 
-**Personas:**
-- **Product Managers** - Need to coordinate cross-functional teams, track feature development, manage roadmaps
-- **Engineering Managers** - Need sprint planning, task tracking, burndown charts
-- **Marketing Teams** - Need campaign planning, content calendars, approval workflows
+**ペルソナ:**
+- **プロダクトマネージャー** - クロスファンクショナルチームの調整、機能開発の追跡、ロードマップ管理が必要
+- **エンジニアリングマネージャー** - スプリント計画、タスクトラッキング、バーンダウンチャートが必要
+- **マーケティングチーム** - キャンペーン計画、コンテンツカレンダー、承認ワークフローが必要
 
-## Market Position
+## 市場ポジション
 
-**Competitors:**
-- **Asana** - More features but complex UI, not async-friendly
-- **Linear** - Great for eng teams but not cross-functional
-- **Notion** - Flexible but requires too much setup
-- **Monday.com** - Good automation but expensive
+**競合:**
+- **Asana** - 機能は多いが複雑なUI、非同期に不向き
+- **Linear** - エンジニアリングチームには最適だがクロスファンクショナルではない
+- **Notion** - 柔軟だがセットアップに手間がかかりすぎる
+- **Monday.com** - オートメーションは優れているが高価
 
-**TaskFlow's edge:** Simple enough to onboard in 10 minutes, powerful enough for complex projects, built for async remote work.
+**TaskFlowの強み:** 10分でオンボーディングできるシンプルさ、複雑なプロジェクトにも対応できるパワフルさ、非同期リモートワーク向けに構築。
 
-## Current Priorities
+## 現在の優先事項
 
-**Q1 2025 Goals:**
-1. Reach $6M ARR (40% growth)
-2. Launch AI-powered features to stay competitive
-3. Improve enterprise readiness (SSO, advanced permissions)
-4. Reduce churn from 3% to 2% monthly
+**2025年Q1の目標:**
+1. $6M ARR達成（40%成長）
+2. 競争力を維持するためのAI搭載機能のローンチ
+3. エンタープライズ対応の改善（SSO、高度な権限管理）
+4. 月次チャーン率を3%から2%に削減
 
-**Strategic Initiatives:**
-- **AI Integration** - Competitors are adding AI fast. Needs to differentiate or risk losing deals.
-- **Mobile App** - Top feature request. 60% of users want to manage tasks on mobile.
-- **Advanced Analytics** - Enterprise customers want custom reports and dashboards.
+**戦略的イニシアチブ:**
+- **AIインテグレーション** - 競合が急速にAIを追加中。差別化しないと案件を失うリスクあり。
+- **モバイルアプリ** - 最もリクエストの多い機能。ユーザーの60%がモバイルでのタスク管理を希望。
+- **高度なアナリティクス** - エンタープライズ顧客がカスタムレポートとダッシュボードを求めている。
 
-## Team & Culture
+## チームと文化
 
-**Leadership:**
-- **Sarah Chen** - CEO (ex-Atlassian PM)
-- **Marcus Johnson** - CTO (ex-Google engineer)
-- **Priya Patel** - Head of Product (that's your boss!)
+**リーダーシップ:**
+- **Sarah Chen** - CEO（元AtlassianのPM）
+- **Marcus Johnson** - CTO（元Googleエンジニア）
+- **Priya Patel** - プロダクト責任者（あなたの上司です！）
 
-**Product Team:**
-- 3 Product Managers (you're one of them)
-- 8 Engineers (split into 2 squads: Core Platform + Growth)
-- 2 Designers
-- 1 User Researcher
+**プロダクトチーム:**
+- PM 3名（あなたはその1人です）
+- エンジニア 8名（コアプラットフォームとグロースの2チームに分割）
+- デザイナー 2名
+- ユーザーリサーチャー 1名
 
-**Culture:**
-- Remote-first, fully distributed
-- Ship small, ship often (2-week sprints)
-- Data-informed but not data-driven (qualitative + quantitative)
-- Customer-centric (PMs spend 3 hours/week talking to customers)
+**文化:**
+- リモートファースト、完全分散型
+- 小さく、頻繁にリリース（2週間スプリント）
+- データインフォームドだがデータドリブンではない（定性的 + 定量的）
+- カスタマーセントリック（PMは週3時間顧客と対話）
 
-## Customer Insights
+## カスタマーインサイト
 
-**What customers love:**
-- "Finally, a tool that doesn't require 2 hours of training"
-- "The async features are a game-changer for our global team"
-- "Clean UI that doesn't overwhelm like Jira"
+**顧客が気に入っている点:**
+- 「やっと、2時間のトレーニングが不要なツールに出会えた」
+- 「非同期機能がグローバルチームにとってゲームチェンジャー」
+- 「Jiraのように圧倒されないクリーンなUI」
 
-**What customers want:**
-- Better mobile experience
-- AI to help write tasks, summarize threads, suggest next actions
-- More integrations (especially Google Drive, Figma)
-- Improved search and filters
+**顧客が求めている点:**
+- より良いモバイル体験
+- タスク作成、スレッド要約、次のアクション提案をするAI
+- より多くのインテグレーション（特にGoogle Drive、Figma）
+- 検索とフィルターの改善
 
-**Recent feedback:**
-- 23% of churned customers cited "missing features" as primary reason
-- 40% of support tickets are about mobile app limitations
-- NPS score: 42 (industry average is 30-40)
+**最近のフィードバック:**
+- 解約顧客の23%が「機能不足」を主な理由として挙げている
+- サポートチケットの40%がモバイルアプリの制限に関するもの
+- NPSスコア: 42（業界平均は30〜40）
 
-## Business Context
+## ビジネスコンテキスト
 
-**Revenue Model:**
-- **Starter:** $8/user/month (up to 10 users)
-- **Pro:** $15/user/month (unlimited users + automation)
-- **Enterprise:** $30/user/month (SSO, advanced permissions, dedicated support)
+**収益モデル:**
+- **Starter:** $8/ユーザー/月（最大10ユーザー）
+- **Pro:** $15/ユーザー/月（無制限ユーザー + オートメーション）
+- **Enterprise:** $30/ユーザー/月（SSO、高度な権限管理、専任サポート）
 
-**Key Metrics:**
-- Average deal size: $1,200/year
+**主要指標:**
+- 平均契約額: $1,200/年
 - CAC: $800
 - LTV: $4,500
-- Payback period: 8 months
-- Monthly churn: 3%
+- 回収期間: 8ヶ月
+- 月次チャーン: 3%
 
-**Competitive Pressure:**
-- Asana just launched AI features
-- Linear is expanding beyond eng teams
-- Notion is improving project management
-- New AI-native tools launching every week
+**競争圧力:**
+- Asana がAI機能をローンチ済み
+- Linear がエンジニアリングチーム以外にも拡大中
+- Notion がプロジェクト管理を改善中
+- AIネイティブの新しいツールが毎週ローンチされている
 
-## Why This Matters
+## なぜこれが重要なのか
 
-You're working at a **critical inflection point**:
-- Growing fast but competition is fierce
-- Need to innovate without breaking what works
-- Every feature needs to drive retention or expansion
-- Can't afford to build the wrong thing
+あなたは**重要な転換点**で働いています:
+- 急成長しているが競争は激しい
+- うまくいっているものを壊さずにイノベーションする必要がある
+- すべての機能がリテンションまたはエクスパンションを推進する必要がある
+- 間違ったものを作る余裕はない
 
-Your PRDs need to balance:
-✅ Customer needs (what they're asking for)
-✅ Business goals (what drives revenue/retention)
-✅ Technical feasibility (what we can actually build)
-✅ Strategic positioning (what keeps us competitive)
+あなたのPRDはバランスを取る必要があります:
+- 顧客ニーズ（顧客が求めているもの）
+- ビジネス目標（収益/リテンションを推進するもの）
+- 技術的実現可能性（実際に構築できるもの）
+- 戦略的ポジショニング（競争力を維持するもの）
 
 ---
 
-**Remember:** You're not building features in a vacuum. Every decision affects growth, retention, and competitive position. Your PRDs need to tell the story of why THIS feature, why NOW, and why it matters to TaskFlow's success.
+**覚えておいてください:** あなたは真空状態で機能を構築しているわけではありません。すべての意思決定が成長、リテンション、競合ポジションに影響します。PRDは、なぜこの機能を、なぜ今、なぜTaskFlowの成功にとって重要なのかというストーリーを伝える必要があります。

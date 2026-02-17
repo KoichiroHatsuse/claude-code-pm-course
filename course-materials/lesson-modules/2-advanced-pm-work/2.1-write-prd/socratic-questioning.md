@@ -1,237 +1,237 @@
-# Socratic Questioning Framework for PRDs
+# PRDのためのソクラテス式質問フレームワーク
 
-This framework helps sharpen feature thinking through targeted questions. Use this to help PMs move from vague ideas to clear, well-reasoned feature definitions.
-
----
-
-## Core Philosophy
-
-**The goal is NOT to challenge the PM, but to help them think more clearly.**
-
-Good Socratic questioning:
-- ✅ Helps uncover assumptions
-- ✅ Clarifies fuzzy thinking
-- ✅ Surfaces potential issues early
-- ✅ Strengthens the rationale
-
-Bad Socratic questioning:
-- ❌ Feels like an interrogation
-- ❌ Makes PM defensive
-- ❌ Asks "gotcha" questions
-- ❌ Questions just to question
+このフレームワークは、的を絞った質問を通じて機能の思考を磨くのに役立ちます。PMが曖昧なアイデアから明確で論理的な機能定義へ移行するのを支援するために使用してください。
 
 ---
 
-## The Five Question Categories
+## 基本哲学
 
-Use 3-5 questions total. Pick the most relevant from each category based on the feature.
+**目標はPMに挑戦することではなく、より明確に考える手助けをすることです。**
 
-### 1. Problem Clarity Questions
+良いソクラテス式質問:
+- 前提を明らかにする
+- 曖昧な思考を明確にする
+- 潜在的な問題を早期に発見する
+- 根拠を強化する
 
-**Purpose:** Ensure the problem is real and well-understood
-
-**Questions to ask:**
-
-**"What specific user pain point does this solve?"**
-- Look for concrete examples, not abstract statements
-- Good: "Users waste 10 minutes finding task context across 5 tools"
-- Bad: "Users want better productivity"
-
-**"How do we know this is a real problem?"**
-- Push for evidence: user interviews, support tickets, churn reasons, usage data
-- Qualitative + quantitative is strongest
-
-**"Who experiences this problem most acutely?"**
-- Forces specificity about target users
-- Helps prioritize if you can't solve for everyone
-
-**"What's the cost of NOT solving this?"**
-- Revenue impact? Churn? Competitive loss? Team productivity?
-- Helps establish urgency
+悪いソクラテス式質問:
+- 尋問のように感じさせる
+- PMを防御的にさせる
+- 「引っかけ」の質問をする
+- 質問のための質問をする
 
 ---
 
-### 2. Solution Validation Questions
+## 5つの質問カテゴリー
 
-**Purpose:** Ensure the proposed solution actually solves the problem
+合計3〜5問を使用してください。機能に基づいて各カテゴリーから最も関連性の高いものを選んでください。
 
-**Questions to ask:**
+### 1. 問題の明確化に関する質問
 
-**"Why is this the right solution for that problem?"**
-- Look for logical connection between problem and solution
-- Watch for solutions looking for problems
+**目的:** 問題が実在し、十分に理解されていることを確認する
 
-**"What alternatives did you consider? Why did you reject them?"**
-- Shows depth of thinking
-- Reveals trade-offs that were considered
-- "This is the only way" is a red flag
+**質問例:**
 
-**"What's the simplest version that solves the core problem?"**
-- Helps avoid over-engineering
-- Identifies must-have vs nice-to-have
+**「この機能はどのような具体的なユーザーのペインポイントを解決しますか？」**
+- 抽象的な記述ではなく、具体的な例を探す
+- 良い例: 「ユーザーは5つのツールを横断してタスクのコンテキストを見つけるのに10分を浪費している」
+- 悪い例: 「ユーザーはより良い生産性を求めている」
 
-**"How will users discover this feature?"**
-- Great solution that no one finds is useless
-- Tests whether it fits naturally into user workflows
+**「これが実在する問題だとどうやって分かりますか？」**
+- エビデンスを求める: ユーザーインタビュー、サポートチケット、解約理由、利用データ
+- 定性的 + 定量的が最も強い
 
----
+**「この問題を最も深刻に感じているのは誰ですか？」**
+- ターゲットユーザーの特定を促す
+- 全員を解決できない場合の優先順位付けに役立つ
 
-### 3. Success Criteria Questions
-
-**Purpose:** Ensure we can measure if the solution works
-
-**Questions to ask:**
-
-**"How will we know if this feature is successful?"**
-- Look for specific, measurable outcomes
-- Both quantitative (metrics) and qualitative (feedback) matter
-
-**"What would make you consider this feature a failure?"**
-- Helps identify risks and edge cases
-- Good teams have clear failure criteria
-
-**"What metric are we trying to move? By how much?"**
-- Forces specificity
-- "Improve engagement" → "Increase weekly active tasks created by 25%"
-
-**"What's the adoption target?"**
-- Not all features need 100% adoption
-- Different targets for different user segments
+**「この問題を解決しないコストは何ですか？」**
+- 収益への影響？チャーン？競合への流出？チームの生産性？
+- 緊急性の確立に役立つ
 
 ---
 
-### 4. Constraint & Trade-off Questions
+### 2. ソリューション検証に関する質問
 
-**Purpose:** Surface limitations and difficult decisions
+**目的:** 提案されたソリューションが実際に問題を解決することを確認する
 
-**Questions to ask:**
+**質問例:**
 
-**"What are the technical constraints or risks?"**
-- Helps engineering team provide realistic estimates
-- Identifies blockers early
+**「なぜこのソリューションがその問題に対して正しいのですか？」**
+- 問題とソリューションの論理的なつながりを探す
+- 問題を探しているソリューションに注意する
 
-**"What are we NOT going to do as part of this?"**
-- Scope management is critical
-- Clear non-goals prevent scope creep
+**「他にどんな代替案を検討しましたか？なぜそれらを却下しましたか？」**
+- 思考の深さを示す
+- 検討されたトレードオフを明らかにする
+- 「これが唯一の方法」は危険信号
 
-**"What existing features or workflows does this affect?"**
-- Nothing exists in isolation
-- Need to think about system impacts
+**「コアの問題を解決する最もシンプルなバージョンは何ですか？」**
+- 過剰なエンジニアリングを避けるのに役立つ
+- 必須機能 vs あれば嬉しい機能を特定する
 
-**"If we had half the time/resources, what would we cut?"**
-- Reveals true priorities
-- Helps identify MVP vs full vision
-
----
-
-### 5. Strategic Fit Questions
-
-**Purpose:** Ensure feature aligns with company goals and strategy
-
-**Questions to ask:**
-
-**"Why is this the right feature to build RIGHT NOW?"**
-- Tests urgency and prioritization
-- Helps clarify opportunity cost
-
-**"How does this fit into our broader product strategy?"**
-- Feature should ladder up to bigger goals
-- Helps tell the strategic narrative
-
-**"What happens if we wait 6 months to build this?"**
-- Tests true urgency vs perceived urgency
-- Helps prioritize against other opportunities
-
-**"How does this affect our competitive position?"**
-- Are we playing catch-up or leading?
-- Table-stakes features vs differentiators
+**「ユーザーはこの機能をどうやって発見しますか？」**
+- 誰も見つけられない素晴らしいソリューションは無意味
+- ユーザーのワークフローに自然にフィットするかテストする
 
 ---
 
-## Conversation Flow Tips
+### 3. 成功基準に関する質問
 
-### Start Broad, Then Narrow
+**目的:** ソリューションが機能しているかどうかを測定できることを確認する
 
-**First question:** Problem clarity
-**Middle questions:** Solution validation + success criteria
-**Last question:** Strategic fit
+**質問例:**
 
-This helps PMs start from user needs and work up to business strategy, not the reverse.
+**「この機能が成功したかどうかをどうやって判断しますか？」**
+- 具体的で測定可能なアウトカムを探す
+- 定量的（メトリクス）と定性的（フィードバック）の両方が重要
 
-### Listen for Red Flags
+**「この機能を失敗と見なすとしたら、何が起きた場合ですか？」**
+- リスクとエッジケースの特定に役立つ
+- 良いチームは明確な失敗基準を持っている
 
-**Vague language:**
-- "Users want better..." → What specifically?
-- "This will improve..." → Improve what, by how much?
-- "Everyone needs..." → Really? Everyone?
+**「どのメトリクスを動かそうとしていますか？どのくらい？」**
+- 具体性を強制する
+- 「エンゲージメントの向上」→「週間アクティブタスク作成数を25%増加」
 
-**Solution-first thinking:**
-- PM can describe feature but struggles to describe problem
-- "Because competitors have it" is not a problem statement
-
-**Lack of evidence:**
-- "I think users would like..." → How do we know?
-- No data, no user quotes, no examples
-
-**Unclear success:**
-- Can't articulate what success looks like
-- No metrics, no qualitative indicators
+**「採用目標はどのくらいですか？」**
+- すべての機能が100%の採用率を必要とするわけではない
+- ユーザーセグメントごとに異なるターゲット
 
 ---
 
-## Example Question Sequence
+### 4. 制約とトレードオフに関する質問
 
-**For AI Voice Chat + To-Do List Feature:**
+**目的:** 制限事項と困難な意思決定を表面化させる
 
-1. **Problem:** "What specific pain point does voice chat solve that typing doesn't?"
-   - Pushes for concrete problem statement
+**質問例:**
 
-2. **Solution:** "Why voice over other input methods? What alternatives did you consider?"
-   - Tests solution validation
+**「技術的な制約やリスクは何ですか？」**
+- エンジニアリングチームが現実的な見積もりを提供するのに役立つ
+- ブロッカーを早期に特定する
 
-3. **Success:** "How will we measure if users actually use the voice feature?"
-   - Establishes clear success criteria
+**「このスコープに含めないものは何ですか？」**
+- スコープ管理が重要
+- 明確な非目標がスコープクリープを防ぐ
 
-4. **Constraints:** "What are we NOT including in V1? What comes later?"
-   - Helps scope the MVP
+**「これによって影響を受ける既存の機能やワークフローは何ですか？」**
+- 何も孤立して存在しない
+- システムへの影響を考慮する必要がある
 
-5. **Strategy:** "Why is this the right AI feature to build first, versus other AI opportunities?"
-   - Tests strategic thinking
-
----
-
-## Coaching Notes
-
-**If PM struggles with a question:**
-- Don't leave them hanging
-- Offer multiple-choice options
-- Share examples from other contexts
-- This is a learning tool, not a test
-
-**If PM gives weak answer:**
-- Ask follow-up: "Can you say more about that?"
-- Probe gently: "What evidence supports that?"
-- Offer alternative perspective: "Some might argue X, how would you respond?"
-
-**If PM gives great answer:**
-- Acknowledge it!
-- Build on it with next question
-- Show how their answer strengthens the PRD
+**「時間やリソースが半分しかなかったら、何を削りますか？」**
+- 真の優先事項を明らかにする
+- MVP vs フルビジョンの特定に役立つ
 
 ---
 
-## Output Goal
+### 5. 戦略的適合性に関する質問
 
-After Socratic questioning, PM should have:
+**目的:** 機能が会社の目標と戦略に一致していることを確認する
 
-✅ Clear, specific problem statement with evidence
-✅ Rational justification for why THIS solution
-✅ Concrete success criteria (quantitative + qualitative)
-✅ Explicit scope boundaries (what's in, what's out)
-✅ Strategic narrative for why this matters now
+**質問例:**
 
-These answers form the foundation of a strong PRD.
+**「なぜ今この機能を構築するのが正しいのですか？」**
+- 緊急性と優先順位付けをテストする
+- 機会コストの明確化に役立つ
+
+**「これはより広範なプロダクト戦略にどう適合しますか？」**
+- 機能はより大きな目標につながるべき
+- 戦略的なナラティブを語るのに役立つ
+
+**「この機能の構築を6ヶ月遅らせたらどうなりますか？」**
+- 真の緊急性 vs 認識された緊急性をテストする
+- 他の機会に対する優先順位付けに役立つ
+
+**「これは競合ポジションにどう影響しますか？」**
+- キャッチアップなのかリードなのか？
+- テーブルステークスの機能 vs 差別化要因
 
 ---
 
-**Remember:** This is not a checklist. Use judgment. Pick the 3-5 most important questions for THIS feature. Quality over quantity.
+## 会話フローのコツ
+
+### 広いところから始めて、絞り込む
+
+**最初の質問:** 問題の明確化
+**中間の質問:** ソリューション検証 + 成功基準
+**最後の質問:** 戦略的適合性
+
+これにより、PMがユーザーニーズから始めてビジネス戦略へと積み上げていく流れになります（逆ではなく）。
+
+### 危険信号に注意する
+
+**曖昧な表現:**
+- 「ユーザーはより良い...を求めている」→ 具体的に何を？
+- 「これにより...が改善される」→ 何がどのくらい改善される？
+- 「全員が...を必要としている」→ 本当に全員？
+
+**ソリューション先行の思考:**
+- PMが機能は説明できるが、問題を説明するのに苦労する
+- 「競合がやっているから」は問題のステートメントではない
+
+**エビデンスの欠如:**
+- 「ユーザーは好むと思う...」→ どうやって分かるのか？
+- データなし、ユーザーの引用なし、事例なし
+
+**不明確な成功:**
+- 成功とはどういう状態か言語化できない
+- メトリクスなし、定性的な指標もなし
+
+---
+
+## 質問シーケンスの例
+
+**AI音声チャット + To-Doリスト機能の場合:**
+
+1. **問題:** 「音声チャットはタイピングでは解決できない、どの具体的なペインポイントを解決しますか？」
+   - 具体的な問題ステートメントを求める
+
+2. **ソリューション:** 「なぜ他の入力方法ではなく音声なのですか？どんな代替案を検討しましたか？」
+   - ソリューションの検証をテストする
+
+3. **成功:** 「ユーザーが実際に音声機能を使用しているかどうかをどう測定しますか？」
+   - 明確な成功基準を確立する
+
+4. **制約:** 「V1に含めないものは何ですか？後に回すものは？」
+   - MVPのスコープ設定に役立つ
+
+5. **戦略:** 「他のAIの機会と比較して、なぜこのAI機能を最初に構築するのが正しいのですか？」
+   - 戦略的思考をテストする
+
+---
+
+## コーチングの注意事項
+
+**PMが質問に苦戦している場合:**
+- 放置しない
+- 選択肢を提示する
+- 他のコンテキストからの例を共有する
+- これはテストではなく、学習ツール
+
+**PMの回答が弱い場合:**
+- フォローアップする: 「もう少し詳しく教えてください」
+- 優しく掘り下げる: 「それを裏付けるエビデンスは何ですか？」
+- 別の視点を提示する: 「Xと主張する人もいるかもしれませんが、どう反論しますか？」
+
+**PMが素晴らしい回答をした場合:**
+- 認める！
+- 次の質問につなげる
+- その回答がPRDをどう強化するか示す
+
+---
+
+## アウトプットの目標
+
+ソクラテス式質問の後、PMは以下を持っているべきです:
+
+- エビデンスに基づいた明確で具体的な問題ステートメント
+- なぜこのソリューションなのかの合理的な根拠
+- 具体的な成功基準（定量的 + 定性的）
+- 明示的なスコープの境界（含むもの、含まないもの）
+- なぜ今これが重要なのかの戦略的ナラティブ
+
+これらの回答が、強力なPRDの基盤を形成します。
+
+---
+
+**覚えておいてください:** これはチェックリストではありません。判断力を使ってください。この機能にとって最も重要な3〜5問を選んでください。量より質です。
