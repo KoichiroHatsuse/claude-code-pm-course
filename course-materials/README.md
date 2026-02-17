@@ -1,76 +1,76 @@
-# Claude Code for Product Managers - Course Materials
+# Claude Code プロダクトマネージャー向けコース - 教材
 
-Welcome to the interactive Claude Code course for Product Managers!
+Claude Codeのインタラクティブコースへようこそ！
 
-## Getting Started
+## はじめに
 
-**You're in the right place!** This folder contains everything you need to complete the course.
+**正しい場所にいます！** このフォルダにはコースを完了するために必要なものがすべて含まれています。
 
-### What's Included
+### 内容
 
-- **`lesson-modules/`** - Interactive modules taught by Claude (Modules 0-2)
-- **`company-context/`** - TaskFlow company reference materials for exercises
-- **`.claude/`** - Slash commands that power the course experience
+- **`lesson-modules/`** - Claudeが教えるインタラクティブモジュール（Module 0〜2）
+- **`company-context/`** - 演習用のTaskFlow社リファレンス資料
+- **`.claude/`** - コース体験を支えるスラッシュコマンド
 
-### How to Start the Course
+### コースの始め方
 
-**1. Make sure you're in this directory:**
+**1. このディレクトリにいることを確認：**
 ```bash
 pwd
-# Should show: .../course-materials
+# 表示されるはず: .../course-materials
 ```
 
-**2. Launch Claude Code:**
+**2. Claude Codeを起動：**
 ```bash
 claude
 ```
 
-**3. Start the first module:**
+**3. 最初のモジュールを開始：**
 
-Once Claude Code is running, type:
+Claude Codeが起動したら、以下を入力してください：
 ```
 /start-1-1
 ```
 
-This kicks off Module 1.1 - Welcome to Claude Code!
+これでModule 1.1 - Claude Code入門が始まります！
 
-### Course Structure
+### コース構成
 
-**Module 0: Getting Started** (Prerequisites)
-- Before running this course, you should have completed Module 0 (installation and setup)
-- If you haven't installed Claude Code yet, visit: https://ccforpms.com/getting-started/installation
+**Module 0: はじめに**（前提条件）
+- このコースを実行する前に、Module 0（インストールとセットアップ）を完了している必要があります
+- Claude Codeをまだインストールしていない場合は、こちらをご覧ください: https://ccforpms.com/getting-started/installation
 
-**Module 1: Fundamentals** (Starts with `/start-1-1`)
-- 1.1: Welcome
-- 1.2: Visualizing Files
-- 1.3: First Tasks
-- 1.4: Agents (Parallel Processing)
-- 1.5: Custom Sub-Agents
-- 1.6: Project Memory
-- 1.7: Navigation
+**Module 1: 基礎**（`/start-1-1` で開始）
+- 1.1: はじめに
+- 1.2: ファイルの可視化
+- 1.3: 最初のタスク
+- 1.4: エージェント（並列処理）
+- 1.5: カスタムサブエージェント
+- 1.6: プロジェクトメモリ
+- 1.7: ナビゲーション
 
-**Module 2: Advanced PM Work**
-- 2.1: Write a PRD
-- 2.2: Analyze Data
-- 2.3: Product Strategy
+**Module 2: 上級PMワーク**
+- 2.1: PRDを書く
+- 2.2: データ分析
+- 2.3: プロダクト戦略
 
-### Slash Commands
+### スラッシュコマンド
 
-Throughout the course, you'll use slash commands like:
-- `/start-1-1` - Start Module 1.1
-- `/start-2-1` - Start Module 2.1
-- etc.
+コース全体を通して、以下のようなスラッシュコマンドを使います：
+- `/start-1-1` - Module 1.1を開始
+- `/start-2-1` - Module 2.1を開始
+- など
 
-These commands are defined in the `.claude/` folder and guide you through each module interactively.
+これらのコマンドは `.claude/` フォルダに定義されており、各モジュールをインタラクティブにガイドします。
 
-### Need Help?
+### 困ったときは
 
-- **Documentation:** https://ccforpms.com
-- **Issues:** https://github.com/carlvellotti/claude-code-pm-course/issues
-- **Questions:** Ask in the course or check the website
+- **ドキュメント:** https://ccforpms.com
+- **問題報告:** https://github.com/carlvellotti/claude-code-pm-course/issues
+- **質問:** コース内で質問するか、Webサイトをご確認ください
 
-### Course Philosophy
+### コースの考え方
 
-This course teaches you Claude Code **by using Claude Code**. You'll work with real files, real company context (TaskFlow), and real PM workflows. Claude is your guide, but you're driving the learning.
+このコースは、**Claude Codeを使って** Claude Codeを学びます。実際のファイル、実際の会社コンテキスト（TaskFlow）、実際のPMワークフローを使って学習します。Claudeがガイドですが、学びの主導権はあなたにあります。
 
-Ready to start? Type `/start-1-1` in Claude Code!
+準備ができましたか？Claude Codeで `/start-1-1` と入力してください！

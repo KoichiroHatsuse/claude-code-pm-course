@@ -1,29 +1,29 @@
-# Communication Style: Executive Email
+# コミュニケーションスタイル: エグゼクティブ向けメール
 
-## Purpose
-Strategic update for leadership that connects findings to business impact and provides clear recommendations.
+## 目的
+調査結果をビジネスインパクトに結びつけ、明確なレコメンデーションを提示するリーダーシップ向けの戦略アップデート。
 
-## Format Rules
-- **Length:** 3 paragraphs (6-8 sentences total)
-- **Tone:** Professional, strategic, confident
-- **Structure:**
-  - **Paragraph 1:** What we learned (key findings + data)
-  - **Paragraph 2:** Why it matters (business impact, strategic implications)
-  - **Paragraph 3:** What we're doing next (recommendations + timeline)
-- **Include:** Specific numbers, business metrics, competitive context
-- **Avoid:** Emojis, casual language, excessive technical details
-- **Focus:** Outcomes, revenue/retention impact, strategic positioning
+## フォーマットルール
+- **長さ:** 3段落（合計6〜8文）
+- **トーン:** プロフェッショナル、戦略的、自信を持って
+- **構成:**
+  - **段落1:** 何がわかったか（主要な発見 + データ）
+  - **段落2:** なぜ重要か（ビジネスインパクト、戦略的な意味合い）
+  - **段落3:** 次に何をするか（レコメンデーション + タイムライン）
+- **含めるもの:** 具体的な数値、ビジネス指標、競合の状況
+- **避けるもの:** 絵文字、カジュアルな言葉遣い、過度な技術的詳細
+- **焦点:** 成果、収益/リテンションへの影響、戦略的ポジショニング
 
-## Example
+## 例
 
-**Input:** User research showed 8/8 users struggled with onboarding, taking 45+ minutes to complete first task. Top pain points: unclear navigation (6 mentions), no templates (5 mentions), overwhelming blank screen (4 mentions). Recommended: add interactive tour and template library.
+**入力:** ユーザーリサーチの結果、8人中8人がオンボーディングに苦労し、最初のタスク完了に45分以上かかっていた。主なペインポイント: 不明確なナビゲーション（6回言及）、テンプレートの不在（5回言及）、圧倒的な空白画面（4回言及）。推奨: インタラクティブツアーとテンプレートライブラリの追加。
 
-**Output:**
+**出力:**
 
-**Subject: User Research Findings: Onboarding Friction Points & Q1 Recommendations**
+**件名: ユーザーリサーチ結果: オンボーディングの摩擦ポイントとQ1レコメンデーション**
 
-We completed 8 user interviews this week focused on our onboarding experience. The findings reveal significant friction: 100% of users struggled to complete their first task, with average time-to-value at 45+ minutes. The primary barriers are navigation confusion (mentioned by 75% of users), lack of starting templates (62%), and the overwhelming blank-screen experience new users encounter.
+今週、オンボーディング体験に焦点を当てた8件のユーザーインタビューを完了しました。結果は重大な摩擦を示しています: ユーザーの100%が最初のタスク完了に苦労しており、価値到達までの平均時間は45分以上です。主な障壁は、ナビゲーションの混乱（ユーザーの75%が言及）、開始テンプレートの不在（62%）、そして新規ユーザーが遭遇する圧倒的な空白画面体験です。
 
-This directly impacts our activation rate, which currently sits at 45% against our Q1 OKR target of 60%. Our competitors (Linear, Asana) average 15-minute time-to-first-task, giving them a significant advantage in trial-to-paid conversion. Addressing these onboarding issues could improve activation by 15-20 percentage points based on industry benchmarks, representing approximately $180K in additional ARR this quarter.
+これはアクティベーション率に直接影響します。現在45%であり、Q1のOKR目標60%に対して大きなギャップがあります。競合他社（Linear、Asana）の最初のタスク完了までの平均時間は15分であり、トライアルから有料への転換率において大きなアドバンテージを持っています。これらのオンボーディング問題に対処することで、業界ベンチマークに基づきアクティベーションを15〜20ポイント改善できる可能性があり、今四半期の追加ARRとして約$180Kに相当します。
 
-We're recommending two initiatives for Q1: an interactive product tour and a template library with 5-7 pre-built project templates. Engineering estimates this at 3 sprints for the web version. I'll have a detailed implementation plan by end of week for review.
+Q1に向けて2つのイニシアチブを推奨します: インタラクティブプロダクトツアーと、5〜7個のプリビルトプロジェクトテンプレートを含むテンプレートライブラリです。エンジニアリングの見積もりはWeb版で3スプリントです。詳細な実装計画を今週末までにレビュー用に準備します。

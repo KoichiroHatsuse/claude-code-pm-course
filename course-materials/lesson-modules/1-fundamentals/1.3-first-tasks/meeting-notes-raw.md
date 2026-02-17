@@ -1,253 +1,253 @@
-MONDAY 10/7 - BUSY DAY
+月曜日 10/7 - 忙しい一日
 
-=== Meeting 1: Product sync w/ Sarah & Jordan (9am) ===
+=== ミーティング1: プロダクト定例 w/ Sarah & Jordan (9am) ===
 
-attendees: sarah (head of product), jordan (design), me
-context: weekly product sync
+出席者: Sarah（プロダクト責任者）、Jordan（デザイン）、自分
+背景: 週次プロダクト定例
 
-- talked about Q4 priorities
-- Sarah wants to push dark mode up in priority
-  - "most requested feature by far"
-  - engineering team asking for it (mike specifically)
-  - might help with retention?
+- Q4の優先事項について話した
+- Sarahはダークモードの優先度を上げたい
+  - 「ダントツで最もリクエストの多い機能」
+  - エンジニアリングチームからも要望あり（特にMike）
+  - リテンション改善に繋がるかも？
 
-jordan showed initial mockups for dark mode
-- looks good! really clean
-- uses our existing color system
-- question: what about user-uploaded images? contrast issues?
-- jordan will investigate
+Jordanがダークモードの初期モックアップを見せた
+- いい感じ！とてもクリーン
+- 既存のカラーシステムを活用
+- 質問: ユーザーがアップロードした画像はどうする？コントラストの問題は？
+- Jordanが調査予定
 
-ONBOARDING discussion:
-sarah: "we need to hit 60% activation by end of Q1"
-- current: 45% (not great)
-- time to first task completion: 45 min (too slow)
-- competitor linear: ~15 min
+オンボーディングの議論:
+Sarah: 「Q1末までにアクティベーション率60%を達成する必要がある」
+- 現状: 45%（良くない）
+- 最初のタスク完了までの時間: 45分（遅すぎる）
+- 競合のLinear: 約15分
 
-ideas discussed:
-- template library (pre-built projects users can start with)
-- better first-run experience
-- video tutorials? (jordan says maybe not, users skip videos)
-- interactive tour (jordan likes this)
+話し合ったアイデア:
+- テンプレートライブラリ（ユーザーが始められるプリビルトプロジェクト）
+- より良い初回体験
+- 動画チュートリアル？（Jordanは「たぶんダメ、ユーザーは動画をスキップする」と言った）
+- インタラクティブツアー（Jordanはこれが気に入った）
 
-ACTION ITEMS:
-- me: research what competitors do for onboarding (asana, linear, clickup)
-- jordan: wireframes for interactive tour concept
-- sarah: talk to customer success about common activation blockers
+アクションアイテム:
+- 自分: 競合のオンボーディングを調査（Asana、Linear、ClickUp）
+- Jordan: インタラクティブツアーのワイヤーフレーム
+- Sarah: カスタマーサクセスにアクティベーションの障壁について聞く
 
-also talked about mobile app progress
-- on track for Q1 launch (good news!)
-- alex (mobile PM) demoing beta next week
-
----
-
-=== Meeting 2: Stakeholder check-in w/ Mike (CTO) (11:30am) ===
-
-mike (cto) wants to discuss notifications system
-
-CONTEXT:
-notifications are messy right now
-- too many emails (users complaining)
-- not enough context in notifications
-- mobile notifications not working great
-- users miss important updates
-
-Mike's perspective:
-"engineering team is drowning in notifications"
-- average engineer gets 40-50 notifications/day
-- most are noise
-- important stuff gets buried
-
-discussed:
-1. smart batching (group similar notifications)
-   - mike: "like github does it - one email for multiple events"
-   - me: makes sense, but need to define what gets batched
-
-2. notification preferences need overhaul
-   - current: binary (on/off per notification type)
-   - need: granular (by project, by person, by urgency)
-
-3. digest mode
-   - batch non-urgent notifications
-   - send once daily (or twice daily?)
-   - mike: "i want morning digest, not constant interruptions"
-
-4. timezone-aware notifications
-   - don't notify at 2am!
-   - respect working hours
-   - mike mentioned they built this at his last company
-
-TECHNICAL CONSIDERATIONS:
-- notification service currently synchronous (slows down API)
-- need to move to async queue (redis? kafka?)
-- mike estimates 2 sprint effort
-- need database schema changes (preferences table redesign)
-
-CONCERNS from Mike:
-- team is at capacity (mobile app work)
-- this would push dark mode back
-- suggests Q2 instead of Q1?
-
-my take: notifications are important but dark mode is more visible
-sarah might disagree - need to discuss priorities
-
-ACTION:
-- me: draft PRD for notification improvements
-- me: talk to customer success - how many tickets are notification-related?
-- me: competitive analysis (how do other tools handle this?)
-- mike: technical spec if we decide to move forward
-
-random note: mike mentioned engineer happiness survey results
-- tools satisfaction: 7.2/10 (down from 7.8 last quarter)
-- dark mode came up multiple times in comments
-- performance issues mentioned (3 people)
+モバイルアプリの進捗についても話した
+- Q1ローンチに向けて順調（良いニュース！）
+- Alex（モバイルPM）が来週ベータをデモ予定
 
 ---
 
-=== Meeting 3: Planning session - Template Library (2pm) ===
+=== ミーティング2: ステークホルダーチェックイン w/ Mike (CTO) (11:30am) ===
 
-brainstorming session for template library project
-attendees: me, jordan (design), alex (mobile pm), jamie (eng lead)
+Mike（CTO）が通知システムについて話したい
 
-BACKGROUND:
-users take forever to get started
-new user flow:
-1. sign up
-2. stare at empty workspace
-3. ... now what?
-4. manually create first project
-5. manually create first tasks
-6. finally start using product (45 min later!)
+背景:
+通知が今ぐちゃぐちゃ
+- メールが多すぎる（ユーザーから苦情）
+- 通知のコンテキストが不十分
+- モバイル通知がうまく動いていない
+- ユーザーが重要な更新を見逃す
 
-GOAL: get users to value faster
+Mikeの視点:
+「エンジニアリングチームは通知に溺れている」
+- 平均で1日40〜50件の通知
+- ほとんどがノイズ
+- 重要なものが埋もれる
 
-TEMPLATE LIBRARY CONCEPT:
-pre-built project templates users can use
-- "product launch"
-- "sprint planning"
-- "hiring pipeline"
-- "content calendar"
-- "bug tracking"
-- etc.
+議論内容:
+1. スマートバッチング（類似の通知をグループ化）
+   - Mike: 「GitHubみたいに - 複数イベントを1通のメールで」
+   - 自分: 理にかなっているが、何をバッチするか定義が必要
 
-discussion:
+2. 通知設定のオーバーホールが必要
+   - 現状: バイナリ（通知タイプごとにオン/オフ）
+   - 必要: 細かい設定（プロジェクト別、人別、緊急度別）
 
-jordan: "we should show templates immediately after signup"
-- modal: "choose a template to get started"
-- can skip (create blank project)
-- templates have real tasks, not just structure
+3. ダイジェストモード
+   - 緊急でない通知をバッチ
+   - 1日1回送信（または1日2回？）
+   - Mike: 「朝のダイジェストが欲しい、常に中断されたくない」
 
-me: "how many templates do we need?"
-- jordan: "start with 5-7, expand later"
-- too many = paradox of choice
-- too few = not enough variety
+4. タイムゾーン対応の通知
+   - 午前2時に通知するな！
+   - 勤務時間を尊重
+   - Mikeは前の会社でこれを構築したと言った
 
-alex: "mobile app should have templates too"
-- consistent experience
-- mobile users probably need templates more (smaller screen, harder to setup)
+技術的な考慮事項:
+- 通知サービスは現在同期処理（APIを遅くしている）
+- 非同期キューへの移行が必要（Redis？Kafka？）
+- Mikeの見積もり: 2スプリント
+- データベーススキーマの変更が必要（設定テーブルの再設計）
 
-jamie (eng): "template data structure?"
-- json files? database records?
-- need versioning (templates evolve)
-- need to support custom fields (templates might use them)
+Mikeの懸念:
+- チームがキャパシティいっぱい（モバイルアプリの作業）
+- これをやるとダークモードが後回しに
+- Q1ではなくQ2を提案？
 
-CONCERNS:
-jamie: "templates are tricky"
-- users customize templates
-- template updates don't affect existing projects
-- or DO they? (might be a feature!)
+自分の見解: 通知は重要だがダークモードの方が目に見える
+Sarahは反対するかも - 優先順位を議論する必要あり
 
-me: "privacy/security?"
-- enterprise customers might want PRIVATE templates
-- team-specific templates (not just global)
-- sarah mentioned this before
+アクション:
+- 自分: 通知改善のPRDを作成
+- 自分: カスタマーサクセスに聞く - 通知関連のチケットは何件？
+- 自分: 競合分析（他のツールはどう対応している？）
+- Mike: 進めると決まれば技術仕様を作成
 
-COMPETITIVE RESEARCH NOTES:
-- Asana has template library (huge! 100+ templates)
-  - organized by category
-  - some are "certified" by Asana
-  - users can create/share templates
-- notion has templates (inline, good UX)
-- clickup has templates (overwhelming, too many options)
-- linear: NO templates (interesting! they just have blank projects)
-
-OPEN QUESTIONS:
-1. template discovery - how do users find templates?
-2. template customization - edit before creating project?
-3. community templates - let users share?
-4. template analytics - which templates are popular?
-
-jamie's technical estimate: 3-4 sprints
-- template storage system
-- template rendering logic
-- UI for browsing templates
-- UI for creating from template
-- versioning system (if we want updates)
-
-alex: "can this wait until after mobile app ships?"
-- team capacity issue again
-- mobile app = Q1 priority
-- this might be Q2
-
-DECISION: need to prioritize with Sarah
-- is template library Q1 or Q2?
-- ties into activation OKR (important!)
-- but team capacity is constrained
-
-ACTION ITEMS:
-- me: write one-pager on template library (scope, goals, timeline)
-- me: gather data on activation drop-off (where do users abandon?)
-- jordan: quick mockups of template selection UI
-- jamie: more detailed technical estimate
-- alex: check if mobile app needs template support at launch (or later?)
+メモ: Mikeがエンジニア満足度調査の結果に触れた
+- ツール満足度: 7.2/10（前四半期の7.8から低下）
+- ダークモードがコメントで複数回言及
+- パフォーマンスの問題にも言及（3人）
 
 ---
 
-RANDOM NOTES / PARKING LOT:
+=== ミーティング3: 企画セッション - テンプレートライブラリ (2pm) ===
 
-- sarah wants to discuss API v2 roadmap next week
-- customer success escalated enterprise customer asking about custom SSO
-  (we have SAML but they want some other protocol? need to investigate)
-- mike mentioned performance regression in search (looking into it)
-- marketing wants to do a dark mode launch campaign (getting ahead of ourselves?)
-- someone on slack mentioned competitor "motion" (haven't heard of them - need to check out)
+テンプレートライブラリプロジェクトのブレストセッション
+出席者: 自分、Jordan（デザイン）、Alex（モバイルPM）、Jamie（エンジニアリングリード）
 
-personal reminder: need to review alex's mobile PRD by wednesday
+背景:
+ユーザーが始めるのに時間がかかりすぎ
+新規ユーザーの流れ:
+1. サインアップ
+2. 空のワークスペースを見つめる
+3. ... で、どうするの？
+4. 手動で最初のプロジェクトを作成
+5. 手動で最初のタスクを作成
+6. やっとプロダクトを使い始める（45分後！）
 
-UPCOMING THIS WEEK:
-- tuesday: customer interview (enterprise admin from salesforce)
-- wednesday: design review (dark mode final mockups)
-- thursday: sprint planning
-- friday: all-hands
+目標: ユーザーにより早く価値を届ける
 
-data to pull:
-- activation funnel breakdown (where are drop-offs?)
-- notification ticket volume (last 3 months)
-- feature request frequency (dark mode vs templates vs notifications)
-- survey results (nps, user satisfaction)
+テンプレートライブラリのコンセプト:
+ユーザーが使えるプリビルトのプロジェクトテンプレート
+- 「プロダクトローンチ」
+- 「スプリントプランニング」
+- 「採用パイプライン」
+- 「コンテンツカレンダー」
+- 「バグトラッキング」
+- など
+
+議論:
+
+Jordan: 「サインアップ直後にテンプレートを表示すべき」
+- モーダル: 「テンプレートを選んで始めましょう」
+- スキップ可能（空のプロジェクトを作成）
+- テンプレートには構造だけでなく実際のタスクが入っている
+
+自分: 「テンプレートは何個必要？」
+- Jordan: 「最初は5〜7個、後で追加」
+- 多すぎる = 選択のパラドックス
+- 少なすぎる = バリエーション不足
+
+Alex: 「モバイルアプリにもテンプレートが必要」
+- 一貫した体験
+- モバイルユーザーの方がテンプレートが必要かも（画面が小さく、セットアップが大変）
+
+Jamie（エンジニア）: 「テンプレートのデータ構造は？」
+- JSONファイル？データベースレコード？
+- バージョニングが必要（テンプレートは進化する）
+- カスタムフィールドのサポートが必要（テンプレートが使う可能性）
+
+懸念事項:
+Jamie: 「テンプレートは厄介」
+- ユーザーがテンプレートをカスタマイズする
+- テンプレートの更新は既存プロジェクトに影響しない
+- それとも影響する？（機能かも！）
+
+自分: 「プライバシー/セキュリティは？」
+- エンタープライズ顧客はプライベートテンプレートを望むかも
+- チーム固有のテンプレート（グローバルだけでなく）
+- Sarahが以前これに触れた
+
+競合リサーチメモ:
+- Asanaにはテンプレートライブラリがある（膨大！100以上のテンプレート）
+  - カテゴリ別に整理
+  - 一部はAsanaの「認定」付き
+  - ユーザーがテンプレートを作成・共有可能
+- Notionにはテンプレートがある（インライン、良いUX）
+- ClickUpにはテンプレートがある（圧倒的、選択肢が多すぎ）
+- Linear: テンプレートなし（興味深い！空のプロジェクトだけ）
+
+未解決の質問:
+1. テンプレートの発見 - ユーザーはどうやってテンプレートを見つける？
+2. テンプレートのカスタマイズ - プロジェクト作成前に編集？
+3. コミュニティテンプレート - ユーザーが共有可能？
+4. テンプレート分析 - どのテンプレートが人気？
+
+Jamieの技術見積もり: 3〜4スプリント
+- テンプレートストレージシステム
+- テンプレートレンダリングロジック
+- テンプレート閲覧のUI
+- テンプレートからの作成UI
+- バージョニングシステム（更新が必要な場合）
+
+Alex: 「モバイルアプリのリリース後でもいい？」
+- またチームキャパシティの問題
+- モバイルアプリ = Q1の優先事項
+- これはQ2かも
+
+決定: Sarahと優先順位を決める必要あり
+- テンプレートライブラリはQ1かQ2か？
+- アクティベーションOKRに関連（重要！）
+- でもチームキャパシティは限られている
+
+アクションアイテム:
+- 自分: テンプレートライブラリの1ページ概要を書く（スコープ、目標、タイムライン）
+- 自分: アクティベーションの離脱データを集める（ユーザーはどこで離脱する？）
+- Jordan: テンプレート選択UIの簡易モックアップ
+- Jamie: より詳細な技術見積もり
+- Alex: モバイルアプリのローンチ時にテンプレートサポートが必要か確認（それとも後？）
 
 ---
 
-PRIORITIES EMERGING:
-1. mobile app (committed, Q1)
-2. dark mode (highly requested, team morale, relatively quick)
-3. activation/onboarding (OKR-critical, but what exactly?)
-   - templates? interactive tour? both?
-4. notifications (pain point, but complex, might be Q2)
-5. enterprise features (sso variants, advanced permissions - ongoing)
+メモ / パーキングロット:
 
-need to get clarity from sarah on what's actually Q1 vs Q2
+- Sarahが来週API v2のロードマップについて話したい
+- カスタマーサクセスがカスタムSSOを求めるエンタープライズ顧客をエスカレーション
+  （SAMLはあるが別のプロトコルを求めている？調査が必要）
+- Mikeが検索のパフォーマンス劣化に言及（調査中）
+- マーケティングがダークモードのローンチキャンペーンをやりたがっている（先走りすぎ？）
+- Slackで誰かが競合「Motion」に言及（聞いたことない - 確認が必要）
+
+個人リマインダー: 水曜日までにAlexのモバイルPRDをレビューする必要あり
+
+今週の予定:
+- 火曜日: 顧客インタビュー（Salesforceのエンタープライズ管理者）
+- 水曜日: デザインレビュー（ダークモード最終モックアップ）
+- 木曜日: スプリントプランニング
+- 金曜日: 全体集会
+
+取得すべきデータ:
+- アクティベーションファネルの内訳（離脱ポイントは？）
+- 通知関連のチケット量（過去3ヶ月）
+- 機能リクエストの頻度（ダークモード vs テンプレート vs 通知）
+- 調査結果（NPS、ユーザー満足度）
 
 ---
 
-FOLLOW-UPS NEEDED:
-✓ competitive research on onboarding (me)
-- PRD for notifications (me)
-- one-pager on template library (me)
-- talk to customer success re: notifications & activation (me)
-- review mobile PRD (me)
-- wireframes for interactive tour (jordan)
-- dark mode final mockups (jordan)
-- technical spec for notifications (mike)
-- technical estimate for templates (jamie)
+浮上してきた優先事項:
+1. モバイルアプリ（コミット済み、Q1）
+2. ダークモード（リクエスト多数、チームの士気、比較的短期間）
+3. アクティベーション/オンボーディング（OKR重要、でも具体的に何？）
+   - テンプレート？インタラクティブツアー？両方？
+4. 通知（ペインポイント、でも複雑、Q2かも）
+5. エンタープライズ機能（SSOバリエーション、高度な権限 - 継続中）
 
-busy week ahead!
+Q1とQ2の実際の線引きについてSarahから明確化が必要
+
+---
+
+フォローアップが必要:
+✓ オンボーディングの競合調査（自分）
+- 通知のPRD（自分）
+- テンプレートライブラリの1ページ概要（自分）
+- 通知とアクティベーションについてカスタマーサクセスに相談（自分）
+- モバイルPRDのレビュー（自分）
+- インタラクティブツアーのワイヤーフレーム（Jordan）
+- ダークモード最終モックアップ（Jordan）
+- 通知の技術仕様（Mike）
+- テンプレートの技術見積もり（Jamie）
+
+忙しい一週間になりそう！

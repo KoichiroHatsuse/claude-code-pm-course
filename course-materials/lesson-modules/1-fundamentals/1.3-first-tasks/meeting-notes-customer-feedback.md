@@ -1,116 +1,116 @@
-# Customer Feedback Session - Friday Oct 11, 3pm
+# 顧客フィードバックセッション - 10月11日金曜, 3pm
 
-attendees: me (PM), customer success team (3 people), 2 enterprise customers on video
+出席者: 自分（PM）、カスタマーサクセスチーム（3名）、エンタープライズ顧客2社（ビデオ参加）
 
-## Customer 1: TechCorp (450 employees, $18K/year plan)
+## 顧客1: TechCorp（従業員450名、$18K/年プラン）
 
-Contact: Jennifer Martinez, VP Operations
+担当者: Jennifer Martinez, VP Operations
 
-**What they love:**
-- speed! way faster than their previous tool (asana)
-- github integration "saves us tons of manual work"
-- cleaner interface than jira
+**気に入っている点:**
+- スピード！以前使っていたツール（Asana）よりずっと速い
+- GitHub連携が「大量の手作業を省いてくれる」
+- Jiraよりクリーンなインターフェース
 
-**Pain Points:**
+**ペインポイント:**
 
-1. **Dark mode missing**
-   - "our dev team works late, they keep asking for this"
-   - "it's literally the #1 request from our engineers"
-   - they've tried browser extensions but "breaks stuff"
+1. **ダークモードがない**
+   - 「開発チームが遅くまで働くので、ずっとリクエストしている」
+   - 「エンジニアからのリクエスト第1位は文字通りこれ」
+   - ブラウザ拡張機能を試したが「壊れる」
 
-2. **Onboarding new team members is rough**
-   - "new hires stare at blank screen, don't know what to do"
-   - they manually created training docs
-   - "wish there were starter templates - like here's how to set up a project"
+2. **新しいチームメンバーのオンボーディングが大変**
+   - 「新入社員が空白画面を見つめて、何をすればいいかわからない」
+   - 手動でトレーニングドキュメントを作成した
+   - 「スターターテンプレートがあればいいのに - プロジェクトの設定方法みたいな」
 
-3. **Mobile is barely usable**
-   - jennifer checks taskflow on phone between meetings
-   - "mobile web version is really clunky"
-   - "i mostly just check status, can't really DO anything on mobile"
+3. **モバイルがほぼ使えない**
+   - Jenniferはミーティングの合間にスマホでTaskFlowをチェックする
+   - 「モバイルWeb版は本当に使いにくい」
+   - 「ほとんどステータス確認だけで、モバイルでは実際に何もできない」
 
-**Feature requests:**
-- dark mode (said this 3 times!)
-- better mobile app
-- template library for common project types
-
----
-
-## Customer 2: DataSystems Inc (850 employees, $42K/year plan)
-
-Contact: Robert Kim, Director of Engineering
-
-**What's working:**
-- team adoption was smooth
-- sso integration "exactly what we needed"
-- performance is good
-
-**Pain Points:**
-
-1. **Notification overload**
-   - "people get 40-50 emails a day"
-   - most users have turned notifications OFF entirely
-   - "they miss important updates because they're drowning in noise"
-
-2. **Dark mode!!**
-   - robert: "can i just add my voice to the chorus? we need dark mode"
-   - "i have engineers working night shift for asia coverage"
-   - "bright white screen at midnight is brutal"
-
-3. **Templates desperately needed**
-   - "we onboard 2-3 engineers per month"
-   - "i recreate the same onboarding checklist EVERY time"
-   - "would save probably an hour per new hire if i could just duplicate"
-
-**Other feedback:**
-- audit logs need more detail (compliance req)
-- reporting could be better
-- but overall they're happy, would recommend
+**機能リクエスト:**
+- ダークモード（3回言及！）
+- より良いモバイルアプリ
+- 一般的なプロジェクトタイプのテンプレートライブラリ
 
 ---
 
-## Key Themes from Both Customers:
+## 顧客2: DataSystems Inc（従業員850名、$42K/年プラン）
 
-### Most Critical (both mentioned):
-1. **Dark mode** - both customers, multiple mentions, blocks engineer satisfaction
-2. **Templates** - both customers, concrete time savings (1 hr per use case)
-3. **Mobile experience** - clunky, limits usage
+担当者: Robert Kim, Director of Engineering
 
-### Secondary:
-- Notification overload (DataSystems mentioned heavily)
-- Onboarding experience (TechCorp mentioned)
-- Reporting/audit logs (enterprise needs)
+**うまくいっている点:**
+- チームの導入がスムーズだった
+- SSO連携が「まさに必要なもの」
+- パフォーマンスが良い
 
----
+**ペインポイント:**
 
-## Customer Success Team Input:
+1. **通知の過負荷**
+   - 「1日40〜50通のメールが来る」
+   - ほとんどのユーザーが通知を完全にオフにしている
+   - 「ノイズに溺れて重要な更新を見逃している」
 
-After customers left, CS team shared additional context:
+2. **ダークモード！！**
+   - Robert: 「この声に加わってもいいですか？ダークモードが必要です」
+   - 「アジア対応で夜勤のエンジニアがいる」
+   - 「真夜中の明るい白い画面は辛い」
 
-- "dark mode comes up in 60%+ of enterprise sales calls"
-- "we've lost 2 deals this quarter because of missing features"
-  - one wanted better mobile
-  - one needed more advanced permissions
-- "templates would reduce support tickets - lots of 'how do i structure this' questions"
+3. **テンプレートが切実に必要**
+   - 「月に2〜3人のエンジニアをオンボードしている」
+   - 「毎回同じオンボーディングチェックリストを作り直している」
+   - 「複製できたら、新入社員1人あたりおそらく1時間節約できる」
 
----
-
-## Action Items:
-
-- me: share this feedback with sarah and product team
-- me: check how many support tickets mention dark mode (probably a lot)
-- customer success: track feature requests more systematically
-- me: competitive analysis - do our competitors have these features?
+**その他のフィードバック:**
+- 監査ログにもっと詳細が必要（コンプライアンス要件）
+- レポーティングの改善余地あり
+- 全体的には満足、推薦したい
 
 ---
 
-## My Thoughts:
+## 両顧客から得たキーテーマ:
 
-Dark mode is clearly the most requested feature. We keep hearing it:
-- user interviews (3/3 mentioned)
-- these enterprise customers (both mentioned)
-- support tickets (need to pull data)
-- team eng happiness survey
+### 最も重要（両方が言及）:
+1. **ダークモード** - 両顧客、複数回言及、エンジニア満足度に影響
+2. **テンプレート** - 両顧客、具体的な時間節約（ユースケースあたり1時間）
+3. **モバイル体験** - 使いにくい、利用を制限
 
-Templates also really clear - concrete time savings, multiple personas need it
+### 二次的:
+- 通知の過負荷（DataSystemsが強く言及）
+- オンボーディング体験（TechCorpが言及）
+- レポーティング/監査ログ（エンタープライズニーズ）
 
-Should probably prioritize both for Q1
+---
+
+## カスタマーサクセスチームのインプット:
+
+顧客退出後、CSチームが追加情報を共有:
+
+- 「ダークモードはエンタープライズ営業コールの60%以上で話題になる」
+- 「今四半期、機能不足で2件の案件を失った」
+  - 1件はより良いモバイルを求めていた
+  - 1件はより高度な権限設定が必要だった
+- 「テンプレートがあればサポートチケットが減る - 『どう構成すればいい？』という質問が多い」
+
+---
+
+## アクションアイテム:
+
+- 自分: このフィードバックをSarahとプロダクトチームに共有
+- 自分: ダークモードに言及するサポートチケットの件数を確認（おそらく多い）
+- カスタマーサクセス: 機能リクエストをより体系的にトラッキング
+- 自分: 競合分析 - 競合他社はこれらの機能を持っているか？
+
+---
+
+## 自分の所感:
+
+ダークモードは明らかに最もリクエストの多い機能。何度も聞いている:
+- ユーザーインタビュー（3/3が言及）
+- これらのエンタープライズ顧客（両方が言及）
+- サポートチケット（データの取得が必要）
+- チームのエンジニア満足度調査
+
+テンプレートも非常に明確 - 具体的な時間節約、複数のペルソナが必要としている
+
+Q1でおそらく両方を優先すべき
