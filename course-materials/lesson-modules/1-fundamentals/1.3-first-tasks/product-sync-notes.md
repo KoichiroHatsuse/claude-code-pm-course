@@ -1,251 +1,251 @@
-product sync - mon oct 7, 2:30pm
+プロダクト定例 - 月曜 10月7日, 2:30pm
 
-attendees: sarah, mike (cto), jordan, alex (mobile pm), jamie (eng lead), me
+出席者: Sarah, Mike (CTO), Jordan, Alex (モバイルPM), Jamie (エンジニアリングリード), 自分
 
-=== NOTIFICATIONS DISCUSSION ===
+=== 通知に関する議論 ===
 
-me presenting notification redesign proposal
+自分が通知再設計の提案をプレゼン
 
-current state is BAD:
-- 127 tickets last quarter about notifications
-- users either get 50+ notifs/day or turn everything off
-- 42 different notification types (way too many!)
-- on/off preferences only (not granular enough)
-- sync delivery = slow API (200-400ms latency - mike said this)
-- enterprise customers complaining in sales calls
+現状はひどい:
+- 先四半期の通知関連チケット127件
+- ユーザーは1日50件以上の通知を受け取るか、全部オフにしている
+- 42種類の通知タイプ（多すぎ！）
+- オン/オフの設定しかない（細かさが足りない）
+- 同期配信 = 遅いAPI（レイテンシ200-400ms - Mikeの発言）
+- エンタープライズ顧客が営業コールで不満を漏らしている
 
-my proposal:
-3 tiers - urgent/important/fyi
-- urgent = immediate (assigned, @mentioned, deadline)
-- important = digest eligible (comments, status changes)
-- fyi = opt-in only (likes, watchers, general activity)
+自分の提案:
+3段階 - urgent/important/fyi
+- urgent = 即時（アサイン、@メンション、期限）
+- important = ダイジェスト対象（コメント、ステータス変更）
+- fyi = オプトインのみ（いいね、ウォッチャー、一般的なアクティビティ）
 
-smart batching - group related notifs
-ex: 5 comments on same task = 1 notification not 5
+スマートバッチング - 関連する通知をグループ化
+例: 同じタスクへの5件のコメント = 5件ではなく1件の通知
 
-digest mode - daily or twice daily
-urgent still immediate tho
+ダイジェストモード - 1日1回または2回
+urgentは即時のまま
 
-timezone aware - respect working hours (9-6 in user tz)
-queue stuff outside hours, deliver later
+タイムゾーン対応 - 勤務時間を尊重（ユーザーのタイムゾーンで9-6）
+勤務時間外のものはキューに入れ、後で配信
 
-better content - show task title + preview, who did it, action buttons
+より良いコンテンツ - タスクタイトル + プレビュー、誰がやったか、アクションボタンを表示
 
-MIKE'S TECH NOTES:
-"need async queue, sync is killing us"
-- move to redis (we already use it)
-- notification worker processes queue
-- 3-4 weeks to implement
+MIKEの技術メモ:
+「非同期キューが必要、同期が我々を殺している」
+- Redisに移行（既に使っている）
+- 通知ワーカーがキューを処理
+- 実装に3〜4週間
 
-db changes needed:
-"user_preferences table is 42 boolean columns, doesnt scale"
-wants jsonb column instead
-showed example schema (urgent/important/fyi with channels, digest settings, quiet hours)
+DB変更が必要:
+「user_preferencesテーブルが42個のbooleanカラム、スケールしない」
+代わりにjsonbカラムを希望
+スキーマ例を見せた（urgent/important/fyiにチャネル、ダイジェスト設定、静寂時間）
 
-migration = 2 weeks, cant flip switch, need gradual rollout
-default existing users to "all = important"
+マイグレーション = 2週間、一気に切り替え不可、段階的ロールアウトが必要
+既存ユーザーはデフォルトで「全て = important」
 
-"async will IMPROVE performance, notifs are slowest api ops"
+「非同期にすればパフォーマンスが改善する、通知はAPIで最も遅い処理」
 
-CONCERNS from team:
+チームからの懸念:
 
-jordan: UI will be complex
-- 3 tiers, channels, digest, quiet hours = lots of settings
-- needs progressive disclosure (simple + advanced modes)
-- "need to design carefully or users confused"
+Jordan: UIが複雑になる
+- 3段階、チャネル、ダイジェスト、静寂時間 = 設定項目が多い
+- プログレッシブディスクロージャーが必要（シンプル + 高度モード）
+- 「慎重にデザインしないとユーザーが混乱する」
 
-sarah: how do we educate users about changes?
-- announcement needed
-- migration guide
-- in-app messaging?
-also timeline concern - 6 weeks min (eng + design + testing)
-"competes with mobile app launch in Q1"
+Sarah: ユーザーに変更をどう伝える？
+- アナウンスが必要
+- 移行ガイド
+- アプリ内メッセージ？
+タイムラインの懸念もあり - 最低6週間（エンジニアリング + デザイン + テスト）
+「Q1のモバイルアプリローンチと競合する」
 
-alex: mobile is different than email
-- push has char limits
-- ios/android handle differently
-- needs mobile-specific design
+Alex: モバイルはメールとは違う
+- プッシュ通知には文字数制限がある
+- iOS/Androidで扱いが異なる
+- モバイル専用のデザインが必要
 
-jamie: what if redis goes down?
-- notifications disappear?
-- need durable queue (sqs?) or persistence
-mike: "can use redis AOF or move to sqs, ill spec it"
+Jamie: Redisがダウンしたら？
+- 通知が消える？
+- 耐久性のあるキュー（SQS？）またはパーシステンスが必要
+Mike: 「Redis AOFを使うかSQSに移行できる、仕様を書く」
 
-me: backward compat? legacy mode?
-sarah: "no, too complex to maintain 2 systems"
+自分: 後方互換性は？レガシーモード？
+Sarah: 「ダメ、2つのシステムを維持するのは複雑すぎる」
 
-OPEN QUESTIONS:
-1. how determine urgent vs important vs fyi? user configurable?
-2. slack notifications - follow email rules or always urgent?
-3. preferences global or per-project? both?
-4. a/b test approach? 10% rollout first?
-5. rollback plan if this breaks?
+未解決の質問:
+1. urgent vs important vs fyiをどう判定？ユーザー設定可能？
+2. Slack通知 - メールルールに従う？常にurgent？
+3. 設定はグローバル？プロジェクトごと？両方？
+4. A/Bテストのアプローチ？最初に10%ロールアウト？
+5. 問題が起きた場合のロールバック計画？
 
-DECISIONS:
-✓ moving forward with 3-tier system (unanimous)
-✓ async queue (mike to spec redis vs sqs)
-⏸ timeline Q1 or Q2? sarah wants detailed plan, decide by eow
-⏸ per-project prefs = v2, start with global
-⏸ a/b testing needs data team input
+決定事項:
+✓ 3段階システムで進める（全員一致）
+✓ 非同期キュー（MikeがRedis vs SQSの仕様を作成）
+⏸ タイムラインQ1かQ2か？Sarahが詳細計画を求め、今週末までに決定
+⏸ プロジェクトごとの設定 = v2、まずグローバルから
+⏸ A/Bテストにはデータチームのインプットが必要
 
-ACTION ITEMS:
-- me: comprehensive PRD by fri oct 11
-- mike: tech spec (arch, db schema, migration) by fri oct 11
-- jordan: ux flows + wireframes by mon oct 14
-- alex: mobile considerations doc by mon oct 14
-- jamie: eng estimate breakdown by tues oct 15
-- me: competitive analysis (asana/linear/clickup) by tues oct 15
-- sarah: schedule followup meeting wed oct 16 3pm
+アクションアイテム:
+- 自分: 包括的PRDを10月11日金曜までに
+- Mike: 技術仕様（アーキテクチャ、DBスキーマ、マイグレーション）を10月11日金曜までに
+- Jordan: UXフロー + ワイヤーフレームを10月14日月曜までに
+- Alex: モバイル考慮事項ドキュメントを10月14日月曜までに
+- Jamie: エンジニアリング見積もりの内訳を10月15日火曜までに
+- 自分: 競合分析（Asana/Linear/ClickUp）を10月15日火曜までに
+- Sarah: 10月16日水曜3pmにフォローアップミーティングをスケジュール
 
-=== Q1 PRIORITIZATION ===
+=== Q1の優先順位付け ===
 
-sarah leading this discussion
+Sarahがこの議論をリード
 
-5 initiatives competing for Q1:
-1. mobile app (committed, non-negotiable)
-2. dark mode (highly requested)
-3. notification redesign (discussed above)
-4. template library (activation play)
-5. enterprise features (sso, permissions)
+Q1で競合する5つのイニシアチブ:
+1. モバイルアプリ（コミット済み、変更不可）
+2. ダークモード（リクエスト多数）
+3. 通知の再設計（上記で議論）
+4. テンプレートライブラリ（アクティベーション施策）
+5. エンタープライズ機能（SSO、権限）
 
-CAPACITY:
-12 engineers total
-4 on mobile til launch
-8 available for web
-2 week sprints = 6 sprints in Q1
+キャパシティ:
+エンジニア合計12名
+4名がローンチまでモバイル担当
+8名がWeb担当可能
+2週間スプリント = Q1に6スプリント
 
-ESTIMATES:
-mobile = 4 sprints (in progress)
-dark mode = 2 sprints
-notifications = 3 sprints
-templates = 3 sprints
-enterprise = 4 sprints
+見積もり:
+モバイル = 4スプリント（進行中）
+ダークモード = 2スプリント
+通知 = 3スプリント
+テンプレート = 3スプリント
+エンタープライズ = 4スプリント
 
-math: can do ~2 major projects (plus mobile) with 8 engineers
+計算: 8名のエンジニアで主要プロジェクト約2つ（+ モバイル）が可能
 
-sarah's criteria:
-1. okr impact (activation, retention, revenue)
-2. customer demand
-3. competitive pressure
-4. team morale
-5. tech dependencies
+Sarahの基準:
+1. OKRへの影響（アクティベーション、リテンション、収益）
+2. 顧客からの要望
+3. 競合からのプレッシャー
+4. チームの士気
+5. 技術的な依存関係
 
-DISCUSSION:
+議論:
 
-dark mode:
-mike: "team really wants this, morale boost"
-jordan: "design mostly done"
-alex: "launch on web + mobile simultaneously? branding opp"
-sarah: "feels like Q1 candidate"
+ダークモード:
+Mike: 「チームが本当に欲しがっている、士気向上」
+Jordan: 「デザインはほぼ完成」
+Alex: 「Web + モバイル同時ローンチ？ブランディングの機会」
+Sarah: 「Q1候補に感じる」
 
-notifications:
-me: "127 tickets, real pain point"
-sarah: "blocking new users/revenue or just annoyance?"
-me: "both, enterprise mentions in sales calls"
-mike: "tech debt too, slowing api"
-sarah: "if not Q1, definitely Q2"
+通知:
+自分: 「127件のチケット、本当のペインポイント」
+Sarah: 「新規ユーザー/収益をブロックしている？それとも単なる不満？」
+自分: 「両方、エンタープライズが営業コールで言及」
+Mike: 「技術的負債でもある、APIが遅くなっている」
+Sarah: 「Q1でなければ、確実にQ2」
 
-templates:
-me: "directly addresses activation okr"
-jordan: "users stare at blank screen, templates solve that"
-jamie: "3 sprints maybe 4 with versioning"
-sarah: "move activation 45% to 60%? thats huge jump"
-me: "prob not alone, need onboarding + templates"
-alex: "mobile needs templates too, adds scope"
+テンプレート:
+自分: 「アクティベーションOKRに直接対応」
+Jordan: 「ユーザーが空白画面を見つめている、テンプレートで解決」
+Jamie: 「3スプリント、バージョニング込みだと4かも」
+Sarah: 「アクティベーション45%から60%に？かなりの飛躍」
+自分: 「テンプレート単体ではたぶん無理、オンボーディング + テンプレートが必要」
+Alex: 「モバイルにもテンプレートが必要、スコープが増える」
 
-enterprise:
-sarah: "losing deals without sso/permissions"
-mike: "enterprise avg $15k vs smb $5k, 3x!"
-me: "but slow sales cycle, wont impact Q1 revenue"
-sarah: "building pipeline for Q2/Q3"
+エンタープライズ:
+Sarah: 「SSO/権限がないと案件を失っている」
+Mike: 「エンタープライズ平均$15K vs SMB $5K、3倍！」
+自分: 「でもセールスサイクルが遅い、Q1の収益には影響しない」
+Sarah: 「Q2/Q3に向けたパイプライン構築」
 
-SARAH'S STRAWMAN:
-Q1: mobile + dark mode + templates
-Q2: notifications + enterprise
+SARAHのたたき台:
+Q1: モバイル + ダークモード + テンプレート
+Q2: 通知 + エンタープライズ
 
-rationale: dark mode quick/visible/team wants it, templates = okr
+根拠: ダークモードは短期間/目に見える/チームが望んでいる、テンプレート = OKR
 
-PUSHBACK:
+反論:
 
-mike: "worried about tech debt if we dont fix notifs"
-"can we at least do async queue in Q1 even if not full redesign?"
-sarah: "split it? infra Q1, ux Q2?"
-mike: "yes, buys performance + sets up Q2"
+Mike: 「通知を直さないと技術的負債が心配」
+「少なくともQ1で非同期キューだけでもやれないか？フル再設計でなくても」
+Sarah: 「分割する？インフラQ1、UX Q2？」
+Mike: 「それでいい、パフォーマンス改善 + Q2の準備になる」
 
-jamie: "templates 3-4 sprints if mobile needs it too"
-alex: "mobile launches late Q1, could do web Q1, mobile Q2?"
-sarah: "works, web first"
+Jamie: 「モバイルにも必要なら、テンプレートは3〜4スプリント」
+Alex: 「モバイルはQ1後半にローンチ、Web Q1、モバイル Q2でいける？」
+Sarah: 「いけるね、まずWebから」
 
-REVISED PLAN:
+修正計画:
 Q1:
-- mobile (4 sprints, 4 eng)
-- dark mode (2 sprints, 3 eng, web+mobile)
-- templates (3 sprints, 3 eng, web only)
-- notif infrastructure (1 sprint, 2 eng, async queue only)
+- モバイル（4スプリント、エンジニア4名）
+- ダークモード（2スプリント、エンジニア3名、Web+モバイル）
+- テンプレート（3スプリント、エンジニア3名、Webのみ）
+- 通知インフラ（1スプリント、エンジニア2名、非同期キューのみ）
 
 Q2:
-- notif ux redesign (2 sprints)
-- templates mobile (1 sprint)
-- enterprise features (4 sprints)
+- 通知UX再設計（2スプリント）
+- テンプレートモバイル（1スプリント）
+- エンタープライズ機能（4スプリント）
 
-consensus: feels achievable, sarah will finalize
+コンセンサス: 実現可能に感じる、Sarahが最終化
 
-=== ENTERPRISE FEEDBACK ===
+=== エンタープライズフィードバック ===
 
-sarah summarizing recent sales calls + customer interviews
+Sarahが最近の営業コール + 顧客インタビューをまとめる
 
-common requests:
-- advanced sso (saml variants, okta, azure ad)
-- detailed audit logs
-- data residency (eu/us servers)
-- custom contracts
-- dedicated support / slas
-- admin analytics (usage tracking)
+よくあるリクエスト:
+- 高度なSSO（SAMLバリエーション、Okta、Azure AD）
+- 詳細な監査ログ
+- データレジデンシー（EU/USサーバー）
+- カスタム契約
+- 専任サポート / SLA
+- 管理者向けアナリティクス（利用状況追跡）
 
-deal blockers:
-- no soc2 (we're working on it)
-- no eu datacenter
-- audit logs dont meet compliance
+案件のブロッカー:
+- SOC2がない（対応中）
+- EUデータセンターがない
+- 監査ログがコンプライアンスを満たしていない
 
-pipeline:
-- 12 enterprise deals (avg $15k each)
-- 3 blocked by sso
-- 2 blocked by compliance/audit
+パイプライン:
+- 12件のエンタープライズ案件（平均$15K）
+- 3件がSSOでブロック
+- 2件がコンプライアンス/監査でブロック
 
-sarah: "enterprise = longer game, invest Q2/Q3 for Q3/Q4 revenue"
+Sarah: 「エンタープライズはロングゲーム、Q2/Q3に投資してQ3/Q4の収益につなげる」
 
-=== SPRINT 23 PREVIEW ===
+=== スプリント23 プレビュー ===
 
-jamie presenting
+Jamieがプレゼン
 
-sprint starts mon oct 14
+スプリント開始: 10月14日月曜
 
-planned:
-- mobile: polish + bug fixes (close to launch!)
-- dark mode: color system refactor (foundation)
-- onboarding: a/b test results
-- performance: search optimization
-- bug fixes: 8 P0s in backlog
+計画:
+- モバイル: 仕上げ + バグ修正（ローンチ間近！）
+- ダークモード: カラーシステムのリファクタ（基盤作り）
+- オンボーディング: A/Bテスト結果
+- パフォーマンス: 検索最適化
+- バグ修正: バックログにP0が8件
 
-team availability:
-jamie out oct 21-25 (vacation)
-mobile full capacity
-web has 2 sprint capacity
+チームの稼働状況:
+Jamieが10月21-25日不在（休暇）
+モバイルはフルキャパシティ
+Webは2スプリント分のキャパシティ
 
-goal: "prepare foundation for Q1 priorities"
+目標: 「Q1の優先事項の基盤を準備する」
 
-=== PARKING LOT ===
+=== パーキングロット ===
 
-- api v2 planning (sarah to schedule)
-- marketing wants dark mode launch campaign (hold til Q1)
-- github integration issue escalated (alex investigating)
-- competitor "motion" launched ai features (need to check out)
+- API v2の計画（Sarahがスケジュール）
+- マーケティングがダークモードのローンチキャンペーンをやりたい（Q1まで保留）
+- GitHub連携の問題がエスカレーション（Alexが調査中）
+- 競合「Motion」がAI機能をローンチ（確認が必要）
 
-=== NEXT MEETINGS ===
+=== 次のミーティング ===
 
-wed oct 9: design review (dark mode mockups)
-thu oct 10: sprint 23 planning
-wed oct 16: notification go/no-go
-fri oct 18: Q1 roadmap finalization
+10月9日水曜: デザインレビュー（ダークモードのモックアップ）
+10月10日木曜: スプリント23プランニング
+10月16日水曜: 通知のGo/No-Go
+10月18日金曜: Q1ロードマップ最終化
 
-meeting done 3:32pm
+ミーティング終了 3:32pm

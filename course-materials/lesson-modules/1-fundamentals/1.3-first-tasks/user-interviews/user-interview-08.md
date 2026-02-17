@@ -1,64 +1,64 @@
-# User Interview #8: Junior PM Persona
+# ユーザーインタビュー #8: ジュニアPMペルソナ
 
-**Participant:** Priya Singh
-**Role:** Associate Product Manager
-**Company:** FinTech Startup (65 employees, Series A)
-**TaskFlow Plan:** Pro (company-wide, 50 users)
-**Date:** October 13, 2024
-**Interviewer:** Senior PM
-**Duration:** 24 minutes
-
----
-
-## Background
-
-Priya is a junior PM who joined the company 4 months ago, fresh out of university. This is her first PM role. She manages a small feature squad and is learning TaskFlow alongside learning PM fundamentals.
+**参加者:** Priya Singh
+**役職:** アソシエイトプロダクトマネージャー
+**企業:** FinTech Startup（従業員65名、シリーズA）
+**TaskFlowプラン:** Pro（全社利用、50ユーザー）
+**日付:** 2024年10月13日
+**インタビュアー:** シニアPM
+**所要時間:** 24分
 
 ---
 
-## Interview
+## 背景
 
-**Q: How's your experience with TaskFlow as a new PM?**
-
-Priya: "It's been a learning curve! I'd never used a tool like this before. At first I was overwhelmed - where do I put tasks? How do I organize projects? What's the right level of detail? But I'm getting better. I basically copied how my manager structures things and adapted from there."
-
-**Q: What made the onboarding hard?**
-
-Priya: "Just the blank screen feeling. I created my first project and was like... now what? I didn't know the best practices. Should I create one big project or multiple small ones? How should I organize tasks? Eventually I asked my manager to share their project as a template. That helped a ton. But I wish TaskFlow had given me some starter templates to learn from."
-
-**Q: What's working well for you now?**
-
-Priya: "Once I got the hang of it, it's pretty intuitive. Creating tasks, assigning people, adding due dates - all straightforward. The comments are great for discussing features with engineers. And I love that I can search quickly. The speed is nice - no waiting for pages to load like some tools I used in school."
-
-**Q: What's frustrating?**
-
-Priya: "Notifications are crazy! I get notified for every little thing. At first I tried to read them all, but it was overwhelming - 30+ notifications a day. Now I mostly ignore them and just check TaskFlow directly. Also, I work late sometimes (trying to prove myself, you know?) and the bright white interface is harsh. Everyone's been talking about wanting dark mode."
-
-**Q: How do you use TaskFlow on mobile?**
-
-Priya: "I check it on my phone during my commute or when I'm away from my desk. But it's not great - lots of scrolling, hard to update tasks, easier to just make a mental note and update later on my laptop. Would be cool if the mobile experience was smoother."
-
-**Q: Tell me about creating your weekly updates.**
-
-Priya: "Oh, I spend way too much time on this. Every week I have to summarize what shipped, what's in progress, what's blocked. I manually go through all my tasks, copy stuff into a doc, format it nicely. Takes like 20-30 minutes. I've seen senior PMs have these polished update formats, and I'm like, how do they do it so fast? If there was a template or automated way to generate updates from task status, that'd be amazing."
-
-**Q: What would make TaskFlow easier for new PMs like you?**
-
-Priya: "Templates and examples! Show me how experienced PMs structure projects. Give me starter templates for common things - like 'feature development project' or 'weekly update format.' And maybe a beginner's guide built into the tool? Right now I'm learning by trial and error and asking colleagues."
-
-**Q: Any other feedback?**
-
-Priya: "The search is great, I use it constantly. Keyboard shortcuts would be cool - I've seen senior people use them and they're so fast. And yeah, dark mode for late work sessions. Overall though, I'm learning to like it. Just wish the onboarding for new users was better."
+Priyaは4ヶ月前に入社したジュニアPMで、大学を卒業したばかり。初のPM職。小規模なフィーチャースクワッドを管理し、PM業務の基礎と同時にTaskFlowを学んでいる。
 
 ---
 
-## Key Insights
-- Onboarding experience confusing for new users (blank screen problem)
-- Templates would accelerate learning curve
-- Dark mode requested (late work hours)
-- Notification overload (30+/day, now ignores most)
-- Mobile experience subpar
-- Wants guidance on PM best practices within tool
-- Manual time spent on weekly updates (20-30 min/week)
-- Keyboard shortcuts would improve power user trajectory
-- Learning by copying colleagues' project structures
+## インタビュー
+
+**Q: 新人PMとしてのTaskFlow体験はどうですか？**
+
+Priya: 「学習曲線がありました！こういうツールは初めてで。最初は圧倒されました - タスクはどこに置くの？プロジェクトはどう整理するの？どの程度の詳しさが適切？でもだんだん慣れてきた。基本的にマネージャーの構成方法をコピーして、そこからアレンジしました。」
+
+**Q: オンボーディングで何が難しかった？**
+
+Priya: 「とにかく空白画面の感覚です。最初のプロジェクトを作って... で、どうするの？ベストプラクティスがわからなかった。1つの大きなプロジェクトにすべきか、複数の小さなプロジェクトか？タスクはどう整理すべき？結局マネージャーにプロジェクトをテンプレートとして共有してもらった。それがとても助かった。でもTaskFlowに学べるスターターテンプレートがあったらよかった。」
+
+**Q: 慣れてきてうまくいっている点は？**
+
+Priya: 「慣れたら、かなり直感的です。タスクの作成、人のアサイン、期限の追加 - 全部簡単。コメントはエンジニアとの機能議論に最適。検索が素早いのも好き。スピードがいい - 学校で使ったツールみたいにページのロードを待つ必要がない。」
+
+**Q: フラストレーションを感じる点は？**
+
+Priya: 「通知がやばい！些細なことでも全部通知される。最初は全部読もうとしたけど、圧倒された - 1日30件以上の通知。今はほとんど無視して、直接TaskFlowをチェックしている。あと、遅くまで働くことがある（自分を証明しようとしてるんです、わかるでしょ？）し、明るい白いインターフェースがきつい。みんなダークモードが欲しいって言ってる。」
+
+**Q: モバイルでのTaskFlow利用は？**
+
+Priya: 「通勤中やデスクを離れている時にスマホで確認する。でもあまり良くない - スクロールが多い、タスクの更新が難しい、後でラップトップで更新しようと頭にメモする方が楽。モバイル体験がもっとスムーズだったらいいのに。」
+
+**Q: 週次アップデートの作成について。**
+
+Priya: 「あー、これにかなりの時間を使っている。毎週、何がリリースされたか、何が進行中か、何がブロックされているかをまとめなきゃいけない。全タスクを手動で確認して、ドキュメントにコピーして、きれいにフォーマット。20〜30分かかる。先輩PMの洗練されたアップデートフォーマットを見て、どうやってあんなに早くやってるの？って思う。タスクのステータスからアップデートを自動生成するテンプレートや方法があったら最高。」
+
+**Q: あなたのような新人PMにとってTaskFlowを使いやすくするものは？**
+
+Priya: 「テンプレートと事例！経験豊富なPMがどうプロジェクトを構成するか見せてほしい。一般的なもののスターターテンプレートをください - 『機能開発プロジェクト』とか『週次アップデートフォーマット』とか。あとツール内にビギナーズガイドがあるといい？今は試行錯誤と同僚への質問で学んでいる。」
+
+**Q: 他にフィードバックは？**
+
+Priya: 「検索は素晴らしい、常に使っている。キーボードショートカットがあるといい - 先輩が使っているのを見てとても速い。あとやっぱり、遅い時間の作業にダークモード。全体的には好きになってきている。新規ユーザー向けのオンボーディングがもっと良ければいいのにとは思う。」
+
+---
+
+## 主要インサイト
+- 新規ユーザーにとってオンボーディング体験が混乱する（空白画面問題）
+- テンプレートが学習曲線を加速する
+- ダークモードの要望（遅い時間の作業）
+- 通知の過負荷（30件以上/日、今はほとんど無視）
+- モバイル体験が不十分
+- ツール内でPMベストプラクティスのガイダンスが欲しい
+- 週次アップデートに手動で時間がかかる（20〜30分/週）
+- キーボードショートカットがパワーユーザーへの成長を助ける
+- 同僚のプロジェクト構造をコピーして学んでいる

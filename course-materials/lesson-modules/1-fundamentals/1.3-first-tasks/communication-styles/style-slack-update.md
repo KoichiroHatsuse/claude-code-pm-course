@@ -1,25 +1,25 @@
-# Communication Style: Slack Update
+# コミュニケーションスタイル: Slack更新
 
-## Purpose
-Quick team update that's easy to scan and keeps everyone aligned without overwhelming them with details.
+## 目的
+スキャンしやすく、詳細で圧倒することなくチーム全員の認識を合わせる、簡潔なチームアップデート。
 
-## Format Rules
-- **Length:** 2-4 lines maximum
-- **Tone:** Casual, friendly, conversational
-- **Emojis:** 1-2 relevant emojis to add visual interest
-- **Structure:**
-  - Line 1: Main announcement or key finding
-  - Line 2: Quick context or "why this matters"
-  - Line 3 (optional): Next step or call to action
-- **Avoid:** Jargon, long paragraphs, excessive details
-- **Focus:** What the team needs to know right now
+## フォーマットルール
+- **長さ:** 最大2〜4行
+- **トーン:** カジュアル、フレンドリー、会話的
+- **絵文字:** 視覚的なアクセントとして関連する絵文字を1〜2個
+- **構成:**
+  - 1行目: メインのアナウンスまたは重要な発見
+  - 2行目: 簡単なコンテキストまたは「なぜ重要か」
+  - 3行目（任意）: 次のステップまたはアクション依頼
+- **避けるもの:** 専門用語、長い段落、過度な詳細
+- **焦点:** チームが今すぐ知るべきこと
 
-## Example
+## 例
 
-**Input:** User research showed 8/8 users struggled with onboarding, taking 45+ minutes to complete first task. Top pain points: unclear navigation (6 mentions), no templates (5 mentions), overwhelming blank screen (4 mentions). Recommended: add interactive tour and template library.
+**入力:** ユーザーリサーチの結果、8人中8人がオンボーディングに苦労し、最初のタスク完了に45分以上かかっていた。主なペインポイント: 不明確なナビゲーション（6回言及）、テンプレートの不在（5回言及）、圧倒的な空白画面（4回言及）。推奨: インタラクティブツアーとテンプレートライブラリの追加。
 
-**Output:**
+**出力:**
 
-🎯 Just wrapped up 8 user interviews on onboarding — every single user struggled to complete their first task (45+ min avg). Main culprits: confusing navigation and that intimidating blank screen when you first log in.
+🎯 オンボーディングに関する8件のユーザーインタビューが完了しました — なんと全員が最初のタスク完了に苦労していました（平均45分以上）。主な原因: わかりにくいナビゲーションと、初回ログイン時の真っ白な画面。
 
-💡 We're going to add an interactive tour + template library to help new users get to value faster. Will share detailed findings in #product-updates!
+💡 インタラクティブツアー + テンプレートライブラリを追加して、新規ユーザーがより早く価値を実感できるようにします。詳細は #product-updates で共有します！

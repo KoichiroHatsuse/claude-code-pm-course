@@ -1,63 +1,63 @@
-# User Interview #6: Marketing Manager Persona
+# ユーザーインタビュー #6: マーケティングマネージャーペルソナ
 
-**Participant:** Sarah Thompson
-**Role:** Head of Marketing
-**Company:** DevTools Inc (140 employees, Series B)
-**TaskFlow Plan:** Pro (marketing team of 8)
-**Date:** October 11, 2024
-**Interviewer:** Senior PM
-**Duration:** 25 minutes
-
----
-
-## Background
-
-Sarah runs marketing for DevTools, managing campaigns, content creation, events, and partnerships. Her team switched from Monday.com to TaskFlow 3 months ago to better align with product and engineering teams.
+**参加者:** Sarah Thompson
+**役職:** マーケティング責任者
+**企業:** DevTools Inc（従業員140名、シリーズB）
+**TaskFlowプラン:** Pro（マーケティングチーム8名）
+**日付:** 2024年10月11日
+**インタビュアー:** シニアPM
+**所要時間:** 25分
 
 ---
 
-## Interview
+## 背景
 
-**Q: Why did you switch from Monday.com to TaskFlow?**
-
-Sarah: "Monday.com was colorful and flexible, but it was slow. Like, painfully slow. We were also the only team on it - product and engineering were on TaskFlow, so we were constantly switching tools. The CEO wanted everyone on one platform, and TaskFlow won."
-
-**Q: How's it working for marketing use cases?**
-
-Sarah: "Better than I expected! We track campaigns, content calendars, event planning. The board view works well for seeing campaign status. We can attach creative assets, track deadlines. It's not perfect for marketing, but it's good enough, and being on the same tool as product helps with launch coordination."
-
-**Q: What's working well?**
-
-Sarah: "Integration with our workflow is seamless now. When product launches a feature, we can link our launch tasks to their development tasks. We see when things are delayed, we can plan accordingly. And it's fast - Monday.com had constant loading spinners. TaskFlow is snappy."
-
-**Q: What's not working well?**
-
-Sarah: "The notification situation is insane. We run multiple campaigns at once - each has dozens of tasks, multiple people collaborating. I get easily 40-50 notifications a day. I've muted most of them, but then I miss important updates. I'd love notification rules - like, only notify me about campaign launch tasks, batch everything else."
-
-**Q: Tell me about your team's workflow.****
-
-Sarah: "We have recurring campaign types - product launches, webinars, blog posts, social campaigns. Every product launch follows the same playbook: brief, creative development, review, scheduling, launch, analysis. I rebuild this structure every single time. A template would be a game-changer. I'd save probably 30 minutes per campaign, we do 3-4 campaigns a month."
-
-**Q: How's the mobile experience?**
-
-Sarah: "Not great for marketing. I'm at conferences a lot, checking task status between sessions. The mobile web version is functional but clunky. Hard to attach images, hard to review creative assets, lots of scrolling. I mostly just check status and wait until I'm on my laptop to do real work."
-
-**Q: What about dark mode?**
-
-Sarah: "Oh my gosh, yes! Our team works across time zones - APAC, EMEA, US. Someone's always working late. The bright white interface is harsh for evening work. Multiple people have asked for dark mode. It's a running joke on our team Slack."
-
-**Q: Any other feedback?**
-
-Sarah: "The custom fields are great for us - we tag by campaign type, channel, budget tier. That's working well. But better templates and smarter notifications would transform how we use TaskFlow. Right now we spend too much time recreating structures and drowning in notification noise."
+SarahはDevToolsのマーケティングを統括し、キャンペーン、コンテンツ制作、イベント、パートナーシップを管理。プロダクトチームやエンジニアリングチームとの連携を強化するため、3ヶ月前にMonday.comからTaskFlowに移行した。
 
 ---
 
-## Key Insights
-- Templates highly desired (recurring campaign structures)
-- Notification overload severe (40-50/day, most muted)
-- Dark mode requested (global team, late hours)
-- Mobile experience inadequate for creative review
-- Speed/performance major improvement over Monday.com
-- Cross-team coordination (with product) working well
-- Custom fields working well for campaign segmentation
-- Time savings estimate: 30 min per campaign with templates (= 2 hours/month)
+## インタビュー
+
+**Q: Monday.comからTaskFlowに移行した理由は？**
+
+Sarah: 「Monday.comはカラフルで柔軟でしたが、遅かった。本当に遅い。それに、うちだけがMonday.comを使っていて - プロダクトとエンジニアリングはTaskFlowだったから、常にツールを切り替えていた。CEOが全員を1つのプラットフォームにまとめたいと言い、TaskFlowが選ばれました。」
+
+**Q: マーケティング用途としてはどうですか？**
+
+Sarah: 「予想以上に良いです！キャンペーン、コンテンツカレンダー、イベント計画を追跡しています。ボードビューがキャンペーンステータスの確認に良い。クリエイティブアセットを添付でき、期限を追跡できる。マーケティングに完璧ではないけど十分で、プロダクトと同じツールにいることでローンチの調整が楽になった。」
+
+**Q: うまくいっている点は？**
+
+Sarah: 「ワークフローとの統合がシームレスになりました。プロダクトが機能をローンチする時、うちのローンチタスクをプロダクトの開発タスクにリンクできる。遅延が見える、計画を調整できる。速さもいい - Monday.comは常にローディングスピナーが出ていた。TaskFlowはきびきびしている。」
+
+**Q: うまくいっていない点は？**
+
+Sarah: 「通知がとんでもないことになっている。複数のキャンペーンを同時に走らせていて - それぞれ数十のタスクがあり、複数人がコラボしている。1日に軽く40〜50件の通知が来る。ほとんどミュートしたけど、重要な更新を見逃す。通知ルールが欲しい - キャンペーンローンチタスクだけ通知して、それ以外はバッチで、みたいな。」
+
+**Q: チームのワークフローについて教えてください。**
+
+Sarah: 「定期的なキャンペーンタイプがあります - プロダクトローンチ、ウェビナー、ブログ記事、SNSキャンペーン。プロダクトローンチは毎回同じプレイブック: ブリーフ、クリエイティブ制作、レビュー、スケジューリング、ローンチ、分析。毎回この構造を作り直している。テンプレートがあれば革命的。キャンペーンあたり30分は節約できるし、月に3〜4つのキャンペーンをやっている。」
+
+**Q: モバイル体験はどうですか？**
+
+Sarah: 「マーケティングには向いていない。カンファレンスによく行くので、セッションの合間にタスクステータスをチェックする。モバイルWeb版は機能するけどもっさり。画像の添付が難しい、クリエイティブアセットのレビューが難しい、スクロールが多い。ほとんどステータス確認だけで、実作業はラップトップに戻るまで待つ。」
+
+**Q: ダークモードについては？**
+
+Sarah: 「もう、はい！チームがタイムゾーンをまたいで働いている - APAC、EMEA、US。誰かが常に遅い時間に仕事をしている。明るい白いインターフェースは夜の仕事にはきつい。複数のメンバーがダークモードを求めている。チームのSlackでもう冗談になっているくらい。」
+
+**Q: 他にフィードバックは？**
+
+Sarah: 「カスタムフィールドが便利 - キャンペーンタイプ、チャネル、予算ティアでタグ付けしている。うまく機能している。でもテンプレートの改善とスマートな通知があれば、TaskFlowの使い方が変わる。今は構造の再作成と通知のノイズに時間を使いすぎている。」
+
+---
+
+## 主要インサイト
+- テンプレートの要望が高い（定期的なキャンペーン構造）
+- 通知の過負荷が深刻（40〜50件/日、ほとんどミュート）
+- ダークモードの要望（グローバルチーム、遅い時間の作業）
+- クリエイティブレビュー用のモバイル体験が不十分
+- Monday.comからのスピード/パフォーマンス改善が大きい
+- プロダクトチームとの連携がうまく機能
+- カスタムフィールドがキャンペーンのセグメンテーションにうまく機能
+- テンプレートによる時間節約の見積もり: キャンペーンあたり30分（= 月2時間）

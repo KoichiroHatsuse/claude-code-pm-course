@@ -1,70 +1,70 @@
-# User Interview #3: Team Lead Persona
+# ユーザーインタビュー #3: チームリードペルソナ
 
-**Participant:** Lisa Patel
-**Role:** Engineering Manager
-**Company:** DataFlow (220 employees, Series B)
-**TaskFlow Plan:** Pro (team of 8 engineers)
-**Date:** October 8, 2024
-**Interviewer:** Senior PM
-**Duration:** 32 minutes
-
----
-
-## Background
-
-Lisa manages a distributed engineering team - 8 engineers across 4 timezones. She's been an engineering manager for 3 years, was a senior engineer before that. Her team has been using TaskFlow for about 4 months.
+**参加者:** Lisa Patel
+**役職:** エンジニアリングマネージャー
+**企業:** DataFlow（従業員220名、シリーズB）
+**TaskFlowプラン:** Pro（エンジニア8名のチーム）
+**日付:** 2024年10月8日
+**インタビュアー:** シニアPM
+**所要時間:** 32分
 
 ---
 
-## Interview
+## 背景
 
-**Q: How does TaskFlow fit into your team's workflow?**
-
-Lisa: "We do two-week sprints. At the start of each sprint, I create a project in TaskFlow with all the tasks. Engineers pull tasks as they complete work. I check the board daily to see who's working on what, identify any blockers. We've basically eliminated standup meetings - everyone just updates their tasks and I can see status at a glance."
-
-**Q: What's working well?**
-
-Lisa: "The workload view is great. I can see if someone has too many tasks assigned and rebalance. Before TaskFlow, I had no visibility - I'd find out someone was overloaded when they're already burned out. Now I can catch it early. The board view is also good for sprint planning - we drag tasks into the sprint and assign them."
-
-**Q: What's not working well?**
-
-Lisa: "Reporting is painful. Every week I have to report up to the VP of Engineering - are we on track, what's blocked, what's the velocity. Right now I manually count completed tasks and make a slide deck. TaskFlow has some reports but they're basic. I want automatic burndown charts, velocity trends, forecasting. Like 'at current pace, you'll finish 2 days late.'"
-
-**Q: Tell me about blockers.**
-
-Lisa: "Blockers are CRITICAL for me. When an engineer is blocked, I need to know immediately. Right now they have to manually tag a task as blocked and write a comment. I wish blocked tasks were more visible - like, red flag, alert me somehow. Or even better, if a task hasn't been updated in 3 days, automatically flag it as potentially blocked."
-
-**Q: How do you use TaskFlow for team visibility?**
-
-Lisa: "I have a dashboard saved with my team's tasks. I check it 3-4 times a day. I can see who's heads-down on work, who just finished something and needs a new task. But the dashboard is pretty basic. I want to see more - like, how many tasks each person completed this week, average cycle time, that kind of thing. Help me spot patterns."
-
-**Q: What about cross-team collaboration?**
-
-Lisa: "My team works with the design team and the product team. TaskFlow is okay for this but could be better. Sometimes designers attach Figma links, sometimes they don't. Sometimes PMs write detailed specs, sometimes they don't. I wish there were requirements - like, 'this task can't be started until a Figma mockup is attached.' Enforce the process a bit."
-
-**Q: How do you handle onboarding new engineers?**
-
-Lisa: "I create a training project with tasks like 'set up dev environment,' 'complete first code review,' etc. Works okay. But I'm basically rebuilding this for each new hire. A template would be nice - I could just duplicate the onboarding project. Actually, templates for common project types would be great - sprint planning, hiring pipeline, etc."
-
-**Q: What features would make your job easier?**
-
-Lisa: "Better reporting, definitely. Automatic insights - like, 'velocity decreased 20% this sprint, investigate.' Workload forecasting - 'if you assign these 5 tasks, Mike will be overloaded.' Blocked task visibility. And honestly, dark mode - half my team works late and they keep asking for it."
-
-**Q: How does TaskFlow compare to tools you've used before?**
-
-Lisa: "We used Jira before. Jira is powerful but SO complicated. TaskFlow is refreshing - it's simple but not TOO simple. It does what we need without overwhelming us with options. But we're hitting the limits now. As the team grows, I need more manager-level features. Right now it's great for individual contributors, but us managers need more tools."
+Lisaは分散型エンジニアリングチームを管理 - 4つのタイムゾーンに8名のエンジニア。エンジニアリングマネージャーとして3年、その前はシニアエンジニア。チームは約4ヶ月前からTaskFlowを使用。
 
 ---
 
-## Key Insights
-- Team visibility is primary use case
-- Workload view highly valued (prevent burnout)
-- Reporting is major pain point (manual, time-consuming)
-- Needs automatic insights and forecasting
-- Blocked task visibility critical but currently manual
-- Dashboard is useful but too basic (wants metrics)
-- Templates would help (onboarding, common projects)
-- Cross-team collaboration could be better (required fields)
-- Dark mode requested by team
-- Tool is good for ICs but lacking manager-level features
-- Eliminated standup meetings (async status updates)
+## インタビュー
+
+**Q: チームのワークフローにTaskFlowはどうフィットしていますか？**
+
+Lisa: 「2週間スプリントでやっています。各スプリントの開始時に、全タスクを含むプロジェクトをTaskFlowで作成。エンジニアは完了に合わせてタスクを取っていく。毎日ボードをチェックして、誰が何に取り組んでいるか、ブロッカーがないか確認。基本的にスタンドアップミーティングを廃止しました - 全員がタスクを更新するだけで、一目でステータスがわかります。」
+
+**Q: うまくいっている点は？**
+
+Lisa: 「ワークロードビューが素晴らしい。誰かにタスクが集中しすぎていたらリバランスできる。TaskFlow以前は可視性がなくて、誰かが過負荷になっていることに気づくのは既に燃え尽きた後でした。今は早期に察知できます。ボードビューもスプリントプランニングに良い - タスクをドラッグしてスプリントに入れてアサインする。」
+
+**Q: うまくいっていない点は？**
+
+Lisa: 「レポーティングが辛い。毎週VP of Engineeringに報告しなければならない - 予定通りか、何がブロックされているか、ベロシティはどうか。今は手動で完了タスクを数えてスライドデッキを作っている。TaskFlowにもレポートはあるけど基本的すぎる。自動バーンダウンチャート、ベロシティトレンド、予測が欲しい。『現在のペースだと2日遅れます』みたいな。」
+
+**Q: ブロッカーについて教えてください。**
+
+Lisa: 「ブロッカーは私にとって最重要です。エンジニアがブロックされたら、すぐに知る必要がある。今は手動でタスクにブロック済みタグを付けてコメントを書かなければならない。ブロックされたタスクがもっと目立てばいいのに - 赤い旗とか、アラートとか。もっと言えば、3日間更新されていないタスクを自動的にブロックの可能性ありとフラグ付けしてくれたら。」
+
+**Q: チームの可視化にTaskFlowをどう活用していますか？**
+
+Lisa: 「チームのタスクを保存したダッシュボードがあります。1日3〜4回チェックする。誰が集中して作業中か、誰がタスクを終えて次のが必要か見れる。でもダッシュボードはかなり基本的。もっと見たい - 各メンバーが今週完了したタスク数、平均サイクルタイムとか。パターンを見つける手助けをしてほしい。」
+
+**Q: チーム間コラボレーションについては？**
+
+Lisa: 「私のチームはデザインチームやプロダクトチームと連携しています。TaskFlowはまあまあですが、もっと良くなれる。デザイナーがFigmaリンクを添付する時もあればしない時もある。PMが詳細なスペックを書く時もあれば書かない時もある。要件があるといいのに - 『Figmaモックアップが添付されるまでこのタスクは開始できない』みたいな。プロセスをもう少し強制してほしい。」
+
+**Q: 新しいエンジニアのオンボーディングはどうしていますか？**
+
+Lisa: 「『開発環境のセットアップ』『最初のコードレビューを完了』などのタスクを含むトレーニングプロジェクトを作成しています。まあまあ機能している。でも基本的に新入社員ごとにこれを作り直している。テンプレートがあると嬉しい - オンボーディングプロジェクトを複製するだけ。実は、一般的なプロジェクトタイプのテンプレートがあると素晴らしい - スプリントプランニング、採用パイプラインとか。」
+
+**Q: 仕事を楽にする機能は？**
+
+Lisa: 「間違いなくレポーティングの改善。自動インサイト - 『今スプリントのベロシティが20%低下、調査してください』みたいな。ワークロード予測 - 『これら5つのタスクをアサインすると、Mikeが過負荷になります』。ブロックされたタスクの可視性。あと正直、ダークモード - チームの半分が遅くまで働いていて、ずっと求めている。」
+
+**Q: 以前使ったツールとの比較は？**
+
+Lisa: 「以前はJiraを使っていました。Jiraはパワフルだけど超複雑。TaskFlowは新鮮 - シンプルだけどシンプルすぎない。必要なことをオプションの山で圧倒せずにやってくれる。でもそろそろ限界に達している。チームが成長するにつれて、マネージャーレベルの機能がもっと必要。今は個人コントリビューターには最適だけど、マネージャーにはもっとツールが必要。」
+
+---
+
+## 主要インサイト
+- チームの可視化が主要ユースケース
+- ワークロードビューを高く評価（バーンアウト防止）
+- レポーティングが大きなペインポイント（手動で時間がかかる）
+- 自動インサイトと予測が必要
+- ブロックされたタスクの可視性が重要だが現在は手動
+- ダッシュボードは有用だが基本的すぎる（メトリクスが欲しい）
+- テンプレートが役立つ（オンボーディング、一般的なプロジェクト）
+- チーム間コラボレーションの改善余地（必須フィールド）
+- チームからダークモードの要望
+- ICには良いがマネージャーレベルの機能が不足
+- スタンドアップミーティングを廃止（非同期ステータス更新）

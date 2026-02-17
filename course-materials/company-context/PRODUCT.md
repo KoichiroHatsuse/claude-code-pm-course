@@ -1,452 +1,452 @@
-# TaskFlow Product Overview
+# TaskFlow プロダクト概要
 
-**Your complete guide to the TaskFlow product**
-
----
-
-## What is TaskFlow?
-
-TaskFlow is a project management SaaS for remote teams. Think **"Asana meets Linear"** - beautiful like Linear, functional like Asana, but built specifically for how remote teams work.
-
-### Core Value Proposition
-
-**For remote teams who struggle with scattered work and unclear priorities,** TaskFlow is a project management tool **that provides context-rich task management and async collaboration.** Unlike Asana (complex, expensive) or Trello (too simple), TaskFlow **balances simplicity with power, at 50% lower cost.**
+**TaskFlow製品の完全ガイド**
 
 ---
 
-## Product Philosophy
+## TaskFlowとは？
 
-### Key Principles
+TaskFlowはリモートチーム向けのプロジェクト管理SaaSです。**「AsanaとLinearの融合」** をイメージしてください - Linearのような美しさ、Asanaのような機能性、そしてリモートチームの働き方に特化して構築されています。
 
-**1. Async-first design**
-- No real-time coordination required
-- Rich context on every task
-- Updates work across timezones
-- Comments replace meetings
+### コアバリュープロポジション
 
-**2. Context over status**
-- Every task answers: What? Why? Who? When? How?
-- No cryptic task titles
-- Full background always attached
-- Reduces "what's this about?" questions
-
-**3. Speed matters**
-- Sub-second page loads
-- Keyboard shortcuts everywhere
-- No loading spinners
-- Instant search
-
-**4. Opinionated with escape hatches**
-- Strong defaults (workflows that work)
-- Flexibility when needed
-- Not overwhelming with options
-
-**5. Beautiful and functional**
-- Design quality matters
-- UI guides users to success
-- Delightful micro-interactions
+**散在する業務と不明確な優先順位に悩むリモートチームにとって、** TaskFlowはコンテキスト重視のタスク管理と非同期コラボレーションを提供するプロジェクト管理ツールです。Asana（複雑で高価）やTrello（シンプルすぎる）とは異なり、TaskFlowは**シンプルさとパワーのバランスを、50%低いコストで**実現しています。
 
 ---
 
-## Core Features
+## プロダクト哲学
 
-### 1. Task Management
+### 基本原則
 
-**What users can do:**
-- Create tasks with rich descriptions (markdown support)
-- Assign to team members
-- Set due dates, priorities, tags
-- Add attachments, links, context
-- Subtasks for complex work
-- Custom fields (text, number, select, date)
+**1. 非同期ファーストの設計**
+- リアルタイムの調整が不要
+- すべてのタスクに豊富なコンテキスト
+- タイムゾーンをまたいだ更新に対応
+- コメントが会議の代わりに
 
-**Our differentiation:**
-- **Context cards:** Every task has built-in space for context (why, background, decisions)
-- **Rich descriptions:** Full markdown, embeds, code blocks
-- **Smart defaults:** Priority, owner, due date auto-suggested based on patterns
+**2. ステータスよりコンテキスト**
+- すべてのタスクが答える: 何を？ なぜ？ 誰が？ いつ？ どうやって？
+- 意味不明なタスクタイトルはなし
+- 常に完全な背景情報が付随
+- 「これは何についてですか？」という質問を削減
 
-### 2. Projects & Organization
+**3. スピードが重要**
+- 1秒以下のページロード
+- あらゆる場所でキーボードショートカット
+- ローディングスピナーなし
+- 即座の検索
 
-**What users can do:**
-- Create projects (collections of tasks)
-- Multiple views: List, Board (Kanban), Calendar, Timeline (Gantt)
-- Filter and sort tasks
-- Saved views (custom filters)
-- Project templates
+**4. こだわりを持ちつつ柔軟に**
+- 強力なデフォルト設定（機能するワークフロー）
+- 必要に応じた柔軟性
+- 選択肢で圧倒しない
 
-**Our differentiation:**
-- **View memory:** Tool remembers your preferred view per project
-- **Smart filters:** Natural language ("My tasks due this week")
-- **Project status:** Auto-calculated based on task completion
-
-### 3. Collaboration
-
-**What users can do:**
-- Comment on tasks (threaded discussions)
-- @mention team members
-- React with emojis
-- Subscribe to task updates
-- Activity feed (what's happening)
-
-**Our differentiation:**
-- **Comment summaries:** AI-generated summary of long threads
-- **Decision tracking:** Mark comments as "Decision" (findable later)
-- **Context preservation:** Every update includes full context
-
-### 4. Notifications
-
-**What users can do:**
-- Email, in-app, Slack, mobile notifications
-- Granular preferences (what to get notified about)
-- Digest mode (batched notifications)
-- Snooze notifications
-
-**Our differentiation:**
-- **Smart batching:** Multiple updates → one notification
-- **Contextual notifications:** Includes enough context to act without clicking
-- **Timezone aware:** Notifications only during work hours
-
-### 5. Integrations
-
-**What users can do:**
-- **Slack:** Post updates, create tasks, get notifications
-- **GitHub:** Link PRs to tasks, auto-update status
-- **Figma:** Embed designs, link to tasks
-- **Google Drive:** Attach docs, preview in-app
-- **Calendar:** Sync due dates (Google Cal, Outlook)
-
-**Our differentiation:**
-- **Two-way sync:** Changes in TaskFlow update connected tools
-- **Context flow:** Integrations pull in context automatically
-
-### 6. Reporting & Analytics
-
-**What users can do:**
-- Team velocity (tasks completed over time)
-- Cycle time (time to complete)
-- Burndown charts
-- Custom reports (filter by anything)
-- Export to CSV
-
-**Our differentiation:**
-- **Automatic insights:** "Team velocity decreased 20% - investigate"
-- **Predictive analytics:** "At current pace, project will finish 3 days late"
+**5. 美しさと機能性の両立**
+- デザイン品質が重要
+- UIはユーザーを成功に導く
+- 心地よいマイクロインタラクション
 
 ---
 
-## User Personas (Detailed)
+## コア機能
 
-### Persona 1: Sarah (Enterprise Admin)
+### 1. タスク管理
 
-**Demographics:**
-- Age: 35-45
-- Role: IT Admin / Operations Lead
-- Company: 500+ employees
-- Location: Remote (various)
+**ユーザーができること:**
+- リッチなタスク作成（Markdownサポート）
+- チームメンバーへのアサイン
+- 期日、優先度、タグの設定
+- 添付ファイル、リンク、コンテキストの追加
+- 複雑な作業のためのサブタスク
+- カスタムフィールド（テキスト、数値、セレクト、日付）
 
-**Goals:**
-- Centralize tools (reduce tool sprawl)
-- Ensure security and compliance
-- Control access and permissions
-- Reduce costs
+**当社の差別化:**
+- **コンテキストカード:** すべてのタスクにコンテキスト用の組み込みスペース（理由、背景、意思決定）
+- **リッチな説明:** 完全なMarkdown、埋め込み、コードブロック
+- **スマートデフォルト:** パターンに基づく優先度、担当者、期日の自動提案
 
-**Pain Points:**
-- Teams using 20+ tools (scattered work)
-- No visibility into what's happening
-- Security concerns (who has access to what?)
-- Hard to onboard new employees (too many tools)
+### 2. プロジェクト＆整理
 
-**Jobs to be Done:**
-- When a new employee joins, consolidate their tool access in one place
-- When auditors ask for access logs, provide comprehensive audit trail
-- When evaluating tools, ensure they meet enterprise security standards
+**ユーザーができること:**
+- プロジェクトの作成（タスクの集まり）
+- 複数のビュー: リスト、ボード（カンバン）、カレンダー、タイムライン（ガントチャート）
+- タスクのフィルタリングとソート
+- 保存済みビュー（カスタムフィルター）
+- プロジェクトテンプレート
 
-**TaskFlow Features They Love:**
-- SSO (Single Sign-On) integration
-- Advanced permissions (role-based access)
-- Audit logs (who did what, when)
-- Admin dashboard (org-wide visibility)
-- Bulk user management
+**当社の差別化:**
+- **ビューの記憶:** プロジェクトごとに好みのビューを記憶
+- **スマートフィルター:** 自然言語対応（「今週期限の自分のタスク」）
+- **プロジェクトステータス:** タスク完了率に基づく自動計算
 
-**Quote:** *"I need to know who has access to what, and I need to be able to revoke it instantly if someone leaves."*
+### 3. コラボレーション
 
----
+**ユーザーができること:**
+- タスクへのコメント（スレッド形式のディスカッション）
+- チームメンバーへの@メンション
+- 絵文字リアクション
+- タスク更新の購読
+- アクティビティフィード（最新の動き）
 
-### Persona 2: Mike (IC Engineer)
+**当社の差別化:**
+- **コメントサマリー:** AIによる長いスレッドの要約
+- **意思決定の追跡:** コメントを「意思決定」としてマーク（後から検索可能）
+- **コンテキストの保持:** すべての更新に完全なコンテキストが含まれる
 
-**Demographics:**
-- Age: 25-35
-- Role: Individual Contributor Engineer
-- Company: 50-200 employees (startup)
-- Location: Remote (global)
+### 4. 通知
 
-**Goals:**
-- Clear task assignments (what to work on)
-- Minimize context switching
-- Deep work time (no interruptions)
-- Simple, fast tools
+**ユーザーができること:**
+- メール、アプリ内、Slack、モバイル通知
+- 細かな設定（通知対象の選択）
+- ダイジェストモード（通知のバッチ処理）
+- 通知のスヌーズ
 
-**Pain Points:**
-- Unclear priorities (what's most important?)
-- Meetings interrupt focus time
-- Task descriptions lack technical detail
-- Slow, bloated tools
+**当社の差別化:**
+- **スマートバッチ処理:** 複数の更新 → 1つの通知にまとめる
+- **コンテキスト付き通知:** クリックせずに対応できるだけのコンテキストを含む
+- **タイムゾーン対応:** 勤務時間中のみ通知
 
-**Jobs to be Done:**
-- When starting work, quickly see what's highest priority
-- When blocked, easily communicate blockers without meetings
-- When finishing a task, immediately see what's next
+### 5. インテグレーション
 
-**TaskFlow Features They Love:**
-- Keyboard shortcuts (navigate without mouse)
-- GitHub integration (PRs linked to tasks)
-- Rich markdown (code blocks, technical detail)
-- Fast performance (no lag)
-- Clean, minimal UI
+**ユーザーができること:**
+- **Slack:** 更新の投稿、タスク作成、通知の受信
+- **GitHub:** PRとタスクのリンク、ステータスの自動更新
+- **Figma:** デザインの埋め込み、タスクへのリンク
+- **Google Drive:** ドキュメントの添付、アプリ内プレビュー
+- **カレンダー:** 期日の同期（Google Cal、Outlook）
 
-**Quote:** *"Just tell me what to build, give me the context, and let me focus. Don't make me hunt for information."*
+**当社の差別化:**
+- **双方向同期:** TaskFlowの変更が連携ツールに反映
+- **コンテキストの流れ:** インテグレーションが自動的にコンテキストを取り込む
 
----
+### 6. レポーティング＆分析
 
-### Persona 3: Alex (Team Lead)
+**ユーザーができること:**
+- チームベロシティ（経時的なタスク完了数）
+- サイクルタイム（完了までの所要時間）
+- バーンダウンチャート
+- カスタムレポート（あらゆる条件でフィルタリング）
+- CSVエクスポート
 
-**Demographics:**
-- Age: 30-40
-- Role: Engineering Manager / Team Lead
-- Company: 100-500 employees
-- Location: Remote (various)
-
-**Goals:**
-- Team visibility (who's working on what)
-- Identify blockers early
-- Balanced workload (no one overloaded)
-- Predictable delivery
-
-**Pain Points:**
-- Hard to see team capacity
-- Blockers discovered too late
-- Standup meetings waste time
-- Team members overloaded or underutilized
-
-**Jobs to be Done:**
-- When planning a sprint, see team capacity and assign work accordingly
-- When someone is blocked, identify it without asking in meetings
-- When reporting to leadership, show team progress clearly
-
-**TaskFlow Features They Love:**
-- Team dashboard (everyone's tasks at a glance)
-- Workload view (who's overloaded)
-- Blocked task visibility (red flags)
-- Sprint reports (velocity, burndown)
-- Comment summaries (catch up on discussions quickly)
-
-**Quote:** *"I need to know if my team is on track without having to ask them individually every day."*
+**当社の差別化:**
+- **自動インサイト:** 「チームベロシティが20%低下しました - 調査してください」
+- **予測分析:** 「現在のペースでは、プロジェクトは3日遅れで完了する見込みです」
 
 ---
 
-## Product Roadmap (Simplified)
+## ユーザーペルソナ（詳細）
 
-### Already Shipped (Current Product)
+### ペルソナ1: Sarah（エンタープライズ管理者）
 
-✅ Core task management
-✅ Projects with multiple views
-✅ Comments and @mentions
-✅ Basic integrations (Slack, GitHub)
-✅ Email notifications
-✅ Custom fields
-✅ Search
-✅ Mobile web (responsive)
+**基本情報:**
+- 年齢: 35〜45歳
+- 役割: IT管理者 / オペレーションリード
+- 企業: 従業員500名以上
+- 勤務地: リモート（各地）
 
-### In Progress (Q4 2024 - Q1 2025)
+**目標:**
+- ツールの一元化（ツールの乱立を削減）
+- セキュリティとコンプライアンスの確保
+- アクセスと権限の管理
+- コスト削減
 
-🚧 **Mobile apps** (iOS and Android native)
-🚧 **SSO integration** (SAML, OAuth)
-🚧 **Advanced permissions** (role-based access control)
-🚧 **Audit logs** (compliance, enterprise)
-🚧 **Improved onboarding** (templates, tours)
+**ペインポイント:**
+- チームが20以上のツールを使用（業務が分散）
+- 何が起きているか把握できない
+- セキュリティ上の懸念（誰が何にアクセスしているか？）
+- 新入社員のオンボーディングが困難（ツールが多すぎる）
 
-### Planned (Q2-Q3 2025)
+**ジョブ・トゥ・ビー・ダン:**
+- 新入社員が入社した際、ツールアクセスを一箇所で集約する
+- 監査人からアクセスログを求められた際、包括的な監査証跡を提供する
+- ツール評価時に、エンタープライズセキュリティ基準を満たしていることを確認する
 
-📅 **Dark mode** (user-requested feature)
-📅 **Time tracking** (hours logged per task)
-📅 **Resource management** (capacity planning)
-📅 **Custom workflows** (status transitions, automations)
-📅 **API v2** (better integrations)
+**TaskFlowで気に入る機能:**
+- SSO（シングルサインオン）連携
+- 高度な権限管理（ロールベースアクセス）
+- 監査ログ（誰が何をいつ行ったか）
+- 管理者ダッシュボード（組織全体の可視化）
+- 一括ユーザー管理
 
-### Research Phase (Exploring)
-
-🔬 **AI features** (smart task suggestions, auto-categorization)
-🔬 **Whiteboarding** (visual collaboration)
-🔬 **Goals & OKRs** (strategic planning)
-🔬 **Portfolio management** (multiple projects)
-
----
-
-## Product Metrics
-
-### North Star Metric
-
-**Weekly Active Teams** - Teams that complete at least one task per week
-
-**Why this metric?**
-- Indicates real usage (not just logins)
-- Measures team collaboration (not individual)
-- Leading indicator of retention
-- Correlates with revenue
-
-**Current:** 850 weekly active teams
-**Goal (Q1 2025):** 1,200 weekly active teams
+**コメント:** *「誰が何にアクセスしているか把握し、退職時には即座にアクセスを取り消せる必要があります。」*
 
 ---
 
-### Product Health Metrics
+### ペルソナ2: Mike（ICエンジニア）
 
-**Activation:**
-- **Definition:** User completes first task within 7 days of signup
-- **Current:** 45%
-- **Target:** 60%
-- **Why it matters:** Activated users are 5x more likely to become paying customers
+**基本情報:**
+- 年齢: 25〜35歳
+- 役割: 個人貢献者（IC）エンジニア
+- 企業: 従業員50〜200名（スタートアップ）
+- 勤務地: リモート（グローバル）
 
-**Retention:**
-- **Definition:** % of users active in month N who are active in month N+1
-- **Current:** 65%
-- **Target:** 75%
-- **Why it matters:** Retention drives LTV (lifetime value)
+**目標:**
+- 明確なタスクアサイン（何に取り組むべきか）
+- コンテキストスイッチの最小化
+- 集中作業の時間確保（割り込みなし）
+- シンプルで高速なツール
+
+**ペインポイント:**
+- 優先順位が不明確（何が最も重要か？）
+- 会議が集中時間を妨げる
+- タスクの説明に技術的な詳細が不足
+- 遅くて重いツール
+
+**ジョブ・トゥ・ビー・ダン:**
+- 作業開始時に、最優先タスクをすぐに確認する
+- ブロッカーがあるとき、会議なしで簡単にブロッカーを伝える
+- タスク完了時に、次の作業をすぐに把握する
+
+**TaskFlowで気に入る機能:**
+- キーボードショートカット（マウスなしで操作）
+- GitHub連携（PRとタスクのリンク）
+- リッチMarkdown（コードブロック、技術的な詳細）
+- 高速なパフォーマンス（ラグなし）
+- クリーンでミニマルなUI
+
+**コメント:** *「何を作るか教えてくれて、コンテキストをくれたら、あとは集中させてほしい。情報を探し回らせたり、会議に出させないでください。」*
+
+---
+
+### ペルソナ3: Alex（チームリード）
+
+**基本情報:**
+- 年齢: 30〜40歳
+- 役割: エンジニアリングマネージャー / チームリード
+- 企業: 従業員100〜500名
+- 勤務地: リモート（各地）
+
+**目標:**
+- チームの可視化（誰が何に取り組んでいるか）
+- ブロッカーの早期発見
+- バランスの取れたワークロード（過負荷の人がいない）
+- 予測可能なデリバリー
+
+**ペインポイント:**
+- チームのキャパシティが見えにくい
+- ブロッカーの発見が遅れる
+- スタンドアップ会議が時間の無駄
+- チームメンバーの過負荷または過少稼働
+
+**ジョブ・トゥ・ビー・ダン:**
+- スプリント計画時に、チームのキャパシティを確認して適切に作業を割り当てる
+- 誰かがブロックされているとき、会議なしでそれを特定する
+- リーダーシップへの報告時に、チームの進捗を明確に示す
+
+**TaskFlowで気に入る機能:**
+- チームダッシュボード（全員のタスクを一覧で確認）
+- ワークロードビュー（過負荷の人を把握）
+- ブロックされたタスクの可視化（赤いフラグ）
+- スプリントレポート（ベロシティ、バーンダウン）
+- コメントサマリー（ディスカッションをすばやくキャッチアップ）
+
+**コメント:** *「毎日個別にチームメンバーに確認しなくても、チームが順調かどうかわかるようにしたいです。」*
+
+---
+
+## プロダクトロードマップ（簡略版）
+
+### リリース済み（現在のプロダクト）
+
+- コアタスク管理
+- 複数ビューのプロジェクト
+- コメントと@メンション
+- 基本的なインテグレーション（Slack、GitHub）
+- メール通知
+- カスタムフィールド
+- 検索機能
+- モバイルWeb（レスポンシブ）
+
+### 進行中（2024年Q4 - 2025年Q1）
+
+- **モバイルアプリ**（iOSおよびAndroidネイティブ）
+- **SSO連携**（SAML、OAuth）
+- **高度な権限管理**（ロールベースアクセス制御）
+- **監査ログ**（コンプライアンス、エンタープライズ）
+- **オンボーディング改善**（テンプレート、ガイドツアー）
+
+### 計画中（2025年Q2-Q3）
+
+- **ダークモード**（ユーザーからの要望機能）
+- **タイムトラッキング**（タスクごとの作業時間記録）
+- **リソース管理**（キャパシティプランニング）
+- **カスタムワークフロー**（ステータス遷移、自動化）
+- **API v2**（より良いインテグレーション）
+
+### リサーチフェーズ（検討中）
+
+- **AI機能**（スマートタスク提案、自動カテゴリ分け）
+- **ホワイトボード**（ビジュアルコラボレーション）
+- **ゴール＆OKR**（戦略的計画）
+- **ポートフォリオ管理**（複数プロジェクト管理）
+
+---
+
+## プロダクト指標
+
+### ノーススターメトリクス
+
+**Weekly Active Teams** - 週に少なくとも1つのタスクを完了するチーム数
+
+**なぜこの指標か？**
+- 実際の利用を示す（単なるログインではない）
+- チームのコラボレーションを測定（個人ではなく）
+- リテンションの先行指標
+- 収益との相関が高い
+
+**現在:** 850 Weekly Active Teams
+**目標（2025年Q1）:** 1,200 Weekly Active Teams
+
+---
+
+### プロダクトヘルス指標
+
+**アクティベーション:**
+- **定義:** サインアップ後7日以内に最初のタスクを完了したユーザー
+- **現在:** 45%
+- **目標:** 60%
+- **重要な理由:** アクティベーション済みユーザーは有料顧客になる可能性が5倍高い
+
+**リテンション:**
+- **定義:** N月にアクティブだったユーザーのうち、N+1月もアクティブなユーザーの割合
+- **現在:** 65%
+- **目標:** 75%
+- **重要な理由:** リテンションがLTV（顧客生涯価値）を左右する
 
 **Time to Value:**
-- **Definition:** Time from signup to first task completed
-- **Current:** 45 minutes (median)
-- **Target:** 15 minutes
-- **Why it matters:** Faster value = higher activation
+- **定義:** サインアップから最初のタスク完了までの時間
+- **現在:** 45分（中央値）
+- **目標:** 15分
+- **重要な理由:** 価値を早く実感 = 高いアクティベーション
 
-**Viral Coefficient:**
-- **Definition:** Average invites sent per user × invite acceptance rate
-- **Current:** 1.2 (barely viral)
-- **Target:** 1.5+ (truly viral)
-- **Why it matters:** Viral growth reduces CAC (customer acquisition cost)
+**バイラル係数:**
+- **定義:** ユーザーあたりの平均招待数 x 招待受諾率
+- **現在:** 1.2（かろうじてバイラル）
+- **目標:** 1.5以上（本格的なバイラル）
+- **重要な理由:** バイラル成長はCAC（顧客獲得コスト）を削減
 
 ---
 
-## Pricing & Packaging
+## 料金プラン
 
-### Current Plans
+### 現在のプラン
 
-**Free Plan:**
-- Up to 10 users
-- Unlimited tasks and projects
-- Basic integrations
-- 7-day activity history
-- Community support
+**Freeプラン:**
+- 最大10ユーザー
+- 無制限のタスクとプロジェクト
+- 基本的なインテグレーション
+- 7日間のアクティビティ履歴
+- コミュニティサポート
 
-**Pro Plan ($12/user/month):**
-- Unlimited users
-- Unlimited activity history
-- Advanced integrations
-- Custom fields
-- Priority support
-- Advanced reporting
+**Proプラン（$12/ユーザー/月）:**
+- 無制限のユーザー
+- 無制限のアクティビティ履歴
+- 高度なインテグレーション
+- カスタムフィールド
+- 優先サポート
+- 高度なレポーティング
 
-**Enterprise Plan (Custom pricing):**
-- Everything in Pro
-- SSO (SAML, OAuth)
-- Advanced permissions
-- Audit logs
-- Dedicated support
-- SLA guarantees
-- Custom contracts
+**Enterpriseプラン（カスタム料金）:**
+- Proのすべての機能
+- SSO（SAML、OAuth）
+- 高度な権限管理
+- 監査ログ
+- 専任サポート
+- SLA保証
+- カスタム契約
 
-### Competitive Pricing
+### 競合との価格比較
 
-| Tool | Entry Price | Mid-tier | Enterprise |
+| ツール | エントリー価格 | ミッドティア | エンタープライズ |
 |------|------------|----------|------------|
-| **TaskFlow** | Free | $12/user/mo | Custom |
-| Asana | Free (limited) | $13.49/user/mo | $30.49/user/mo |
-| Monday.com | $8/user/mo | $10/user/mo | $16/user/mo |
-| Linear | $8/user/mo | $12/user/mo | Custom |
-| ClickUp | Free | $7/user/mo | $12/user/mo |
+| **TaskFlow** | 無料 | $12/ユーザー/月 | カスタム |
+| Asana | 無料（制限あり） | $13.49/ユーザー/月 | $30.49/ユーザー/月 |
+| Monday.com | $8/ユーザー/月 | $10/ユーザー/月 | $16/ユーザー/月 |
+| Linear | $8/ユーザー/月 | $12/ユーザー/月 | カスタム |
+| ClickUp | 無料 | $7/ユーザー/月 | $12/ユーザー/月 |
 
-**Our strategy:** Competitive on price, better on value.
+**当社の戦略:** 価格で競争力を持ち、価値で勝つ。
 
 ---
 
-## Technology Stack
+## 技術スタック
 
-**Frontend:**
+**フロントエンド:**
 - React + TypeScript
 - Tailwind CSS
-- React Query (data fetching)
-- WebSockets (real-time updates)
+- React Query（データフェッチ）
+- WebSockets（リアルタイム更新）
 
-**Backend:**
+**バックエンド:**
 - Node.js + Express
-- PostgreSQL (primary database)
-- Redis (caching, sessions)
-- S3 (file storage)
+- PostgreSQL（プライマリデータベース）
+- Redis（キャッシュ、セッション）
+- S3（ファイルストレージ）
 
-**Infrastructure:**
-- AWS (hosting)
-- CloudFront (CDN)
-- Terraform (infrastructure as code)
+**インフラストラクチャ:**
+- AWS（ホスティング）
+- CloudFront（CDN）
+- Terraform（Infrastructure as Code）
 
-**Mobile:**
-- React Native (iOS and Android)
-- Shared backend APIs
-
----
-
-## Product Principles in Action
-
-### Example: How we built Comments
-
-**Principle: Async-first**
-- Rich text editor (not just plain text)
-- Threading (organized discussions)
-- Email integration (reply via email)
-- Notification digests (not interrupt-driven)
-
-**Principle: Context over status**
-- Comments stay attached to task (never orphaned)
-- Quote specific parts of previous comments
-- Mark decisions explicitly (findable later)
-
-**Principle: Speed matters**
-- Comments load instantly (optimistic UI)
-- Keyboard shortcut to add comment (Cmd+Shift+C)
-- No page reload needed
-
-**Result:** 80% of teams use comments daily (high engagement)
+**モバイル:**
+- React Native（iOSおよびAndroid）
+- 共有バックエンドAPI
 
 ---
 
-## Your Projects This Quarter
+## プロダクト原則の実践例
 
-As the Senior PM for Activation & Onboarding, you're working on:
+### 事例: コメント機能の構築
 
-**Project 1: Onboarding Redesign**
-- Goal: Increase activation from 45% → 60%
-- Timeline: Q1 2025
-- Status: In progress
+**原則: 非同期ファースト**
+- リッチテキストエディター（プレーンテキストだけではない）
+- スレッド機能（整理されたディスカッション）
+- メール連携（メールから返信）
+- 通知ダイジェスト（割り込み型ではない）
 
-**Project 2: Dark Mode**
-- Goal: Ship most-requested feature
-- Timeline: Q1 2025
-- Status: PRD complete, starting dev
+**原則: ステータスよりコンテキスト**
+- コメントはタスクに紐づく（孤立しない）
+- 過去のコメントの特定部分を引用
+- 意思決定を明示的にマーク（後から検索可能）
 
-**Project 3: Template Library**
-- Goal: Faster time to value
-- Timeline: Q2 2025
-- Status: Research phase
+**原則: スピードが重要**
+- コメントは即座にロード（楽観的UI）
+- コメント追加のキーボードショートカット（Cmd+Shift+C）
+- ページリロード不要
 
----
-
-## Product Documentation
-
-All product documentation lives in:
-- **Notion:** Product specs, PRDs, research
-- **Figma:** Designs, mockups, design system
-- **GitHub:** Technical specs, API docs
-- **TaskFlow:** Roadmap, feature tracking (we dogfood!)
+**結果:** 80%のチームがコメント機能を毎日利用（高いエンゲージメント）
 
 ---
 
-**Throughout this course, you'll write PRDs, generate user stories, analyze research, and plan features for TaskFlow. You're not learning in a vacuum - you're working on a real (fictional) product! 🎯**
+## あなたの今四半期のプロジェクト
+
+アクティベーション＆オンボーディング担当のシニアPMとして、以下に取り組んでいます:
+
+**プロジェクト1: オンボーディングの再設計**
+- 目標: アクティベーション率を45% → 60%に向上
+- タイムライン: 2025年Q1
+- ステータス: 進行中
+
+**プロジェクト2: ダークモード**
+- 目標: 最もリクエストの多い機能を出荷
+- タイムライン: 2025年Q1
+- ステータス: PRD完了、開発開始
+
+**プロジェクト3: テンプレートライブラリ**
+- 目標: より短いTime to Value
+- タイムライン: 2025年Q2
+- ステータス: リサーチフェーズ
+
+---
+
+## プロダクトドキュメント
+
+すべてのプロダクトドキュメントは以下に保管されています:
+- **Notion:** プロダクト仕様書、PRD、リサーチ
+- **Figma:** デザイン、モックアップ、デザインシステム
+- **GitHub:** 技術仕様書、APIドキュメント
+- **TaskFlow:** ロードマップ、機能トラッキング（自社ドッグフーディング！）
+
+---
+
+**このコースを通じて、PRDの作成、ユーザーストーリーの生成、リサーチの分析、機能の計画をTaskFlowで行います。真空状態での学習ではなく、実在する（架空の）プロダクトに取り組むのです！**

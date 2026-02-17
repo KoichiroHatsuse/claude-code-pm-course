@@ -1,63 +1,63 @@
-# User Interview #7: Sales Operations Lead Persona
+# ユーザーインタビュー #7: セールスオペレーションリードペルソナ
 
-**Participant:** Marcus Williams
-**Role:** Sales Operations Lead
-**Company:** Enterprise SaaS Co (280 employees, Series C)
-**TaskFlow Plan:** Enterprise (sales team of 25)
-**Date:** October 12, 2024
-**Interviewer:** Senior PM
-**Duration:** 29 minutes
-
----
-
-## Background
-
-Marcus manages sales operations, tracking deal progress, onboarding new sales reps, and coordinating between sales, marketing, and customer success. His team adopted TaskFlow 5 months ago to complement Salesforce.
+**参加者:** Marcus Williams
+**役職:** セールスオペレーションリード
+**企業:** Enterprise SaaS Co（従業員280名、シリーズC）
+**TaskFlowプラン:** Enterprise（営業チーム25名）
+**日付:** 2024年10月12日
+**インタビュアー:** シニアPM
+**所要時間:** 29分
 
 ---
 
-## Interview
+## 背景
 
-**Q: How does TaskFlow fit into your sales workflow?**
-
-Marcus: "We use Salesforce for deal tracking, but we use TaskFlow for everything around deals - follow-up tasks, deal reviews, customer onboarding coordination. Each big deal gets a TaskFlow project where we coordinate all the moving pieces - legal review, security questionnaire, custom demo, pricing approval."
-
-**Q: What's working well?**
-
-Marcus: "The visibility is great. I can see where deals are getting stuck. Sales reps update tasks, I can check in without micromanaging. We can loop in legal, security, whoever we need. Much better than the scattered email threads we had before."
-
-**Q: What's frustrating?**
-
-Marcus: "I travel constantly - meeting customers, attending sales kickoffs, visiting field offices. The mobile experience is rough. I need to check deal status on the go, add quick notes, reassign tasks. The mobile web version works, but it's slow and clunky. I end up waiting until I'm back at my hotel to do updates."
-
-**Q: You mentioned onboarding new sales reps - how does that work?**
-
-Marcus: "Huge pain point. We have a 30-day onboarding program for new reps - product training, shadowing calls, first solo demo, quota ramp. I have a master checklist, but I manually recreate it for each new hire. We're hiring 2-3 reps per quarter. If I could just duplicate a template project, that'd save me hours. Right now it's copy-paste hell."
-
-**Q: How do you handle deal reviews?**
-
-Marcus: "Every week we review all active deals. I go through TaskFlow, check task completion, spot blockers. But it's manual - I'm literally opening each project, scanning tasks, making notes. Would be awesome if TaskFlow could auto-generate a deal status report. Like, 'These 3 deals have overdue tasks, these 2 are blocked, these 5 are on track.'"
-
-**Q: Tell me about notifications.**
-
-Marcus: "Too many. Way too many. Our team is fast-paced - deals move quickly, tasks get updated constantly. I get probably 60-70 notifications a day. I've had to turn most off. But then sometimes I miss a critical update - like, legal has a question blocking a deal. I need smart notifications - urgent stuff immediately, everything else once daily."
-
-**Q: What about dark mode?**
-
-Marcus: "Our sales team would love it. They work late prepping for next-day meetings, catching up on the East Coast or calling APAC. The bright white screen at 10pm is not ideal. I've heard this request from multiple reps."
-
-**Q: If you could have one feature?**
-
-Marcus: "Templates, hands down. The amount of duplicate work we do setting up onboarding projects, recurring deal review checklists, quarterly planning structures - it's massive. We'd save hours every month. After that, better reporting and mobile improvements."
+Marcusはセールスオペレーションを管理し、案件の進捗追跡、新規営業担当者のオンボーディング、営業・マーケティング・カスタマーサクセス間の調整を担当。Salesforceの補完として5ヶ月前にTaskFlowを導入。
 
 ---
 
-## Key Insights
-- Templates critical (onboarding reps, deal workflows)
-- Mobile experience inadequate (frequent travel)
-- Notification overload extreme (60-70/day)
-- Dark mode requested by sales team (late evening work)
-- Reporting/analytics manual and time-consuming
-- Visibility into deal progress working well
-- Integration with Salesforce would be valuable
-- Time savings estimate: Hours per month with templates
+## インタビュー
+
+**Q: 営業ワークフローにTaskFlowはどうフィットしていますか？**
+
+Marcus: 「案件追跡にはSalesforceを使っていますが、案件周りの全てにTaskFlowを使っています - フォローアップタスク、案件レビュー、顧客オンボーディングの調整。大きな案件ごとにTaskFlowプロジェクトを作り、全ての可動部分を調整します - 法務レビュー、セキュリティ質問票、カスタムデモ、価格承認。」
+
+**Q: うまくいっている点は？**
+
+Marcus: 「可視性が素晴らしい。案件がどこで詰まっているか見える。営業担当がタスクを更新し、マイクロマネジメントせずにチェックインできる。法務、セキュリティ、必要な人を巻き込める。以前のバラバラなメールスレッドよりずっと良い。」
+
+**Q: フラストレーションを感じる点は？**
+
+Marcus: 「常に出張しています - 顧客訪問、営業キックオフ、支社訪問。モバイル体験がイマイチ。移動中に案件ステータスをチェックしたり、簡単なメモを追加したり、タスクを再アサインしたい。モバイルWeb版は動くけど、遅くてもっさり。結局ホテルに戻るまで更新を待つことになる。」
+
+**Q: 新規営業担当者のオンボーディングについて。**
+
+Marcus: 「大きなペインポイントです。新規担当者向けの30日間オンボーディングプログラムがある - 製品トレーニング、コールの同行、初のソロデモ、ノルマランプアップ。マスターチェックリストがあるけど、新入社員ごとに手動で作り直している。四半期ごとに2〜3人を採用している。テンプレートプロジェクトを複製できれば、何時間も節約できる。今はコピペ地獄です。」
+
+**Q: 案件レビューはどうしていますか？**
+
+Marcus: 「毎週全アクティブ案件をレビューする。TaskFlowを見て、タスクの完了状況をチェックし、ブロッカーを発見。でも手動 - 文字通り各プロジェクトを開いて、タスクをスキャンして、メモを取っている。TaskFlowが案件ステータスレポートを自動生成してくれたら最高。『この3件は期限超過タスクあり、この2件はブロック中、この5件は順調』みたいな。」
+
+**Q: 通知について。**
+
+Marcus: 「多い。多すぎる。チームはペースが速い - 案件が素早く動き、タスクが常に更新される。おそらく1日60〜70件の通知が来る。ほとんどオフにせざるを得なかった。でも時々重要な更新を見逃す - 法務が案件をブロックする質問をしているとか。スマート通知が必要 - 緊急なものは即座に、それ以外は1日1回のダイジェストで。」
+
+**Q: ダークモードについては？**
+
+Marcus: 「営業チームは喜ぶでしょう。翌日の準備で遅くまで働いたり、東海岸に追いつくために遅い時間に作業したり、APACに電話したり。夜10時の明るい白い画面は理想的じゃない。複数の担当者からこの要望を聞いています。」
+
+**Q: 1つ機能を持てるなら？**
+
+Marcus: 「テンプレート、ダントツで。オンボーディングプロジェクトの設定、定期的な案件レビューチェックリスト、四半期計画の構造 - 重複作業が膨大。月に何時間も節約できる。その次は、レポーティングの改善とモバイルの改善。」
+
+---
+
+## 主要インサイト
+- テンプレートが重要（担当者オンボーディング、案件ワークフロー）
+- モバイル体験が不十分（頻繁な出張）
+- 通知の過負荷が極端（60〜70件/日）
+- 営業チームからダークモードの要望（夜遅くの作業）
+- レポーティング/アナリティクスが手動で時間がかかる
+- 案件進捗の可視化がうまく機能
+- Salesforceとの連携が価値がある
+- テンプレートによる時間節約見積もり: 月に数時間

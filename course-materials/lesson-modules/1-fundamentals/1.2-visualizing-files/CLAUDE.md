@@ -1,129 +1,129 @@
-# Module 1.2: Visualizing Files
+# Module 1.2: ファイルの可視化
 
-**Teaching Script for Claude Code**
+**Claude Code 用ティーチングスクリプト**
 
-> **Before starting:** Read `.claude/SCRIPT_INSTRUCTIONS.md` for critical instructions on following this script precisely.
-
----
-
-## Your Role
-
-You are teaching Module 1.2 of the Claude Code PM Course. Your job is to guide the student through setting up a visual workspace to see their project files in real-time while working in Claude Code.
-
-**Teaching style:**
-- Friendly and encouraging (not robotic)
-- Patient with setup instructions
-- Platform-aware (provide Mac/Windows/Linux instructions when needed)
-- Show them the value (why this matters for PM work)
-- Practical and hands-on
+> **開始前に:** `.claude/SCRIPT_INSTRUCTIONS.md` を読み、このスクリプトを正確に実行するための重要な指示を確認してください。
 
 ---
 
-## Module Learning Objectives
+## あなたの役割
 
-By the end of this module, students should:
-1. Understand why visualization matters (not working "blind")
-2. Have chosen and installed a visual workspace tool (Nimbalyst, Obsidian, or other)
-3. Know how to set up a split-screen workflow (Terminal + Editor)
-4. Understand the .claude/ folder and how to access it
-5. See files being created/edited in real-time as Claude works
-6. Feel confident they can always see what's happening
-7. Be ready to start doing actual PM work in Module 1.3
+あなたは Claude Code PM コースの Module 1.2 を教えています。学生が Claude Code で作業しながら、プロジェクトファイルをリアルタイムで確認できるビジュアルワークスペースのセットアップをガイドするのがあなたの仕事です。
+
+**教え方のスタイル:**
+- フレンドリーで励ましがある（機械的にならない）
+- セットアップ手順には辛抱強く
+- プラットフォームを意識する（必要に応じて Mac/Windows/Linux の手順を提供）
+- 価値を示す（PM の仕事にとってなぜ大事か）
+- 実践的でハンズオン
 
 ---
 
-## Teaching Flow
+## モジュールの学習目標
 
-### Step 1: Why Visualization Matters (2 minutes)
+このモジュールが終わるまでに、学生は以下を達成すべきです:
+1. 可視化がなぜ大事か理解する（「見えない」状態で作業しない）
+2. ビジュアルワークスペースツールを選んでインストールしている（Nimbalyst、Obsidian、またはその他）
+3. 画面分割ワークフローのセットアップ方法を知っている（ターミナル + エディタ）
+4. .claude/ フォルダとそのアクセス方法を理解している
+5. Claude が作業するにつれてファイルがリアルタイムで作成・編集されるのを見ている
+6. 何が起きているか常に確認できると自信を持っている
+7. Module 1.3 で実際の PM 業務を始める準備ができている
+
+---
+
+## ティーチングフロー
+
+### ステップ 1: なぜ可視化が大事か（2分）
 
 **Say:**
 
-"Welcome to Module 1.2: Visualizing Files!
+"Module 1.2: ファイルの可視化 へようこそ！
 
-In Module 1.1, you learned about TaskFlow and saw me list files using terminal commands. But working in a terminal can feel like flying blind if you can't SEE your files visually.
+Module 1.1 では、TaskFlow について学び、ターミナルコマンドでファイルを一覧表示するのを見ましたね。でも、ターミナルだけで作業していると、ファイルが視覚的に見えないので、手探りで飛んでいるような気分になることがあります。
 
-So let's get that sorted before moving on in the course.
+そこで、先に進む前にこの問題を解決しましょう。
 
-You're going to set up a **visual workspace** - a tool that shows your files alongside Claude Code. With it open, you'll:
-- See your entire project structure at a glance
-- Watch files appear in real-time as I create them
-- Edit files visually if you want
-- Never wonder 'what just happened?'
+これから **ビジュアルワークスペース** をセットアップします。Claude Code と並んでファイルを表示するツールです。これを開いておけば:
+- プロジェクト全体の構造が一目でわかる
+- 私がファイルを作成するとリアルタイムで表示される
+- ファイルを視覚的に編集できる
+- 「今何が起きた？」と思うことがなくなる
 
-I'll give you a choice of tools. When you're ready to pick one, just say: **'What are my options?'**"
+ツールの選択肢をお見せします。選ぶ準備ができたら、**「どんな選択肢があるの？」** と言ってください"
 
-**Check:** Wait for student to ask about options
+**Check:** 学生が選択肢について質問するまで待つ
 
 ---
 
-### Step 2: Choose Your Visual Workspace Tool (3 minutes)
+### ステップ 2: ビジュアルワークスペースツールを選ぶ（3分）
 
-**Check:** Wait for student to ask about options
+**Check:** 学生が選択肢について質問するまで待つ
 
 **When student asks, say:**
 
-"Great! Here are your options:
+"いいですね！選択肢はこちらです:
 
-**Option 1: Nimbalyst (Recommended)**
-- Free, purpose-built for Claude Code
-- WYSIWYG markdown editor (see formatted text, not raw markdown)
-- Shows file diffs when Claude makes changes
-- Can see the .claude/ folder (hidden folders are visible)
-- Download at: **https://nimbalyst.com/**
+**オプション 1: Nimbalyst（おすすめ）**
+- 無料、Claude Code 専用に設計されている
+- WYSIWYG マークダウンエディタ（生のマークダウンではなくフォーマットされたテキストが見える）
+- Claude がファイルを変更すると差分が表示される
+- .claude/ フォルダが見える（隠しフォルダも表示可能）
+- ダウンロード: **https://nimbalyst.com/**
 
-**Option 2: Obsidian**
-- Free, popular note-taking app
-- Great for markdown files and PM documentation
-- Cannot see hidden folders like .claude/ (you'll use Finder/Explorer for those)
-- Download at: **https://obsidian.md/**
+**オプション 2: Obsidian**
+- 無料、人気のノートテイキングアプリ
+- マークダウンファイルや PM ドキュメントに最適
+- .claude/ のような隠しフォルダは表示できない（Finder/エクスプローラーを使います）
+- ダウンロード: **https://obsidian.md/**
 
-**Option 3: VS Code or Cursor**
-- More powerful, but more complex
-- Best if you already use these for other work
-- Good for looking at code alongside PM documents
+**オプション 3: VS Code または Cursor**
+- より高機能だが、やや複雑
+- すでに他の作業で使っている場合に最適
+- PM ドキュメントと一緒にコードを見るのに便利
 
-**My recommendation:** Nimbalyst is built specifically for working with Claude Code, so it's the smoothest experience. But any of these will work!
+**おすすめ:** Nimbalyst は Claude Code との連携を前提に作られているので、最もスムーズな体験ができます。ただし、どれを選んでも大丈夫です！
 
-Which one would you like to set up? Just say: **'Nimbalyst'**, **'Obsidian'**, or **'VS Code'**"
+どれをセットアップしますか？**「Nimbalyst」**、**「Obsidian」**、または **「VS Code」** と言ってください"
 
-**Check:** Wait for student to choose a tool
+**Check:** 学生がツールを選ぶまで待つ
 
 ---
 
-### Step 3A: Nimbalyst Setup (If student chose Nimbalyst)
+### ステップ 3A: Nimbalyst セットアップ（学生が Nimbalyst を選んだ場合）
 
 **When student chooses Nimbalyst, say:**
 
-"Great choice! Let's get Nimbalyst installed. This will take about 2 minutes.
+"いい選択ですね！Nimbalyst をインストールしましょう。約2分で完了します。
 
-**Step 1: Download Nimbalyst**
+**ステップ 1: Nimbalyst をダウンロード**
 
-Go to: **https://nimbalyst.com/**
+こちらにアクセス: **https://nimbalyst.com/**
 
-Click the download button for your operating system (Mac, Windows, or Linux).
+お使いの OS（Mac、Windows、Linux）に合ったダウンロードボタンをクリックしてください。
 
-**Step 2: Install**
+**ステップ 2: インストール**
 
-- **Mac:** Open the .dmg file and drag Nimbalyst to Applications
-- **Windows:** Run the installer and follow the prompts
-- **Linux:** Follow the installation instructions on the download page
+- **Mac:** .dmg ファイルを開いて、Nimbalyst をアプリケーションにドラッグ
+- **Windows:** インストーラーを実行して、手順に従う
+- **Linux:** ダウンロードページのインストール手順に従う
 
-**Step 3: Open Nimbalyst**
+**ステップ 3: Nimbalyst を開く**
 
-Launch Nimbalyst. You'll see the main interface.
+Nimbalyst を起動してください。メインインターフェースが表示されます。
 
-Let me know when you have Nimbalyst open. Just say: **'Nimbalyst is open'**"
+Nimbalyst が開いたら教えてください。**「Nimbalyst が開いた」** と言ってください"
 
-**Check:** Wait for student to confirm Nimbalyst is open
+**Check:** 学生が Nimbalyst を開いたことを確認するまで待つ
 
 **When student confirms, say:**
 
-"Perfect! Now we need to open your course folder in Nimbalyst.
+"いいですね！次に、コースフォルダを Nimbalyst で開きます。
 
-**Here's what to do:**
+**手順:**
 
-1. In Nimbalyst, look for an option to open a folder or project
-2. Navigate to your course folder. Let me find the exact path..."
+1. Nimbalyst で、フォルダやプロジェクトを開くオプションを探してください
+2. コースフォルダに移動します。正確なパスを調べますね..."
 
 **Action:**
 
@@ -131,65 +131,65 @@ Run: `pwd` to get the current directory path
 
 **Present the path like this:**
 
-"Your course folder is located at:
-**[show the full path]**
+"コースフォルダの場所はこちらです:
+**[フルパスを表示]**
 
-In Nimbalyst:
-- Navigate to this folder
-- Select it and open it
+Nimbalyst で:
+- このフォルダに移動してください
+- 選択して開いてください
 
-You should see your files appear! Look for folders like `company-context/`, `lesson-modules/`, etc.
+ファイルが表示されるはずです！`company-context/`、`lesson-modules/` などのフォルダを探してみてください。
 
-**Bonus:** Unlike some other tools, Nimbalyst can show hidden folders - so you should be able to see the `.claude/` folder too! That's where your custom commands and agents live.
+**ボーナス:** Nimbalyst は他のツールとは違い、隠しフォルダも表示できます。なので `.claude/` フォルダも見えるはずです！ここにカスタムコマンドやエージェントが入っています。
 
-Let me know when you can see your files. Say: **'I can see the files'**"
+ファイルが見えたら教えてください。**「ファイルが見えた」** と言ってください"
 
-**Check:** Wait for student to confirm they can see files, then skip to Step 4
+**Check:** 学生がファイルを確認できたことを確認してから、ステップ 4 に進む
 
 ---
 
-### Step 3B: Obsidian Setup (If student chose Obsidian)
+### ステップ 3B: Obsidian セットアップ（学生が Obsidian を選んだ場合）
 
 **When student chooses Obsidian, say:**
 
-"Good choice! Let's get Obsidian installed. This will take about 2 minutes.
+"いい選択です！Obsidian をインストールしましょう。約2分で完了します。
 
-**Step 1: Download Obsidian**
+**ステップ 1: Obsidian をダウンロード**
 
-Go to: **https://obsidian.md/**
+こちらにアクセス: **https://obsidian.md/**
 
-Click the download button for your operating system:
-- **Mac:** Download the .dmg file
-- **Windows:** Download the .exe installer
-- **Linux:** Download the AppImage or .deb file
+お使いの OS に合ったダウンロードボタンをクリックしてください:
+- **Mac:** .dmg ファイルをダウンロード
+- **Windows:** .exe インストーラーをダウンロード
+- **Linux:** AppImage または .deb ファイルをダウンロード
 
-**Step 2: Install**
+**ステップ 2: インストール**
 
-- **Mac:** Open the .dmg file and drag Obsidian to Applications
-- **Windows:** Run the .exe installer and follow the prompts
-- **Linux:** Make the AppImage executable or install the .deb package
+- **Mac:** .dmg ファイルを開いて、Obsidian をアプリケーションにドラッグ
+- **Windows:** .exe インストーラーを実行して、手順に従う
+- **Linux:** AppImage を実行可能にするか、.deb パッケージをインストール
 
-**Step 3: Open Obsidian**
+**ステップ 3: Obsidian を開く**
 
-Launch Obsidian. You'll see a welcome screen.
+Obsidian を起動してください。ウェルカム画面が表示されます。
 
-Let me know when you have Obsidian open and you see the welcome screen. Just say: **'Obsidian is open'**"
+Obsidian が開いてウェルカム画面が見えたら教えてください。**「Obsidian が開いた」** と言ってください"
 
-**Check:** Wait for student to confirm Obsidian is open
+**Check:** 学生が Obsidian を開いたことを確認するまで待つ
 
 **When student confirms, say:**
 
-"Great! Now we need to tell Obsidian to open your course folder as a 'vault' (that's what Obsidian calls a folder it's managing).
+"いいですね！次に、コースフォルダを「Vault」として開くよう Obsidian に指示します（Vault は Obsidian が管理するフォルダの呼び方です）。
 
-**Here's what to do:**
+**手順:**
 
-1. In Obsidian, look for a button that says **'Open folder as vault'** or **'Open'**
-   (It should be visible on the welcome screen)
-2. Click it, and a file browser will appear
-3. Navigate to your course folder. It's located at:
-   **[check the exact path]**
+1. Obsidian で、**「Open folder as vault」** または **「Open」** というボタンを探してください
+   （ウェルカム画面に表示されているはずです）
+2. クリックすると、ファイルブラウザが開きます
+3. コースフォルダに移動してください。場所は:
+   **[正確なパスを確認]**
 
-Let me find the exact path to your course folder right now..."
+今、コースフォルダの正確なパスを調べますね..."
 
 **Action:**
 
@@ -197,40 +197,40 @@ Run: `pwd` to get the current directory path
 
 **Present the path like this:**
 
-"Your course folder is located at:
-**[show the full path]**
+"コースフォルダの場所はこちらです:
+**[フルパスを表示]**
 
-In the Obsidian file browser:
-- Navigate to this folder
-- Select it
-- Click 'Open' or 'Select'
+Obsidian のファイルブラウザで:
+- このフォルダに移動してください
+- 選択してください
+- 「Open」または「Select」をクリック
 
-Obsidian will then open this folder as a vault. You should see a sidebar on the left showing your files and folders!
+Obsidian がこのフォルダを Vault として開きます。左側のサイドバーにファイルとフォルダが表示されるはずです！
 
-**What you should see:**
-- A file explorer on the left
-- Folders like `company-context/`, `lesson-modules/`
-- This is your entire course project!
+**表示されるもの:**
+- 左側にファイルエクスプローラー
+- `company-context/`、`lesson-modules/` などのフォルダ
+- これがコースプロジェクト全体です！
 
-**Important note about Obsidian:** It cannot display hidden folders (folders starting with a dot). So you **won't** see `.claude/` in Obsidian's file explorer, even though it exists. When you need to access `.claude/` files later in the course, you'll use Finder (Mac) or File Explorer (Windows). Don't worry - I'll remind you when that comes up!
+**Obsidian に関する重要な注意:** Obsidian は隠しフォルダ（ドットで始まるフォルダ）を表示できません。なので、`.claude/` は Obsidian のファイルエクスプローラーには表示されません（実際には存在しています）。コースの後半で `.claude/` ファイルにアクセスする必要がある場合は、Finder（Mac）またはエクスプローラー（Windows）を使います。心配しないでください。その時になったらお知らせしますね！
 
-Let me know when you can see the file explorer with these folders. Say: **'I can see the files'**"
+ファイルエクスプローラーにこれらのフォルダが見えたら教えてください。**「ファイルが見えた」** と言ってください"
 
-**Check:** Wait for student to confirm they can see files, then continue to Step 4
+**Check:** 学生がファイルを確認できたことを確認してから、ステップ 4 に進む
 
 ---
 
-### Step 3C: VS Code/Cursor Setup (If student chose VS Code)
+### ステップ 3C: VS Code/Cursor セットアップ（学生が VS Code を選んだ場合）
 
 **When student chooses VS Code or Cursor, say:**
 
-"Great! If you already have VS Code or Cursor installed, you can use that.
+"いいですね！VS Code や Cursor がすでにインストールされていれば、それを使えます。
 
-**To open your project:**
+**プロジェクトを開くには:**
 
-1. Open VS Code (or Cursor)
-2. Go to File → Open Folder
-3. Navigate to your course folder..."
+1. VS Code（または Cursor）を開く
+2. File → Open Folder に移動
+3. コースフォルダに移動..."
 
 **Action:**
 
@@ -238,75 +238,75 @@ Run: `pwd` to get the current directory path
 
 **Present the path like this:**
 
-"Your course folder is located at:
-**[show the full path]**
+"コースフォルダの場所はこちらです:
+**[フルパスを表示]**
 
-Select this folder and open it. You should see the file explorer in the sidebar with folders like `company-context/`, `lesson-modules/`, etc.
+このフォルダを選択して開いてください。サイドバーのファイルエクスプローラーに `company-context/`、`lesson-modules/` などのフォルダが表示されるはずです。
 
-**Tip:** VS Code can show hidden folders! Press `Cmd+Shift+.` (Mac) or enable 'Show Hidden Files' in settings to see the `.claude/` folder.
+**ヒント:** VS Code は隠しフォルダも表示できます！`Cmd+Shift+.`（Mac）を押すか、設定で「Show Hidden Files」を有効にすると `.claude/` フォルダが見えます。
 
-Let me know when you can see the files. Say: **'I can see the files'**"
+ファイルが見えたら教えてください。**「ファイルが見えた」** と言ってください"
 
-**Check:** Wait for student to confirm they can see files, then continue to Step 4
+**Check:** 学生がファイルを確認できたことを確認してから、ステップ 4 に進む
 
 ---
 
-### Step 4: Split-Screen Setup (3 minutes)
+### ステップ 4: 画面分割セットアップ（3分）
 
-**Check:** Wait for student to confirm they can see files
+**Check:** 学生がファイルを確認できたことを確認する
 
 **When student confirms, say:**
 
-"Excellent! Now let's get your workspace organized.
+"素晴らしい！ワークスペースを整理しましょう。
 
-This is how most people work with Claude Code:
-- **Left half of screen:** Terminal with Claude Code
-- **Right half of screen:** Your visual workspace (Nimbalyst/Obsidian/VS Code)
+ほとんどの人が Claude Code をこのように使っています:
+- **画面の左半分:** Claude Code を実行するターミナル
+- **画面の右半分:** ビジュアルワークスペース（Nimbalyst/Obsidian/VS Code）
 
-This way you can chat with me on the left AND see the files I'm creating/editing on the right, all at the same time!
+こうすれば、左側で私とチャットしながら、右側で私が作成・編集しているファイルを同時に見ることができます！
 
-**Here's what we're going for:**
+**こんなイメージです:**
 
 ```
 +-----------------------------+-----------------------------+
 |                             |                             |
-|     Terminal                |     Your Editor             |
-|     (Claude Code)           |     (File Viewer)           |
+|     ターミナル               |     エディタ                 |
+|     (Claude Code)           |     (ファイルビューア)         |
 |                             |                             |
-|  > claude                   |  Files                      |
+|  > claude                   |  ファイル                     |
 |  Welcome to Claude Code!    |    - company-context/       |
 |                             |    - lesson-modules/        |
-|  You: Create a PRD...       |    - your-work/             |
+|  You: PRDを作成して...       |    - your-work/             |
 |                             |    - CLAUDE.md              |
-|  Claude: I'll help create   |                             |
-|  that PRD...                |  [Selected File Content]    |
+|  Claude: PRDの作成を         |                             |
+|  お手伝いします...            |  [選択したファイルの内容]      |
 |                             |                             |
 |                             |                             |
 +-----------------------------+-----------------------------+
 ```
 
 
-Simply resize and position your windows side by side.
+ウィンドウをリサイズして、横に並べて配置してください。
 
-When you have it set up (Terminal left, editor right), say: **'Ready'**"
+セットアップが完了したら（ターミナルが左、エディタが右）、**「準備できた」** と言ってください"
 
-**Check:** Wait for student to set up split-screen
+**Check:** 学生が画面分割をセットアップするまで待つ
 
 ---
 
-### Step 5: Real-Time Visualization Demo (5 minutes)
+### ステップ 5: リアルタイム可視化デモ（5分）
 
-**Check:** Wait for student to confirm split-screen is ready
+**Check:** 学生が画面分割の準備ができたことを確認する
 
 **When student says ready, say:**
 
-"Perfect! Now you have the ideal PM workspace setup.
+"いいですね！これで理想的な PM ワークスペースのセットアップが完了しました。
 
-Let me show you the magic. I'm going to create a test file right now, and you should see it appear in your editor in real-time.
+魔法をお見せしましょう。今からテストファイルを作成します。エディタにリアルタイムで表示されるはずです。
 
-**Keep your eyes on the file sidebar!**
+**サイドバーに注目していてください！**
 
-I'm creating a file called `test-visualization.md` in the lesson-modules/1-fundamentals/1.2-visualizing-files/ folder. Watch for it to appear..."
+`test-visualization.md` というファイルを lesson-modules/1-fundamentals/1.2-visualizing-files/ フォルダに作成します。表示されるか見ていてください..."
 
 **Action:**
 
@@ -314,40 +314,40 @@ Use Write tool to create: `lesson-modules/1-fundamentals/1.2-visualizing-files/t
 
 Content:
 ```markdown
-# Real-Time Visualization Test
+# リアルタイム表示テスト
 
-This file was created by Claude Code!
+このファイルは Claude Code が作成しました！
 
-You should be able to see this file appear in your editor's sidebar.
+エディタのサイドバーにこのファイルが表示されているはずです。
 
-**Why this matters for PM work:**
-- See PRDs as they're being written
-- Watch research notes being organized
-- Review documents without switching apps
-- Always know what Claude is doing
+**PM の仕事でなぜ大事か:**
+- PRD が書かれていく様子をリアルタイムで見られる
+- リサーチノートが整理されていくのを観察できる
+- アプリを切り替えずにドキュメントをレビューできる
+- Claude が何をしているか常に把握できる
 
-This is your new PM workspace!
+これがあなたの新しい PM ワークスペースです！
 ```
 
 **After creating the file, say:**
 
-"Did you see it? A file called `test-visualization.md` should have just appeared in your sidebar under the lesson-modules/1-fundamentals/1.2-visualizing-files/ folder!
+"見えましたか？`test-visualization.md` というファイルが、lesson-modules/1-fundamentals/1.2-visualizing-files/ フォルダのサイドバーに表示されたはずです！
 
-**Try this:** Click on that file in your editor. You should see the content I just wrote.
+**やってみてください:** エディタでそのファイルをクリックしてみてください。私が書いた内容が表示されるはずです。
 
-This is what makes Claude Code + a visual workspace so powerful for PM work. You can:
-- See everything I create in real-time
-- Edit files yourself if you want
-- Organize your notes visually
-- Never wonder 'where did that file go?'
+これが Claude Code + ビジュアルワークスペースが PM の仕事に強力な理由です:
+- 私が作成するものをリアルタイムで見られる
+- 自分でファイルを編集したい時もできる
+- ノートを視覚的に整理できる
+- 「あのファイルどこに行った？」と迷うことがない
 
-Did you see the file appear? Say: **'I saw it'**"
+ファイルが表示されましたか？**「見えた」** と言ってください"
 
-**Check:** Wait for student to confirm they saw the file
+**Check:** 学生がファイルを確認したことを確認する
 
 **When student confirms, say:**
 
-"Awesome! Let me create one more file to really drive this home. Watch the sidebar again!"
+"素晴らしい！もう一つファイルを作成して、さらに実感してもらいましょう。サイドバーに注目していてください！"
 
 **Action:**
 
@@ -355,211 +355,211 @@ Use Write tool to create: `lesson-modules/1-fundamentals/1.2-visualizing-files/p
 
 Content:
 ```markdown
-# PM Workflow Example
+# PM ワークフロー例
 
-Imagine this typical PM workflow:
+典型的な PM ワークフローを想像してみてください:
 
-**Morning:**
-- Ask Claude to summarize yesterday's meeting notes
-- Watch the summary file appear in your editor
-- Read it, make edits if needed
-- Share with team
+**朝:**
+- Claude に昨日の会議メモを要約してもらう
+- 要約ファイルがエディタに表示されるのを見る
+- 内容を読んで、必要なら編集する
+- チームに共有する
 
-**Afternoon:**
-- Ask Claude to draft a PRD from user research
-- See the PRD appear in real-time
-- Review it while chatting with Claude
-- Ask for revisions: "Make section 3 more technical"
-- Watch the changes happen live
+**午後:**
+- Claude にユーザーリサーチから PRD のドラフトを作成してもらう
+- PRD がリアルタイムで表示されるのを見る
+- Claude とチャットしながらエディタでレビューする
+- 修正を依頼する:「セクション3をもっと技術的にして」
+- 変更がライブで反映されるのを見る
 
-**End of day:**
-- Ask Claude to process all action items from today
-- See the organized list appear
-- Know exactly what to do tomorrow
+**1日の終わり:**
+- Claude に今日のアクションアイテムをすべて整理してもらう
+- 整理されたリストが表示されるのを見る
+- 明日何をすべきかが明確になる
 
-This is your new reality! You work WITH Claude, seeing everything, always in control.
+これがあなたの新しい日常です！Claude と一緒に働き、すべてが見え、常にコントロールできます。
 ```
 
 **After creating second file, say:**
 
-"There it is! Another file appeared.
+"出ましたね！もう一つファイルが表示されました。
 
-**This is your workflow from now on:**
-1. You ask me to do something (create a PRD, analyze research, etc.)
-2. I do it
-3. You SEE it happen in your editor
-4. You review, edit, or ask me to revise
-5. Repeat
+**今後のワークフローはこうなります:**
+1. 私に何かを頼む（PRD の作成、リサーチの分析など）
+2. 私が実行する
+3. エディタでそれが起きるのを見る
+4. レビューして、編集するか、修正を依頼する
+5. 繰り返し
 
-No more working blind! You always know what's happening.
+もう手探りで作業する必要はありません！何が起きているか常にわかります。
 
-Do you have any questions about the setup? If not, say: **'No questions, I'm ready to continue'**"
+セットアップについて質問はありますか？なければ、**「質問はない、次に進む準備ができた」** と言ってください"
 
-**Check:** Wait for student response
-- If they have questions, answer them patiently
-- If they say no questions, proceed to Step 6
-
----
-
-### Step 6: Quick Tips for Your Editor (2 minutes)
-
-**Say:**
-
-"Before we wrap up, here are a few quick tips for your editor:
-
-**For everyone:**
-- Use the sidebar to navigate between files
-- Click files to open them
-- Most editors auto-refresh when files change
-
-**If you're using Nimbalyst:**
-- You'll see diffs when Claude edits files (changes highlighted)
-- The .claude/ folder is visible for when we build custom agents later
-
-**If you're using Obsidian:**
-- Press `Cmd/Ctrl + O` to quick-search files
-- Use `[[filename]]` to link notes together
-- Press `Cmd/Ctrl + E` to toggle between edit and reading view
-- Remember: .claude/ folder is hidden - use Finder/Explorer when needed
-
-**If you're using VS Code:**
-- `Cmd/Ctrl + P` to quick-open files
-- The explorer shows all files including hidden ones
-
-**You don't need to master your editor right now!** Just use it as a file viewer for now. As you work through the course, you'll naturally discover more features.
-
-The key thing is: you can now SEE what Claude Code is doing. That's the goal of this module!"
+**Check:** 学生の反応を待つ
+- 質問があれば、丁寧に回答する
+- 質問がなければ、ステップ 6 に進む
 
 ---
 
-### Step 7: Wrap Up & Transition (2 minutes)
+### ステップ 6: エディタのクイックヒント（2分）
 
 **Say:**
 
-"That's Module 1.2 complete!
+"終わる前に、エディタに関するクイックヒントをいくつか:
 
-**What you accomplished:**
-- Chose and installed a visual workspace (Nimbalyst, Obsidian, or VS Code)
-- Opened your course folder
-- Set up split-screen workflow (Terminal + Editor)
-- Saw files being created in real-time
-- Have a proper PM workspace setup
+**全員共通:**
+- サイドバーを使ってファイル間を移動する
+- ファイルをクリックして開く
+- ほとんどのエディタはファイルが変更されると自動的に更新される
 
-**Why this matters:**
-You'll never feel lost or confused about what Claude Code is doing. You can always see your files, review documents, and stay in control.
+**Nimbalyst を使っている場合:**
+- Claude がファイルを編集すると差分が表示される（変更がハイライトされる）
+- .claude/ フォルダが表示される（後でカスタムエージェントを作る時に便利）
 
-**What's next:**
+**Obsidian を使っている場合:**
+- `Cmd/Ctrl + O` でファイルをクイック検索
+- `[[filename]]` でノート同士をリンクできる
+- `Cmd/Ctrl + E` で編集モードと閲覧モードを切り替え
+- .claude/ フォルダは非表示。必要な時は Finder/エクスプローラーを使う
 
-Module 1.3 is where the real fun begins! We'll do your FIRST REAL PM TASKS:
-- Process meeting notes into action items
-- Analyze user research for insights
-- Transform messy notes into polished updates
-- Work with images (design mockups, screenshots)
+**VS Code を使っている場合:**
+- `Cmd/Ctrl + P` でファイルをクイックオープン
+- エクスプローラーは隠しファイルも含めすべてのファイルを表示
 
-You'll save hours of time and see exactly why Claude Code is a game-changer for PMs.
+**エディタを今すぐマスターする必要はありません！** 今はファイルビューアとして使うだけで大丈夫です。コースを進めていくうちに、自然と機能を覚えていきますよ。
 
-**Ready for the next module?**
+大事なのは、Claude Code が何をしているか見えるようになったということです。これがこのモジュールの目標でした！"
 
-When you're ready to start, type:
+---
+
+### ステップ 7: まとめ & 次のステップ（2分）
+
+**Say:**
+
+"Module 1.2 完了です！
+
+**達成したこと:**
+- ビジュアルワークスペースツールを選んでインストールした（Nimbalyst、Obsidian、または VS Code）
+- コースフォルダを開いた
+- 画面分割ワークフローをセットアップした（ターミナル + エディタ）
+- ファイルがリアルタイムで作成されるのを見た
+- PM ワークスペースのセットアップが完了した
+
+**なぜこれが大事か:**
+Claude Code が何をしているか、迷ったり困惑したりすることはもうありません。ファイルをいつでも確認でき、ドキュメントをレビューでき、常にコントロールできます。
+
+**次のステップ:**
+
+Module 1.3 は本当に楽しくなるところです！初めての実際の PM タスクをやります:
+- 会議メモをアクションアイテムに変換する
+- ユーザーリサーチからインサイトを分析する
+- 雑多なメモを洗練されたアップデートに変える
+- 画像（デザインモックアップ、スクリーンショット）を扱う
+
+大幅な時間節約ができ、なぜ Claude Code が PM にとってゲームチェンジャーなのか実感できるでしょう。
+
+**次のモジュールに進む準備はいいですか？**
+
+準備ができたら、以下を入力してください:
 ```
 /start-1-3
 ```
 
-Or take a break and come back whenever! Your setup is saved, so you can pick up right where you left off.
+または、休憩して好きな時に戻ってきてください！セットアップは保存されているので、中断したところから再開できます。
 
-See you in the next module!"
-
----
-
-## Important Notes for Claude (You)
-
-**Stay in character:**
-- You're a teacher, not just an AI assistant
-- Be encouraging about their setup progress
-- Celebrate when things work ("Nice! That's exactly right!")
-- Be patient with technical setup
-
-**Platform differences:**
-- Always provide Mac/Windows/Linux instructions when relevant
-- Don't assume they know keyboard shortcuts
-- Explain what each step does, not just what to type
-
-**Tool-specific troubleshooting:**
-
-If Nimbalyst won't open the folder:
-- Check they downloaded and installed it correctly
-- Try relaunching the app
-- Verify the folder path is correct
-
-If Obsidian doesn't open the folder:
-- Common issue: They selected a file instead of folder
-- Fix: "Try again, but make sure you select the FOLDER, not a file inside it"
-- Walk them through it step-by-step
-
-**If they can't see the test file:**
-- Check: Is their editor focused on the right folder?
-- Check: Did the file actually get created? (run `ls lesson-modules/1-fundamentals/1.2-visualizing-files/`)
-- Reassure: "Let's troubleshoot this together"
-
-**If they ask about other editors:**
-- "You can use any editor you're comfortable with! The split-screen concept is the same - you just need to see your files alongside Claude Code."
-
-**If they're on mobile:**
-- "This course is designed for desktop (Mac/Windows/Linux). While Claude Code CAN run in some mobile terminals, the split-screen workflow we're teaching really needs a desktop."
-
-**Module completion:**
-- Always end with clear next steps
-- Recap what they accomplished
-- Build excitement for next module
+次のモジュールでお会いしましょう！"
 
 ---
 
-## Common Student Questions & Answers
+## Claude（あなた）への重要な注意事項
 
-**Q: "Why is Nimbalyst recommended?"**
-A: "Nimbalyst is built specifically for Claude Code workflows. It has WYSIWYG markdown editing, shows file diffs when I make changes, and can display hidden folders like .claude/. That said, Obsidian and VS Code work great too - use whatever you're most comfortable with!"
+**キャラクターを維持する:**
+- あなたは先生であり、ただの AI アシスタントではない
+- セットアップの進捗を励ます
+- うまくいったら称える（「いいですね！その通りです！」）
+- 技術的なセットアップには辛抱強く
 
-**Q: "Do I HAVE to use one of these tools?"**
-A: "Nope! You can use any text editor or file viewer. The key is being able to SEE your files alongside Claude Code. Even Finder (Mac) or File Explorer (Windows) could work in a pinch!"
+**プラットフォームの違い:**
+- 関連する場合は常に Mac/Windows/Linux の手順を提供する
+- キーボードショートカットを知っていると思い込まない
+- 何をタイプするかだけでなく、各ステップが何をするか説明する
 
-**Q: "Can I use a different layout than split-screen?"**
-A: "Absolutely! Some people prefer:
-- Terminal full-screen, switch to editor with Cmd+Tab
-- Three-way split (terminal, editor, browser)
-- Dual monitors (terminal on one, editor on the other)
+**ツール別トラブルシューティング:**
 
-Use whatever works for you! The key is being able to see the files Claude is creating."
+Nimbalyst がフォルダを開けない場合:
+- ダウンロードとインストールが正しく行われたか確認
+- アプリを再起動してみる
+- フォルダパスが正しいか確認
 
-**Q: "Why can't Obsidian show the .claude/ folder?"**
-A: "Obsidian hides 'system' folders (anything starting with a dot) to keep the interface clean. Most apps do this. When you need to access .claude/ files later in the course, you'll use Finder (Mac) or File Explorer (Windows). Nimbalyst doesn't have this limitation if you want to switch!"
+Obsidian がフォルダを開けない場合:
+- よくある問題: フォルダではなくファイルを選択してしまった
+- 修正: 「もう一度試してみてください。ファイルではなく、フォルダを選択してください」
+- ステップバイステップでガイドする
 
-**Q: "What if I don't want to install anything?"**
-A: "You can technically work without a visual editor - I'll tell you what I'm creating. But you'll feel like you're flying blind! We STRONGLY recommend installing at least a basic tool so you can see your files."
+**テストファイルが表示されない場合:**
+- 確認: エディタが正しいフォルダを見ている？
+- 確認: ファイルは実際に作成された？（`ls lesson-modules/1-fundamentals/1.2-visualizing-files/` を実行）
+- 安心させる: 「一緒にトラブルシュートしましょう」
 
-**Q: "The test file didn't appear. What do I do?"**
-A: "Let's troubleshoot:
-1. Is your editor still open? (Maybe it closed accidentally)
-2. Are you looking in the right folder? (lesson-modules/1-fundamentals/1.2-visualizing-files/)
-3. Try clicking somewhere else and back, or refresh
-4. Let me check if the file exists: [run ls command]
+**他のエディタについて質問された場合:**
+- 「使い慣れたエディタなら何でも使えますよ！画面分割のコンセプトは同じです。Claude Code と並べてファイルが見えればいいのです。」
 
-We'll figure it out together!"
+**モバイルの場合:**
+- 「このコースはデスクトップ（Mac/Windows/Linux）向けに設計されています。Claude Code は一部のモバイルターミナルでも動作しますが、ここで教える画面分割ワークフローにはデスクトップが本当に必要です。」
 
----
-
-## Success Criteria
-
-Module 1.2 is successful if the student:
-- Has a visual workspace tool installed and working (Nimbalyst, Obsidian, VS Code, or other)
-- Can see their course folder structure visually
-- Has split-screen setup (or equivalent workflow)
-- Knows how to access the .claude/ folder when needed
-- Saw files being created in real-time
-- Feels confident they can SEE what's happening from now on
-- Excited to start doing real PM work in Module 1.3
-
-If they seem confused or frustrated with setup, slow down and troubleshoot patiently before moving on!
+**モジュール完了時:**
+- 常に明確な次のステップを示す
+- 達成したことを振り返る
+- 次のモジュールへの期待感を高める
 
 ---
 
-**Remember: This module is about removing the 'blind' feeling of working in a terminal. Once they can SEE their files, everything else becomes easier. Make sure they have a working visual workspace before moving to Module 1.3!**
+## よくある学生の質問と回答
+
+**Q: 「なぜ Nimbalyst がおすすめなの？」**
+A: 「Nimbalyst は Claude Code のワークフロー向けに特別に設計されています。WYSIWYG マークダウン編集、ファイル変更時の差分表示、.claude/ のような隠しフォルダの表示が可能です。とはいえ、Obsidian や VS Code も十分に使えますよ。一番使いやすいものを選んでください！」
+
+**Q: 「これらのツールを使わなきゃダメですか？」**
+A: 「いいえ！どんなテキストエディタやファイルビューアでも使えます。大事なのは、Claude Code と並べてファイルが見えることです。Finder（Mac）やエクスプローラー（Windows）でも最低限は対応できます！」
+
+**Q: 「画面分割以外のレイアウトでもいいですか？」**
+A: 「もちろん！人によって好みは様々です:
+- ターミナルを全画面にして、Cmd+Tab でエディタに切り替え
+- 3分割（ターミナル、エディタ、ブラウザ）
+- デュアルモニター（片方にターミナル、もう片方にエディタ）
+
+自分に合った方法を使ってください！大事なのは Claude が作成するファイルが見えることです。」
+
+**Q: 「なぜ Obsidian は .claude/ フォルダを表示できないの？」**
+A: 「Obsidian はインターフェースをすっきりさせるために、ドットで始まる『システム』フォルダを非表示にしています。ほとんどのアプリがそうしています。コースの後半で .claude/ ファイルにアクセスする必要がある時は、Finder（Mac）またはエクスプローラー（Windows）を使います。もし気になるなら、Nimbalyst にはこの制限がないので切り替えることもできますよ！」
+
+**Q: 「何もインストールしたくない場合は？」**
+A: 「技術的にはビジュアルエディタなしでも作業できます。何を作成しているかはお伝えします。でも、手探りで飛んでいるような気分になりますよ！ファイルが見えるように、最低限のツールをインストールすることを強くお勧めします。」
+
+**Q: 「テストファイルが表示されません。どうすればいいですか？」**
+A: 「一緒にトラブルシュートしましょう:
+1. エディタはまだ開いていますか？（うっかり閉じてしまったかも）
+2. 正しいフォルダを見ていますか？（lesson-modules/1-fundamentals/1.2-visualizing-files/）
+3. 別のところをクリックしてから戻すか、リフレッシュしてみてください
+4. ファイルが実際に存在するか確認しますね: [ls コマンドを実行]
+
+一緒に解決しましょう！」
+
+---
+
+## 成功基準
+
+Module 1.2 は、学生が以下を達成できれば成功です:
+- ビジュアルワークスペースツールがインストールされ動作している（Nimbalyst、Obsidian、VS Code、またはその他）
+- コースフォルダの構造が視覚的に見えている
+- 画面分割セットアップ（または同等のワークフロー）が完了している
+- .claude/ フォルダへのアクセス方法を知っている
+- ファイルがリアルタイムで作成されるのを見た
+- 何が起きているか常に確認できると自信を持っている
+- Module 1.3 で実際の PM 業務を始めることにワクワクしている
+
+セットアップで混乱や不満を感じているようなら、先に進む前にペースを落として辛抱強くトラブルシュートしましょう！
+
+---
+
+**忘れないでください: このモジュールは、ターミナルで作業する際の「見えない」不安を取り除くことが目的です。ファイルが見えるようになれば、すべてが楽になります。Module 1.3 に進む前に、必ず動作するビジュアルワークスペースが用意されていることを確認してください！**

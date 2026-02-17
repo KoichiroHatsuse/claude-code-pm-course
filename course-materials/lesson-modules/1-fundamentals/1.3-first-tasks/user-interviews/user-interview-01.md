@@ -1,63 +1,63 @@
-# User Interview #1: Enterprise Admin Persona
+# ユーザーインタビュー #1: エンタープライズ管理者ペルソナ
 
-**Participant:** Rachel Kim
-**Role:** Director of IT Operations
-**Company:** FinanceTech Solutions (650 employees, Series C)
-**TaskFlow Plan:** Enterprise (pilot with 100 users)
-**Date:** October 5, 2024
-**Interviewer:** Senior PM
-**Duration:** 35 minutes
-
----
-
-## Background
-
-Rachel has been at FinanceTech for 4 years, leading IT operations. Her team manages 30+ tools across the organization. They're currently piloting TaskFlow with their product and engineering teams (100 users). Evaluating whether to roll out company-wide.
+**参加者:** Rachel Kim
+**役職:** IT運用ディレクター
+**企業:** FinanceTech Solutions（従業員650名、シリーズC）
+**TaskFlowプラン:** Enterprise（100ユーザーでパイロット中）
+**日付:** 2024年10月5日
+**インタビュアー:** シニアPM
+**所要時間:** 35分
 
 ---
 
-## Interview
+## 背景
 
-**Q: Tell me about your current project management setup before TaskFlow.**
-
-Rachel: "Oh boy. It's a mess, honestly. Engineering uses Linear, product team was on Asana, marketing uses Monday.com, and sales has their own thing in Salesforce. Everyone wanted something different. My team spends so much time just managing access and trying to get visibility into what's actually happening."
-
-**Q: What made you consider TaskFlow?**
-
-Rachel: "We needed to consolidate. Too many tools, too many logins, too much chaos. When someone leaves the company, we have to remember to revoke access in like 15 different places. It's a nightmare. TaskFlow's SSO integration was the main draw - we can provision and deprovision from our identity provider."
-
-**Q: How's the pilot going so far?**
-
-Rachel: "Pretty good! The product and engineering teams are happy with it. They like the interface - it's clean, fast. But I need more from the admin side. The audit logs are basic - I need more detail. Like, who exported data? Who changed permissions? That kind of thing. Compliance team asks for this stuff."
-
-**Q: What would make you roll this out company-wide?**
-
-Rachel: "Better admin controls. Right now I can see high-level usage, but I want to see exactly who's using it, who's not, what features they're using. Cost allocation too - we charge back to departments, so I need to know which team is using how much. Also, the permission system is good but we need more granularity. Like, read-only access for certain projects, or limit who can invite external users."
-
-**Q: Any features you wish TaskFlow had?**
-
-Rachel: "Dark mode. Sounds silly, but our engineering team asks about it constantly. They work late, they want dark mode. Also, better mobile app - the mobile web version is okay but not great. Our field teams would use this if the mobile experience was better."
-
-**Q: What about the onboarding experience?**
-
-Rachel: "Honestly? It's fine for power users but confusing for casual users. We had to create our own onboarding guide. Some kind of template library would help - like 'here's a pre-built project, start with this.' People stare at a blank screen and don't know what to do. We need to hold their hand more at the beginning."
-
-**Q: How does TaskFlow compare to your previous tools?**
-
-Rachel: "Pricing is better than Asana - we're saving like 40%. Performance is way better than Monday.com - that thing is so slow. The SSO integration is easier than most tools. But enterprise features are still catching up. We need things like data residency options, more compliance certifications, custom contract terms. You're not quite ready for a Fortune 500 deployment yet."
-
-**Q: Anything else we should know?**
-
-Rachel: "The support team is responsive, that's great. The product updates frequently - that's good but also a little concerning. We need stability. Maybe a slower release cycle for enterprise customers? Or an LTS version? Also, documentation for admins could be better. I had to figure out a lot through trial and error."
+RachelはFinanceTechに4年在籍し、IT運用を統括している。チームは組織全体で30以上のツールを管理。現在、プロダクトチームとエンジニアリングチーム（100ユーザー）でTaskFlowをパイロット中。全社展開するかどうかを評価中。
 
 ---
 
-## Key Insights
-- SSO was primary driver for adoption
-- Needs more detailed audit logs for compliance
-- Permission system needs more granularity
-- Cost allocation/usage tracking important for enterprise
-- Dark mode highly requested by engineering team
-- Onboarding needs help (template library suggestion)
-- Mobile web experience not good enough
-- Enterprise customers need stability over rapid updates
+## インタビュー
+
+**Q: TaskFlow導入前のプロジェクト管理体制について教えてください。**
+
+Rachel: 「大変ですよ、正直に言うと。エンジニアリングはLinearを使い、プロダクトチームはAsana、マーケティングはMonday.com、そして営業はSalesforce内で独自にやっています。みんな違うものを使いたがる。私のチームはアクセス管理と、実際に何が起きているかの可視化にかなりの時間を費やしています。」
+
+**Q: TaskFlowを検討した理由は？**
+
+Rachel: 「統合が必要でした。ツールが多すぎ、ログインが多すぎ、混乱が多すぎる。誰かが退職すると、15以上の場所でアクセスを取り消すことを覚えておかなければならない。悪夢です。TaskFlowのSSO連携が最大の魅力でした - IDプロバイダーからプロビジョニングとデプロビジョニングができます。」
+
+**Q: パイロットの進捗はいかがですか？**
+
+Rachel: 「かなり良いです！プロダクトチームとエンジニアリングチームは気に入っています。インターフェースがクリーンで速い。でも管理者側にもっと求めるものがあります。監査ログが基本的すぎます - もっと詳細が必要です。誰がデータをエクスポートしたか、誰が権限を変更したか、そういうことです。コンプライアンスチームがこの情報を要求します。」
+
+**Q: 全社展開の条件は？**
+
+Rachel: 「より良い管理者コントロールです。今はハイレベルな利用状況は見れますが、誰が使っているか、誰が使っていないか、どの機能を使っているか正確に見たい。コスト配分も - 部門ごとにチャージバックするので、どのチームがどれだけ使っているか知る必要があります。あと、権限システムは良いけどもっと細かさが必要です。特定プロジェクトへの読み取り専用アクセスとか、外部ユーザーの招待を制限するとか。」
+
+**Q: TaskFlowに欲しい機能は？**
+
+Rachel: 「ダークモード。些細に聞こえるかもしれませんが、エンジニアリングチームが常に聞いてきます。遅くまで働くから、ダークモードが欲しいって。あと、より良いモバイルアプリ - モバイルWeb版はまあまあですが、あまり良くない。フィールドチームはモバイル体験がもっと良ければ使うでしょう。」
+
+**Q: オンボーディング体験はどうですか？**
+
+Rachel: 「正直？パワーユーザーには問題ないけど、カジュアルユーザーには混乱します。独自のオンボーディングガイドを作る必要がありました。テンプレートライブラリがあると助かります - 『プリビルトのプロジェクトがあるよ、これから始めてみて』みたいな。空白画面を見つめて何をすればいいかわからない人がいる。最初はもっと手を引いてあげる必要があります。」
+
+**Q: 以前使っていたツールとの比較は？**
+
+Rachel: 「価格はAsanaより良い - 約40%節約しています。パフォーマンスはMonday.comよりずっと良い - あれは本当に遅い。SSO連携はほとんどのツールより簡単。でもエンタープライズ機能はまだ追いついている段階。データレジデンシーのオプション、もっとコンプライアンス認証、カスタム契約条件が必要です。Fortune 500への導入にはまだ準備が整っていません。」
+
+**Q: 他に伝えたいことは？**
+
+Rachel: 「サポートチームの対応が早い、それは素晴らしい。プロダクトの更新頻度が高い - 良いことだけど少し気になる。安定性が必要です。エンタープライズ顧客向けにはリリースサイクルを遅くするか、LTSバージョンがあるといい。あと、管理者向けのドキュメントがもっと充実するといい。多くのことを試行錯誤で学ばなければなりませんでした。」
+
+---
+
+## 主要インサイト
+- SSOが導入の主要ドライバー
+- コンプライアンスのためにより詳細な監査ログが必要
+- 権限システムにより細かい粒度が必要
+- エンタープライズにとってコスト配分/利用状況追跡が重要
+- エンジニアリングチームからダークモードの要望が高い
+- オンボーディングに支援が必要（テンプレートライブラリの提案）
+- モバイルWeb体験が不十分
+- エンタープライズ顧客は急速な更新より安定性を求める
