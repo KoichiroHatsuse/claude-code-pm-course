@@ -1,81 +1,81 @@
-# Claude Code PM Course
+# Claude Code PM コース
 
-An interactive course teaching Product Managers how to use Claude Code effectively for their daily work.
+プロダクトマネージャーが Claude Code を日々の業務で効果的に活用する方法を学ぶ、インタラクティブなコースです。
 
-## Course Structure
+## コース構成
 
-### Module 0: Getting Started
-- **0.0 Introduction** - Course overview and what you'll learn
-- **0.1 Installation** - Install Claude Code and prerequisites
-- **0.2 Start & Clone** - Launch Claude Code and clone this course
+### Module 0: はじめに
+- **0.0 イントロダクション** - コース概要と学べること
+- **0.1 インストール** - Claude Code と前提条件のインストール
+- **0.2 スタート & クローン** - Claude Code を起動してこのコースをクローン
 
-### Module 1: Claude Code Fundamentals
-- **1.1 Welcome** - Introduction to TaskFlow and the course project
-- **1.2 Visualizing Files** - Set up your visual workspace (Nimbalyst, Obsidian, or VS Code)
-- **1.3 First Tasks** - Process meeting notes, analyze research, work with images
-- **1.4 Agents** - Use parallel agents for complex workflows
-- **1.5 Custom Sub-Agents** - Create specialized AI personas for reviews
-- **1.6 Project Memory** - Use CLAUDE.md for context and instructions
-- **1.7 Claude Code Navigation** - Master file operations and searches
+### Module 1: Claude Code の基礎
+- **1.1 ウェルカム** - TaskFlow とコースプロジェクトの紹介
+- **1.2 ファイルの可視化** - ビジュアルワークスペースのセットアップ（Nimbalyst、Obsidian、VS Code）
+- **1.3 最初のタスク** - 会議メモの処理、リサーチの分析、画像の操作
+- **1.4 エージェント** - 複雑なワークフローに並行エージェントを活用
+- **1.5 カスタムサブエージェント** - レビュー用の専門 AI ペルソナを作成
+- **1.6 プロジェクトメモリ** - CLAUDE.md でコンテキストと指示を管理
+- **1.7 Claude Code ナビゲーション** - ファイル操作と検索をマスター
 
-### Module 2: Advanced PM Scenarios
-- **2.1 Write a PRD** - Partner with AI to create product requirements
-- **2.2 Analyze Data** - Data-driven product decisions
-- **2.3 Product Strategy** - Strategic planning and competitive analysis
+### Module 2: 上級 PM シナリオ
+- **2.1 PRD を書く** - AI と協力してプロダクト要件を作成
+- **2.2 データ分析** - データドリブンなプロダクト判断
+- **2.3 プロダクト戦略** - 戦略策定と競合分析
 
-## How to Use This Course
+## コースの使い方
 
-### Interactive Track (Recommended)
-1. Clone this repository
-2. Navigate to the course materials: `cd course-materials`
-3. Start Claude Code: `claude`
-4. Run `/start-1-1` to begin the first lesson
-5. Follow the guided, hands-on lessons
+### インタラクティブトラック（推奨）
+1. このリポジトリをクローン
+2. コース教材に移動: `cd course-materials`
+3. Claude Code を起動: `claude`
+4. `/start-1-1` を実行して最初のレッスンを開始
+5. ガイド付きのハンズオンレッスンに沿って進める
 
-### Reference Track
-Each module has a `REFERENCE_GUIDE.md` that can be read standalone for quick reference.
+### リファレンストラック
+各モジュールには `REFERENCE_GUIDE.md` があり、クイックリファレンスとして単独で読むことができます。
 
-## ⚠️ Important: Instructions for Claude Code
+## ⚠️ 重要: Claude Code への指示
 
-**When you first open this repository in Claude Code:**
-- ❌ **Do NOT install npm dependencies** or run `npm install` yet
-- ❌ **Do NOT build the website** or run `npm run build`
-- ❌ **Do NOT make any setup changes** without being asked
+**このリポジトリを Claude Code で初めて開いたとき:**
+- ❌ npm の依存関係をインストール**しないでください**（`npm install` を実行しない）
+- ❌ ウェブサイトをビルド**しないでください**（`npm run build` を実行しない）
+- ❌ 指示なしにセットアップの変更を**しないでください**
 
-**Instead:**
-- 📖 Read the course content as guided
-- 🎯 Wait for explicit instructions in each module
-- 💬 Ask the user what they'd like to do next
+**代わりに:**
+- 📖 ガイドに沿ってコース内容を読む
+- 🎯 各モジュールの明示的な指示を待つ
+- 💬 次に何をすべきかユーザーに聞く
 
-The course is self-contained - we'll handle setup only when needed. Your job is to guide the user through the learning experience interactively.
+このコースは自己完結型です - セットアップは必要な時にのみ行います。あなたの仕事は、ユーザーをインタラクティブな学習体験にガイドすることです。
 
-## What You'll Learn
+## 学べること
 
-- **File Operations** - Read, search, organize, and manage PM documents
-- **@-Mentions** - Provide full context to Claude for better outputs
-- **Agents** - Run parallel workflows and get multi-perspective feedback
-- **Custom Sub-Agents** - Create specialized reviewers (engineer, executive, UX)
-- **Project Memory** - Use CLAUDE.md to customize Claude's behavior
-- **Real PM Workflows** - Write PRDs, analyze data, develop strategy
+- **ファイル操作** - PM ドキュメントの読み取り、検索、整理、管理
+- **@メンション** - Claude に完全なコンテキストを提供してより良いアウトプットを得る
+- **エージェント** - 並行ワークフローを実行し、多角的なフィードバックを取得
+- **カスタムサブエージェント** - 専門レビュアーの作成（エンジニア、エグゼクティブ、UX）
+- **プロジェクトメモリ** - CLAUDE.md で Claude の動作をカスタマイズ
+- **実践的な PM ワークフロー** - PRD 作成、データ分析、戦略策定
 
-## Prerequisites
+## 前提条件
 
-- Basic familiarity with product management
-- Willingness to learn command-line basics
-- Mac, Windows, or Linux computer
+- プロダクトマネジメントの基本的な知識
+- コマンドラインの基礎を学ぶ意欲
+- Mac、Windows、または Linux コンピュータ
 
-## About This Course
+## このコースについて
 
-This course teaches PMs how to use Claude Code as a thinking partner, not just an automation tool. You'll learn to:
-- Work faster without sacrificing quality
-- Get multi-perspective feedback instantly
-- Process research and data efficiently
-- Write better documents with AI assistance
+このコースは、PM が Claude Code を単なる自動化ツールではなく、思考パートナーとして活用する方法を教えます。以下のことが身につきます:
+- 品質を犠牲にせずに、より速く仕事を進める
+- 多角的なフィードバックを即座に取得する
+- リサーチとデータを効率的に処理する
+- AI の支援でより良いドキュメントを作成する
 
-**Time to Complete:** ~4-6 hours for full interactive track
+**完了までの所要時間:** インタラクティブトラック全体で約 4〜6 時間
 
-## License
+## ライセンス
 
-This work is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+この作品は [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) の下でライセンスされています。
 
-Copyright © 2025 Carl Vellotti. You may view and share this course content with attribution, but commercial use and modifications are not permitted.
+Copyright © 2025 Carl Vellotti. このコース内容は帰属表示付きで閲覧・共有可能ですが、商用利用や改変は許可されていません。
