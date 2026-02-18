@@ -1,67 +1,67 @@
-# User Interview #4: Product Designer Persona
+# ユーザーインタビュー #4: プロダクトデザイナーペルソナ
 
-**Participant:** Maya Rodriguez
-**Role:** Senior Product Designer
-**Company:** CloudSync (95 employees, Series A)
-**TaskFlow Plan:** Pro (design team of 6)
-**Date:** October 9, 2024
-**Interviewer:** Senior PM
-**Duration:** 26 minutes
-
----
-
-## Background
-
-Maya leads design for CloudSync's core product. She's been with the company for 18 months and championed the switch to TaskFlow from Trello 6 months ago. She manages design projects, collaborates with PMs and engineers.
+**参加者:** Maya Rodriguez
+**役職:** シニアプロダクトデザイナー
+**企業:** CloudSync（従業員95名、シリーズA）
+**TaskFlowプラン:** Pro（デザインチーム6名）
+**日付:** 2024年10月9日
+**インタビュアー:** シニアPM
+**所要時間:** 26分
 
 ---
 
-## Interview
+## 背景
 
-**Q: How do you use TaskFlow in your design workflow?**
-
-Maya: "I use it for everything - design sprint planning, tracking design tasks, managing feedback. I create tasks for each design deliverable, attach Figma links, track review cycles. It's become central to how our design team operates."
-
-**Q: What made you choose TaskFlow over other tools?**
-
-Maya: "Trello was too simple - we needed more structure as we grew. I looked at Linear but it felt too engineering-focused. Asana was overwhelming with options. TaskFlow hit the sweet spot - powerful enough for our needs but not cluttered. The visual board view is crucial for designers."
-
-**Q: What's working well?**
-
-Maya: "The attachment system is great - I can link Figma files, add screenshots, attach design specs. Comments work well for design feedback. The @mentions make it easy to loop people in. And honestly, it's just fast. I hate waiting for tools to load."
-
-**Q: What's frustrating?**
-
-Maya: "Oh man, the lack of dark mode is killing me. I work late, and that bright white interface is harsh. I've tried browser extensions but they break the UI. Also, when I'm reviewing designs on my phone during my commute, the mobile experience is rough - hard to see details, lots of scrolling."
-
-**Q: Tell me about collaborating with PMs and engineers.**
-
-Maya: "It's mostly good. I create design tasks, PMs create feature tasks, engineers create implementation tasks. We link them together. But sometimes things get lost - like, a PM creates a task without looping in design, or an engineer starts building before design is ready. Would be nice if there were required steps or dependencies we could enforce."
-
-**Q: How do you handle design feedback?**
-
-Maya: "Comments work but they can get messy. Someone leaves feedback, I make changes, upload new version - the comment thread gets long and confusing. Would love version tracking or a cleaner way to mark feedback as addressed. Also, sometimes stakeholders comment without context - like 'make it pop' - and I need to dig into what they actually mean."
-
-**Q: What about getting new designers onboarded?**
-
-Maya: "It's manual. I have to walk each new designer through our process - how we structure projects, where to put Figma links, how to tag things. A template for design projects would help. Like, 'here's a pre-built project structure for a feature design cycle.' I keep recreating the same setup."
-
-**Q: If you could add one feature?**
-
-Maya: "Dark mode, 100%. After that, better image/mockup handling. Right now I upload screenshots but they're small in the task view. Would be cool to have a gallery view or ability to zoom in. And templates - both for design projects and for design feedback formats."
-
-**Q: Any other feedback?**
-
-Maya: "The notifications are a bit much. I get pinged for everything - every comment, every assignment. I'd love a way to only get notified about design-critical stuff. Like, notify me when stakeholders leave feedback, but maybe batch engineer questions into a digest."
+MayaはCloudSyncのコアプロダクトのデザインをリードしている。入社18ヶ月で、6ヶ月前にTrelloからTaskFlowへの移行を推進した。デザインプロジェクトの管理、PMやエンジニアとのコラボレーションを担当。
 
 ---
 
-## Key Insights
-- Visual board view important for design workflow
-- Dark mode highly requested (long evening work hours)
-- Mobile viewing experience inadequate for design review
-- Template library would help (design project structure)
-- Notification overload (needs filtering/batching)
-- Version tracking for design iterations needed
-- Better image/mockup handling desired
-- Cross-functional collaboration has gaps (missing dependencies/requirements)
+## インタビュー
+
+**Q: デザインワークフローでTaskFlowをどう使っていますか？**
+
+Maya: 「全てに使っています - デザインスプリントの計画、デザインタスクの追跡、フィードバック管理。各デザイン成果物ごとにタスクを作成し、Figmaリンクを添付し、レビューサイクルを追跡。デザインチームの運営の中心になっています。」
+
+**Q: 他のツールよりTaskFlowを選んだ理由は？**
+
+Maya: 「Trelloはシンプルすぎた - 成長に伴いもっと構造が必要でした。Linearを見たけどエンジニア寄りすぎた。Asanaはオプションが多すぎて圧倒された。TaskFlowがちょうどいいバランスだった - 必要なだけパワフルで、ごちゃごちゃしていない。ビジュアルなボードビューがデザイナーにとって重要です。」
+
+**Q: うまくいっている点は？**
+
+Maya: 「添付システムが素晴らしい - Figmaファイルをリンクしたり、スクリーンショットを追加したり、デザインスペックを添付できる。コメントはデザインフィードバックにうまく機能する。@メンションで簡単に人を巻き込める。あと、とにかく速い。ツールのロードを待つのが嫌いなんです。」
+
+**Q: フラストレーションを感じる点は？**
+
+Maya: 「ダークモードがないのが辛い。遅くまで働くことが多くて、あの明るい白いインターフェースがきつい。ブラウザ拡張を試したけどUIが壊れる。あと、通勤中にスマホでデザインをレビューする時、モバイル体験がイマイチ - 詳細が見にくい、スクロールが多い。」
+
+**Q: PMやエンジニアとのコラボレーションは？**
+
+Maya: 「概ね良好です。私がデザインタスクを作り、PMが機能タスクを作り、エンジニアが実装タスクを作る。それらをリンクする。でも時々抜けがある - PMがデザインを巻き込まずにタスクを作ったり、エンジニアがデザイン完了前に実装を始めたり。必須ステップや依存関係を強制できるといいのに。」
+
+**Q: デザインフィードバックの処理はどうしていますか？**
+
+Maya: 「コメントは機能するけどごちゃごちゃしがち。誰かがフィードバックを残す、変更を加える、新バージョンをアップロード - コメントスレッドが長くなって混乱する。バージョン追跡や、フィードバックに対応済みマークを付けるクリーンな方法が欲しい。あと、ステークホルダーがコンテキストなしでコメントすることがある - 『もっとインパクトを出して』みたいな - それが実際に何を意味するか掘り下げなければならない。」
+
+**Q: 新しいデザイナーのオンボーディングは？**
+
+Maya: 「手動です。新しいデザイナーごとにプロセスを一通り説明する - プロジェクトの構成方法、Figmaリンクの置き場所、タグの付け方。デザインプロジェクト用のテンプレートがあると助かる。『機能デザインサイクル用のプリビルトプロジェクト構造がここにあります』みたいな。同じセットアップを何度も作り直しています。」
+
+**Q: 1つ機能を追加できるなら？**
+
+Maya: 「ダークモード、100%。その次は、より良い画像/モックアップの扱い。今はスクリーンショットをアップロードするけどタスクビューでは小さい。ギャラリービューやズームイン機能があるといい。あとテンプレート - デザインプロジェクトとデザインフィードバックフォーマットの両方。」
+
+**Q: 他にフィードバックは？**
+
+Maya: 「通知がちょっと多い。コメント、アサイン、全部通知される。デザインに重要なものだけ通知されたい。ステークホルダーがフィードバックを残したら通知して、エンジニアの質問はダイジェストにまとめて、みたいな。」
+
+---
+
+## 主要インサイト
+- ビジュアルなボードビューがデザインワークフローに重要
+- ダークモードの要望が高い（夜遅くまでの作業）
+- デザインレビュー用のモバイル閲覧体験が不十分
+- テンプレートライブラリが役立つ（デザインプロジェクト構造）
+- 通知の過負荷（フィルタリング/バッチングが必要）
+- デザインイテレーションのバージョン追跡が必要
+- より良い画像/モックアップのハンドリングが望ましい
+- クロスファンクショナルコラボレーションにギャップあり（依存関係/要件の欠如）

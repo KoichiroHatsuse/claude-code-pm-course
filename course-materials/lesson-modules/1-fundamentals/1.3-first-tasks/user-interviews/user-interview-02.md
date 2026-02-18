@@ -1,69 +1,69 @@
-# User Interview #2: IC Engineer Persona
+# ユーザーインタビュー #2: ICエンジニアペルソナ
 
-**Participant:** David Chen
-**Role:** Senior Backend Engineer
-**Company:** GrowthLabs (180 employees, Series B)
-**TaskFlow Plan:** Pro (company-wide, 120 active users)
-**Date:** October 6, 2024
-**Interviewer:** Senior PM
-**Duration:** 28 minutes
-
----
-
-## Background
-
-David has been at GrowthLabs for 2 years. He works on backend infrastructure, primarily Node.js and PostgreSQL. His team switched from Linear to TaskFlow 6 months ago. He's a power user - in TaskFlow daily.
+**参加者:** David Chen
+**役職:** シニアバックエンドエンジニア
+**企業:** GrowthLabs（従業員180名、シリーズB）
+**TaskFlowプラン:** Pro（全社利用、アクティブユーザー120名）
+**日付:** 2024年10月6日
+**インタビュアー:** シニアPM
+**所要時間:** 28分
 
 ---
 
-## Interview
+## 背景
 
-**Q: How do you use TaskFlow in your daily workflow?**
-
-David: "First thing in the morning - check TaskFlow. See what's assigned to me, what's due today, what's high priority. I mostly use keyboard shortcuts - I barely touch my mouse. Cmd+K to search, J and K to navigate tasks. It's fast, which is critical. If a tool is slow, I just won't use it."
-
-**Q: What do you like most about TaskFlow?**
-
-David: "Speed. Seriously, it loads instantly. No spinners, no lag. I came from Linear which is also fast, but TaskFlow feels snappier. The GitHub integration is killer - I can link PRs to tasks and the status auto-updates when I merge. That's huge for me. Less manual updating."
-
-**Q: What's frustrating about TaskFlow?**
-
-David: "No dark mode! I work late sometimes, bright white interface hurts my eyes. I've installed browser extensions to force dark mode but it looks janky. This is like the #1 thing I want. Also, the mobile web version is rough. I check tasks on my phone sometimes and it's not great - too much scrolling, hard to read context."
-
-**Q: Tell me about how you get task context.**
-
-David: "Context is super important. If a task just says 'fix login bug' with no details, I waste time hunting for information. Good PMs on our team write detailed descriptions - they include background, edge cases, links to relevant docs. That's when TaskFlow shines. The markdown support is great - they can include code snippets, links, everything I need."
-
-**Q: How about notifications?**
-
-David: "Ugh. Too many. I get emails for everything. Someone comments on a task, I get an email. Someone assigns me something, I get an email. Someone breathes near a task I'm watching, I get an email. I've basically turned most notifications off. I just check TaskFlow manually a few times a day. There should be digest mode - like, send me ONE email with all updates, not 20 separate emails."
-
-**Q: What about team collaboration?**
-
-David: "Comments work well. I like that I can @mention people and they get notified. Threading is good for keeping discussions organized. But honestly, a lot of our collaboration still happens in Slack. We discuss in Slack, then someone updates the task. Would be cool if Slack integration was better - like, post in Slack and it automatically adds a comment to the linked task."
-
-**Q: If you could add one feature, what would it be?**
-
-David: "Dark mode. Hands down. After that, maybe offline support? I work on planes sometimes and it'd be nice to at least view tasks offline. Oh, and API access - I'd love to script some automations. Like, auto-create tasks from error monitoring alerts."
-
-**Q: How does TaskFlow compare to Linear?**
-
-David: "Linear has slightly better UX for engineers - the keyboard shortcuts are more comprehensive. And they have dark mode! But TaskFlow is better for cross-functional teams. Our PMs and designers use TaskFlow, but they found Linear too engineering-focused. So TaskFlow works better for the whole team."
-
-**Q: Any other feedback?**
-
-David: "Search could be better. Right now it's just text search. I want to search by custom fields, or combine filters. Like 'show me all high priority tasks assigned to me in the API project due this week.' I can kind of do that with filters but search would be faster."
+DavidはGrowthLabsに2年在籍。バックエンドインフラを担当し、主にNode.jsとPostgreSQLを扱う。チームは6ヶ月前にLinearからTaskFlowに移行。パワーユーザーで、毎日TaskFlowを使用。
 
 ---
 
-## Key Insights
-- Speed/performance is critical - major reason for continued use
-- Dark mode is #1 feature request (impacts retention)
-- GitHub integration highly valued
-- Keyboard shortcuts are essential (power user behavior)
-- Mobile web experience inadequate
-- Notification overload - needs digest mode
-- Task context (detailed descriptions) very important
-- Slack integration could be better (two-way sync)
-- Search functionality could be more powerful
-- Markdown support for technical detail appreciated
+## インタビュー
+
+**Q: 日常のワークフローでTaskFlowをどう使っていますか？**
+
+David: 「朝一番にTaskFlowをチェックします。自分にアサインされたもの、今日が期限のもの、優先度が高いものを確認。ほぼキーボードショートカットだけで操作しています - マウスにはほとんど触れない。Cmd+Kで検索、JとKでタスク間を移動。速いのが重要。ツールが遅いと使わなくなります。」
+
+**Q: TaskFlowで一番気に入っている点は？**
+
+David: 「スピード。本当に、瞬時にロードされる。スピナーもラグもない。Linearも速いですが、TaskFlowの方がきびきび感じます。GitHub連携が最高で - PRをタスクにリンクすると、マージ時にステータスが自動更新される。これは大きい。手動更新が減ります。」
+
+**Q: TaskFlowでフラストレーションを感じる点は？**
+
+David: 「ダークモードがない！遅くまで働くことがあるので、明るい白いインターフェースが目にきつい。ブラウザ拡張でダークモードを強制してますが、見た目が崩れる。これが一番欲しい機能です。あと、モバイルWeb版がイマイチ。たまにスマホでタスクを確認しますが、スクロールが多すぎてコンテキストが読みにくい。」
+
+**Q: タスクのコンテキスト取得について教えてください。**
+
+David: 「コンテキストは超重要です。タスクに『ログインバグを直す』とだけ書いてあって詳細がないと、情報を探すのに時間を無駄にする。うちのチームの良いPMは詳細な説明を書いてくれる - 背景、エッジケース、関連ドキュメントへのリンク。そういう時にTaskFlowが輝く。Markdownサポートが素晴らしくて、コードスニペットやリンクなど必要なものを全部含められる。」
+
+**Q: 通知についてはどうですか？**
+
+David: 「うーん。多すぎる。なんでもメールが来る。誰かがタスクにコメントしたらメール。アサインされたらメール。ウォッチしているタスクの近くで誰かが息をしたらメール。基本的にほとんどの通知をオフにしました。1日に数回手動でTaskFlowをチェックしています。ダイジェストモードがあるべきです - 20通の個別メールじゃなくて、全更新をまとめた1通のメールを送ってほしい。」
+
+**Q: チームのコラボレーションについては？**
+
+David: 「コメントはうまく機能しています。@メンションで人をタグ付けして通知できるのが好き。スレッドは議論を整理するのに良い。でも正直、コラボレーションの多くはまだSlackで行われています。Slackで議論して、誰かがタスクを更新する。Slack連携がもっと良ければいいのに - Slackに投稿したらリンクされたタスクに自動でコメントが追加されるとか。」
+
+**Q: 1つ機能を追加できるなら何を？**
+
+David: 「ダークモード。ダントツで。その次は、オフラインサポートかな？飛行機で仕事することがあって、オフラインでもタスクを見れたらいいのに。あと、APIアクセス - 自動化をスクリプトで書きたい。エラーモニタリングのアラートから自動でタスクを作成するとか。」
+
+**Q: LinearとTaskFlowの比較は？**
+
+David: 「Linearの方がエンジニア向けのUXがやや良い - キーボードショートカットがより充実している。それにダークモードがある！でもTaskFlowはクロスファンクショナルチームには向いている。うちのPMやデザイナーもTaskFlowを使っていますが、Linearはエンジニア寄りすぎると感じた。だからチーム全体にはTaskFlowの方が合っています。」
+
+**Q: 他にフィードバックは？**
+
+David: 「検索がもっと良くなるといい。今はテキスト検索だけ。カスタムフィールドで検索したり、フィルターを組み合わせたい。『今週期限の、自分にアサインされた、APIプロジェクトの、優先度高のタスクを全部見せて』みたいな。フィルターでなんとなくできるけど、検索の方が速い。」
+
+---
+
+## 主要インサイト
+- スピード/パフォーマンスが重要 - 継続利用の主な理由
+- ダークモードが機能リクエスト第1位（リテンションに影響）
+- GitHub連携を高く評価
+- キーボードショートカットが必須（パワーユーザー行動）
+- モバイルWeb体験が不十分
+- 通知の過負荷 - ダイジェストモードが必要
+- タスクのコンテキスト（詳細な説明）が非常に重要
+- Slack連携の改善余地あり（双方向同期）
+- 検索機能がもっと強力になるべき
+- 技術的な詳細のMarkdownサポートを評価

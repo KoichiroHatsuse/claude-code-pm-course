@@ -1,13 +1,13 @@
-# Real-Time Visualization Test
+# リアルタイム表示テスト
 
-This file was created by Claude Code!
+このファイルは Claude Code が作成しました！
 
-You should be able to see this file appear in Obsidian's sidebar on the left.
+エディタのサイドバーにこのファイルが表示されているはずです。
 
-**Why this matters for PM work:**
-- See PRDs as they're being written
-- Watch research notes being organized
-- Review documents without switching apps
-- Always know what Claude is doing
+**PM の仕事でなぜ大事か:**
+- PRD が書かれていく様子をリアルタイムで見られる
+- リサーチノートが整理されていくのを観察できる
+- アプリを切り替えずにドキュメントをレビューできる
+- Claude が何をしているか常に把握できる
 
-This is your new PM workspace! 🎉
+これがあなたの新しい PM ワークスペースです！

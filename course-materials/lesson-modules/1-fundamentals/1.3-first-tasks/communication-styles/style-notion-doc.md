@@ -1,106 +1,106 @@
-# Communication Style: Notion Document
+# コミュニケーションスタイル: Notionドキュメント
 
-## Purpose
-Comprehensive reference document that anyone can read asynchronously and get complete context.
+## 目的
+誰でも非同期で読んで完全なコンテキストを得られる、包括的なリファレンスドキュメント。
 
-## Format Rules
-- **Length:** As long as needed to be thorough (typically 300-600 words)
-- **Tone:** Professional but accessible, detailed, well-organized
-- **Structure:**
-  - **Title:** Clear, descriptive headline
-  - **Summary:** 2-3 sentence TL;DR at the top
-  - **Sections:** Use H2 headers to organize (Background, Key Findings, Recommendations, Next Steps)
-  - **Lists:** Bullet points for scannability
-  - **Tables:** Optional for organizing data/findings
-  - **Callouts:** Use for important insights or action items
-- **Include:** Full context, supporting details, direct quotes, specific examples
-- **Avoid:** Assuming prior knowledge, skipping important context
-- **Focus:** Being a comprehensive, standalone reference
+## フォーマットルール
+- **長さ:** 十分に詳細な内容に必要なだけ（通常300〜600語）
+- **トーン:** プロフェッショナルだがわかりやすく、詳細で、よく整理された
+- **構成:**
+  - **タイトル:** 明確で説明的な見出し
+  - **サマリー:** 2〜3文のTL;DRを冒頭に
+  - **セクション:** H2ヘッダーで整理（背景、主要な発見、レコメンデーション、ネクストステップ）
+  - **リスト:** スキャンしやすい箇条書き
+  - **テーブル:** データ/発見を整理するためにオプションで使用
+  - **コールアウト:** 重要なインサイトやアクションアイテムに使用
+- **含めるもの:** 完全なコンテキスト、裏付けとなる詳細、直接引用、具体例
+- **避けるもの:** 予備知識の前提、重要なコンテキストの省略
+- **焦点:** 包括的で自己完結したリファレンスであること
 
-## Example
+## 例
 
-**Input:** User research showed 8/8 users struggled with onboarding, taking 45+ minutes to complete first task. Top pain points: unclear navigation (6 mentions), no templates (5 mentions), overwhelming blank screen (4 mentions). Recommended: add interactive tour and template library.
+**入力:** ユーザーリサーチの結果、8人中8人がオンボーディングに苦労し、最初のタスク完了に45分以上かかっていた。主なペインポイント: 不明確なナビゲーション（6回言及）、テンプレートの不在（5回言及）、圧倒的な空白画面（4回言及）。推奨: インタラクティブツアーとテンプレートライブラリの追加。
 
-**Output:**
+**出力:**
 
-# User Research Report: TaskFlow Onboarding Study
+# ユーザーリサーチレポート: TaskFlow オンボーディング調査
 
-**TL;DR:** All 8 users struggled significantly with onboarding (45+ min avg to first task). Primary issues: navigation confusion, lack of templates, overwhelming blank-screen experience. Recommending interactive tour + template library for Q1.
+**TL;DR:** 全8名のユーザーがオンボーディングで大きな困難を経験（最初のタスクまで平均45分以上）。主な問題: ナビゲーションの混乱、テンプレートの不在、圧倒的な空白画面体験。Q1にインタラクティブツアー + テンプレートライブラリを推奨。
 
-## Background
+## 背景
 
-We conducted 8 user interviews (Oct 2-6) with new TaskFlow users to understand onboarding friction points. Participants were recruited from recent trial signups and represented a mix of roles (PMs, engineers, marketers) and team sizes (solo to 50+ people).
+TaskFlowの新規ユーザーを対象に、オンボーディングの摩擦ポイントを理解するため8件のユーザーインタビューを実施しました（10月2〜6日）。参加者は最近のトライアルサインアップから募集し、役割（PM、エンジニア、マーケター）とチーム規模（個人〜50人以上）のミックスで構成。
 
-**Research Goals:**
-- Identify friction points in first-time user experience
-- Understand time-to-first-task completion
-- Compare our onboarding to competitor experiences
-- Generate recommendations for Q1 activation improvements
+**リサーチ目標:**
+- 初回ユーザー体験の摩擦ポイントを特定
+- 最初のタスク完了までの時間を把握
+- 競合のオンボーディング体験との比較
+- Q1アクティベーション改善のためのレコメンデーションを生成
 
-## Key Findings
+## 主要な発見
 
-### 1. Time-to-Value is Too Long
-- **Average time to complete first task: 45 minutes**
-- All 8 users (100%) struggled with initial setup
-- Competitors average 15 minutes (Linear, Asana)
-- Current activation rate: 45% (target: 60%)
+### 1. 価値到達までの時間が長すぎる
+- **最初のタスク完了までの平均時間: 45分**
+- 全8名のユーザー（100%）が初期セットアップに苦労
+- 競合の平均は15分（Linear、Asana）
+- 現在のアクティベーション率: 45%（目標: 60%）
 
-### 2. Navigation is Confusing (6/8 users)
-Users couldn't find basic features:
-- "I didn't know where to click to create my first project"
-- "I kept looking for templates but couldn't find them"
-- "The sidebar wasn't obvious as navigation"
+### 2. ナビゲーションがわかりにくい（8名中6名）
+ユーザーが基本機能を見つけられない:
+- 「最初のプロジェクトを作るためにどこをクリックすればいいかわからなかった」
+- 「テンプレートを探したけど見つからなかった」
+- 「サイドバーがナビゲーションだとわかりにくかった」
 
-### 3. Lack of Templates Increases Friction (5/8 users)
-Users want pre-built starting points:
-- "I stared at a blank screen not knowing what to do"
-- "I wish there were examples I could start from"
-- "Notion has templates — why don't you?"
+### 3. テンプレートの不在が摩擦を増大（8名中5名）
+ユーザーはプリビルトの出発点を求めている:
+- 「空白の画面を見つめて何をすればいいかわからなかった」
+- 「参考にできるサンプルがあればよかった」
+- 「Notionにはテンプレートがあるのに、なぜないの？」
 
-### 4. Blank-Screen Experience is Overwhelming (4/8 users)
-The empty workspace intimidates new users:
-- "I felt like I had to build everything from scratch"
-- "It's too much freedom without guidance"
+### 4. 空白画面体験が圧倒的（8名中4名）
+空のワークスペースが新規ユーザーを威圧:
+- 「全部ゼロから作らなきゃいけないと感じた」
+- 「ガイドなしの自由度が高すぎる」
 
-## Competitive Comparison
+## 競合比較
 
-| Platform | Time-to-First-Task | Has Templates | Has Interactive Tour |
-| --- | --- | --- | --- |
-| TaskFlow | 45 min | ❌ | ❌ |
-| Asana | 12 min | ✅ | ✅ |
-| Linear | 15 min | ❌ | ✅ |
-| ClickUp | 18 min | ✅ | ✅ |
+| プラットフォーム | 最初のタスクまでの時間 | テンプレート | インタラクティブツアー |
+|----------|-------------------|---------------|---------------------|
+| TaskFlow | 45分 | ❌ | ❌ |
+| Asana | 12分 | ✅ | ✅ |
+| Linear | 15分 | ❌ | ✅ |
+| ClickUp | 18分 | ✅ | ✅ |
 
-## Recommendations
+## レコメンデーション
 
-### Primary: Interactive Product Tour
-- Guide users through key features on first login
-- Progressive disclosure (don't overwhelm)
-- Can be skipped but defaults to "on"
-- Engineering estimate: 2 sprints
+### 優先: インタラクティブプロダクトツアー
+- 初回ログイン時に主要機能をガイド
+- プログレッシブディスクロージャー（圧倒しない）
+- スキップ可能だがデフォルトは「オン」
+- エンジニアリング見積もり: 2スプリント
 
-### Primary: Template Library
-- 5-7 pre-built project templates
-- Categories: Product Launch, Sprint Planning, Bug Tracking, Content Calendar
-- Shown immediately after signup
-- Engineering estimate: 3 sprints (web), 1 sprint (mobile later)
+### 優先: テンプレートライブラリ
+- 5〜7個のプリビルトプロジェクトテンプレート
+- カテゴリ: プロダクトローンチ、スプリントプランニング、バグトラッキング、コンテンツカレンダー
+- サインアップ直後に表示
+- エンジニアリング見積もり: 3スプリント（Web）、1スプリント（モバイルは後日）
 
-### Secondary: Navigation Improvements
-- More prominent sidebar labels
-- Contextual hints for new users
-- Included in interactive tour
+### 二次: ナビゲーションの改善
+- より目立つサイドバーラベル
+- 新規ユーザー向けのコンテキストヒント
+- インタラクティブツアーに含む
 
-## Next Steps
+## ネクストステップ
 
-1. **This week:** Detailed PRD for both initiatives
-2. **Next week:** Engineering breakdown and timeline
-3. **Oct 16:** Design review (Jordan's wireframes)
-4. **Oct 18:** Final Q1 prioritization decision
+1. **今週:** 両イニシアチブの詳細PRD
+2. **来週:** エンジニアリングの内訳とタイムライン
+3. **10月16日:** デザインレビュー（Jordanのワイヤーフレーム）
+4. **10月18日:** Q1優先順位の最終決定
 
-**Owner:** [Your name]
-**Stakeholders:** Sarah (Product), Jordan (Design), Jamie (Engineering)
-**Timeline:** Q1 2024 (if prioritized)
+**オーナー:** [あなたの名前]
+**ステークホルダー:** Sarah（プロダクト）、Jordan（デザイン）、Jamie（エンジニアリング）
+**タイムライン:** Q1 2024（優先された場合）
 
 ---
 
-*Related: Q1 OKRs, Activation Rate Analysis, Competitor Research*
+*関連: Q1 OKR、アクティベーション率分析、競合リサーチ*

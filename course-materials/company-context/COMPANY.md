@@ -1,332 +1,332 @@
-# TaskFlow Company Overview
+# TaskFlow 会社概要
 
-**Welcome to TaskFlow!** This is your fictional company throughout the Claude Code PM Course.
+**TaskFlowへようこそ！** ここはClaude Code PMコース全体を通じて使用する架空の会社です。
 
 ---
 
-## Company Background
+## 会社の背景
 
-**Founded:** 2021
-**Headquarters:** San Francisco, CA
-**Stage:** Series B ($20M raised)
-**Employees:** 50 people
+**設立:** 2021年
+**本社:** サンフランシスコ、カリフォルニア州
+**ステージ:** シリーズB（累計$20M調達）
+**従業員数:** 50名
 
-### Team Structure
+### チーム構成
 
-**Product (5 people):**
-- Sarah Chen - Head of Product
-- You - Senior PM (that's you!)
-- Alex Rivera - PM, Mobile & Growth
-- 2 Associate PMs
+**プロダクト（5名）:**
+- Sarah Chen - プロダクト責任者
+- あなた - シニアPM（あなた自身です！）
+- Alex Rivera - PM、モバイル＆グロース担当
+- アソシエイトPM 2名
 
-**Engineering (15 people):**
+**エンジニアリング（15名）:**
 - Mike Rodriguez - CTO
-- 3 Engineering Leads
-- 12 Engineers (frontend, backend, mobile)
+- エンジニアリングリード 3名
+- エンジニア 12名（フロントエンド、バックエンド、モバイル）
 
-**Design (3 people):**
-- Jordan Kim - Head of Design
-- 2 Product Designers
+**デザイン（3名）:**
+- Jordan Kim - デザイン責任者
+- プロダクトデザイナー 2名
 
-**Go-to-Market (20 people):**
-- Sales: 8 people
-- Marketing: 6 people
-- Customer Success: 6 people
+**Go-to-Market（20名）:**
+- セールス: 8名
+- マーケティング: 6名
+- カスタマーサクセス: 6名
 
-**Operations (7 people):**
-- CEO, CFO, Head of People, IT, Legal, Office Manager, Recruiting
-
----
-
-## Company Mission
-
-**Mission:** Empower remote teams to collaborate seamlessly through intelligent project management.
-
-**Vision:** Become the default project management tool for modern remote-first companies.
-
-**Values:**
-- **User-first:** Every decision starts with user needs
-- **Transparency:** Default to open communication
-- **Speed:** Move fast, iterate quickly, learn continuously
-- **Quality:** Sweat the details, ship polished products
-- **Remote-first:** Distributed by design, async by default
+**オペレーション（7名）:**
+- CEO、CFO、人事責任者、IT、法務、オフィスマネージャー、採用担当
 
 ---
 
-## Company Stage & Traction
+## 会社のミッション
 
-### Current Metrics (Q4 2024)
+**ミッション:** インテリジェントなプロジェクト管理を通じて、リモートチームのシームレスなコラボレーションを実現する。
 
-**Users:**
-- 50,000 total registered users
-- 10,000 active monthly users
-- 2,500 daily active users
+**ビジョン:** 現代のリモートファースト企業にとって、デフォルトのプロジェクト管理ツールになる。
 
-**Revenue:**
-- $2.5M ARR (Annual Recurring Revenue)
-- $250k MRR (Monthly Recurring Revenue)
-- 500 paying teams
-- Average deal size: $5k/year
-
-**Growth:**
-- 15% month-over-month user growth
-- 20% month-over-month revenue growth
-- 65% net retention rate
-- 45% activation rate (sign-up → active user)
-
-### Funding History
-
-**Seed Round (2021):** $2M
-- Investors: Y Combinator, several angels
-- Used for: Product development, initial team
-
-**Series A (2022):** $8M
-- Led by: Sequoia Capital
-- Used for: Scaling team, go-to-market
-
-**Series B (2024):** $20M
-- Led by: Andreessen Horowitz
-- Used for: Enterprise expansion, mobile development, international
+**バリュー:**
+- **ユーザーファースト:** すべての意思決定はユーザーニーズから始まる
+- **透明性:** オープンなコミュニケーションを基本とする
+- **スピード:** 素早く動き、素早く改善し、継続的に学ぶ
+- **品質:** 細部にこだわり、完成度の高い製品を届ける
+- **リモートファースト:** 設計から分散型、デフォルトで非同期
 
 ---
 
-## Market Position
+## 会社のステージとトラクション
 
-### Target Market
+### 現在の指標（2024年Q4）
 
-**Primary:** Series A-C startups (50-500 employees)
-- Remote-first or hybrid companies
-- Tech-forward teams
-- Need better than Trello, not as complex as Jira
+**ユーザー:**
+- 登録ユーザー総数 50,000人
+- 月間アクティブユーザー 10,000人
+- デイリーアクティブユーザー 2,500人
 
-**Secondary:** SMB teams (10-50 employees)
-- Agencies, consulting firms
-- Creative teams
-- Budget-conscious
+**収益:**
+- $2.5M ARR（年間経常収益）
+- $250k MRR（月間経常収益）
+- 有料チーム数 500
+- 平均契約額: $5k/年
 
-**Future:** Enterprise (500+ employees)
-- Fortune 500 companies
-- Requires: SSO, advanced security, compliance
+**成長:**
+- 月次ユーザー成長率 15%
+- 月次収益成長率 20%
+- ネットリテンション率 65%
+- アクティベーション率 45%（サインアップ → アクティブユーザー）
 
-### Market Size
+### 資金調達の歴史
 
-**TAM (Total Addressable Market):** $20B
-- Project management software market
+**シードラウンド（2021年）:** $2M
+- 投資家: Y Combinator、複数のエンジェル投資家
+- 用途: プロダクト開発、初期チーム
 
-**SAM (Serviceable Addressable Market):** $5B
-- Remote-first companies, 10-500 employees
+**シリーズA（2022年）:** $8M
+- リード: Sequoia Capital
+- 用途: チーム拡大、Go-to-Market
 
-**SOM (Serviceable Obtainable Market):** $500M
-- Startups specifically, next 5 years
+**シリーズB（2024年）:** $20M
+- リード: Andreessen Horowitz
+- 用途: エンタープライズ展開、モバイル開発、海外展開
 
 ---
 
-## Competitive Landscape
+## 市場ポジション
 
-### Direct Competitors
+### ターゲット市場
+
+**プライマリ:** シリーズA〜Cのスタートアップ（従業員50〜500名）
+- リモートファーストまたはハイブリッド企業
+- テクノロジーに積極的なチーム
+- Trelloでは物足りないが、Jiraほど複雑なものは不要
+
+**セカンダリ:** SMBチーム（従業員10〜50名）
+- エージェンシー、コンサルティング会社
+- クリエイティブチーム
+- コスト意識が高い
+
+**将来:** エンタープライズ（従業員500名以上）
+- Fortune 500企業
+- 必要要件: SSO、高度なセキュリティ、コンプライアンス
+
+### 市場規模
+
+**TAM（獲得可能な最大市場規模）:** $20B
+- プロジェクト管理ソフトウェア市場
+
+**SAM（対応可能な市場規模）:** $5B
+- リモートファースト企業、従業員10〜500名
+
+**SOM（獲得可能な市場規模）:** $500M
+- スタートアップ特化、今後5年間
+
+---
+
+## 競合環境
+
+### 直接競合
 
 **Asana:**
-- Strengths: Brand recognition, enterprise features
-- Weaknesses: Complex UI, expensive
-- Our differentiation: Simpler, more affordable, better for startups
+- 強み: ブランド認知度、エンタープライズ機能
+- 弱み: 複雑なUI、高価格
+- 当社の差別化: よりシンプル、より手頃、スタートアップに最適
 
 **Linear:**
-- Strengths: Beautiful UI, developer-loved
-- Weaknesses: Engineering-focused, less PM-friendly
-- Our differentiation: Better for PMs, cross-functional teams
+- 強み: 美しいUI、エンジニアに人気
+- 弱み: エンジニアリング特化、PM向けではない
+- 当社の差別化: PMに最適、部門横断チーム向け
 
 **Monday.com:**
-- Strengths: Customizable, visual
-- Weaknesses: Expensive, overwhelming options
-- Our differentiation: Opinionated workflow, faster setup
+- 強み: カスタマイズ性、ビジュアル性
+- 弱み: 高価格、選択肢が多すぎる
+- 当社の差別化: 明確なワークフロー、素早い導入
 
 **ClickUp:**
-- Strengths: Feature-rich, all-in-one
-- Weaknesses: Cluttered, performance issues
-- Our differentiation: Focused, fast, polished
+- 強み: 機能豊富、オールインワン
+- 弱み: 画面が雑然、パフォーマンス問題
+- 当社の差別化: 集中した機能、高速、洗練されたUI
 
-### Indirect Competitors
+### 間接競合
 
-- **Notion:** Documentation tool expanding into project management
-- **Jira:** Developer tool, too complex for cross-functional teams
-- **Trello:** Too simple for growing companies
-- **Slack:** Chat tool with project management aspirations
+- **Notion:** ドキュメントツールからプロジェクト管理に拡張中
+- **Jira:** 開発者向けツール、部門横断チームには複雑すぎる
+- **Trello:** 成長企業にはシンプルすぎる
+- **Slack:** プロジェクト管理を目指すチャットツール
 
-### Our Positioning
+### 当社のポジショニング
 
-**Core positioning:** "Project management built for how remote teams actually work"
+**コアポジショニング:** 「リモートチームの実際の働き方に合わせて作られたプロジェクト管理ツール」
 
-**Differentiators:**
-1. **Async-first:** Built for distributed teams, not real-time meetings
-2. **Context-rich:** Every task has full context (no "what's this for?")
-3. **Fast & lightweight:** Loads instantly, no performance issues
-4. **Beautiful:** Design quality rivals Linear, but more functional
-5. **Affordable:** 50% cheaper than Asana for same features
-
----
-
-## Product Philosophy
-
-### Core Beliefs
-
-**1. Context over status updates**
-- Tasks should have enough context that anyone can pick them up
-- Status meetings are waste - status should be visible in the tool
-
-**2. Async by default**
-- Don't require synchronous coordination
-- Build for teams across timezones
-
-**3. Opinionated but flexible**
-- Strong defaults (workflows that work)
-- Customizable when needed (not overwhelming)
-
-**4. Speed matters**
-- Tools should be fast to learn, fast to use, fast to load
-- No loading spinners, no lag
-
-**5. Beautiful and functional**
-- Good design isn't just aesthetics
-- UI should guide users to success
+**差別化要因:**
+1. **非同期ファースト:** リアルタイムの会議ではなく、分散チームのために構築
+2. **コンテキスト重視:** すべてのタスクに十分なコンテキスト（「これは何のため？」が不要）
+3. **高速＆軽量:** 瞬時にロード、パフォーマンス問題なし
+4. **美しいデザイン:** Linearに匹敵するデザイン品質で、より高機能
+5. **手頃な価格:** 同等の機能でAsanaの50%の価格
 
 ---
 
-## Company Culture
+## プロダクト哲学
 
-### How We Work
+### 基本信念
 
-**Remote-first:**
-- Team across 8 timezones
-- Async communication default
-- Weekly all-hands (recorded)
-- Quarterly in-person offsites
+**1. ステータス更新よりコンテキスト**
+- タスクは誰でもすぐ着手できるだけのコンテキストを持つべき
+- ステータス会議は無駄 - ステータスはツール上で確認できるべき
 
-**Documentation:**
-- Write everything down (Notion)
-- Prefer writing over meetings
-- Record decisions with context
+**2. デフォルトで非同期**
+- 同期的な調整を必要としない
+- タイムゾーンをまたぐチームのために構築
 
-**Meetings:**
-- Default to no meeting
-- If meeting needed: agenda required
-- Under 30 minutes
-- Notes published after
+**3. こだわりを持ちつつ柔軟に**
+- 強力なデフォルト設定（機能するワークフロー）
+- 必要に応じてカスタマイズ可能（圧倒的にならない程度に）
 
-**Tools:**
-- TaskFlow (obviously! dogfooding)
-- Notion (docs, wikis)
-- Figma (design)
-- GitHub (code)
-- Slack (quick communication)
-- Linear (engineering tasks - yes, we use competitors!)
+**4. スピードが重要**
+- ツールは学習も使用もロードも速くあるべき
+- ローディングスピナーやラグは許容しない
+
+**5. 美しさと機能性の両立**
+- 良いデザインは見た目だけではない
+- UIはユーザーを成功に導くべき
 
 ---
 
-## Strategic Priorities (2025)
+## 企業文化
 
-### Q1 2025 Focus
+### 働き方
 
-**1. Mobile app launch**
-- iOS and Android native apps
-- 35% of usage is mobile web (painful experience)
-- Unlock field teams, on-the-go usage
+**リモートファースト:**
+- 8つのタイムゾーンにまたがるチーム
+- デフォルトは非同期コミュニケーション
+- 週次全社ミーティング（録画あり）
+- 四半期ごとの対面オフサイト
 
-**2. Enterprise readiness**
-- SSO (Single Sign-On) - SAML, OAuth
-- Advanced permissions and roles
-- Audit logs for compliance
-- Upmarket strategy
+**ドキュメンテーション:**
+- すべてを書き残す（Notion）
+- 会議よりも文書を優先
+- 決定事項はコンテキストとともに記録
 
-**3. Activation improvement**
-- Increase 45% → 60% activation rate
-- Faster time-to-value
-- Better onboarding
-- Template library
+**ミーティング:**
+- デフォルトはミーティングなし
+- ミーティングが必要な場合: アジェンダ必須
+- 30分以内
+- 終了後に議事録を公開
 
-### 2025 OKRs (Objectives & Key Results)
-
-**Objective 1: Achieve product-market fit in enterprise segment**
-- KR1: Close 20 enterprise deals (500+ employees)
-- KR2: Net retention rate: 65% → 80%
-- KR3: Average deal size: $5k → $15k
-
-**Objective 2: Become the default PM tool for Series A startups**
-- KR1: 20% market share in Series A startup segment
-- KR2: NPS score: 35 → 50
-- KR3: Activation rate: 45% → 60%
-
-**Objective 3: Establish mobile presence**
-- KR1: Ship iOS and Android apps
-- KR2: 40% mobile adoption (of mobile web users)
-- KR3: 4.5+ star rating in app stores
+**使用ツール:**
+- TaskFlow（もちろん！自社ドッグフーディング）
+- Notion（ドキュメント、Wiki）
+- Figma（デザイン）
+- GitHub（コード）
+- Slack（クイックコミュニケーション）
+- Linear（エンジニアリングタスク - 競合製品も使っています！）
 
 ---
 
-## Your Role (Senior PM)
+## 戦略的優先事項（2025年）
 
-### What You Own
+### 2025年Q1の重点項目
 
-**Product areas:**
-- Activation & onboarding
-- Core task management workflows
-- Notifications system
-- Integrations (Slack, GitHub, etc.)
+**1. モバイルアプリのローンチ**
+- iOSおよびAndroidネイティブアプリ
+- 利用の35%がモバイルWeb（使いにくい体験）
+- フィールドチーム、外出先での利用を可能に
 
-**Your goals:**
-- Increase activation rate (45% → 60%)
-- Improve time-to-value (first task completed)
-- Reduce time-to-first-invite (viral growth)
+**2. エンタープライズ対応**
+- SSO（シングルサインオン）- SAML、OAuth
+- 高度な権限管理とロール
+- コンプライアンス向け監査ログ
+- アップマーケット戦略
 
-### Your Stakeholders
+**3. アクティベーション改善**
+- アクティベーション率を45% → 60%に向上
+- より短いTime to Value
+- より良いオンボーディング
+- テンプレートライブラリ
 
-**Report to:** Sarah Chen (Head of Product)
+### 2025年 OKR（目標と主要成果指標）
 
-**Work closely with:**
-- Mike Rodriguez (CTO) - Technical feasibility
-- Jordan Kim (Head of Design) - UX and design
-- Alex Rivera (PM, Mobile) - Cross-platform consistency
-- Engineering Leads - Sprint planning, prioritization
+**目標1: エンタープライズセグメントでのプロダクトマーケットフィット達成**
+- KR1: エンタープライズ案件20件の成約（従業員500名以上）
+- KR2: ネットリテンション率: 65% → 80%
+- KR3: 平均契約額: $5k → $15k
 
-**Collaborate with:**
-- Sales & CS - Enterprise customer needs
-- Marketing - Launch planning
-- Analytics - Data and insights
+**目標2: シリーズAスタートアップのデフォルトPMツールになる**
+- KR1: シリーズAスタートアップセグメントで市場シェア20%
+- KR2: NPSスコア: 35 → 50
+- KR3: アクティベーション率: 45% → 60%
 
-### Your Success Metrics
-
-**Primary:**
-- Activation rate (% of signups → active users)
-- Time to first task completed
-- Viral coefficient (invites sent per user)
-
-**Secondary:**
-- Feature adoption rates
-- User satisfaction (NPS, surveys)
-- Support ticket volume
+**目標3: モバイルプレゼンスの確立**
+- KR1: iOSおよびAndroidアプリの出荷
+- KR2: モバイル採用率40%（モバイルWebユーザーのうち）
+- KR3: アプリストアで4.5以上の評価
 
 ---
 
-## Key Terminology
+## あなたの役割（シニアPM）
 
-**Workspace:** Top-level container (one per company)
-**Project:** Collection of tasks (e.g., "Q1 Product Launch")
-**Task:** Individual work item
-**Epic:** Large feature or initiative spanning multiple tasks
-**Sprint:** 2-week development cycle
-**Cycle:** Same as sprint (we use "cycle" in product, "sprint" with eng)
+### 担当領域
+
+**プロダクト領域:**
+- アクティベーション＆オンボーディング
+- コアタスク管理ワークフロー
+- 通知システム
+- インテグレーション（Slack、GitHubなど）
+
+**あなたの目標:**
+- アクティベーション率の向上（45% → 60%）
+- Time to Valueの改善（最初のタスク完了まで）
+- 初回招待までの時間短縮（バイラル成長）
+
+### ステークホルダー
+
+**レポートライン:** Sarah Chen（プロダクト責任者）
+
+**密接に連携:**
+- Mike Rodriguez（CTO）- 技術的実現可能性
+- Jordan Kim（デザイン責任者）- UXとデザイン
+- Alex Rivera（PM、モバイル）- クロスプラットフォームの一貫性
+- エンジニアリングリード - スプリント計画、優先順位付け
+
+**協力関係:**
+- セールス＆CS - エンタープライズ顧客ニーズ
+- マーケティング - ローンチ計画
+- アナリティクス - データとインサイト
+
+### 成功指標
+
+**主要指標:**
+- アクティベーション率（サインアップ → アクティブユーザーの割合）
+- 最初のタスク完了までの時間
+- バイラル係数（ユーザーあたりの招待数）
+
+**副次指標:**
+- 機能採用率
+- ユーザー満足度（NPS、アンケート）
+- サポートチケット件数
 
 ---
 
-## This Course
+## 主要な用語
 
-Throughout this course, you'll work on real TaskFlow projects:
-- Write PRDs for new features
-- Analyze user research
-- Plan sprints
-- Review competitive intelligence
-- Generate user stories
-- Communicate with stakeholders
+**Workspace（ワークスペース）:** トップレベルの単位（1社に1つ）
+**Project（プロジェクト）:** タスクの集まり（例: 「Q1プロダクトローンチ」）
+**Task（タスク）:** 個別の作業項目
+**Epic（エピック）:** 複数のタスクにまたがる大きな機能やイニシアチブ
+**Sprint（スプリント）:** 2週間の開発サイクル
+**Cycle（サイクル）:** スプリントと同義（プロダクト側では「サイクル」、エンジニアリング側では「スプリント」を使用）
 
-All the context is pre-created. You're stepping into a working company with active projects, existing documents, and ongoing work.
+---
 
-**Let's build some great products! 🚀**
+## このコースについて
+
+このコース全体を通じて、TaskFlowの実際のプロジェクトに取り組みます:
+- 新機能のPRD作成
+- ユーザーリサーチの分析
+- スプリントの計画
+- 競合インテリジェンスのレビュー
+- ユーザーストーリーの作成
+- ステークホルダーとのコミュニケーション
+
+すべてのコンテキストは事前に作成されています。あなたはアクティブなプロジェクト、既存のドキュメント、進行中の業務がある稼働中の会社に参加するのです。
+
+**素晴らしいプロダクトを作りましょう！**

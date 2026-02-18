@@ -1,228 +1,227 @@
-DESIGN MOCKUP: TASKFLOW DARK MODE
-Designer: Jordan Kim
-Version: v3 (Final for review)
-Date: October 8, 2024
-Figma Link: [figma.com/taskflow-dark-mode-v3]
+デザインモックアップ: TASKFLOW ダークモード
+デザイナー: Jordan Kim
+バージョン: v3（レビュー用最終版）
+日付: 2024年10月8日
+Figma リンク: [figma.com/taskflow-dark-mode-v3]
 
 ═══════════════════════════════════════════════════════════════════
 
-OVERVIEW:
+概要:
 
-Jordan presented the final dark mode mockups for TaskFlow. This is version 3 after incorporating feedback from engineering and product teams. The design covers the main application screens: project board, task detail view, navigation, and settings.
-
-═══════════════════════════════════════════════════════════════════
-
-COLOR PALETTE:
-
-Background Colors:
-- Primary background: #1a1a1a (very dark gray, not pure black)
-- Secondary background: #242424 (slightly lighter for cards/panels)
-- Tertiary background: #2e2e2e (for hover states)
-
-Text Colors:
-- Primary text: #f0f0f0 (off-white, not pure white - reduces eye strain)
-- Secondary text: #b0b0b0 (gray for less important text)
-- Disabled text: #666666 (darker gray)
-
-Accent Colors:
-- Primary brand (blue): #4d9fff (lighter than light mode #2563eb)
-- Success (green): #4ade80 (lighter than light mode)
-- Warning (yellow): #fbbf24 (same as light mode, already bright)
-- Error (red): #f87171 (lighter than light mode)
-- Links: #60a5fa (lighter blue, distinct from primary brand)
-
-Borders/Dividers:
-- Subtle borders: #333333 (barely visible, just enough to separate)
-- Strong borders: #444444 (for emphasized separation)
+Jordanがダークモードの最終モックアップをTaskFlowチームに提示した。エンジニアリングチームとプロダクトチームからのフィードバックを反映したバージョン3。デザインは主要なアプリケーション画面をカバー: プロジェクトボード、タスク詳細ビュー、ナビゲーション、設定。
 
 ═══════════════════════════════════════════════════════════════════
 
-KEY SCREENS SHOWN:
+カラーパレット:
 
-1. PROJECT BOARD VIEW:
-- Left sidebar navigation with dark #1a1a1a background
-- Main content area #242424 background
-- Task cards with #2e2e2e background
-- Column headers (To Do, In Progress, Done) with subtle #333333 borders
-- Task cards have rounded corners (8px) and subtle shadow
-- Hover state: task card background lightens to #363636
+背景色:
+- プライマリ背景: #1a1a1a（とても濃いグレー、純粋な黒ではない）
+- セカンダリ背景: #242424（カード/パネル用のやや明るい色）
+- ターシャリ背景: #2e2e2e（ホバー状態用）
 
-2. TASK DETAIL VIEW:
-- Right-side slide-out panel
-- Panel background: #242424
-- Task title in large #f0f0f0 text
-- Task description with markdown rendering (code blocks have #1a1a1a background)
-- Comments section at bottom with threaded replies
-- Attachment previews with thumbnail borders
-- Action buttons (Edit, Complete, Delete) with appropriate accent colors
+テキスト色:
+- プライマリテキスト: #f0f0f0（オフホワイト、純粋な白ではない - 目の疲れを軽減）
+- セカンダリテキスト: #b0b0b0（重要度の低いテキスト用グレー）
+- 無効テキスト: #666666（濃いグレー）
 
-3. TOP NAVIGATION:
-- Fixed header, #1a1a1a background
-- Search bar with #2e2e2e background, #333333 border
-- User avatar and settings icons in #f0f0f0
-- Notification bell with badge (red #f87171 if unread)
+アクセントカラー:
+- プライマリブランド（青）: #4d9fff（ライトモードの#2563ebより明るい）
+- 成功（緑）: #4ade80（ライトモードより明るい）
+- 警告（黄）: #fbbf24（ライトモードと同じ、既に明るい）
+- エラー（赤）: #f87171（ライトモードより明るい）
+- リンク: #60a5fa（明るい青、プライマリブランドとは区別）
 
-4. SETTINGS MODAL:
-- Modal overlay with 60% opacity black (#000000 at 0.6)
-- Modal content: #242424 background, rounded corners (12px)
-- Form inputs with #2e2e2e background
-- Toggle switches for dark mode setting (on/off/auto based on system)
+ボーダー/ディバイダー:
+- 控えめなボーダー: #333333（ほぼ見えない、区切りに必要な最低限）
+- 強調ボーダー: #444444（明確な区切り用）
 
 ═══════════════════════════════════════════════════════════════════
 
-NOTABLE DESIGN DECISIONS:
+主要画面:
 
-Contrast Ratios:
-Jordan verified all text meets WCAG AA standards (4.5:1 for normal text, 3:1 for large text). Primary text (#f0f0f0 on #1a1a1a) has 11.5:1 ratio. Secondary text (#b0b0b0 on #1a1a1a) has 6.2:1 ratio.
+1. プロジェクトボードビュー:
+- 左サイドバーナビゲーション、#1a1a1aの背景
+- メインコンテンツエリア、#242424の背景
+- タスクカード、#2e2e2eの背景
+- カラムヘッダー（To Do, In Progress, Done）、控えめな#333333のボーダー
+- タスクカードは角丸（8px）と控えめなシャドウ
+- ホバー時: タスクカードの背景が#363636に明るくなる
 
-Not Pure Black:
-"I'm using #1a1a1a instead of #000000 because pure black on OLED screens can cause eye strain with pure white text. Slightly lighter black is easier on the eyes."
+2. タスク詳細ビュー:
+- 右側スライドアウトパネル
+- パネル背景: #242424
+- タスクタイトルは大きな#f0f0f0テキスト
+- タスク説明にMarkdownレンダリング対応（コードブロックは#1a1a1a背景）
+- 下部にコメントセクション、スレッド返信付き
+- 添付ファイルプレビュー、サムネイルボーダー付き
+- アクションボタン（編集、完了、削除）、適切なアクセントカラー
 
-Syntax Highlighting:
-Code blocks in task descriptions use a dark syntax theme (similar to VS Code's Dark+ theme). Jordan included examples with JavaScript, Python, and JSON.
+3. トップナビゲーション:
+- 固定ヘッダー、#1a1a1a背景
+- 検索バー、#2e2e2e背景、#333333ボーダー
+- ユーザーアバターと設定アイコン、#f0f0f0
+- 通知ベル、未読の場合は赤バッジ（#f87171）
 
-User-Uploaded Images:
-Images in task attachments have a subtle #333333 border to separate them from the background. Jordan noted: "If users upload screenshots with white backgrounds, they'll look weird. The border helps."
-
-Icons:
-All icons are #f0f0f0 or #b0b0b0 depending on importance. Jordan adjusted several icons that were too thin (looked faint in dark mode) - made them slightly bolder.
-
-═══════════════════════════════════════════════════════════════════
-
-INTERACTION STATES:
-
-Hover States:
-- Buttons: background lightens by ~10%
-- Task cards: background goes from #2e2e2e to #363636
-- Links: underline appears
-
-Focus States:
-- Blue outline (#4d9fff) for keyboard navigation
-- 2px solid outline, 4px offset
-- Ensures accessibility for keyboard users
-
-Active/Pressed States:
-- Buttons: background darkens slightly, scale down to 98%
-- Creates tactile feedback
-
-Disabled States:
-- Reduced opacity (50%)
-- Cursor changes to not-allowed
-- Text color shifts to #666666
+4. 設定モーダル:
+- モーダルオーバーレイ、黒の60%不透明度（#000000 at 0.6）
+- モーダルコンテンツ: #242424背景、角丸（12px）
+- フォーム入力、#2e2e2e背景
+- ダークモード設定のトグルスイッチ（オン/オフ/システム設定に基づく自動）
 
 ═══════════════════════════════════════════════════════════════════
 
-WHAT'S WORKING WELL:
+注目すべきデザイン決定:
 
-✓ Contrast is excellent - very readable
-✓ Accent colors pop without being harsh
-✓ Consistent spacing and hierarchy
-✓ Smooth transitions between light/dark (Jordan showed animation)
-✓ Brand identity maintained (still feels like TaskFlow)
-✓ Code blocks look great (important for engineer users)
+コントラスト比:
+Jordanは全テキストがWCAG AA基準を満たすことを確認（通常テキスト4.5:1、大テキスト3:1）。プライマリテキスト（#f0f0f0 on #1a1a1a）は11.5:1の比率。セカンダリテキスト（#b0b0b0 on #1a1a1a）は6.2:1の比率。
 
-═══════════════════════════════════════════════════════════════════
+純粋な黒ではない理由:
+「OLEDスクリーンで純粋な黒と純粋な白テキストの組み合わせは目の疲れを引き起こす可能性があるため、#000000ではなく#1a1a1aを使用しています。少し明るい黒の方が目に優しいです。」
 
-CONCERNS / QUESTIONS FROM REVIEW:
+シンタックスハイライト:
+タスク説明内のコードブロックはダークシンタックステーマを使用（VS CodeのDark+テーマに類似）。JordanはJavaScript、Python、JSONの例を含めた。
 
-1. USER-UPLOADED IMAGES:
-Issue: Screenshots with white backgrounds will look jarring
-Jordan's solution: Add border, but might not be enough
-Alternative: Add background pattern behind images (like Slack does?)
-DECISION NEEDED: How to handle this? Test with real content?
+ユーザーアップロード画像:
+タスク添付の画像には、背景から分離するための控えめな#333333ボーダーがある。Jordanの注記: 「白い背景のスクリーンショットをアップロードすると変に見えます。ボーダーが役立ちます。」
 
-2. CHART/GRAPH COLORS:
-Issue: Reports page has charts (velocity, burndown). Jordan showed examples but colors might need adjustment.
-Concern: Chart libraries (we use Recharts) have default colors that won't work in dark mode.
-ACTION: Engineering needs to test chart library dark mode support
-
-3. THIRD-PARTY EMBEDS:
-Issue: Figma embeds, Google Doc embeds - we don't control their appearance
-Jordan: "If someone embeds a Figma mockup, it'll be light mode. We can't change that."
-DECISION NEEDED: Accept that embedded content won't match theme? Or hide embeds in dark mode?
-
-4. MOBILE APP:
-Issue: Jordan designed this for web. Mobile needs separate consideration.
-Question: Does mobile launch with dark mode? Or ship mobile without dark mode initially?
-Alex (mobile PM) needs to weigh in.
-
-5. MARKETING SITE:
-Issue: Should our marketing site (taskflow.com) have dark mode too?
-Or just the app?
-Jordan: "That's extra scope. Marketing site is separate codebase."
-DECISION NEEDED: App only or app + marketing site?
-
-6. DEFAULT MODE:
-Issue: Should dark mode be opt-in or opt-out?
-Options:
-  a) Default to light mode (current behavior)
-  b) Default to system preference (auto-detect OS theme)
-  c) Default to dark mode (force everyone to dark)
-Jordan suggests option B (system preference)
-DECISION NEEDED: Product and engineering to decide
+アイコン:
+全アイコンは重要度に応じて#f0f0f0または#b0b0b0。Jordanはダークモードで薄すぎたアイコンを調整 - やや太くした。
 
 ═══════════════════════════════════════════════════════════════════
 
-TECHNICAL IMPLEMENTATION NOTES:
+インタラクション状態:
 
-Jordan worked with Jamie (eng lead) on implementation approach:
+ホバー状態:
+- ボタン: 背景が約10%明るくなる
+- タスクカード: 背景が#2e2e2eから#363636に
+- リンク: アンダーラインが表示
 
-CSS Variables:
-Use CSS custom properties for colors:
+フォーカス状態:
+- キーボードナビゲーション用の青アウトライン（#4d9fff）
+- 2pxソリッドアウトライン、4pxオフセット
+- キーボードユーザーのアクセシビリティを確保
+
+アクティブ/押下状態:
+- ボタン: 背景がやや暗くなる、98%にスケールダウン
+- 触覚的なフィードバックを演出
+
+無効状態:
+- 不透明度を下げる（50%）
+- カーソルがnot-allowedに変更
+- テキスト色が#666666に
+
+═══════════════════════════════════════════════════════════════════
+
+うまくいっている点:
+
+✓ コントラストが優秀 - とても読みやすい
+✓ アクセントカラーがきつすぎずに映える
+✓ 一貫したスペーシングと階層
+✓ ライト/ダーク切り替え時のスムーズなトランジション（Jordanがアニメーションを見せた）
+✓ ブランドアイデンティティが維持されている（TaskFlowらしさを保持）
+✓ コードブロックの見栄えが良い（エンジニアユーザーにとって重要）
+
+═══════════════════════════════════════════════════════════════════
+
+レビューからの懸念事項 / 質問:
+
+1. ユーザーアップロード画像:
+問題: 白い背景のスクリーンショットが違和感を生む
+Jordanの解決策: ボーダーを追加、でも十分ではないかも
+代替案: 画像の背後にバックグラウンドパターンを追加（Slackのように？）
+要決定: どう対処する？実際のコンテンツでテスト？
+
+2. チャート/グラフの色:
+問題: レポートページにチャート（ベロシティ、バーンダウン）がある。Jordanが例を見せたが色の調整が必要かも。
+懸念: チャートライブラリ（Rechartsを使用）のデフォルトカラーがダークモードで機能しない。
+アクション: エンジニアリングがチャートライブラリのダークモード対応をテストする必要あり
+
+3. サードパーティ埋め込み:
+問題: Figma埋め込み、Google Doc埋め込み - 表示を制御できない
+Jordan: 「Figmaモックアップを埋め込むと、ライトモードになる。それは変えられない。」
+要決定: 埋め込みコンテンツがテーマと一致しないことを受け入れる？ダークモードでは埋め込みを非表示にする？
+
+4. モバイルアプリ:
+問題: JordanはWeb用にデザインした。モバイルは別途考慮が必要。
+質問: モバイルローンチ時にダークモードを含める？それとも最初はダークモードなしで出す？
+Alex（モバイルPM）のインプットが必要。
+
+5. マーケティングサイト:
+問題: マーケティングサイト（taskflow.com）にもダークモードが必要？
+それともアプリだけ？
+Jordan: 「それは追加スコープ。マーケティングサイトは別のコードベース。」
+要決定: アプリのみ、またはアプリ + マーケティングサイト？
+
+6. デフォルトモード:
+問題: ダークモードはオプトインかオプトアウトか？
+選択肢:
+  a) デフォルトはライトモード（現在の挙動）
+  b) デフォルトはシステム設定（OSテーマを自動検出）
+  c) デフォルトはダークモード（全員をダークに強制）
+Jordanは選択肢B（システム設定）を提案
+要決定: プロダクトとエンジニアリングが決定
+
+═══════════════════════════════════════════════════════════════════
+
+技術実装メモ:
+
+JordanがJamie（エンジニアリングリード）と実装アプローチを検討:
+
+CSS変数:
+色にはCSSカスタムプロパティを使用:
 --background-primary: #1a1a1a;
 --text-primary: #f0f0f0;
-etc.
+など
 
-Toggle switches between light/dark by changing root CSS variables.
+ルートCSS変数を切り替えることでライト/ダークを切り替え。
 
-Persistence:
-User preference stored in database (user settings)
-Also stored in localStorage for instant load
+永続化:
+ユーザー設定はデータベースに保存（ユーザー設定）
+即時ロード用にlocalStorageにも保存
 
-Animation:
-Smooth transition when toggling (0.2s ease)
-Jordan: "No jarring flashing between modes"
+アニメーション:
+切り替え時のスムーズなトランジション（0.2sイーズ）
+Jordan: 「モード切り替え時にちらつきなし」
 
-System Preference Detection:
-Use prefers-color-scheme media query
-Respects OS-level dark mode setting
+システム設定の検出:
+prefers-color-schemeメディアクエリを使用
+OS レベルのダークモード設定を尊重
 
-Per-Component Overrides:
-Some components might need special handling (charts, embeds)
-Engineering to identify edge cases during implementation
-
-═══════════════════════════════════════════════════════════════════
-
-ROLLOUT STRATEGY:
-
-Jordan suggests:
-1. Beta test with internal team first (dogfood)
-2. Invite 100 power users to test (opt-in beta)
-3. Gather feedback, fix issues
-4. Public launch with announcement
-
-Marketing opportunity:
-- Blog post: "TaskFlow Dark Mode is Here"
-- Social media campaign
-- Email to all users
-- In-app banner announcement
+コンポーネント単位のオーバーライド:
+一部のコンポーネントは特別な処理が必要な場合あり（チャート、埋め込み）
+エンジニアリングが実装時にエッジケースを特定
 
 ═══════════════════════════════════════════════════════════════════
 
-NEXT STEPS:
+ロールアウト戦略:
 
-- [ ] Product (me): Decision on user-uploaded images, embeds, default mode
-- [ ] Engineering (Jamie): Investigate chart library dark mode support
-- [ ] Mobile (Alex): Decide if mobile launches with dark mode
-- [ ] Marketing: Plan launch campaign (if going forward)
-- [ ] Design (Jordan): Address feedback, finalize specs for engineering
+Jordanの提案:
+1. まず社内チームでベータテスト（ドッグフーディング）
+2. 100人のパワーユーザーをテストに招待（オプトインベータ）
+3. フィードバックを収集、問題を修正
+4. アナウンス付きで一般公開
+
+マーケティングの機会:
+- ブログ記事: 「TaskFlowのダークモードが登場」
+- SNSキャンペーン
+- 全ユーザーにメール
+- アプリ内バナーでのアナウンス
 
 ═══════════════════════════════════════════════════════════════════
 
-PERSONAL NOTES:
+ネクストステップ:
+[ ] プロダクト（自分）: ユーザーアップロード画像、埋め込み、デフォルトモードの決定
+[ ] エンジニアリング（Jamie）: チャートライブラリのダークモード対応を調査
+[ ] モバイル（Alex）: モバイルローンチ時にダークモードを含めるか決定
+[ ] マーケティング: ローンチキャンペーンの計画（進めるなら）
+[ ] デザイン（Jordan）: フィードバックを反映、エンジニアリング向け仕様を最終化
 
-This looks really polished. Jordan clearly put a lot of thought into contrast, accessibility, and edge cases. The design feels modern and premium - definitely something that will delight our engineering users.
+═══════════════════════════════════════════════════════════════════
 
-Main concerns are the edge cases (user-uploaded content, embeds, charts). We need to test with real messy data, not just pristine mockups.
+個人的なメモ:
 
-Overall: Strong yes to move forward. This will be a big win for user satisfaction and team morale.
+とても完成度が高い。Jordanはコントラスト、アクセシビリティ、エッジケースについてよく考えている。デザインはモダンでプレミアム感がある - エンジニアユーザーを間違いなく喜ばせるだろう。
+
+主な懸念はエッジケース（ユーザーアップロードコンテンツ、埋め込み、チャート）。きれいなモックアップだけでなく、実際のごちゃごちゃしたデータでテストする必要がある。
+
+全体的に: 進めるべき。ユーザー満足度とチームの士気にとって大きな成果になる。

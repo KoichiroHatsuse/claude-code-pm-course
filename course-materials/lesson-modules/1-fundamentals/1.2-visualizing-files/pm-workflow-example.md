@@ -1,23 +1,23 @@
-# PM Workflow Example
+# PM ワークフロー例
 
-Imagine this typical PM workflow:
+典型的な PM ワークフローを想像してみてください:
 
-**Morning:**
-- Ask Claude to summarize yesterday's meeting notes
-- Watch the summary file appear in Obsidian
-- Read it, make edits if needed
-- Share with team
+**朝:**
+- Claude に昨日の会議メモを要約してもらう
+- 要約ファイルがエディタに表示されるのを見る
+- 内容を読んで、必要なら編集する
+- チームに共有する
 
-**Afternoon:**
-- Ask Claude to draft a PRD from user research
-- See the PRD appear in real-time
-- Review it in Obsidian while chatting with Claude
-- Ask for revisions: "Make section 3 more technical"
-- Watch the changes happen live
+**午後:**
+- Claude にユーザーリサーチから PRD のドラフトを作成してもらう
+- PRD がリアルタイムで表示されるのを見る
+- Claude とチャットしながらエディタでレビューする
+- 修正を依頼する:「セクション3をもっと技術的にして」
+- 変更がライブで反映されるのを見る
 
-**End of day:**
-- Ask Claude to process all action items from today
-- See the organized list appear
-- Know exactly what to do tomorrow
+**1日の終わり:**
+- Claude に今日のアクションアイテムをすべて整理してもらう
+- 整理されたリストが表示されるのを見る
+- 明日何をすべきかが明確になる
 
-This is your new reality! You work WITH Claude, seeing everything, always in control.
+これがあなたの新しい日常です！Claude と一緒に働き、すべてが見え、常にコントロールできます。
