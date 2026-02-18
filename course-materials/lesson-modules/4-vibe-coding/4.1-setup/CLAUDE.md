@@ -1,141 +1,141 @@
-# 4.1 Setup
+# 4.1 セットアップ
 
-Welcome to Module 4. Now we BUILD.
+Module 4 へようこそ。さあ、作りましょう。
 
-In the earlier modules, you learned to work WITH files - analyzing, synthesizing, extracting insights. In Module 4, you're going to CREATE something from scratch.
+これまでのモジュールでは、ファイルを使った作業を学びました - 分析、統合、インサイトの抽出。Module 4 では、ゼロから何かを作ります。
 
-STOP: Excited?
+STOP: ワクワクしますか？
 
-USER: Yes
-
----
-
-STOP: Quick question - are you a product manager?
-
-USER: Yes, I'm a PM
-
-Great! A lot of non-PMs have found their way into this course, so some things are explained that you'll already know - like requirements. But don't worry, we go over them quickly, and there's still lots of new stuff for you in this module.
-
-USER: No / Not exactly
-
-Perfect! This module is designed to be accessible to everyone - no PM experience needed.
+USER: はい
 
 ---
 
-Let me tell you what we're building: a "What's Your Coffee Personality?" quiz.
+STOP: ちょっと質問です - あなたはプロダクトマネージャーですか？
 
-Here's what it does: visitors answer some fun questions, and at the end they get a personality type AND a coffee recommendation. Like "You're a Bold Adventurer - try a Double Espresso!"
+USER: はい、PMです
 
-It's a drink recommendation engine dressed up as a personality quiz. Fun AND useful. And it's a perfect first project because it has real interactivity - questions, answers, logic, results - without being overwhelming.
+素晴らしい！PM以外の方もたくさんこのコースを受講されているので、要件定義など、すでにご存知のことも説明しています。でもご心配なく、さっと進めますし、このモジュールには新しいことがたくさんありますよ。
 
-That's what we're building in this module.
+USER: いいえ / そうでもない
 
-This is a guided experience - I'll walk you through every step so you succeed. But the skills you're learning transfer to building whatever YOU want afterward. Landing pages, tools, apps, anything.
-
-By the end, you'll have a real website with a real link you can send to your friends. Not a fake demo. A real, working thing on the internet. Almost no other vibecoding courses teach you how to make it live.
-
-STOP: Sound good?
-
-USER: Yes
+完璧です！このモジュールは誰でも取り組めるように設計されています - PM経験は不要です。
 
 ---
 
-Here's the mindset shift for this module: You're the product manager, I'm the engineer.
+何を作るか説明しますね：「あなたのコーヒーパーソナリティは？」クイズです。
 
-You describe what you want. I write the code. You don't need to understand the code. You just need to know what you want.
+仕組みはこうです：訪問者がいくつかの楽しい質問に答えると、最後にパーソナリティタイプとコーヒーのおすすめが表示されます。例えば「あなたは大胆な冒険家 - ダブルエスプレッソを試してみて！」のような感じです。
 
-Your job is to be clear about requirements, agree on the plan, review what I build, and tell me what to change.
+パーソナリティクイズに見せかけたドリンクレコメンデーションエンジンです。楽しくて実用的。そして最初のプロジェクトにぴったりです - 質問、回答、ロジック、結果という本格的なインタラクティブ性がありながら、難しすぎません。
 
-STOP: This is how non-technical people work with developers. You're about to learn that skill. Make sense?
+それがこのモジュールで作るものです。
 
-USER: Yes
+これはガイド付きの体験です - 成功するように一つひとつ丁寧にご案内します。でも、ここで学ぶスキルは、その後あなたが何でも作れるようになるためのものです。ランディングページ、ツール、アプリ、何でも。
 
----
+モジュールが終わる頃には、友達に送れる本物のリンクがある本物のウェブサイトが出来上がります。デモではありません。インターネット上で動く本物です。実際にライブにする方法まで教えてくれるバイブコーディングコースはほとんどありません。
 
-Here's what we'll do across these lessons:
+STOP: いい感じですか？
 
-- First, we figure out exactly what your quiz should be - the **requirements**
-- Then I **build** it while you watch
-- Then you **iterate** - tell me what to change until you love it
-- Then we **save** it to GitHub (like Google Drive for code)
-- Finally, we put it on the internet so anyone can visit it - developers call this **deploying**
-
-Requirements → Build → Iterate → Save → Deploy. That's the loop.
-
-STOP: Ready to learn it?
-
-USER: Yes
+USER: はい
 
 ---
 
-Let's talk about the tech. The code I write will be in JavaScript - the most popular programming language for websites. I'll also use something called Next.js, which is a popular framework - basically a pre-built structure that makes JavaScript websites easier to build and deploy.
+このモジュールのマインドセットシフトはこうです：あなたはプロダクトマネージャー、私はエンジニアです。
 
-You don't need to understand any of this. I handle all the code. I'm just mentioning it so you're familiar with the terms.
+あなたが欲しいものを説明する。私がコードを書く。コードを理解する必要はありません。何が欲しいかを知っていればOKです。
 
-This module has 5 lessons and takes about 1.5-2 hours total. You don't need to do it all in one sitting.
+あなたの役割は、要件を明確にすること、プランに合意すること、私が作ったものをレビューすること、そして変更したいことを伝えることです。
 
-STOP: Ready to get started?
+STOP: これが非エンジニアがデベロッパーと仕事をする方法です。今からそのスキルを学びます。わかりましたか？
 
-USER: Yes
-
----
-
-Let's create a folder for your quiz project.
-
-STOP: Ask me to create a new folder called "quiz-project"
-
-USER: Create a new folder called quiz-project
-
-ACTION: Create a new folder called `quiz-project` in the current directory
-
-Done! That's where all the code and files for your quiz will live.
-
-STOP: Can you see the new folder in your file explorer on the left?
-
-USER: Yes
+USER: はい
 
 ---
 
-**What you just learned:** The mindset and setup for building something from scratch.
+これらのレッスンで行うことはこうです：
 
-**Where else this applies:**
-- Any time you want to build a quick tool, prototype, or website
-- When you have an idea and want to see if it's possible
-- Side projects, internal tools, landing pages, simple apps
+- まず、クイズがどうあるべきかを正確に決めます - **要件定義**
+- 次に、あなたが見ている前で私が**ビルド**します
+- そして、あなたが**イテレーション**します - 気に入るまで変更点を教えてください
+- その後、GitHub（コード版Google Driveのようなもの）に**セーブ**します
+- 最後に、誰でもアクセスできるようにインターネットに公開します - デベロッパーはこれを**デプロイ**と呼びます
+
+要件定義 → ビルド → イテレーション → セーブ → デプロイ。これがループです。
+
+STOP: 学ぶ準備はできましたか？
+
+USER: はい
+
+---
+
+技術的な話をしましょう。私が書くコードはJavaScript - ウェブサイト用の最も人気のあるプログラミング言語です。また、Next.jsというものも使います。これは人気のフレームワーク - つまりJavaScriptのウェブサイトをより簡単にビルド・デプロイできるようにする、あらかじめ構築された構造です。
+
+これらを理解する必要はありません。コードは全部私が担当します。用語に慣れておいてもらうために触れているだけです。
+
+このモジュールは5つのレッスンがあり、全体で約1.5〜2時間かかります。一度に全部やる必要はありません。
+
+STOP: 始める準備はできましたか？
+
+USER: はい
+
+---
+
+クイズプロジェクト用のフォルダを作りましょう。
+
+STOP: 「quiz-project」という新しいフォルダを作ってください、と私にお願いしてみてください
+
+USER: quiz-projectという新しいフォルダを作って
+
+ACTION: カレントディレクトリに `quiz-project` という新しいフォルダを作成する
+
+できました！クイズのコードやファイルはすべてここに入ります。
+
+STOP: 左側のファイルエクスプローラーに新しいフォルダが見えますか？
+
+USER: はい
+
+---
+
+**今学んだこと：** ゼロから何かを作るためのマインドセットとセットアップ。
+
+**他にどこで使えるか：**
+- ちょっとしたツール、プロトタイプ、ウェブサイトを作りたいとき
+- アイデアがあって、実現可能か確認したいとき
+- サイドプロジェクト、社内ツール、ランディングページ、シンプルなアプリ
 
 ## Quick Plugs
 
-This course was created by Carl Vellotti ([X](https://x.com/carlvellotti) / [LinkedIn](https://www.linkedin.com/in/carlvellotti/)) - if you have thoughts or feedback on the course, he's always happy to hear from users!
+このコースは Carl Vellotti ([X](https://x.com/carlvellotti) / [LinkedIn](https://www.linkedin.com/in/carlvellotti/)) が作成しました - コースへのご意見やフィードバックがあれば、いつでも喜んで聞きます！
 
-And if you haven't already - join the official newsletter and community at ccforpms.com. It's THE place for PMs using Claude Code: new modules, in-depth guides, and a community.
+まだの方は、ccforpms.com で公式ニュースレターとコミュニティにご参加ください。Claude Code を使うPMのための場所です：新しいモジュール、詳細ガイド、そしてコミュニティがあります。
 
-STOP: Want me to open that site for you to subscribe?
+STOP: サイトを開いて登録しますか？
 
-USER: Replies
+USER: 返答
 
-ACTION: If user says yes, open https://ccforpms.com in browser
+ACTION: ユーザーが「はい」と言った場合、ブラウザで https://ccforpms.com を開く
 
 ---
 
-**Next up:** In 4.2, we're going to figure out exactly what YOUR quiz should be. I'll interview you about what you want, and we'll create a requirements document together. This is where you make it yours.
+**次回：** 4.2 では、あなたのクイズがどうあるべきかを正確に決めていきます。あなたが何を求めているかインタビューして、一緒に要件ドキュメントを作成します。ここであなたのオリジナルにします。
 
-STOP: Ready for 4.2? Say "let's go" or type /start-4-2
+STOP: 4.2 の準備はできましたか？「行きましょう」と言うか、/start-4-2 と入力してください
 
-USER: Let's go
+USER: 行きましょう
 
 ---
 
 ## Important Notes for Claude
 
-- If the user hasn't done earlier modules, that's fine - the backstory recap covers it
-- The quiz-project folder should be created in whatever directory the user is currently in
-- Don't overthink the folder creation - just make it simple
-- If the user asks questions about the technology, keep explanations simple and reassuring
-- For the PM question, accept any variation of yes/no and respond appropriately
+- ユーザーが以前のモジュールを完了していなくても問題ありません - 背景の説明でカバーされます
+- quiz-project フォルダはユーザーが現在いるディレクトリに作成してください
+- フォルダ作成はシンプルに行ってください
+- ユーザーが技術について質問した場合、シンプルで安心できる説明を心がけてください
+- PM の質問では、はい/いいえのどんなバリエーションも受け付けて、適切に対応してください
 
 ## Success Criteria
 
-- User understands the PM/engineer mindset
-- User understands the Plan → Build → Iterate → Save → Deploy loop
-- `quiz-project/` folder exists
-- User is ready for 4.2
+- ユーザーが PM/エンジニアのマインドセットを理解している
+- ユーザーがプラン → ビルド → イテレーション → セーブ → デプロイのループを理解している
+- `quiz-project/` フォルダが存在する
+- ユーザーが 4.2 に進む準備ができている

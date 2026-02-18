@@ -1,44 +1,44 @@
-# Module 3.2.2: Strategy & Architecture Visuals
+# Module 3.2.2: 戦略＆アーキテクチャビジュアル
 
-Welcome to Module 3.2.2: Strategy & Architecture Visuals!
+Module 3.2.2: 戦略＆アーキテクチャビジュアルへようこそ！
 
-Your TaskFlow Mobile pitch was a hit - leadership is excited. But now different stakeholders want deeper dives.
+TaskFlow Mobileのプレゼンは大成功 - リーダーシップは大興奮です。でも今度は、それぞれのステークホルダーがより深い内容を求めています。
 
-The CTO wants to understand the technical architecture. The CEO wants to see feature prioritization. And the board wants to see the product roadmap.
+CTOは技術アーキテクチャを理解したい。CEOは機能の優先順位付けを見たい。そして取締役会はプロダクトロードマップを見たい。
 
-You need visuals that communicate complex ideas clearly. Let's build them.
+複雑なアイデアを明確に伝えるビジュアルが必要です。さっそく作りましょう。
 
-STOP: Ready to prep for your stakeholder meetings?
+STOP: ステークホルダーミーティングの準備はできましたか？
 
 USER: Ready
 
 ---
 
-Quick reminder: you can reference styles from `style-library.html` or just describe what you want.
+リマインダー：`style-library.html` からスタイルを参照するか、欲しいものをそのまま説明できます。
 
-The **Architecture** and **Framework** categories have great options for this module.
+**Architecture** と **Framework** カテゴリーにはこのモジュールに最適なオプションがあります。
 
-STOP: Makes sense?
+STOP: わかりましたか？
 
 USER: Yes
 
 ---
 
-## Part 1: System Architecture (CTO Meeting)
+## Part 1: システムアーキテクチャ（CTOミーティング）
 
-First up: the CTO meeting.
+最初はCTOミーティングです。
 
-The CTO wants to understand how TaskFlow Mobile fits into the existing TaskFlow ecosystem. Let's create a system architecture diagram showing:
+CTOは、TaskFlow Mobileが既存のTaskFlowエコシステムにどう組み込まれるかを理解したいと思っています。以下を示すシステムアーキテクチャダイアグラムを作りましょう：
 
-- **TaskFlow Mobile app** - the new thing we're building
-- **TaskFlow Backend API** - the existing backend
-- **Database layer** - PostgreSQL for data, Redis for caching
-- **Third-party integrations** - push notifications, analytics
-- **Data flow** - how information moves between components
+- **TaskFlow Mobile app** - 新しく構築するもの
+- **TaskFlow Backend API** - 既存のバックエンド
+- **Database layer** - データ用のPostgreSQL、キャッシュ用のRedis
+- **Third-party integrations** - プッシュ通知、アナリティクス
+- **Data flow** - コンポーネント間の情報の流れ
 
-This is the kind of diagram that answers "how does it all connect?"
+これは「すべてがどうつながっているのか？」に答えるダイアグラムです。
 
-STOP: Ask me to create a system architecture diagram for TaskFlow Mobile.
+STOP: TaskFlow Mobileのシステムアーキテクチャダイアグラムを作成するよう依頼してください。
 
 USER: Create a system architecture diagram / Generate the architecture diagram
 
@@ -53,38 +53,38 @@ ACTION: Generate system architecture diagram
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your architecture diagram.
+`outputs/` フォルダでアーキテクチャダイアグラムを確認してください。
 
-STOP: Does this clearly show how the pieces connect?
+STOP: パーツ同士のつながりが明確に示されていますか？
 
 USER: Response
 
 ACTION: If user wants changes, iterate on the diagram. If satisfied, continue.
 
-The CTO can now see exactly how TaskFlow Mobile integrates with the existing system.
+これでCTOは、TaskFlow Mobileが既存システムにどう統合されるかが一目でわかります。
 
-This same approach works for ANY diagram you need - system architecture, data flows, org charts, network topology, whatever. Just describe your components and how they connect.
+この同じアプローチは、必要なあらゆるダイアグラムに使えます - システムアーキテクチャ、データフロー、組織図、ネットワークトポロジー、何でも。コンポーネントとその接続方法を説明するだけです。
 
-STOP: Ready for the CEO meeting?
+STOP: CEOミーティングの準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 2: Strategy Framework (CEO Meeting)
+## Part 2: 戦略フレームワーク（CEOミーティング）
 
-Next: the CEO meeting.
+次はCEOミーティングです。
 
-The CEO wants to see how you're prioritizing features - what gets built first and why. A 2x2 matrix is perfect for this: **Impact vs Effort**.
+CEOは機能の優先順位付けを見たい - 何を最初に作り、なぜなのか。2x2マトリクスがぴったりです：**Impact vs Effort**。
 
-Let's map out the key features for TaskFlow Mobile:
+TaskFlow Mobileの主要機能をマッピングしましょう：
 
-- **Quick Wins** (High Impact, Low Effort): Push notifications for task updates, offline task viewing
-- **Major Projects** (High Impact, High Effort): Real-time sync across devices, team chat integration
-- **Fill-ins** (Low Impact, Low Effort): Custom themes, widget support
-- **Avoid** (Low Impact, High Effort): Voice command support, AR task visualization
+- **Quick Wins**（高Impact、低Effort）：タスク更新のプッシュ通知、オフラインタスク閲覧
+- **Major Projects**（高Impact、高Effort）：デバイス間リアルタイム同期、チームチャット統合
+- **Fill-ins**（低Impact、低Effort）：カスタムテーマ、ウィジェットサポート
+- **Avoid**（低Impact、高Effort）：音声コマンドサポート、ARタスク可視化
 
-STOP: Ask me to create a 2x2 prioritization matrix for TaskFlow Mobile features.
+STOP: TaskFlow Mobile機能の2x2優先順位付けマトリクスを作成するよう依頼してください。
 
 USER: Create a prioritization matrix / Generate the 2x2 matrix
 
@@ -99,39 +99,39 @@ ACTION: Generate 2x2 prioritization matrix
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your prioritization matrix.
+`outputs/` フォルダで優先順位付けマトリクスを確認してください。
 
-STOP: See how the matrix makes the prioritization logic visual and clear?
+STOP: マトリクスが優先順位のロジックをビジュアルに明確にしているのがわかりますか？
 
 USER: Response
 
 ACTION: If user wants changes, iterate on the matrix. If satisfied, continue.
 
-Now the CEO can see at a glance what you're building first and why.
+これでCEOは、何を最初に作り、なぜなのかが一目でわかります。
 
-And this works for ANY framework you can imagine - 2x2 matrices, pyramids, Venn diagrams, canvases, funnels, whatever. Same process: describe the structure, list what goes where, specify the style. You can reference the style library or describe what you want from scratch.
+そしてこれは、想像できるあらゆるフレームワークに使えます - 2x2マトリクス、ピラミッド、ベンダイアグラム、キャンバス、ファネルなど何でも。同じプロセスです：構造を説明し、どこに何が入るかをリストし、スタイルを指定する。スタイルライブラリを参照することも、ゼロから説明することもできます。
 
-STOP: Ready for the board meeting?
+STOP: 取締役会ミーティングの準備はできましたか？
 
 USER: Yes
 
 ---
 
-## Part 3: Product Roadmap (Board Meeting)
+## Part 3: プロダクトロードマップ（取締役会ミーティング）
 
-Finally: the board meeting.
+最後は取締役会ミーティングです。
 
-The board wants to see the big picture - when does this ship and what's the phased rollout?
+取締役会は全体像を見たい - いつ出荷し、フェーズドロールアウトはどうなるのか。
 
-Let's create a roadmap showing TaskFlow Mobile over 3 quarters:
+3四半期にわたるTaskFlow Mobileのロードマップを作りましょう：
 
-- **Q1: MVP Launch** - Core task management, push notifications, offline viewing
-- **Q2: Team Features** - Real-time sync, team chat integration, shared task lists
-- **Q3: Enterprise** - Admin controls, SSO integration, advanced analytics
+- **Q1: MVP Launch** - コアタスク管理、プッシュ通知、オフライン閲覧
+- **Q2: Team Features** - リアルタイム同期、チームチャット統合、共有タスクリスト
+- **Q3: Enterprise** - 管理コントロール、SSO統合、高度なアナリティクス
 
-This shows a clear path from MVP to enterprise-ready.
+MVPからエンタープライズ対応までの明確な道筋を示します。
 
-STOP: Ask me to create a product roadmap for TaskFlow Mobile.
+STOP: TaskFlow Mobileのプロダクトロードマップを作成するよう依頼してください。
 
 USER: Create a product roadmap / Generate the roadmap
 
@@ -147,67 +147,67 @@ ACTION: Generate product roadmap visualization
 
 ACTION: Provide the path to the output image so user can view it.
 
-Check the `outputs/` folder for your roadmap.
+`outputs/` フォルダでロードマップを確認してください。
 
-STOP: Does this tell a clear story of how the product evolves?
+STOP: プロダクトがどう進化するか、明確なストーリーになっていますか？
 
 USER: Response
 
 ACTION: If user wants changes, iterate on the roadmap. If satisfied, continue.
 
-The board can now see the strategic vision laid out over time.
+これで取締役会は、時間軸に沿った戦略ビジョンを見ることができます。
 
-This works for ANY timeline or sequence you need - roadmaps, Gantt charts, release plans, migration schedules. Define your time periods, list what goes in each, describe the style. Same process every time.
+これは必要なあらゆるタイムラインやシーケンスに使えます - ロードマップ、ガントチャート、リリース計画、移行スケジュール。期間を定義し、各期間に入るものをリストし、スタイルを説明する。毎回同じプロセスです。
 
-STOP: One more thing before we wrap up.
-
-USER: Yes
-
----
-
-## Growing Your Style Library
-
-Remember: you can always add your own styles to the style database.
-
-Found a diagram style you love online? Extract it and save it. Created something in this module that worked really well? Add it to your library.
-
-A great source for framework and diagram inspiration is **https://slidemodel.com/** - find a style you like, screenshot it, and use style extraction to clone it for your own purposes.
-
-Over time, you'll build a collection of go-to styles for every situation.
-
-If you need a refresher on how to add styles, revisit Module 3.1.4.
-
-STOP: Makes sense?
+STOP: まとめに入る前にもう1つあります。
 
 USER: Yes
 
 ---
 
-## Wrap-Up
+## スタイルライブラリを育てる
 
-Let's recap what you just built:
+覚えておいてください：いつでもスタイルデータベースに独自のスタイルを追加できます。
 
-1. **A system architecture diagram** for the CTO
-2. **A 2x2 prioritization matrix** for the CEO
-3. **A product roadmap** for the board
+オンラインで気に入ったダイアグラムスタイルを見つけた？抽出して保存しましょう。このモジュールでうまくいったものがあった？ライブラリに追加しましょう。
 
-Three different stakeholders, three different visual needs - all handled.
+フレームワークやダイアグラムのインスピレーション源として **https://slidemodel.com/** がおすすめです - 気に入ったスタイルを見つけ、スクリーンショットを撮り、スタイル抽出を使って自分の目的にクローンしましょう。
 
-These techniques work for any strategic or technical communication:
-- Architecture reviews
-- Strategy presentations
-- Planning sessions
-- Board updates
+時間とともに、あらゆるシチュエーションに対応するスタイルのコレクションが出来上がります。
 
-STOP: Any questions before we move on?
+スタイルの追加方法を復習したい場合は、Module 3.1.4を再訪してください。
+
+STOP: わかりましたか？
+
+USER: Yes
+
+---
+
+## まとめ
+
+作成したものを振り返りましょう：
+
+1. **CTO向けのシステムアーキテクチャダイアグラム**
+2. **CEO向けの2x2優先順位付けマトリクス**
+3. **取締役会向けのプロダクトロードマップ**
+
+3人の異なるステークホルダー、3つの異なるビジュアルニーズ - すべて対応完了です。
+
+これらのテクニックは、あらゆる戦略的・技術的コミュニケーションに使えます：
+- アーキテクチャレビュー
+- 戦略プレゼンテーション
+- プランニングセッション
+- 取締役会への報告
+
+STOP: 次に進む前に質問はありますか？
 
 USER: Questions or ready to continue
 
 ---
 
-In the next module, we'll tackle marketing and announcement visuals - ads, feature graphics, and launch assets.
+次のモジュールでは、マーケティングとアナウンスメントのビジュアル - 広告、フィーチャーグラフィック、ローンチアセットに取り組みます。
 
-Type `/start-3-2-3` to continue.
+`/start-3-2-3` と入力して続けましょう。
 
 ---
 
@@ -223,9 +223,9 @@ Type `/start-3-2-3` to continue.
 
 ## Success Criteria
 
-The module is complete when the user has:
-- [ ] Generated a system architecture diagram showing TaskFlow Mobile's technical stack
-- [ ] Generated a 2x2 prioritization matrix with features plotted by impact/effort
-- [ ] Generated a product roadmap showing 3-quarter phased rollout
-- [ ] Understands they can add custom styles to their library (callback to 3.1.4)
-- [ ] Understands these techniques apply to any strategic/technical visual need
+このモジュールは、受講者が以下を達成した時点で完了です：
+- [ ] TaskFlow Mobileの技術スタックを示すシステムアーキテクチャダイアグラムを生成した
+- [ ] Impact/Effortで機能をプロットした2x2優先順位付けマトリクスを生成した
+- [ ] 3四半期のフェーズドロールアウトを示すプロダクトロードマップを生成した
+- [ ] スタイルライブラリにカスタムスタイルを追加できることを理解した（Module 3.1.4への参照）
+- [ ] これらのテクニックがあらゆる戦略的・技術的ビジュアルニーズに応用できることを理解した

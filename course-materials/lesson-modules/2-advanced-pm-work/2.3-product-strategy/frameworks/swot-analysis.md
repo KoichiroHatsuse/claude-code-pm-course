@@ -1,385 +1,385 @@
-# SWOT Analysis for Product Strategy
+# プロダクト戦略のための SWOT 分析
 
-## What Is SWOT?
+## SWOT とは？
 
-SWOT stands for **Strengths**, **Weaknesses**, **Opportunities**, and **Threats**. It's a classic strategic planning framework that helps you understand your position and identify strategic options.
+SWOT は **Strengths**（強み）、**Weaknesses**（弱み）、**Opportunities**（機会）、**Threats**（脅威）の頭文字です。自社のポジションを理解し、戦略的な選択肢を特定するための、クラシックな戦略計画フレームワークです。
 
-### The Four Quadrants
+### 4つの象限
 
 ```
-INTERNAL (Things you control)
+INTERNAL（自分たちでコントロールできるもの）
 ┌─────────────────┬─────────────────┐
 │   STRENGTHS     │   WEAKNESSES    │
-│  (Helpful)      │   (Harmful)     │
+│  （有利）        │   （不利）       │
 ├─────────────────┼─────────────────┤
 │ OPPORTUNITIES   │    THREATS      │
-│  (Helpful)      │   (Harmful)     │
+│  （有利）        │   （不利）       │
 └─────────────────┴─────────────────┘
-EXTERNAL (Things you don't control)
+EXTERNAL（自分たちでコントロールできないもの）
 ```
 
 ---
 
-## The Four Components
+## 4つの構成要素
 
-### STRENGTHS (Internal, Helpful)
+### STRENGTHS（内部・有利）
 
-**Question:** What advantages do we have? What are we good at?
+**問い:** 私たちにはどんな優位性があるか？何が得意か？
 
-#### What to Look For
-- Unique capabilities or expertise
-- Strong brand or reputation
-- Proprietary technology or data
-- Existing customer relationships
-- Financial resources
-- Talented team
-- Network effects or installed base
-- Efficient operations
+#### 注目すべきポイント
+- ユニークな能力や専門知識
+- 強いブランドや評判
+- 独自の技術やデータ
+- 既存の顧客関係
+- 財務的なリソース
+- 優秀なチーム
+- ネットワーク効果やインストールベース
+- 効率的なオペレーション
 
-#### Examples for TaskFlow
-- Strong activation rate (from Module 2.2 improvements)
-- Deep understanding of small team workflows
-- Engaged user community
-- Fast product iteration cycle
-- User data on productivity patterns
+#### TaskFlow の例
+- 高いアクティベーション率（Module 2.2 の改善により）
+- 小規模チームのワークフローに対する深い理解
+- エンゲージメントの高いユーザーコミュニティ
+- 素早いプロダクトイテレーションサイクル
+- 生産性パターンに関するユーザーデータ
 
-#### How to Use
-Strengths are the foundation of your strategy. Your guiding policy should leverage these advantages.
-
----
-
-### WEAKNESSES (Internal, Harmful)
-
-**Question:** What limitations do we have? Where are we vulnerable?
-
-#### What to Look For
-- Limited resources (budget, team size)
-- Technical debt or infrastructure constraints
-- Gaps in expertise
-- Brand perception issues
-- Customer churn problems
-- Dependency on single platform/partner
-- Slow execution
-- Weak go-to-market capability
-
-#### Examples for TaskFlow
-- Limited brand awareness vs competitors
-- Small team (only 8 engineers)
-- No mobile app yet (web-only)
-- Enterprise features lacking
-- Limited marketing budget
-
-#### How to Use
-Weaknesses constrain your strategic options. Be honest about what you CAN'T do. Don't choose a strategy that requires strengths you don't have.
+#### 活用方法
+強みは戦略の土台です。ガイディングポリシーはこれらの優位性を活用するべきです。
 
 ---
 
-### OPPORTUNITIES (External, Helpful)
+### WEAKNESSES（内部・不利）
 
-**Question:** What trends or changes create opportunities for us?
+**問い:** どんな制約があるか？どこが脆弱か？
 
-#### What to Look For
-- Market trends favoring your approach
-- Technology shifts (e.g., AI, mobile, voice)
-- Customer behavior changes
-- Competitors' missteps
-- Regulatory changes
-- Underserved customer segments
-- Adjacent markets to expand into
-- Partnership opportunities
+#### 注目すべきポイント
+- リソースの限界（予算、チームサイズ）
+- 技術的負債やインフラの制約
+- 専門知識のギャップ
+- ブランド認知の問題
+- 顧客チャーンの問題
+- 単一プラットフォーム/パートナーへの依存
+- 実行スピードの遅さ
+- Go-to-market 能力の弱さ
 
-#### Examples for TaskFlow
-- AI revolution making voice interfaces mainstream
-- Remote work increasing demand for productivity tools
-- Competitors focused on enterprise, neglecting SMBs
-- Growing "founder-led company" market segment
-- Integration marketplace opportunities
+#### TaskFlow の例
+- 競合と比較してブランド認知が限定的
+- 小さなチーム（エンジニアわずか8名）
+- モバイルアプリがない（Web のみ）
+- エンタープライズ機能が不足
+- マーケティング予算が限られている
 
-#### How to Use
-Opportunities are your "where to play" options. Pick opportunities that align with your strengths and can overcome weaknesses.
-
----
-
-### THREATS (External, Harmful)
-
-**Question:** What external factors could hurt us?
-
-#### What to Look For
-- New competitors entering the market
-- Existing competitors launching similar features
-- Technology shifts making your approach obsolete
-- Customer preference changes
-- Economic downturn affecting budget
-- Platform risk (dependency on Google, Apple, etc.)
-- Regulatory changes
-- Market saturation
-
-#### Examples for TaskFlow
-- Notion, Linear, and other tools adding AI features
-- Microsoft/Google bundling productivity tools (free/cheap)
-- AI making complex tools seem dated
-- Economic downturn = smaller budgets for SaaS tools
-- Apple/Google improving native to-do apps
-
-#### How to Use
-Threats shape your strategic urgency and defensibility needs. Identify which threats are most critical and how to mitigate them.
+#### 活用方法
+弱みは戦略的選択肢を制約します。自分たちに「できないこと」に正直になりましょう。持っていない強みを前提とした戦略は選ばないでください。
 
 ---
 
-## How to Conduct a SWOT Analysis
+### OPPORTUNITIES（外部・有利）
 
-### Step 1: Gather Information
+**問い:** どんなトレンドや変化が私たちにチャンスを生んでいるか？
 
-Before filling out your SWOT, collect:
-- **Customer research** - What do they love/hate about you?
-- **Competitive analysis** - Where do you stand vs competitors?
-- **Market trends** - What's changing in your space?
-- **Internal metrics** - What does your data show?
-- **Team input** - What do people on the ground see?
+#### 注目すべきポイント
+- 自社のアプローチに有利な市場トレンド
+- テクノロジーの変化（例: AI、モバイル、音声）
+- 顧客行動の変化
+- 競合のミス
+- 規制の変化
+- 十分にサービスされていない顧客セグメント
+- 隣接市場への拡大
+- パートナーシップの機会
 
-### Step 2: Brainstorm Each Quadrant
+#### TaskFlow の例
+- AI 革命により音声インターフェースが主流化
+- リモートワークにより生産性ツールの需要が増加
+- 競合がエンタープライズに集中し、SMB を軽視
+- 「創業者主導の会社」市場セグメントの成長
+- インテグレーションマーケットプレイスの機会
 
-For each quadrant, generate 5-10 items. Be specific, not generic.
-
-❌ Generic: "Good team"
-✅ Specific: "3 engineers with deep expertise in real-time collaboration"
-
-❌ Generic: "Competition"
-✅ Specific: "Notion launching AI features Q2, with 10x our marketing budget"
-
-### Step 3: Prioritize
-
-Not all items are equally important. Mark 2-3 items per quadrant as **critical**.
-
-Ask: "If we could only focus on 3 strengths, which would be most strategic?"
-
-### Step 4: Connect the Dots
-
-The real insight comes from combining quadrants:
-
-**Strength + Opportunity = Strategic Bet**
-"We're great at X, and the market is moving toward Y. Let's double down."
-
-**Weakness + Threat = Major Risk**
-"We're weak at X, and competitors are attacking there. We need to defend or exit."
-
-**Strength + Threat = Defensive Play**
-"We have advantage X, but threat Y could erode it. How do we protect?"
-
-**Weakness + Opportunity = Build or Partner**
-"There's a big opportunity in X, but we lack capability Y. Do we build it or partner?"
-
-### Step 5: Develop Strategic Options
-
-Based on your SWOT, identify 2-4 strategic directions:
-
-**Example Strategies:**
-1. **Leverage Strength + Seize Opportunity**
-   - "We're strong with SMBs (strength), AI is making tools more accessible (opportunity) → Build AI-first SMB product"
-
-2. **Shore Up Weakness + Defend Against Threat**
-   - "We lack mobile (weakness), competitors are mobile-first (threat) → Ship mobile app to defend position"
-
-3. **Avoid Weakness + Ignore Opportunity**
-   - "Enterprise opportunity exists but we're weak there → Stay focused on SMB instead"
+#### 活用方法
+機会は「どこで戦うか」の選択肢です。自社の強みに合致し、弱みを克服できる機会を選びましょう。
 
 ---
 
-## SWOT Best Practices
+### THREATS（外部・不利）
 
-### Do's ✅
+**問い:** どんな外部要因が私たちを脅かす可能性があるか？
 
-1. **Be Honest**
-   - Don't sugarcoat weaknesses
-   - Don't overstate strengths
-   - Face reality
+#### 注目すべきポイント
+- 新規参入者
+- 既存の競合が類似機能をローンチ
+- 自社のアプローチを時代遅れにするテクノロジーの変化
+- 顧客の嗜好の変化
+- 景気後退による予算縮小
+- プラットフォームリスク（Google、Apple 等への依存）
+- 規制の変化
+- 市場の飽和
 
-2. **Be Specific**
-   - "Strong user retention (Week 1: 78%)" not "Good product"
-   - "Notion + Linear both launching AI features Q2" not "Competition"
+#### TaskFlow の例
+- Notion、Linear などが AI 機能を追加
+- Microsoft/Google が生産性ツールをバンドル（無料/低価格）
+- AI が複雑なツールを時代遅れに見せる
+- 景気後退 = SaaS ツールの予算縮小
+- Apple/Google がネイティブの To-do アプリを強化
 
-3. **Use Data**
-   - Support with metrics, research, evidence
-   - Not just gut feelings
-
-4. **Consider Relative Position**
-   - Strengths and weaknesses are RELATIVE to competitors
-   - "We have 10 engineers" is a strength vs 3-person startup, weakness vs 100-person company
-
-5. **Update Regularly**
-   - SWOT changes as market evolves
-   - Revisit quarterly
-
-### Don'ts ❌
-
-1. **Don't Create a Laundry List**
-   - Prioritize the critical few
-   - Not everything belongs in SWOT
-
-2. **Don't Confuse Internal with External**
-   - Strengths/Weaknesses = YOU (internal)
-   - Opportunities/Threats = MARKET (external)
-
-3. **Don't Stop at the SWOT**
-   - SWOT is diagnostic, not strategy
-   - Use it to inform strategic choices
-
-4. **Don't Ignore Bad News**
-   - Weaknesses and threats are the most valuable quadrants
-   - They tell you what you need to address
-
-5. **Don't Make It Static**
-   - SWOT should lead to action
-   - "So what? What does this mean for our strategy?"
+#### 活用方法
+脅威は戦略の緊急性と防御力の必要性を形作ります。最も重大な脅威を特定し、どう軽減するかを考えましょう。
 
 ---
 
-## SWOT Example: TaskFlow (Fictional)
+## SWOT 分析の進め方
 
-### Strengths
-- ⭐ **78% week-1 retention** (after guided onboarding) - industry leading
-- ⭐ Deep expertise in **small team workflows** (our ICP)
-- **Fast iteration** - ship features every 2 weeks
-- Strong **user community** - 5k Discord members, high engagement
-- **Proprietary data** on productivity patterns
+### ステップ 1: 情報を集める
 
-### Weaknesses
-- ⭐ **Limited brand awareness** - <5% aided recall vs Notion's 40%
-- ⭐ **Small team** - 8 engineers vs competitors' 50-100
-- **No mobile app** - web-only limits use cases
-- **Minimal enterprise features** - can't compete for large contracts
-- Limited **marketing budget** - $50k/month vs competitors' $500k+
+SWOT を記入する前に、以下を収集します:
+- **顧客リサーチ** - 顧客は何が好きで何が嫌いか？
+- **競合分析** - 競合と比較した自社のポジションは？
+- **市場トレンド** - 業界で何が変わっているか？
+- **社内指標** - データは何を示しているか？
+- **チームの意見** - 現場のメンバーは何を見ているか？
 
-### Opportunities
-- ⭐ **AI revolution** - voice interfaces becoming mainstream
-- ⭐ **Remote work** - sustained demand for async productivity tools
-- **Competitors focused on enterprise** - leaving SMB underserved
-- **Integration ecosystem** - Zapier, Make, APIs
-- Growing "**founder-led company**" segment (our sweet spot)
+### ステップ 2: 各象限でブレインストーミング
 
-### Threats
-- ⭐ **Notion, Linear, Height** all adding AI features - will they crush us?
-- ⭐ **Microsoft/Google bundling** - free/cheap alternatives
-- **Economic downturn** - smaller budgets for SaaS
-- **AI making complex tools obsolete** - do people need task managers if AI handles tasks?
-- **Apple/Google improving native apps** - platform risk
+各象限について 5〜10 項目を出します。抽象的ではなく、具体的に。
 
-⭐ = Critical (top 3 per quadrant)
+❌ 抽象的: 「良いチーム」
+✅ 具体的: 「リアルタイムコラボレーションに深い専門知識を持つエンジニア3名」
 
----
+❌ 抽象的: 「競合」
+✅ 具体的: 「Notion が Q2 に AI 機能をローンチ予定、マーケティング予算は当社の10倍」
 
-## Strategic Insights from This SWOT
+### ステップ 3: 優先順位をつける
 
-### Key Insights
+すべての項目が同じ重要度ではありません。各象限で 2〜3 項目を**重要**としてマークします。
 
-1. **Strength + Opportunity = AI-Native Productivity**
-   - We're strong with small teams + AI is exploding → Build AI-first features for our ICP
-   - Leverage our understanding of SMB workflows to make AI actually useful (not just hype)
+問い: 「3つの強みだけに集中できるとしたら、どれが最も戦略的か？」
 
-2. **Weakness + Threat = Brand/Distribution Problem**
-   - Limited awareness + competitors outspending us → We can't win on marketing spend
-   - Need **product-led growth** and **community** strategies instead
+### ステップ 4: 点と点をつなぐ
 
-3. **Strength + Threat = Defensibility via Retention**
-   - 78% retention is a moat + competitors are coming → Focus on retention/engagement, not acquisition
-   - Make TaskFlow so valuable users wouldn't switch even if competitors copy features
+本当のインサイトは象限を組み合わせることから生まれます:
 
-4. **Weakness + Opportunity = Mobile Critical**
-   - No mobile app + remote work increasing → Mobile is now table stakes
-   - But with 8 engineers, can't build everything → Need to prioritize
+**強み + 機会 = 戦略的な賭け**
+「私たちは X が得意で、市場は Y に向かっている。倍賭けしよう。」
 
-### Strategic Options to Consider
+**弱み + 脅威 = 重大なリスク**
+「私たちは X が弱く、競合がそこを攻めている。防御するか撤退が必要。」
 
-**Option 1: AI-First for Small Teams**
-- Double down on AI features designed for founder-led companies
-- Leverage strength (SMB expertise) + opportunity (AI)
-- Risk: Threat from bigger players
+**強み + 脅威 = 防御的な打ち手**
+「私たちには X の優位性があるが、脅威 Y がそれを侵食する可能性がある。どう守るか？」
 
-**Option 2: Product-Led Growth via Community**
-- Focus on retention and virality over paid acquisition
-- Leverage strength (community) to overcome weakness (limited budget)
-- Risk: Slower growth
+**弱み + 機会 = 自前構築かパートナーシップ**
+「X に大きなチャンスがあるが、Y の能力が足りない。自前で作るかパートナーを組むか？」
 
-**Option 3: Mobile-First Transformation**
-- Ship mobile to reach new use cases
-- Address weakness + defend against threat
-- Risk: Diverts resources from AI opportunity
+### ステップ 5: 戦略的選択肢を策定する
 
-**Option 4: Vertical Integration**
-- Go deep in specific industries (e.g., agencies, consultants)
-- Leverage strength (fast iteration) to build tailored solutions
-- Risk: Limits addressable market
+SWOT に基づいて、2〜4 つの戦略的方向性を特定します:
+
+**戦略の例:**
+1. **強みを活かす + 機会をつかむ**
+   - 「SMB に強い（強み）、AI がツールをより身近にしている（機会）→ AI ファーストの SMB プロダクトを構築」
+
+2. **弱みを補強する + 脅威から防御する**
+   - 「モバイルがない（弱み）、競合はモバイルファースト（脅威）→ ポジションを守るためモバイルアプリをリリース」
+
+3. **弱みを回避する + 機会を見送る**
+   - 「エンタープライズの機会はあるが、そこが弱い → SMB に集中し続ける」
 
 ---
 
-## SWOT + Other Frameworks
+## SWOT のベストプラクティス
 
-### SWOT + Rumelt's Kernel
+### やるべきこと
 
-**SWOT informs your Diagnosis:**
-- Critical weaknesses and threats = challenges to overcome
-- Critical strengths and opportunities = advantages to leverage
+1. **正直であること**
+   - 弱みを取り繕わない
+   - 強みを過大評価しない
+   - 現実に向き合う
 
-**Example:**
-- **Diagnosis:** "We're positioned to win with small teams (strength) in an AI-first world (opportunity), but vulnerable to better-funded competitors (threat) copying our approach unless we build defensibility"
-- **Guiding Policy:** "Become the AI-native productivity tool for founder-led companies, winning through superior product-market fit rather than marketing spend"
-- **Coherent Actions:** [Roadmap aligned with this]
+2. **具体的であること**
+   - 「良いプロダクト」ではなく「強いユーザーリテンション（Week 1: 78%）」
+   - 「競合」ではなく「Notion + Linear が Q2 に AI 機能をローンチ」
+
+3. **データを使うこと**
+   - 指標、リサーチ、エビデンスで裏付ける
+   - 直感だけに頼らない
+
+4. **相対的なポジションを考慮すること**
+   - 強みと弱みは競合との**相対的な**ものです
+   - 「エンジニア10名」は3人のスタートアップに対しては強みだが、100人の会社に対しては弱み
+
+5. **定期的に更新すること**
+   - SWOT は市場の変化に応じて変わります
+   - 四半期ごとに見直しましょう
+
+### やってはいけないこと
+
+1. **長大なリストを作らない**
+   - 重要な少数に絞る
+   - すべてが SWOT に入るわけではない
+
+2. **内部と外部を混同しない**
+   - 強み/弱み = 自社（内部）
+   - 機会/脅威 = 市場（外部）
+
+3. **SWOT で止まらない**
+   - SWOT は診断ツールであり、戦略そのものではない
+   - 戦略的選択の判断材料として使う
+
+4. **悪いニュースを無視しない**
+   - 弱みと脅威は最も価値のある象限
+   - 対処すべきことを教えてくれる
+
+5. **静的にしない**
+   - SWOT はアクションにつながるべき
+   - 「だから何？これは戦略にとってどういう意味？」
+
+---
+
+## SWOT の例: TaskFlow（架空）
+
+### Strengths（強み）
+- ⭐ **Week 1 リテンション 78%**（ガイド付きオンボーディング後）- 業界トップレベル
+- ⭐ **小規模チームのワークフロー**に関する深い専門知識（当社の ICP）
+- **素早いイテレーション** - 2週間ごとに機能をリリース
+- 強い**ユーザーコミュニティ** - Discord メンバー5,000人、高いエンゲージメント
+- 生産性パターンに関する**独自のデータ**
+
+### Weaknesses（弱み）
+- ⭐ **ブランド認知が限定的** - 助成想起率 5% 未満（Notion の 40% に対して）
+- ⭐ **小さなチーム** - エンジニア8名（競合の 50〜100名に対して）
+- **モバイルアプリなし** - Web のみでユースケースが限定
+- **エンタープライズ機能が最低限** - 大型契約には対応できない
+- **マーケティング予算が限定的** - 月5万ドル（競合の50万ドル以上に対して）
+
+### Opportunities（機会）
+- ⭐ **AI 革命** - 音声インターフェースが主流化
+- ⭐ **リモートワーク** - 非同期の生産性ツールへの持続的な需要
+- **競合がエンタープライズに集中** - SMB が十分にサービスされていない
+- **インテグレーションエコシステム** - Zapier、Make、API
+- 「**創業者主導の会社**」セグメントの成長（当社のスイートスポット）
+
+### Threats（脅威）
+- ⭐ **Notion、Linear、Height** がすべて AI 機能を追加 - 潰されるのか？
+- ⭐ **Microsoft/Google のバンドル** - 無料/低価格の代替品
+- **景気後退** - SaaS の予算縮小
+- **AI が複雑なツールを不要にする** - AI がタスクを処理するなら、タスクマネージャーは必要か？
+- **Apple/Google がネイティブアプリを強化** - プラットフォームリスク
+
+⭐ = 重要（各象限のトップ3）
+
+---
+
+## この SWOT からの戦略的インサイト
+
+### 主要なインサイト
+
+1. **強み + 機会 = AI ネイティブな生産性**
+   - 小規模チームに強い + AI が爆発的に成長中 → ICP 向けの AI ファースト機能を構築
+   - SMB ワークフローの理解を活かして、AI を本当に役立つものにする（ハイプだけでなく）
+
+2. **弱み + 脅威 = ブランド/ディストリビューションの問題**
+   - 認知度が低い + 競合が当社より多く支出 → マーケティング費用では勝てない
+   - **プロダクトレッドグロース**と**コミュニティ**戦略が必要
+
+3. **強み + 脅威 = リテンションによる防御力**
+   - 78% のリテンションは堀 + 競合が迫ってきている → 獲得ではなくリテンション/エンゲージメントに注力
+   - 競合が機能をコピーしても乗り換えないほど TaskFlow を価値あるものにする
+
+4. **弱み + 機会 = モバイルが重要**
+   - モバイルアプリなし + リモートワーク増加 → モバイルは今やテーブルステークス
+   - ただしエンジニア8名では全部は作れない → 優先順位付けが必要
+
+### 検討すべき戦略的選択肢
+
+**選択肢 1: 小規模チーム向け AI ファースト**
+- 創業者主導の会社向けに設計された AI 機能に倍賭け
+- 強み（SMB の専門知識）+ 機会（AI）を活用
+- リスク: より大きなプレイヤーからの脅威
+
+**選択肢 2: コミュニティによるプロダクトレッドグロース**
+- 有料獲得よりリテンションとバイラリティに注力
+- 強み（コミュニティ）を活用して弱み（限られた予算）を克服
+- リスク: 成長が遅い
+
+**選択肢 3: モバイルファースト・トランスフォーメーション**
+- モバイルをリリースして新しいユースケースにリーチ
+- 弱みに対処 + 脅威から防御
+- リスク: AI の機会からリソースが転用される
+
+**選択肢 4: バーティカルインテグレーション**
+- 特定の業界に深く入る（例: エージェンシー、コンサルタント）
+- 強み（素早いイテレーション）を活用してカスタマイズされたソリューションを構築
+- リスク: アドレス可能な市場が狭まる
+
+---
+
+## SWOT + 他のフレームワーク
+
+### SWOT + Rumelt の Kernel
+
+**SWOT は Diagnosis（診断）に情報を提供します:**
+- 重要な弱みと脅威 = 克服すべき課題
+- 重要な強みと機会 = 活用すべき優位性
+
+**例:**
+- **Diagnosis:** 「私たちは小規模チームに勝てるポジションにあり（強み）、AI ファーストの世界で（機会）、しかし資金力のある競合（脅威）がアプローチをコピーすれば防御力がなければ脆弱」
+- **Guiding Policy:** 「創業者主導の会社向けの AI ネイティブな生産性ツールになる。マーケティング費用ではなく、優れたプロダクトマーケットフィットで勝つ」
+- **Coherent Actions:** [これに沿ったロードマップ]
 
 ### SWOT + DHM
 
-**Use DHM to evaluate strategic options generated by SWOT:**
+**SWOT で生成した戦略的選択肢を DHM で評価:**
 
-| Option | Delight | Hard to Copy | Margin | Score |
+| 選択肢 | Delight | Hard to Copy | Margin | スコア |
 |--------|---------|--------------|--------|-------|
-| AI-First | High | Medium | High | ⭐⭐⭐ |
-| Product-Led | Medium | Low | Medium | ⭐⭐ |
-| Mobile-First | Medium | Low | Low | ⭐ |
-| Vertical | High | Medium | Medium | ⭐⭐⭐ |
+| AI ファースト | 高 | 中 | 高 | ⭐⭐⭐ |
+| プロダクトレッド | 中 | 低 | 中 | ⭐⭐ |
+| モバイルファースト | 中 | 低 | 低 | ⭐ |
+| バーティカル | 高 | 中 | 中 | ⭐⭐⭐ |
 
-This helps you pick which option to pursue.
-
----
-
-## Quick Reference
-
-When conducting SWOT for product strategy:
-
-**STRENGTHS** (Internal, Helpful)
-- [ ] What unique capabilities do we have?
-- [ ] What do customers love about us?
-- [ ] What advantages vs competitors?
-
-**WEAKNESSES** (Internal, Harmful)
-- [ ] What limits our options?
-- [ ] Where are we vulnerable?
-- [ ] What do we lack vs competitors?
-
-**OPPORTUNITIES** (External, Helpful)
-- [ ] What market trends favor us?
-- [ ] What customer needs are underserved?
-- [ ] Where are competitors weak?
-
-**THREATS** (External, Harmful)
-- [ ] What could disrupt our business?
-- [ ] What are competitors doing?
-- [ ] What external factors create risk?
-
-**Then ask:**
-- Which Strength + Opportunity combinations are most promising?
-- Which Weakness + Threat combinations are most dangerous?
-- What does this tell us about where to compete?
+これにより、どの選択肢を追求するか判断しやすくなります。
 
 ---
 
-## Remember
+## クイックリファレンス
 
-**SWOT is a diagnostic tool, not a strategy.**
+プロダクト戦略のために SWOT を実施する際のチェックリスト:
 
-Use it to:
-1. Understand your position honestly
-2. Identify strategic options
-3. Prioritize where to focus
+**STRENGTHS**（内部・有利）
+- [ ] 私たちにはどんなユニークな能力があるか？
+- [ ] 顧客は私たちの何が好きか？
+- [ ] 競合と比較してどんな優位性があるか？
 
-**Don't stop at the SWOT - use it to inform your strategic choices.**
+**WEAKNESSES**（内部・不利）
+- [ ] 何が私たちの選択肢を制限しているか？
+- [ ] どこが脆弱か？
+- [ ] 競合と比較して何が不足しているか？
 
-The best strategies leverage strengths, address weaknesses, seize opportunities, and mitigate threats - all at once.
+**OPPORTUNITIES**（外部・有利）
+- [ ] どんな市場トレンドが私たちに有利か？
+- [ ] どんな顧客ニーズが十分にサービスされていないか？
+- [ ] 競合はどこが弱いか？
+
+**THREATS**（外部・不利）
+- [ ] 何がビジネスを脅かす可能性があるか？
+- [ ] 競合は何をしているか？
+- [ ] どんな外部要因がリスクを生むか？
+
+**そして問いかける:**
+- どの「強み + 機会」の組み合わせが最も有望か？
+- どの「弱み + 脅威」の組み合わせが最も危険か？
+- これは「どこで競うか」について何を教えてくれるか？
+
+---
+
+## 覚えておくこと
+
+**SWOT は診断ツールであり、戦略そのものではありません。**
+
+以下の目的で使いましょう:
+1. 自社のポジションを正直に理解する
+2. 戦略的選択肢を特定する
+3. どこに集中するか優先順位をつける
+
+**SWOT で止まらないでください - 戦略的選択の判断材料として活用しましょう。**
+
+最も優れた戦略は、強みを活かし、弱みに対処し、機会をつかみ、脅威を軽減するものです - すべてを同時に。

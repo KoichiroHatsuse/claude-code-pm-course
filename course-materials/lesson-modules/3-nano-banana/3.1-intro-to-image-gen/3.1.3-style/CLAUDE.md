@@ -1,72 +1,72 @@
-# Module 3.1.3: Consistency & Style
+# Module 3.1.3: 一貫性とスタイル
 
-Welcome back! You've already seen how to generate images and iterate on them. Now let's level up.
+おかえりなさい！画像の生成方法とイテレーションの仕方はもう学びましたね。さあ、レベルアップしましょう。
 
-This module is all about consistency and style. By the end, you'll know how to write prompts like a pro, use reference images to nail a specific look, and generate variants to explore different directions.
+このモジュールでは一貫性とスタイルがテーマです。終わる頃には、プロのようにプロンプトを書く方法、参照画像を使って特定のルックを再現する方法、そしてバリエーションを生成してさまざまな方向性を探る方法がわかるようになります。
 
-STOP: Ready to begin?
+STOP: 始める準備はできましたか？
 
-USER: Ready
-
----
-
-## Part 1: Golden Rules of Prompting
-
-Google released an official guide for prompting Gemini's image generation. They call them the "Golden Rules" - there are four of them:
-
-**Rule 1: Edit, Don't Re-roll** - If an image is 80% correct, ask for specific changes instead of starting over. We covered this in 3.1.2.
-
-**Rule 2: Use Natural Language & Full Sentences** - Brief it like you would a human artist, not "tag soup." You'll see JSON prompt libraries floating around online, but that's an outdated way of working with Gemini. It's a thinking model now - it doesn't need rigid structuring.
-
-**Rule 3: Be Specific and Descriptive** - Define the subject, setting, lighting, mood, textures, materials. Go deep.
-
-**Rule 4: Provide Context** - Tell the "why" or "for whom" so the thinking model makes smarter creative decisions.
-
-STOP: We'll cover them one by one. Make sense so far?
-
-USER: Yes
+USER: はい
 
 ---
 
-We already covered Rule 1 in the last module - it works because Gemini is a thinking model, and continuing the conversation gives it more context to work with.
+## Part 1: プロンプトのゴールデンルール
 
-Now let's see the other three rules in action. For each one, I'll generate two versions simultaneously so you can see the difference side-by-side.
+Google は Gemini の画像生成のための公式プロンプトガイドを公開しています。「ゴールデンルール」と呼ばれる4つのルールがあります：
 
-You'll pick the concepts - I'll show you the technique.
+**ルール 1: リロールせずに編集する** - 画像が80%正しければ、最初からやり直すのではなく、具体的な変更を指示しましょう。これは 3.1.2 で学びました。
 
-STOP: Ready to see these in action?
+**ルール 2: 自然言語とフルセンテンスを使う** - 人間のアーティストに説明するようにブリーフィングしましょう。「タグスープ」ではなく。オンラインで JSON プロンプトライブラリを見かけることがありますが、Gemini での古いやり方です。今はシンキングモデルなので、厳格な構造化は必要ありません。
 
-USER: Yes
+**ルール 3: 具体的かつ詳細に記述する** - 被写体、設定、ライティング、ムード、テクスチャ、マテリアルを定義しましょう。深く掘り下げてください。
+
+**ルール 4: コンテキストを提供する** - 「なぜ」「誰のために」を伝えることで、シンキングモデルがよりスマートなクリエイティブ判断を下せるようになります。
+
+STOP: 一つずつ見ていきます。ここまで大丈夫ですか？
+
+USER: はい
 
 ---
 
-### Rule 2: Natural Language vs Tag Soup
+ルール 1 は前のモジュールで学びました - Gemini がシンキングモデルなので、会話を続けることでより多くのコンテキストが得られ、うまく機能します。
 
-Let's start with Rule 2.
+では残りの3つのルールを実際に見てみましょう。それぞれのルールで2つのバージョンを同時に生成して、違いを並べて比較できるようにします。
 
-"Tag soup" is the style of prompting that became popular with earlier image models like Midjourney and Stable Diffusion - comma-separated keywords jammed together:
+コンセプトはあなたが選んでください - テクニックは私がお見せします。
+
+STOP: 実際に見てみる準備はできましたか？
+
+USER: はい
+
+---
+
+### ルール 2: 自然言語 vs タグスープ
+
+ルール 2 から始めましょう。
+
+「タグスープ」とは、Midjourney や Stable Diffusion などの初期の画像モデルで普及したプロンプトスタイルで、カンマ区切りのキーワードを詰め込む方法です：
 
 ```
 cat, orange tabby, sitting, window, sunlight, cozy, warm lighting, 8k, hyperrealistic, bokeh, soft focus
 ```
 
-Natural language is just... writing normally:
+自然言語は...普通に書くだけです：
 
 ```
 An orange tabby cat sitting on a windowsill, bathed in warm afternoon sunlight. The scene feels cozy and intimate, with soft focus on the background.
 ```
 
-Both can work, but Gemini was trained on natural language. Let's see the difference.
+どちらも機能しますが、Gemini は自然言語で学習されています。違いを見てみましょう。
 
-STOP: What concept would you like to see this demonstrated with? Give me a subject or scene - anything you want.
+STOP: 何のコンセプトでデモを見たいですか？被写体やシーンを教えてください - 何でも構いません。
 
-USER: [Provides concept]
+USER: [コンセプトを指定]
 
 ---
 
-Perfect. I'll show you the difference between tag soup and natural language.
+いいですね。タグスープと自然言語の違いをお見せします。
 
-I'm generating both versions right now so we can compare them directly.
+両方のバージョンを今生成して、直接比較できるようにします。
 
 ACTION: Generate two images in parallel:
 - Tag soup version: comma-separated keywords, no sentences
@@ -74,47 +74,47 @@ ACTION: Generate two images in parallel:
 
 ACTION: Save both images with descriptive names
 
-Here's what I used for each prompt:
-- **Tag soup:** [share the tag soup prompt]
-- **Natural language:** [share the natural language prompt]
+それぞれのプロンプトはこちらです：
+- **タグスープ:** [タグスーププロンプトを共有]
+- **自然言語:** [自然言語プロンプトを共有]
 
-Check both images in your `outputs/` folder:
+`outputs/` フォルダで両方の画像を確認してください：
 - `[concept]_tag_soup.png`
 - `[concept]_natural_language.png`
 
-STOP: Take a look at both - what do you notice?
+STOP: 両方を見てみてください - 何か気づいたことはありますか？
 
-USER: [Describes observations]
-
----
-
-You might notice they're actually pretty similar. That's kind of the point.
-
-Both approaches can produce good results. But natural language is just... easier. You don't have to memorize special syntax or worry about formatting. Just describe what you want like you're talking to a designer. And remember, I can always help you write these prompts as well.
-
-STOP: Ready for the next rule?
-
-USER: Yes
+USER: [観察を述べる]
 
 ---
 
-### Rule 3: Be Specific and Descriptive
+実はかなり似ていると思ったかもしれません。それがポイントなんです。
 
-This one's fun. Rule 3 is about defining the subject, setting, lighting, mood, textures, materials - all of it.
+どちらのアプローチでも良い結果が出ます。でも自然言語の方が...単純に楽なんです。特別な構文を覚えたり、フォーマットを気にする必要がありません。デザイナーに話すように説明するだけです。そして、プロンプトを書くのは私がいつでもお手伝いできますよ。
 
-Here's the thing about Gemini: it can handle A LOT of description. Like, way more than you'd think. And it's surprisingly consistent even with very detailed prompts.
+STOP: 次のルールに進みましょうか？
 
-Don't hold back. And if you're ever not sure how to add more detail, just ask me - I can help expand your prompts.
-
-STOP: What would you like to create for this demo? Give me a new concept.
-
-USER: [Provides concept]
+USER: はい
 
 ---
 
-Great choice. I'll show you vague vs detailed.
+### ルール 3: 具体的かつ詳細に記述する
 
-For the vague version, I'll use a simple one-sentence description. For the detailed version, I'm going all out - lighting, textures, atmosphere, materials, composition, everything.
+これは楽しいですよ。ルール 3 は被写体、設定、ライティング、ムード、テクスチャ、マテリアルなど、すべてを定義することです。
+
+Gemini について知っておいてほしいこと：とても多くの詳細を処理できます。想像以上に多くのことを。そして非常に詳細なプロンプトでも驚くほど一貫した結果を出します。
+
+遠慮せず書いてください。もっと詳細を追加する方法がわからなければ、聞いてください - プロンプトの拡張をお手伝いします。
+
+STOP: このデモでは何を作りたいですか？新しいコンセプトを教えてください。
+
+USER: [コンセプトを指定]
+
+---
+
+いい選択ですね。あいまいなプロンプトと詳細なプロンプトの違いをお見せします。
+
+あいまいなバージョンはシンプルな一文の説明にします。詳細なバージョンでは全力を出します - ライティング、テクスチャ、雰囲気、マテリアル、構図、すべてを盛り込みます。
 
 ACTION: Generate two images in parallel:
 - Vague prompt: simple, minimal description
@@ -122,55 +122,55 @@ ACTION: Generate two images in parallel:
 
 ACTION: Save both images with descriptive names
 
-Here's what I used:
-- **Vague:** [share the vague prompt]
-- **Detailed:** [share the detailed prompt - show them how crazy detailed you went]
+使ったプロンプトはこちらです：
+- **あいまい:** [あいまいなプロンプトを共有]
+- **詳細:** [詳細なプロンプトを共有 - どれだけ詳しく書いたか見せる]
 
 ACTION: View the images yourself and note the differences
 
-Check your `outputs/` folder:
+`outputs/` フォルダを確認してください：
 - `[concept]_vague.png`
 - `[concept]_detailed.png`
 
-STOP: Compare them - see the difference detail makes?
+STOP: 比べてみてください - 詳細さの違いがわかりますか？
 
-USER: [Responds]
-
----
-
-The detailed version gives Gemini so much more to work with. And here's what's cool - it actually follows through on all those details. The lighting you specified? It's there. The textures? There.
-
-Don't be afraid to be extremely specific. If you're ever stuck, just ask me to help expand your prompt.
-
-STOP: Ready for the last rule?
-
-USER: Yes
+USER: [回答]
 
 ---
 
-### Rule 4: Provide Context
+詳細なバージョンは Gemini にはるかに多くの情報を与えます。そしてすごいのは - 実際にすべての詳細に従っているところです。指定したライティング？そのまま反映されています。テクスチャ？同様です。
 
-This one is about telling Gemini the "why" or "for whom."
+とことん具体的に書くことを恐れないでください。行き詰まったら、プロンプトの拡張をお手伝いしますので聞いてください。
 
-Context helps the model understand the purpose and make appropriate creative choices. A portrait "for a children's book" looks very different from a portrait "for a luxury brand advertisement."
+STOP: 最後のルールに進みましょうか？
 
-STOP: What would you like to create? I'll give you some context options we can add.
-
-USER: [Provides concept]
+USER: はい
 
 ---
 
-Nice. Here are some context options that would work well with that:
+### ルール 4: コンテキストを提供する
+
+これは Gemini に「なぜ」「誰のために」を伝えるルールです。
+
+コンテキストはモデルが目的を理解し、適切なクリエイティブ判断を下すのに役立ちます。「絵本のための」ポートレートと「ラグジュアリーブランドの広告のための」ポートレートでは、まったく異なる仕上がりになります。
+
+STOP: 何を作りたいですか？追加するコンテキストの選択肢を提案しますね。
+
+USER: [コンセプトを指定]
+
+---
+
+いいですね。そのコンセプトに合うコンテキストの選択肢はこちらです：
 
 ACTION: Generate context options dynamically based on what makes sense for the user's concept (e.g., "for a children's book illustration", "for a luxury brand advertisement", "for a tech startup landing page", "for a vintage poster design")
 
-STOP: Pick one of these, or suggest your own context.
+STOP: この中から選ぶか、自分でコンテキストを提案してください。
 
-USER: [Picks context]
+USER: [コンテキストを選択]
 
 ---
 
-I'll generate one without context and one with your chosen context.
+コンテキストなしとコンテキストありの2つのバージョンを生成します。
 
 ACTION: Generate two images in parallel:
 - No context: just the subject description
@@ -180,49 +180,49 @@ ACTION: Save both images with descriptive names
 
 ACTION: Review both images and identify specific differences
 
-Here's what I noticed: [share observations about how context influenced the result - be specific about what changed]
+気づいたこと：[コンテキストが結果にどう影響したか具体的に共有 - 何が変わったかを詳しく説明]
 
-Check your `outputs/` folder:
+`outputs/` フォルダを確認してください：
 - `[concept]_no_context.png`
 - `[concept]_with_context.png`
 
-STOP: See how the context changed the creative direction?
+STOP: コンテキストがクリエイティブの方向性をどう変えたか、わかりますか？
 
-USER: [Responds]
-
----
-
-That wraps up the Golden Rules:
-1. **Edit, don't re-roll** - iterate on what's working
-2. **Use natural language** - talk to it like a designer
-3. **Be specific and descriptive** - Gemini can handle the detail
-4. **Provide context** - tell it the "why"
-
-Keep these in mind for all your image generation work. They'll make a real difference.
-
-STOP: Ready to move on to reference images?
-
-USER: Yes
+USER: [回答]
 
 ---
 
-## Part 2: Reference Images
+これでゴールデンルールのまとめです：
+1. **リロールせずに編集する** - うまくいっているものをイテレーションする
+2. **自然言語を使う** - デザイナーに話すように
+3. **具体的かつ詳細に記述する** - Gemini は詳細を処理できる
+4. **コンテキストを提供する** - 「なぜ」を伝える
 
-Now we're getting into the really powerful stuff.
+すべての画像生成作業でこれらを念頭に置いてください。大きな違いが出ます。
 
-You can provide Gemini with reference images to guide the style or subject. This is huge for brand consistency, recreating specific looks, or getting characters to look right.
+STOP: 参照画像に進みましょうか？
 
-Let's start with a single style reference.
+USER: はい
+
+---
+
+## Part 2: 参照画像
+
+ここからが本当にパワフルな機能です。
+
+Gemini にスタイルや被写体のガイドとして参照画像を提供できます。ブランドの一貫性を保つ、特定のルックを再現する、キャラクターの見た目を正確にするなど、非常に重要な機能です。
+
+まずは単一のスタイルリファレンスから始めましょう。
 
 ACTION: Read the `style-reference.jpeg` file to understand its visual style
 
 ACTION: Tell user where to find `style-reference.jpeg` so they can view it
 
-This is an epic basketball landing page - bold, dynamic, high-energy design. Great visual style.
+これはダイナミックでエネルギッシュなバスケットボールのランディングページです - 大胆でインパクトのあるデザイン。素晴らしいビジュアルスタイルですね。
 
-STOP: What would you like me to create in this style? Give me a completely different subject.
+STOP: このスタイルで何を作ってほしいですか？まったく違う被写体を教えてください。
 
-USER: [Provides subject]
+USER: [被写体を指定]
 
 ---
 
@@ -230,67 +230,67 @@ ACTION: Generate an image using `style-reference.jpeg` as a style reference with
 
 ACTION: Save with descriptive name
 
-Check `outputs/` for your styled image.
+`outputs/` フォルダでスタイル適用済みの画像を確認してください。
 
-STOP: Take a look - see how it captured that bold, dynamic visual style but with your subject?
+STOP: 見てみてください - あの大胆でダイナミックなビジュアルスタイルがあなたの被写体にどう反映されているかわかりますか？
 
-USER: [Responds]
+USER: [回答]
 
 ---
 
-This is incredibly useful for brand consistency. Got a style you love? Just feed it in as a reference.
+これはブランドの一貫性を保つのに非常に便利です。気に入ったスタイルがあれば、参照画像として入力するだけです。
 
-Now let's try something more advanced - multiple reference images.
+次はもう少し高度なことを試してみましょう - 複数の参照画像です。
 
-We're going to create an epic cat food landing page called "APEX CAT" featuring Carl's cats Winter and Piper.
+Carl の猫 Winter と Piper をフィーチャーした「APEX CAT」というキャットフードのランディングページを作ります。
 
 ACTION: Tell users where they can find the cat images (Winter 1-3, Piper 1-2)
 
-STOP: Did you find Winter and Piper?
+STOP: Winter と Piper の写真は見つかりましたか？
 
-USER: [Confirms]
+USER: [確認]
 
 ---
 
-I'll combine:
-- The `style-reference.jpeg` for that bold, dynamic visual style
-- Photos of Winter (the black fluffy cat) - all 3 reference photos
-- Photos of Piper (the gray/cream fluffy cat) - both reference photos
+以下を組み合わせます：
+- `style-reference.jpeg` - あの大胆でダイナミックなビジュアルスタイル
+- Winter（黒いふわふわの猫）の写真 - 3枚すべて
+- Piper（グレー/クリーム色のふわふわの猫）の写真 - 2枚とも
 
-Pro tip: providing multiple reference photos of the same subject gives much better results. The model can understand the subject from different angles and lighting conditions, which helps it represent them more accurately.
+プロのコツ：同じ被写体の参照写真を複数提供すると、はるかに良い結果が得られます。モデルがさまざまな角度やライティング条件から被写体を理解できるため、より正確に表現できるようになります。
 
 ACTION: Generate an "APEX CAT" landing page combining style reference + all 5 cat photos
 
 ACTION: Save with descriptive name like `apex_cat_landing_page.png`
 
-Check your `outputs/` folder for the result.
+`outputs/` フォルダで結果を確認してください。
 
-STOP: What do you think? See how it captured both cats' likeness in that landing page style?
+STOP: どうですか？2匹の猫の特徴がランディングページスタイルに反映されているのがわかりますか？
 
-USER: [Responds]
-
----
-
-That's the power of reference images:
-- **Single reference** for style
-- **Multiple references** for better subject accuracy
-- **Mix and match** - style from one image, subjects from others
-
-STOP: Ready for Part 3 - grids and variants?
-
-USER: Yes
+USER: [回答]
 
 ---
 
-## Part 3: Grids and Variants
+これが参照画像のパワーです：
+- **単一の参照画像** - スタイルの適用
+- **複数の参照画像** - 被写体の精度向上
+- **組み合わせ** - ある画像からスタイル、別の画像から被写体
 
-Sometimes you need multiple views or variations of the same subject. Grids are perfect for this - character sheets, sprite sheets, product angles, you name it.
+STOP: Part 3 のグリッドとバリエーションに進みましょうか？
 
-Let's create a 3x3 video game character sprite sheet using Winter.
+USER: はい
 
-STOP: Go ahead and ask me to generate a character sprite sheet using the Winter photos.
+---
 
-USER: Generate a character sprite sheet using the Winter photos
+## Part 3: グリッドとバリエーション
+
+被写体の複数のビューやバリエーションが必要な場合があります。グリッドはこれに最適です - キャラクターシート、スプライトシート、プロダクトのアングル、何にでも使えます。
+
+Winter を使って 3x3 のビデオゲームキャラクタースプライトシートを作りましょう。
+
+STOP: Winter の写真を使ってキャラクタースプライトシートの生成を頼んでみてください。
+
+USER: Winter の写真を使ってキャラクタースプライトシートを生成して
 
 ---
 
@@ -300,23 +300,23 @@ ACTION: Generate a 3x3 grid sprite sheet using Winter reference photos
 
 ACTION: Save as `winter_sprite_sheet.png`
 
-Check your `outputs/` folder for the sprite sheet.
+`outputs/` フォルダでスプライトシートを確認してください。
 
-This is great for consistency - same character, different angles and poses, all matching the same design language.
+一貫性の確保に最適です - 同じキャラクターで異なるアングルやポーズ、すべて同じデザイン言語で統一されています。
 
-STOP: See how all 9 poses maintain the same character design?
+STOP: 9つのポーズすべてが同じキャラクターデザインを維持しているのがわかりますか？
 
-USER: [Responds]
+USER: [回答]
 
 ---
 
-Let's try one more grid - and this one's a bit meta.
+もう一つグリッドを試してみましょう - ちょっとメタな内容です。
 
-We just learned the Golden Rules of prompting. What if we used image generation to create teaching slides about those very rules?
+先ほどプロンプトのゴールデンルールを学びましたね。そのルールについてのティーチングスライドを画像生成で作ったらどうでしょう？
 
-STOP: Ask me to generate an 8-slide presentation about the Golden Rules.
+STOP: ゴールデンルールについての8スライドのプレゼンテーションを生成するよう頼んでみてください。
 
-USER: Generate an 8-slide presentation about the Golden Rules
+USER: ゴールデンルールについての8スライドのプレゼンテーションを生成して
 
 ---
 
@@ -330,27 +330,27 @@ ACTION: Generate a 2x4 grid (8 slides) teaching the Golden Rules of prompting
 
 ACTION: Save as `golden_rules_slides.png`
 
-Check your `outputs/` folder for the slides.
+`outputs/` フォルダでスライドを確認してください。
 
-See what we did there? We used the tool to create teaching content about the tool. Grids are incredibly useful for presentations, tutorials, or any content that needs visual consistency.
+何をしたかわかりますか？ツールを使ってツールについてのティーチングコンテンツを作ったんです。グリッドはプレゼンテーション、チュートリアル、またはビジュアルの一貫性が必要なあらゆるコンテンツに非常に便利です。
 
-STOP: Pretty meta, right? Ready to move on to variants?
+STOP: かなりメタですよね？バリエーションに進みましょうか？
 
-USER: [Responds]
+USER: [回答]
 
 ---
 
-Now let's talk about variants.
+ではバリエーションについて話しましょう。
 
-Here's something important: anything with LLMs has inherent randomness, and this is espeically true with image generation. Even with the exact same prompt, you'll get different results each time.
+重要なことをお伝えします：LLM には固有のランダム性があり、画像生成では特にそうです。まったく同じプロンプトでも、毎回異なる結果が出ます。
 
-You can treat this as a feature, not a bug.
+これをバグではなくフィーチャーとして活用しましょう。
 
-Instead of generating one image and hoping it's right, generate 2-3 variants with the same prompt. Then pick your favorite and iterate on that one.
+1枚の画像を生成して当たることを祈るのではなく、同じプロンプトで2-3個のバリエーションを生成しましょう。そしてお気に入りを選んで、それをイテレーションするのです。
 
-STOP: Pick any concept from our earlier demos that you'd like to explore further. You can check the `outputs/` folder if you need a reminder.
+STOP: 先ほどのデモの中から、さらに探ってみたいコンセプトを選んでください。忘れてしまったら `outputs/` フォルダを確認してください。
 
-USER: [Picks concept]
+USER: [コンセプトを選択]
 
 ---
 
@@ -360,21 +360,21 @@ ACTION: Generate 3 variants of the user's chosen concept using the SAME prompt e
 
 ACTION: Save as `[concept]_variant_1.png`, `[concept]_variant_2.png`, `[concept]_variant_3.png`
 
-Check your `outputs/` folder - you should see three different versions from the same prompt.
+`outputs/` フォルダを確認してください - 同じプロンプトから3つの異なるバージョンが見られるはずです。
 
-STOP: Which variant do you like best?
+STOP: どのバリエーションが一番好きですか？
 
-USER: [Picks favorite]
+USER: [お気に入りを選択]
 
 ---
 
-Great choice. Now we can iterate on that specific direction.
+いい選択ですね。では、その方向性をさらに発展させましょう。
 
-This is the workflow: generate variants, pick the best, then refine.
+これがワークフローです：バリエーションを生成し、ベストを選び、それを磨いていく。
 
-STOP: What would you like to change or enhance about your chosen variant?
+STOP: 選んだバリエーションの何を変えたい、または強化したいですか？
 
-USER: [Provides feedback]
+USER: [フィードバックを提供]
 
 ---
 
@@ -382,77 +382,77 @@ ACTION: Continue the session to refine the chosen variant based on user feedback
 
 ACTION: Save the refined version
 
-This is the full creative workflow:
-1. **Generate variants** to explore directions
-2. **Pick your favorite**
-3. **Iterate with specific feedback**
+これが完全なクリエイティブワークフローです：
+1. **バリエーションを生成** して方向性を探る
+2. **お気に入りを選ぶ**
+3. **具体的なフィードバックでイテレーションする**
 
-STOP: See how that workflow gives you more control over the creative direction?
+STOP: このワークフローでクリエイティブの方向性をどうコントロールできるか、わかりますか？
 
-USER: [Responds]
-
----
-
-## Wrap-Up
-
-Excellent work! Let's recap what you learned:
-
-**Golden Rules:**
-- Edit, don't re-roll
-- Use natural language
-- Be specific and descriptive
-- Provide context
-
-**Reference Images:**
-- Single reference for style
-- Multiple references for better subject accuracy
-- Mix and match style and subject references
-
-**Grids and Variants:**
-- Grids for consistency across poses/angles
-- Variants to explore directions, then iterate on the best
-
-STOP: Any questions before we move on?
-
-USER: [Questions or ready to continue]
+USER: [回答]
 
 ---
 
-In the next module, we'll build a style database so you can save and reuse your favorite styles. You'll learn how to deconstruct existing images and build your own creative toolkit.
+## まとめ
 
-STOP: Tell me when you're ready for Module 3.1.4
+素晴らしい仕事です！学んだことを振り返りましょう：
 
-USER: Ready
+**ゴールデンルール：**
+- リロールせずに編集する
+- 自然言語を使う
+- 具体的かつ詳細に記述する
+- コンテキストを提供する
 
-Run `/start-3-1-4` to continue.
+**参照画像：**
+- 単一の参照画像でスタイルを適用
+- 複数の参照画像で被写体の精度を向上
+- スタイルと被写体の参照画像を組み合わせる
+
+**グリッドとバリエーション：**
+- グリッドでポーズ/アングルの一貫性を確保
+- バリエーションで方向性を探り、ベストをイテレーション
+
+STOP: 次に進む前に質問はありますか？
+
+USER: [質問または続ける準備ができた]
 
 ---
 
-## Important Notes for Claude
+次のモジュールでは、スタイルデータベースを構築して、お気に入りのスタイルを保存・再利用できるようにします。既存の画像を分解してオリジナルのクリエイティブツールキットを構築する方法を学びます。
 
-When running this module:
+STOP: Module 3.1.4 の準備ができたら教えてください
 
-1. **Descriptive file names** - Always use meaningful names when saving outputs (e.g., `coffee_shop_warm_light.png` not just sequential numbers)
+USER: 準備できました
 
-2. **Share your prompts** - When generating comparison images, always show the user what prompts you used so they can learn from the technique
+`/start-3-1-4` を実行して続けてください。
 
-3. **View images yourself** - For demos where you need to comment on differences, actually look at the generated images and provide specific observations
+---
 
-4. **Dynamic context options** - When offering context options for Rule 4, generate options that make sense for the user's specific concept
+## Claude への重要な注意事項
 
-5. **Cat photo locations** - The cat photos (Winter 1-3, Piper 1-2) and style-reference.jpeg are in the module folder. Tell users the exact path.
+このモジュールを実行する際の注意：
 
-6. **Variants workflow** - When generating variants, use the same prompt each time to demonstrate natural randomness
+1. **わかりやすいファイル名** - 出力を保存する際は常に意味のある名前を使用してください（例：`coffee_shop_warm_light.png`、連番ではなく）
 
-7. **Opening images** - If a user is having trouble finding an image, offer to open it for them using `open [path]` (Mac) or `start [path]` (Windows)
+2. **プロンプトを共有する** - 比較画像を生成する際は、テクニックを学べるよう、使用したプロンプトを必ずユーザーに見せてください
 
-## Success Criteria
+3. **自分で画像を確認する** - 違いについてコメントが必要なデモでは、実際に生成された画像を見て具体的な観察を述べてください
 
-Module is complete when:
-- [ ] User has seen all 4 Golden Rules explained
-- [ ] User has completed 3 comparison demos (tag soup vs natural language, vague vs detailed, no context vs with context)
-- [ ] User has used a single style reference
-- [ ] User has seen the multi-image APEX CAT demo
-- [ ] User has generated a grid/sprite sheet
-- [ ] User has generated variants and iterated on their favorite
-- [ ] User is directed to `/start-3-1-4`
+4. **動的なコンテキストオプション** - ルール 4 のコンテキストオプションを提案する際は、ユーザーの具体的なコンセプトに合った選択肢を生成してください
+
+5. **猫の写真の場所** - 猫の写真（Winter 1-3、Piper 1-2）と style-reference.jpeg はモジュールフォルダにあります。ユーザーに正確なパスを伝えてください。
+
+6. **バリエーションのワークフロー** - バリエーションを生成する際は、自然なランダム性を実証するために毎回同じプロンプトを使用してください
+
+7. **画像を開く** - ユーザーが画像を見つけるのに困っている場合は、`open [path]`（Mac）または `start [path]`（Windows）を使って画像を開くことを提案してください
+
+## 成功基準
+
+モジュールの完了条件：
+- [ ] ユーザーが4つのゴールデンルールすべての説明を受けた
+- [ ] ユーザーが3つの比較デモを完了した（タグスープ vs 自然言語、あいまい vs 詳細、コンテキストなし vs コンテキストあり）
+- [ ] ユーザーが単一のスタイルリファレンスを使用した
+- [ ] ユーザーが複数画像の APEX CAT デモを見た
+- [ ] ユーザーがグリッド/スプライトシートを生成した
+- [ ] ユーザーがバリエーションを生成し、お気に入りをイテレーションした
+- [ ] ユーザーが `/start-3-1-4` に案内された

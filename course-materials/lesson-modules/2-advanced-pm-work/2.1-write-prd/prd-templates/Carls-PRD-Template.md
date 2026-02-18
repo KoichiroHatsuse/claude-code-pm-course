@@ -1,72 +1,72 @@
-# Carl’s PRD Template
+# Carl's PRD Template
 
 # Problem Alignment
 
 ## Problem & Opportunity
 
-Describe the problem we are trying to solve in 1-2 sentences. I should be able to read this alone and communicate the value/risks to someone else.
+解決しようとしている問題を1〜2文で記述してください。これだけを読んで、他の人にその価値やリスクを伝えられるようにすべきです。
 
-- Why does this matter to our customers and business?
-- What evidence or insights do you have to support this?
-- Which customers are we working with, or hearing from, to better understand this problem?
-- Why is solving this problem urgent? Why now?
-- Why is it important?
+- なぜこれが顧客とビジネスにとって重要なのか？
+- これを裏付けるエビデンスやインサイトは何か？
+- この問題をより深く理解するために、どの顧客と協力している、または話を聞いているか？
+- この問題を解決することがなぜ緊急なのか？なぜ今なのか？
+- なぜ重要なのか？
 
 ## **High Level Approach**
 
-Describe the rough shape of how we might tackle the problem. I should be able to squint my eyes and see the same shape. For example, if the problem was “discoverability of new features”, then this might be “a notification center for relevant features”.
+問題への取り組み方の大まかな形を記述してください。目を細めても同じ形が見えるくらいの粒度です。例えば、問題が「新機能の発見性」だった場合、「関連する機能のための通知センター」のようになるかもしれません。
 
-What alternatives did we consider?  Why did we land with this?
+どのような代替案を検討しましたか？なぜこの方法に落ち着いたのか？
 
 ### **Narrative**
 
-**Optional**: Share (hypothetical) stories to paint a picture of what life looks like for customers today. Describe common and edgy use cases to consider when designing the solution.
+**任意**: 今日の顧客にとっての生活がどのようなものかを描く（仮定の）ストーリーを共有してください。ソリューションを設計する際に考慮すべき一般的なユースケースやエッジケースを記述してください。
 
 ## **Goals**
 
-1. *Describe high-level goals, ideally in priority order and not too many.*
-2. *Include measurable (metrics) and immeasurable (feelings) goals*
-3. *Keep it short and sweet*
-4. *Include gaurdrail metrics*
+1. *高レベルの目標を、理想的には優先順位順で、多すぎない数で記述*
+2. *測定可能な（メトリクス）目標と測定不可能な（フィーリング）目標の両方を含める*
+3. *簡潔にまとめる*
+4. *ガードレールメトリクスを含める*
 
 ## **Non-goals**
 
-1. *List explicit areas we do not plan to address*
-2. *Explain why they are not goals*
-3. *These are as important and clarifying as the goals*
+1. *対処する予定のない領域を明示的にリスト化*
+2. *それが目標でない理由を説明*
+3. *これらは目標と同じくらい重要で明確化に役立つ*
 
 # Solution Alignment
 
 ## Key Features
 
-Plan of record
+計画記録
 
-1. *List the features that shape the solution*
-2. *Ideally in priority order*
-3. *Think of this like drawing the perimeter of the solution space*
-4. *Draw the boundaries so the team can focus on how to fill it in*
-5. *Link out to sub-docs for more detail for particularly large projects*
-6. *Challenge the size to see if a smaller component can be shipped independently*
+1. *ソリューションを形作る機能をリスト化*
+2. *理想的には優先順位順*
+3. *ソリューション空間の境界を描くイメージ*
+4. *チームがその中を埋めることに集中できるよう境界線を引く*
+5. *特に大きなプロジェクトについてはサブドキュメントへリンク*
+6. *より小さなコンポーネントを独立してリリースできないかサイズに挑戦する*
 
-Future considerations
+将来の検討事項
 
-1. *Optionally list features you are saving for later*
-2. *These might inform how you build now*
+1. *後に回す機能を任意でリスト化*
+2. *これらが現在の構築方法に影響する可能性がある*
 
 ### **Key Flows**
 
-Show what the end-to-end experience will be for customers. This could be written prose, a flow diagram, screenshots, or design explorations. It will vary by project and team. Do not try to do this in isolation. Work with design and engineering to complete.
+エンドツーエンドの顧客体験がどうなるかを示してください。これは文章での説明、フロー図、スクリーンショット、またはデザインの検討など、さまざまな形式が考えられます。プロジェクトやチームによって異なります。これを単独で行おうとしないでください。デザインとエンジニアリングと協力して完成させてください。
 
-It is natural for this section to become more specific over time. It might start as a few annotated screenshots or stories. It might become highly detailed requirements with acceptance criteria. Adjust to the way your team operates. If you have a strong designer who enjoys going into every edge case, lean on them. If you have detailed engineers who prefer to have each scenario documented, go deep on acceptance criteria.
+このセクションは時間とともにより具体的になるのが自然です。最初はいくつかの注釈付きスクリーンショットやストーリーかもしれません。詳細な要件と受入基準になることもあります。チームの運営方法に合わせて調整してください。あらゆるエッジケースに踏み込むことを楽しむ優秀なデザイナーがいる場合は、彼らに任せましょう。各シナリオを文書化することを好む詳細志向のエンジニアがいる場合は、受入基準を深く掘り下げましょう。
 
-This will naturally change over time — that’s okay. When changes occur, document them in the [Changelog](https://docs.google.com/document/d/1mEMDcHmtQ6twzNlpvF-9maNlAcezpWDtCnyIqWkODZs/edit#heading=h.n2tmu89lqb7n) and notify all contributors.
+これは自然と時間とともに変化します。変更が発生したら、[Changelog](https://docs.google.com/document/d/1mEMDcHmtQ6twzNlpvF-9maNlAcezpWDtCnyIqWkODZs/edit#heading=h.n2tmu89lqb7n)に記録し、すべてのコントリビューターに通知してください。
 
 ### **Key Logic**
 
-1. *List rules to guide design and development*
-2. *Address common scenarios and edge cases*
-3. *It is often easier to write these out than rely on design to show every permutation*
-4. *Include non-functional requirements*
+1. *デザインと開発を導くルールをリスト化*
+2. *一般的なシナリオとエッジケースに対処*
+3. *デザインにすべてのパターンを示させるよりも、文章で書き出す方が簡単なことが多い*
+4. *非機能要件を含める*
 
 # Development and Launch Planning
 
@@ -79,6 +79,6 @@ This will naturally change over time — that’s okay. When changes occur, doc
 ## Other
 
 - Appendix
-- Changelog – move to top once started
+- Changelog - 開始後はドキュメントの先頭に移動
 - FAQ
 - Risks
